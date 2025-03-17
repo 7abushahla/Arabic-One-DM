@@ -1,4 +1,4 @@
-# One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting
+# One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation
 
 ## $Khat^2$ Dataset
 Inspired by the **Font²** dataset, we built a large synthetic dataset of Arabic word images rendered in a wide variety of fonts—including those that mimic handwriting. In our pipeline, over **2,000** freely available Arabic calligraphic fonts were scraped from multiple websites, then manually verified to ensure they correctly render every Arabic character (with decorative fonts containing elements like hearts or stars discarded). Additionally, drawing inspiration from **HATFORMER**, we collected more than **130** paper background images and compiled an Arabic corpus of **8.2 million** words from diverse online sources, including Wikipedia.
