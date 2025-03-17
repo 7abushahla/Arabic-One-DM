@@ -1,0 +1,1000 @@
+./fonts/cartoon/Cartoon1471Extended-x3oyq.ttf
+./fonts/BTehran/BTehran.ttf
+./fonts/HelveticaWorld/HelveticaWorld-Bold.ttf
+./fonts/Neckar Font Bold/Neckar Font Bold.ttf
+./fonts/Marhey/static/Marhey-Bold.ttf
+./fonts/BSetareh/BSetareh.ttf
+./fonts/BIXIE/BIXIE-Regular.ttf
+./fonts/22876/22876-gen01.ttf
+./fonts/trado/trado.ttf
+./fonts/DimaNaskh/DimaNaskh.ttf
+./fonts/K_FARNAZ/K_FARNAZ.TTF
+./fonts/fromAkram/Fonts/DTNASKH1.TTF
+./fonts/Air Strip Arabic/Air Strip Arabic.ttf
+./fonts/Lemonada/Lemonada-Light.ttf
+./fonts/Hacen Samra/Hacen Samra.ttf
+./fonts/BKamran/BKamran.ttf
+./fonts/DG/DG-3asomy-Thin.ttf
+./fonts/MotkenRafidain/MotkenRafidain.ttf
+./fonts/Mj-Unique-Light/Mj-Unique-Light.ttf
+./fonts/BSahar/BSahar.ttf
+./fonts/DimaLatifi/DimaLatifi.ttf
+./fonts/pHalls/pHalls-Khodkar-phalls.com_.ttf
+./fonts/Hacen Algeria/Hacen Algeria.ttf
+./fonts/Kufam/static/Kufam-MediumItalic.ttf
+./fonts/belal/BelalBoldBold-BWrl8.ttf
+./fonts/Abdoullah Ashgar EL/Abdoullah Ashgar EL-kharef.ttf
+./fonts/ae/ae_Khalid.ttf
+./fonts/mohammed/mohammed2.ttf
+./fonts/Hasan/Hasan-Alquds-Unicode-Bold.ttf
+./fonts/HACEN_LINER_PRINT/HACEN_LINER_PRINT-OUT.TTF
+./fonts/Rubik/static/Rubik-Bold.ttf
+./fonts/fromAkram/Fonts/OLDOUTSH.TTF
+./fonts/OoredooArabic/OoredooArabic-Regular.ttf
+./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-SemiBold.ttf
+./fonts/4_51/4_51.ttf
+./fonts/Cairo/Cairo-Regular.ttf
+./fonts/BEsfhnBd/BEsfhnBd.ttf
+./fonts/AraHamah1964R/AraHamah1964R-Regular.ttf
+./fonts/arabswell_/arabswell_1.ttf
+./fonts/BigVesta Arabic Regular/BigVesta Arabic Regular.ttf
+./fonts/Elain-Regular/Elain-Regular.ttf
+./fonts/Hend Font Bold/Hend Font Bold.ttf
+./fonts/Neckar Font Regular/Neckar Font Regular.ttf
+./fonts/Arian-LT-Heavy-1/Arian-LT-Heavy-1.ttf
+./fonts/Rubik/static/Rubik-Medium.ttf
+./fonts/Hacen Trarza Hd/Hacen Trarza Hd.ttf
+./fonts/b/B_MITRA.TTF
+./fonts/boutros/boutros6.ttf
+./fonts/JannaLT/JannaLT-Regular.ttf
+./fonts/BNazannO/BNazannO.ttf
+./fonts/HACEN_TYPOGRAPHER/HACEN_TYPOGRAPHER.TTF
+./fonts/Harmattan/Harmattan-Regular.ttf
+./fonts/fromAkram/Fonts/OLDANBLD.TTF
+./fonts/aga/AgaRasheeqV2RshyqBold-DMDE.ttf
+./fonts/18271/18271-18271-18271-7438358.ttf
+./fonts/4_88/4_88.ttf
+./fonts/Vibes/Vibes-Regular.ttf
+./fonts/Hasan/Hasan-Alquds-Unicode-Medium.ttf
+./fonts/Cairo_Play/static/CairoPlay-Medium.ttf
+./fonts/ae/ae_Hani.ttf
+./fonts/al/AL-Gemah-Alhoda.ttf
+./fonts/Markazi_Text/MarkaziText-VariableFont_wght.ttf
+./fonts/AraHamahHoms/AraHamahHoms-Regular.ttf
+./fonts/HACEN_PROMOTER/HACEN_PROMOTER.TTF
+./fonts/ae_Khalid/ae_Khalid.ttf
+./fonts/BMitraBd/BMitraBd.ttf
+./fonts/Far_Fanni/Far_Fanni.ttf
+./fonts/MA3ALI/MA3ALI-AQSA.TTF
+./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-SemiBold.ttf
+./fonts/BKoodkBd/BKoodkBd.ttf
+./fonts/Cairo-SemiBold-2/Cairo-SemiBold-2.ttf
+./fonts/taro/taro.ttf
+./fonts/AlHurra Font Light/AlHurra Font Light.ttf
+./fonts/Blabeloo/Blabeloo-font-v.1.0.ttf
+./fonts/BTitrBd/BTitrBd.ttf
+./fonts/Dima-Yekan/Dima-Yekan.ttf
+./fonts/Fustat/static/Fustat-Light.ttf
+./fonts/Vazirmatn/static/Vazirmatn-Light.ttf
+./fonts/omniglot/OmniglotFont-mLWLv.ttf
+./fonts/Sp_Hadi_p30download.com_/Sp_Hadi_p30download.com_.ttf
+./fonts/Ah/Ah-moharram-bold.ttf
+./fonts/BlueOcean/BlueOcean.ttf
+./fonts/0 Titr Bold Bold/0 Titr Bold Bold.ttf
+./fonts/ae/ae_AlMohanad.ttf
+./fonts/GaliModern-Bold/GaliModern-Bold.ttf
+./fonts/MOTKEN_K_NASIM/MOTKEN_K_NASIM.TTF
+./fonts/Kufam/static/Kufam-ExtraBold.ttf
+./fonts/air/air-arabia-1.ttf
+./fonts/A Khash Medium/A Khash Medium.ttf
+./fonts/Beiruti/static/Beiruti-ExtraLight.ttf
+./fonts/ElMessiri-Bold/ElMessiri-Bold.ttf
+./fonts/b/B_BARDIYA_BOLD.TTF
+./fonts/Abdo Free Regular/Abdo Free Regular.ttf
+./fonts/Hacen Extender Bd/Hacen Extender Bd.ttf
+./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-Black.ttf
+./fonts/Hacen Tunisia/Hacen Tunisia.ttf
+./fonts/ae/ae_Nagham.ttf
+./fonts/ae/ae_Dimnah.ttf
+./fonts/HACEN_TYPOGRAPHER_BOOK/HACEN_TYPOGRAPHER_BOOK.TTF
+./fonts/shekari/shekari.ttf
+./fonts/Amiri/Amiri-Italic.ttf
+./fonts/Hacen Maghreb/Hacen Maghreb.ttf
+./fonts/BFarnaz/BFarnaz.ttf
+./fonts/ae/ae_Sindibad.ttf
+./fonts/SC_KHALID/SC_KHALID.ttf
+./fonts/BBardiya/BBardiya.ttf
+./fonts/BFantezy/BFantezy.ttf
+./fonts/Almarai/Almarai-Regular.ttf
+./fonts/Hacen/Hacen-Algeria-Hd.ttf
+./fonts/Hacen-Beirut-Light/Hacen-Beirut-Light.ttf
+./fonts/Ruwudu/Ruwudu-Bold.ttf
+./fonts/HACEN_PROMOTER_LT/HACEN_PROMOTER_LT.TTF
+./fonts/BOUTROS_ADS_BOLD/BOUTROS_ADS_BOLD.TTF
+./fonts/Hacen Beirut/Hacen Beirut.ttf
+./fonts/BBaran/BBaran.ttf
+./fonts/FFTaweel-Bold/FFTaweel-Bold.ttf
+./fonts/AdvertisingLight/AdvertisingLight.ttf
+./fonts/DTHULUTH/DTHULUTH-II-1.ttf
+./fonts/ONE/ONE.ttf
+./fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.ttf
+./fonts/Arian-LT-1/Arian-LT-1.ttf
+./fonts/Qatar2022Arabic/Qatar2022Arabic-Bold.ttf
+./fonts/4_6D/4_6D.ttf
+./fonts/b/B_YAGUT.TTF
+./fonts/Amiri/Amiri-Regular.ttf
+./fonts/Sukar Regular/Sukar Regular.ttf
+./fonts/Hacen Digital Arabia/Hacen Digital Arabia.ttf
+./fonts/AraHamah1964B/AraHamah1964B-Bold.ttf
+./fonts/BOUTROS_ADS_CONDENSED_BOLD/BOUTROS_ADS_CONDENSED_BOLD.TTF
+./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Medium.ttf
+./fonts/ae/ae_Rasheeq_bold.ttf
+./fonts/ae_AlManzomah/ae_AlManzomah.ttf
+./fonts/FFTaweel/FFTaweel-Bold.ttf
+./fonts/DimaUbuntu/DimaUbuntu.ttf
+./fonts/Aljazeera/Aljazeera.ttf
+./fonts/VIP/VIP-TIM-Thin.ttf
+./fonts/Hacen Tunisia Lt/Hacen Tunisia Lt.ttf
+./fonts/Tajawal/Tajawal-Light.ttf
+./fonts/DUBAI/DUBAI-LIGHT.TTF
+./fonts/GaliModern-Medium/GaliModern-Medium.ttf
+./fonts/Lemonada/Lemonada-SemiBold.ttf
+./fonts/KacstFarsi/KacstFarsi.ttf
+./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Bold.ttf
+./fonts/KacstOneFixed/KacstOneFixed.ttf
+./fonts/Vazirmatn/static/Vazirmatn-Regular.ttf
+./fonts/GaliModern-UltraLight/GaliModern-UltraLight.ttf
+./fonts/ae/ae_Petra.ttf
+./fonts/AraHamah1982/AraHamah1982-Regular.ttf
+./fonts/DimaHallFetica22/DimaHallFetica22.ttf
+./fonts/Handjet/static/Handjet-ExtraBold.ttf
+./fonts/truetypewriter/TruetypewriterPolyglott-mELa.ttf
+./fonts/BritishCouncil-Arabic-Bold-Italic/BritishCouncil-Arabic-Bold-Italic.ttf
+./fonts/ae/AE_ALMATEEN_BOLD.TTF
+./fonts/ali-meshref/ali-meshref.ttf
+./fonts/bader_al merkaz/bader_al merkaz.ttf
+./fonts/117/117-Barada-Reqa.ttf
+./fonts/Droid_Arabic_kufi/DroidKufi-Regular.ttf
+./fonts/Abomsaab Regular/Abomsaab Regular.ttf
+./fonts/Molhim_Bold/Molhim_Bold.ttf
+./fonts/Lateef/Lateef-Regular.ttf
+./fonts/djadli_OTFal/djadli_OTFal-Qabas-Slant.ttf
+./fonts/HSN_sadiyah/HSN_sadiyah.ttf
+./fonts/BKarim/BKarim.ttf
+./fonts/DimaBarf2/DimaBarf2.ttf
+./fonts/Zain/Zain-LightItalic.ttf
+./fonts/Kufam/static/Kufam-Regular.ttf
+./fonts/DimaShekasteh/DimaShekasteh.ttf
+./fonts/riyad/riyad-bank-Light.ttf
+./fonts/DimaSalam/DimaSalam.ttf
+./fonts/Al-naqaaa-S/Al-naqaaa-S.ttf
+./fonts/scheherazade/Scheherazade-o3VB.ttf
+./fonts/GE-Cap-Medium/GE-Cap-Medium.ttf
+./fonts/Estedad/Estedad-Light.ttf
+./fonts/KacstPoster/KacstPoster.ttf
+./fonts/mohammed/mohammed3.ttf
+./fonts/BMasdBdI/BMasdBdI.ttf
+./fonts/HACEN_LINER_SCREEN/HACEN_LINER_SCREEN.TTF
+./fonts/DimaShekari/DimaShekari.ttf
+./fonts/Vazirmatn/Vazirmatn-VariableFont_wght.ttf
+./fonts/MOTKEN_K_TRAFFIC/MOTKEN_K_TRAFFIC.TTF
+./fonts/Arian-LT-Demi-1/Arian-LT-Demi-1.ttf
+./fonts/Hamdy/Hamdy-V2-Bold.ttf
+./fonts/Fanni/Fanni.ttf
+./fonts/Cairo_Play/static/CairoPlay-Light.ttf
+./fonts/Hacen Saudi Arabia/Hacen Saudi Arabia.ttf
+./fonts/Mada/static/Mada-Black.ttf
+./fonts/Kufyan Arabic Bold/Kufyan Arabic Bold.ttf
+./fonts/ae/ae_Nada.ttf
+./fonts/fantazy/fantazy.ttf
+./fonts/ae/ae_Tholoth.ttf
+./fonts/KHALAAD_HADEEL/KHALAAD_HADEEL.TTF
+./fonts/fromAkram/Fonts/Susan.TTF
+./fonts/Cairo_Play/static/CairoPlay-Regular.ttf
+./fonts/Hacen Promoter Broadcast/Hacen Promoter Broadcast.ttf
+./fonts/Tajawal/Tajawal-ExtraBold.ttf
+./fonts/Aref_Menna Light/Aref_Menna Light.ttf
+./fonts/BOUTROS_ADS_INLINE_BOLD/BOUTROS_ADS_INLINE_BOLD.TTF
+./fonts/HACEN_PROMOTER_MD/HACEN_PROMOTER_MD.TTF
+./fonts/Lateef/Lateef-Medium.ttf
+./fonts/mothanna_0_02/Mothanna-Oblique.ttf
+./fonts/KAMRB_SF/KAMRB_SF.ttf
+./fonts/HACEN_DALAL/HACEN_DALAL.TTF
+./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf
+./fonts/HACEN_CASABLANCA_HEAVY/HACEN_CASABLANCA_HEAVY.TTF
+./fonts/HACEN_VANILLA/HACEN_VANILLA.TTF
+./fonts/Aref_Ruqaa/ArefRuqaa-Regular.ttf
+./fonts/VIP Golan/VIP Golan.ttf
+./fonts/BRoya/BRoya.ttf
+./fonts/arabswell_/arabswell_2.ttf
+./fonts/SC_REHAN/SC_REHAN.TTF
+./fonts/Hacen Tunisia Bold/Hacen Tunisia Bold.ttf
+./fonts/Hacen Tunisia Bd/Hacen Tunisia Bd.ttf
+./fonts/Zain/Zain-Black.ttf
+./fonts/TanseekModernProArabic/TanseekModernProArabic-ExBold.ttf
+./fonts/Cairo_Play/static/CairoPlay-ExtraLight.ttf
+./fonts/al/AL-FARES.TTF
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Light.ttf
+./fonts/Rubik/static/Rubik-ExtraBold.ttf
+./fonts/ae/ae_Tarablus.ttf
+./fonts/Tajawal/Tajawal-Regular.ttf
+./fonts/Mj_Elit_ufont.ir_/Mj_Elit_ufont.ir_.ttf
+./fonts/KHALAAD_NOORA/KHALAAD_NOORA.TTF
+./fonts/ae/ae_Mashq_bold.ttf
+./fonts/nazli/nazli.ttf
+./fonts/fromAkram/Fonts/DWNSPOUT.TTF
+./fonts/Arbaeen_DownloadSoftware.iR_/Arbaeen_DownloadSoftware.iR_.ttf
+./fonts/BNikiOI/BNikiOI.ttf
+./fonts/Kufam/static/Kufam-ExtraBoldItalic.ttf
+./fonts/DimaThulth2/DimaThulth2.ttf
+./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Medium.ttf
+./fonts/BalooBhaijaan/BalooBhaijaan-Regular.ttf
+./fonts/Hacen Extender X4 Super Fit/Hacen Extender X4 Super Fit.ttf
+./fonts/Hacen/Hacen-Algeria-Bd.ttf
+./fonts/KAMR__SF/KAMR__SF.ttf
+./fonts/Estedad/Estedad-Black.ttf
+./fonts/Shams/Shams.ttf
+./fonts/Kalema /Kalema - Copy.ttf
+./fonts/PalatinoSansArabic/PalatinoSansArabic-Bold.ttf
+./fonts/Shoroq Font/Shoroq Font.ttf
+./fonts/DimaPlatinum/DimaPlatinum.ttf
+./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf
+./fonts/ae/ae_Furat.ttf
+./fonts/ae/ae_Arab.ttf
+./fonts/A-Massir-Spray/A-Massir-Spray.ttf
+./fonts/Oi/Oi-Regular.ttf
+./fonts/Almarai/Almarai-Bold.ttf
+./fonts/Droid_Arabic_kufi/DroidKufi-Bold.ttf
+./fonts/GaliModern-SemiBold/GaliModern-SemiBold.ttf
+./fonts/FrutigerLTArabic/FrutigerLTArabic-45Light.ttf
+./fonts/ae/ae_Graph.ttf
+./fonts/Dima-Mitra/Dima-Mitra.ttf
+./fonts/Hacen Trarza/Hacen Trarza.ttf
+./fonts/Cairo-Light-2/Cairo-Light-2.ttf
+./fonts/boutros/boutros5.ttf
+./fonts/BTehranI/BTehranI.ttf
+./fonts/BNaznnBd/BNaznnBd.ttf
+./fonts/al/al-hadaribold-1.ttf
+./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-Light.ttf
+./fonts/XB Zar BdIt/XB Zar BdIt.ttf
+./fonts/Insan/Insan-Bold.ttf
+./fonts/BNikiO/BNikiO.ttf
+./fonts/Dima-Classic-Medium/Dima-Classic-Medium.ttf
+./fonts/fromAkram/Fonts/Dawlat.TTF
+./fonts/DINArabic-CondLight/DINArabic-CondLight.ttf
+./fonts/A/A-Sogand.ttf
+./fonts/Tajawal/Tajawal-Bold.ttf
+./fonts/ae/ae_Hor.ttf
+./fonts/BOAHMED_ALHARF_BOLD/BOAHMED_ALHARF_BOLD.TTF
+./fonts/AbdoMaster/AbdoMaster-DemiBold _.ttf
+./fonts/Hacen Casablanca Lt/Hacen Casablanca Lt.ttf
+./fonts/DINArabic-CondBlack/DINArabic-CondBlack.ttf
+./fonts/Abdo Misr Black/Abdo Misr Black.ttf
+./fonts/Scheherazade_New/ScheherazadeNew-Bold.ttf
+./fonts/hacen-samra/hacen-samra.ttf
+./fonts/Hacen Newspaper/Hacen Newspaper.ttf
+./fonts/Fustat/Fustat-VariableFont_wght.ttf
+./fonts/Expo Arabic/alfont_com_AlFont_com_ExpoArabic-SemiBold.ttf
+./fonts/Noon/Noon.ttf
+./fonts/Kufyan Arabic Thin/Kufyan Arabic Thin.ttf
+./fonts/Lateef/Lateef-ExtraLight.ttf
+./fonts/Mada/static/Mada-ExtraLight.ttf
+./fonts/Amiri Slanted/Amiri Slanted.ttf
+./fonts/014.ttf
+./fonts/BMah/BMah.ttf
+./fonts/advertising/advertising2.ttf
+./fonts/Ruwudu/Ruwudu-Medium.ttf
+./fonts/HSN_Ibtisam/HSN_Ibtisam.ttf
+./fonts/BKamrnBd/BKamrnBd.ttf
+./fonts/Rubik/static/Rubik-Italic.ttf
+./fonts/4_E8/4_E8.ttf
+./fonts/BElham/BElham.ttf
+./fonts/MolsaqArabic-ExtraLight/MolsaqArabic-ExtraLight.ttf
+./fonts/GaliModern-ExtraLight/GaliModern-ExtraLight.ttf
+./fonts/fromAkram/Fonts/DTNASKH4.TTF
+./fonts/Changa/static/Changa-ExtraLight.ttf
+./fonts/BZarBd/BZarBd.ttf
+./fonts/BTabssom/BTabssom.ttf
+./fonts/BigVesta Arabic Bold/BigVesta Arabic Bold.ttf
+./fonts/Amiri Regular/Amiri Regular.ttf
+./fonts/Dubai-Bold/Dubai-Bold.ttf
+./fonts/AD/AD-Rsail Bold.ttf
+./fonts/fromAkram/Fonts/DWNSH2.TTF
+./fonts/ghanem-Medium/ghanem-Medium.ttf
+./fonts/Fustat/static/Fustat-Regular.ttf
+./fonts/BNikiS/BNikiS.ttf
+./fonts/DimaBahman/DimaBahman.ttf
+./fonts/aref/aref-regular.ttf
+./fonts/HSN_Razan_regular/HSN_Razan_regular.ttf
+./fonts/Hacen_Tehran/Hacen_Tehran.ttf
+./fonts/Sevin/Sevin.ttf
+./fonts/aga/AgaCordobaV2QrtbBold-W0vV.ttf
+./fonts/18 Khebrat Musamim Regular/18 Khebrat Musamim Regular.ttf
+./fonts/AbdoMaster/AbdoMaster-Book _.ttf
+./fonts/Thulth-Tharwat-Emara-Golden/Thulth-Tharwat-Emara-Golden.ttf
+./fonts/VIP/VIP-Hakm-Regular-2016.ttf
+./fonts/Changa/static/Changa-Light.ttf
+./fonts/BOUTROS_ADS_SHADOW_BOLD/BOUTROS_ADS_SHADOW_BOLD.TTF
+./fonts/DG/DG-Modal3at-Med.ttf
+./fonts/Lateef/Lateef-Light.ttf
+./fonts/A.Thuluth_p30download.com/A.Thuluth_p30download.com.ttf
+./fonts/Aref_Ruqaa/ArefRuqaa-Bold.ttf
+./fonts/Mada/static/Mada-Medium.ttf
+./fonts/A.Farhood/A.Farhood.ttf
+./fonts/Hacen Saudi Arabia XL/Hacen Saudi Arabia XL.ttf
+./fonts/mutawazi/Mutawazi-dEeZ.ttf
+./fonts/BSINABD/BSINABD.TTF
+./fonts/ae/ae_Jet.ttf
+./fonts/K_SINA/K_SINA.TTF
+./fonts/Hacen Promoter Lt/Hacen Promoter Lt.ttf
+./fonts/persian/persian-sooreh-.ttf
+./fonts/GEDinkum-Regular/GEDinkum-Regular.ttf
+./fonts/djadli_OTFal/djadli_OTFal-Qabas-Extrude.ttf
+./fonts/rabat/rabat.ttf
+./fonts/aga/AgaSindibadV2SndbdBold-ZWmq.ttf
+./fonts/Maghribi Assile/Maghribi Assile.ttf
+./fonts/boutros/boutros2.ttf
+./fonts/BNasimBd/BNasimBd.ttf
+./fonts/Harmattan/Harmattan-Bold.ttf
+./fonts/GaliModern-UltraLight-1/GaliModern-UltraLight-1.ttf
+./fonts/Adobe Arabic SHIN Stout Bold/Adobe Arabic SHIN Stout Bold.ttf
+./fonts/Markazi_Text/static/MarkaziText-Bold.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-Light.ttf
+./fonts/Kelma_/Kelma_-MagdySoliman-Regular.ttf
+./fonts/Katibeh/Katibeh-Regular.ttf
+./fonts/Bustan Bold/Bustan Bold.ttf
+./fonts/BShadi/BShadi.ttf
+./fonts/HSN_Golden/HSN_Golden.ttf
+./fonts/HACEN_SAMRA_LT/HACEN_SAMRA_LT.TTF
+./fonts/Damavand-Light/Damavand-Light.ttf
+./fonts/BSepidhO/BSepidhO.ttf
+./fonts/Frutiger-LT-Arabic-55-Roman/Frutiger-LT-Arabic-55-Roman.ttf
+./fonts/fromAkram/Fonts/DTNASKH2.TTF
+./fonts/Expo Arabic/Expo Arabic Medium.ttf
+./fonts/Scheherazade_New/ScheherazadeNew-Regular.ttf
+./fonts/Droid/Droid-Arabic-Kufi.ttf
+./fonts/DimaBarf/DimaBarf.ttf
+./fonts/AbdoMaster/AbdoMaster-Bold _.ttf
+./fonts/Beiruti/Beiruti-VariableFont_wght.ttf
+./fonts/Sada Regular/Sada Regular.ttf
+./fonts/Barada/Barada-Reqa.ttf
+./fonts/MotkenNoqtaii/MotkenNoqtaii.ttf
+./fonts/BBaranOI/BBaranOI.ttf
+./fonts/fromAkram/Fonts/DIWANLTR.TTF
+./fonts/Sada Bold/Sada Bold.ttf
+./fonts/Hacen-Promoter/Hacen-Promoter.ttf
+./fonts/tradbdo/tradbdo.ttf
+./fonts/Parvin-Regular/Parvin-Regular.ttf
+./fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf
+./fonts/diwany/diwany-edited.ttf
+./fonts/al/Al-samt-tow.ttf
+./fonts/Rakkas/Rakkas-Regular.ttf
+./fonts/Graffiti/Graffiti-Font-3D.ttf
+./fonts/GE-Contrast/GE-Contrast-Bold.ttf
+./fonts/GaliModern-Light/GaliModern-Light.ttf
+./fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Plain.ttf
+./fonts/Expo Arabic/Expo Arabic Book.ttf
+./fonts/SC_HANI/SC_HANI.ttf
+./fonts/Hend Font Regular/Hend Font Regular.ttf
+./fonts/FFTaweel-BoldStamp/FFTaweel-BoldStamp.ttf
+./fonts/Hacen Casablanca/Hacen Casablanca.ttf
+./fonts/Readex_Pro/static/ReadexPro-Medium.ttf
+./fonts/BritishCouncil-Arabic-Bold/BritishCouncil-Arabic-Bold.ttf
+./fonts/Mada/static/Mada-Regular.ttf
+./fonts/GRKUFMAZ/GRKUFMAZ.ttf
+./fonts/HACEN_SUDAN_BD/HACEN_SUDAN_BD.TTF
+./fonts/K_TRAFFIC/K_TRAFFIC.TTF
+./fonts/phalls_khodkar/phalls_khodkar.ttf
+./fonts/Rubik/static/Rubik-LightItalic.ttf
+./fonts/DimaMakhtom/DimaMakhtom.ttf
+./fonts/BKaj/BKaj.ttf
+./fonts/HACEN_DALAL_TEXT/HACEN_DALAL_TEXT.TTF
+./fonts/Noto_Sans_Arabic/NotoSansArabic-Thin.ttf
+./fonts/Shekari Font/Shekari Font.ttf
+./fonts/MOTKEN_DAEIRA/MOTKEN_DAEIRA.TTF
+./fonts/AL_EBDAA/AL_EBDAA.TTF
+./fonts/ae/ae_Japan.ttf
+./fonts/Lateef/Lateef-Bold.ttf
+./fonts/fromAkram/Fonts/PTBLDHAD.TTF
+./fonts/SC_HANI/SC_HANI.TTF
+./fonts/ae/ae_Electron.ttf
+./fonts/MOTKEN_K_TABASSOM/MOTKEN_K_TABASSOM.TTF
+./fonts/AraHamahAlThawra/AraHamahAlThawra-Regular.ttf
+./fonts/ElMessiri-Medium/ElMessiri-Medium.ttf
+./fonts/Cairo/Cairo-Bold.ttf
+./fonts/Zain/Zain-Light.ttf
+./fonts/FFKhallab-Italic-1/FFKhallab-Italic-1.ttf
+./fonts/DINArabic/DINArabic-CondThin.ttf
+./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-VariableFont_wght.ttf
+./fonts/Marhey/static/Marhey-Regular.ttf
+./fonts/SC_GULF/SC_GULF.TTF
+./fonts/BBaranI/BBaranI.ttf
+./fonts/Kufam/static/Kufam-Medium.ttf
+./fonts/AraHamahZanki/AraHamahZanki-Regular.ttf
+./fonts/ScheherazadeRegOT/ScheherazadeRegOT.ttf
+./fonts/K_NASIM/K_NASIM.TTF
+./fonts/DimaNastalighTahriri-1/DimaNastalighTahriri-1.ttf
+./fonts/Hasan/Hasan-Alquds-Unicode-Light.ttf
+./fonts/Zain/Zain-ExtraLight.ttf
+./fonts/almwaheb/almwaheb-by-A4D.ttf
+./fonts/Droid.Arabic.Naskh_.Regular_DownloadSoftware.iR_/Droid.Arabic.Naskh_.Regular_DownloadSoftware.iR_.ttf
+./fonts/Kufam/static/Kufam-Black.ttf
+./fonts/Hacen Egypt/Hacen Egypt.ttf
+./fonts/22016/22016-adobearabic.ttf
+./fonts/HACEN_CASABLANCA/HACEN_CASABLANCA.TTF
+./fonts/HACEN_BEIRUT_LIGHT/HACEN_BEIRUT_LIGHT.TTF
+./fonts/ae/ae_AlHor.ttf
+./fonts/Nawel/Nawel.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-Black.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Regular.ttf
+./fonts/arabic/ArabicFont2013-q6jV.ttf
+./fonts/BAsemanI/BAsemanI.ttf
+./fonts/Droid/Droid-Sans-Arabic.ttf
+./fonts/HSN_Razan_bold/HSN_Razan_bold.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-ExtraBold.ttf
+./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-SemiBold.ttf
+./fonts/SC_TARABLUS/SC_TARABLUS.ttf
+./fonts/Hacen Casablanca Hd/Hacen Casablanca Hd.ttf
+./fonts/BElmB/BElmB.ttf
+./fonts/Mirza/Mirza-Regular.ttf
+./fonts/Hacen Freehand/Hacen Freehand.ttf
+./fonts/SC_LUJAYN/SC_LUJAYN.TTF
+./fonts/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth,wght.ttf
+./fonts/Tajawal/Tajawal-ExtraLight.ttf
+./fonts/BShiraz/BShiraz.ttf
+./fonts/DroidNaskh/DroidNaskh-Regular.ttf
+./fonts/Insan/Insan-Thin.ttf
+./fonts/MARWAEL_FH/MARWAEL_FH02.TTF
+./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Regular.ttf
+./fonts/MotkenDaira/MotkenDaira.TTF
+./fonts/BNikooI/BNikooI.ttf
+./fonts/BCompset/BCompset.ttf
+./fonts/Mada/static/Mada-Light.ttf
+./fonts/BArshia/BArshia.ttf
+./fonts/TanseekModernProArabic/TanseekModernProArabic-Bold.ttf
+./fonts/Hacen-Casablanca-Heavy/Hacen-Casablanca-Heavy.ttf
+./fonts/Molhim (1)/Molhim (1).ttf
+./fonts/bein/bein-ar-black.ttf
+./fonts/MOTKEN_K_KAMRAN/MOTKEN_K_KAMRAN.TTF
+./fonts/Marhey/Marhey-VariableFont_wght.ttf
+./fonts/FrutigerLTArabic/FrutigerLTArabic-75Black.ttf
+./fonts/FFTaweel-Stamp/FFTaweel-Stamp.ttf
+./fonts/PetraGlyphDisplayLight /PetraGlyphDisplayLight 2.ttf
+./fonts/HSN_Layan/HSN_Layan.ttf
+./fonts/KHALAAD_ABEER/KHALAAD_ABEER.TTF
+./fonts/Hesham-/Hesham-.ttf
+./fonts/Changa/Changa-VariableFont_wght.ttf
+./fonts/Janna-LT-Regular/Janna-LT-Regular.ttf
+./fonts/b/B_ARSHIA.TTF
+./fonts/BZaman/BZaman.ttf
+./fonts/ElMessiri-Bold-2/ElMessiri-Bold-2.ttf
+./fonts/Mj_Yalda_0/Mj_Yalda_0.ttf
+./fonts/Dimathuluth/Dimathuluth.ttf
+./fonts/Monadi/Monadi.ttf
+./fonts/KHALAAD_DIALA/KHALAAD_DIALA.TTF
+./fonts/Mj_Tasmeem/Mj_Tasmeem.ttf
+./fonts/GE-Curves-Medium/GE-Curves-Medium.ttf
+./fonts/DimaKereshmeh/DimaKereshmeh.ttf
+./fonts/Abdo Logo Regular/Abdo Logo Regular.ttf
+./fonts/HSN_Moalla/HSN_Moalla.ttf
+./fonts/DimaMoalemBlack/DimaMoalemBlack.ttf
+./fonts/afsaneh/afsaneh.ttf
+./fonts/fromAkram/Fonts/Sima.TTF
+./fonts/DimaDigital/DimaDigital.ttf
+./fonts/Zain/Zain-ExtraBold.ttf
+./fonts/MOTKEN_K_HOMA/MOTKEN_K_HOMA.TTF
+./fonts/Hasan_Hiba/Hasan_Hiba.ttf
+./fonts/Mirza/Mirza-Medium.ttf
+./fonts/BBaranO/BBaranO.ttf
+./fonts/Insan/Insan-Regular.ttf
+./fonts/BHoma/BHoma.ttf
+./fonts/boutros/boutros.ttf
+./fonts/Amiri Bold/Amiri Bold.ttf
+./fonts/Vazirmatn/static/Vazirmatn-Bold.ttf
+./fonts/Almarai/Almarai-ExtraBold.ttf
+./fonts/Muslimah-Light/Muslimah-Light.ttf
+./fonts/azhary/azhary.ttf
+./fonts/KacstDecorative/KacstDecorative.ttf
+./fonts/SC_SHARJAH/SC_SHARJAH.TTF
+./fonts/FFTaweel/FFTaweel-Regular.ttf
+./fonts/air/air-arabia-3.ttf
+./fonts/HACEN_SAHAFA/HACEN_SAHAFA.TTF
+./fonts/BHamid/BHamid.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-SemiBold.ttf
+./fonts/Scheherazade-Regular/Scheherazade-Regular.ttf
+./fonts/BoutrosNewsH1/BoutrosNewsH1-Bold.ttf
+./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-Bold.ttf
+./fonts/Rubik/static/Rubik-BlackItalic.ttf
+./fonts/alsamt diwani (1)/alsamt diwani (1).ttf
+./fonts/MOTKEN_K_SINA/MOTKEN_K_SINA.TTF
+./fonts/Aljazeera-font/Al-Jazeera-Arabic-Regular.ttf
+./fonts/Rubik/static/Rubik-Black.ttf
+./fonts/SC_OUHOD/SC_OUHOD.TTF
+./fonts/AraHamahAlHorra/AraHamahAlHorra-Regular.ttf
+./fonts/MOHAMMAD_LAHA/MOHAMMAD_LAHA.TTF
+./fonts/Cairo/Cairo-Light.ttf
+./fonts/Adobe Arabic SHIN Typo Bold/Adobe Arabic SHIN Typo Bold.ttf
+./fonts/decotype/decotype-thuluth-ii.ttf
+./fonts/WasmFontBold/WasmFontBold.ttf
+./fonts/aref_ graffiti/aref_ graffiti.ttf
+./fonts/Massir.Ballpoint/Massir.Ballpoint.ttf
+./fonts/BritishCouncil-Arabic-Light-Italic/BritishCouncil-Arabic-Light-Italic.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Medium.ttf
+./fonts/DimaSogand/DimaSogand-new.ttf
+./fonts/Markazi_Text/static/MarkaziText-SemiBold.ttf
+./fonts/Kufam/static/Kufam-Bold.ttf
+./fonts/Readex_Pro/static/ReadexPro-Regular.ttf
+./fonts/Expo Arabic/Expo Arabic Bold.ttf
+./fonts/SC_SHMOOKH_/SC_SHMOOKH_01.TTF
+./fonts/Alkalami/Alkalami-Regular.ttf
+./fonts/Hacen-Jordan/Hacen-Jordan.ttf
+./fonts/BZar/BZar.ttf
+./fonts/B-amir/B-amir.ttf
+./fonts/arbfonts/arbfonts-samt-7017 (1).ttf
+./fonts/BTawfigO/BTawfigO.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-SemiBold.ttf
+./fonts/Hacen Liner Print-out/Hacen Liner Print-out.ttf
+./fonts/AlHurra Font Regular/AlHurra Font Regular.ttf
+./fonts/Mada/static/Mada-ExtraBold.ttf
+./fonts/KHALAAD_SIMA/KHALAAD_SIMA.TTF
+./fonts/Frutiger-LT-Arabic-57-Cn/Frutiger-LT-Arabic-57-Cn.ttf
+./fonts/Hacen-Digital-Arabia-XL/Hacen-Digital-Arabia-XL.ttf
+./fonts/Hacen Beirut Md/Hacen Beirut Md.ttf
+./fonts/Fustat/static/Fustat-ExtraBold.ttf
+./fonts/BMashhad/BMashhad.ttf
+./fonts/Hacen Dalal Text/Hacen Dalal Text.ttf
+./fonts/Hacen Beirut Hd/Hacen Beirut Hd.ttf
+./fonts/BNikiBI/BNikiBI.ttf
+./fonts/Hacen Sahafa/Hacen Sahafa.ttf
+./fonts/BFerdosi/BFerdosi.ttf
+./fonts/Kufigraph Font/Kufigraph Font.ttf
+./fonts/ae/AeAlarabiya-WGzA.ttf
+./fonts/BNikiSI/BNikiSI.ttf
+./fonts/redcal-arabic-regular/RedCal Arabic Regular/RedCal Arabic Regular.ttf
+./fonts/Frutiger-LT-Arabic-77-Black-Cn/Frutiger-LT-Arabic-77-Black-Cn.ttf
+./fonts/HACEN_LINER_XXL/HACEN_LINER_XXL.TTF
+./fonts/ArefRuqaa/ArefRuqaa-Bold-1.ttf
+./fonts/Handjet/static/Handjet-Regular.ttf
+./fonts/AraHalaBoShe/AraHalaBoShe-sha-Regular.ttf
+./fonts/Handjet/static/Handjet-SemiBold.ttf
+./fonts/BKoodakO/BKoodakO.ttf
+./fonts/Sukar Black/Sukar Black.ttf
+./fonts/AbdoMaster/AbdoMaster-ExtraLight _.ttf
+./fonts/HSN_Khalid/HSN_Khalid.ttf
+./fonts/ElMessiri/ElMessiri-SemiBold.ttf
+./fonts/AAAGoldenLotus Stg1_Ver1 Regular/AAAGoldenLotus Stg1_Ver1 Regular.ttf
+./fonts/Kufyan Arabic Medium/Kufyan Arabic Medium.ttf
+./fonts/SC_KHALID/SC_KHALID.TTF
+./fonts/Damavand-DemiBold/Damavand-DemiBold.ttf
+./fonts/DINArabic/DINArabic-Cond.ttf
+./fonts/BOUTROS_ADS_LIGHT/BOUTROS_ADS_LIGHT.TTF
+./fonts/Vazirmatn/static/Vazirmatn-Thin.ttf
+./fonts/Sonbili/Sonbili.ttf
+./fonts/ae_Sharjah/ae_Sharjah.ttf
+./fonts/Arian-LT-Light-1/Arian-LT-Light-1.ttf
+./fonts/Tasees/Tasees-Bold.ttf
+./fonts/ElMessiri-Regular/ElMessiri-Regular.ttf
+./fonts/ElMessiri-SemiBold/ElMessiri-SemiBold.ttf
+./fonts/VIP/VIP-Hakm-Thin-2016.ttf
+./fonts/Changa/static/Changa-Regular.ttf
+./fonts/Mada/static/Mada-SemiBold.ttf
+./fonts/BritishCouncil/BritishCouncil-Arabic-Black.ttf
+./fonts/Thulth/Thulth-Tharwat-Emara-Golden.ttf
+./fonts/Lemonada/Lemonada-Bold.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-ExtraLight.ttf
+./fonts/Mj_Moharram-Bold_0-1/Mj_Moharram-Bold_0-1.ttf
+./fonts/Beiruti/static/Beiruti-Light.ttf
+./fonts/JannaLT/JannaLT-Bold.ttf
+./fonts/rabi3/rabi3.ttf
+./fonts/mohammed/mohammed.ttf
+./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf
+./fonts/XB Zar/XB Zar.ttf
+./fonts/fromAkram/Fonts/DTNASKH0.TTF
+./fonts/Aref_Menna/Aref_Menna-Bold-1.ttf
+./fonts/HacenSaudiArabia/HacenSaudiArabia.ttf
+./fonts/BritishCouncil/BritishCouncil-Arabic-Light.ttf
+./fonts/KHALAAD_SUSAN/KHALAAD_SUSAN.TTF
+./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraLight.ttf
+./fonts/islamic/islamic-seven-tablog3alm.ttf
+./fonts/Elegant/Elegant-ar.ttf
+./fonts/DUBAI/DUBAI-MEDIUM.TTF
+./fonts/XB Zar It/XB Zar It.ttf
+./fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf
+./fonts/KHALAAD_SARA/KHALAAD_SARA.TTF
+./fonts/Cairo_Play/static/CairoPlay-SemiBold.ttf
+./fonts/KacstBook/KacstBook.ttf
+./fonts/GE-Narrow-Light/GE-Narrow-Light.ttf
+./fonts/Ahrar Font/Ahrar Font.ttf
+./fonts/BADER_AL_GORDABIA/BADER_AL_GORDABIA.TTF
+./fonts/AbdoMasteroutline _/AbdoMasteroutline _.ttf
+./fonts/Fustat/static/Fustat-SemiBold.ttf
+./fonts/Lateef/Lateef-SemiBold.ttf
+./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Thin.ttf
+./fonts/HACEN_NEWSPAPER/HACEN_NEWSPAPER.TTF
+./fonts/Hacen Trarza Lt/Hacen Trarza Lt.ttf
+./fonts/Handjet/static/Handjet-Medium.ttf
+./fonts/K_TABASSOM/K_TABASSOM.TTF
+./fonts/MOTKEN_NOQTA/MOTKEN_NOQTA.TTF
+./fonts/Readex_Pro/static/ReadexPro-SemiBold.ttf
+./fonts/aga/AgaGranadaGrntV2-E9Ar.ttf
+./fonts/BBadr/BBadr.ttf
+./fonts/Janna/JannaLT-Regular.ttf
+./fonts/Hacen Samra Lt/Hacen Samra Lt.ttf
+./fonts/Kufam/Kufam-VariableFont_wght.ttf
+./fonts/Sheba Ye Font/Sheba Ye Font.ttf
+./fonts/Rubik/static/Rubik-Light.ttf
+./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-Thin.ttf
+./fonts/K Kamran/K Kamran.ttf
+./fonts/ae/ae_Sharjah.ttf
+./fonts/Zeytoon/Zeytoon.ttf
+./fonts/arslan/arslan-wessam-b-arslan-wessam-b.ttf
+./fonts/BRoyaBd/BRoyaBd.ttf
+./fonts/Hacen Tunisia Lt (1)/Hacen Tunisia Lt (1).ttf
+./fonts/HACEN_BEIRUT/HACEN_BEIRUT.TTF
+./fonts/ArabicUIText/ArabicUIText.ttf
+./fonts/Hacen Digital Arabia XL/Hacen Digital Arabia XL.ttf
+./fonts/BKarimBd/BKarimBd.ttf
+./fonts/BShirazI/BShirazI.ttf
+./fonts/Mada/static/Mada-Bold.ttf
+./fonts/Gulzar/Gulzar-Regular.ttf
+./fonts/Ferdaos Zd Bold/Ferdaos Zd Bold.ttf
+./fonts/fromAkram/Fonts/DWNOUTSH.TTF
+./fonts/ghanem/ghanem.ttf
+./fonts/AD/AD-STOOR Regular.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-Bold.ttf
+./fonts/fromAkram/Fonts/noora.TTF
+./fonts/Hacen Liner Print-out Light/Hacen Liner Print-out Light.ttf
+./fonts/Cairo/Cairo-ExtraLight.ttf
+./fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+./fonts/Estedad/Estedad-Bold.ttf
+./fonts/18410/18410-ah-naskh-hadith(1).ttf
+./fonts/Beiruti/static/Beiruti-Medium.ttf
+./fonts/fromAkram/Fonts/DTHULUTH.TTF
+./fonts/AraHamahSahetAlAssi/AraHamahSahetAlAssi-Regular.ttf
+./fonts/Kharabeesh/Kharabeesh-Font.ttf
+./fonts/K_HOMA/K_HOMA.TTF
+./fonts/Hasan/Hasan-Alquds-Unicode.ttf
+./fonts/Assaf Font/Assaf Font.ttf
+./fonts/SC_ALYERMOOK/SC_ALYERMOOK.ttf
+./fonts/Noto_Kufi_Arabic/NotoKufiArabic-VariableFont_wght.ttf
+./fonts/aga/AgaMashqV2MshqBold-xj6j.ttf
+./fonts/Vazirmatn/static/Vazirmatn-SemiBold.ttf
+./fonts/e68ffdd6/e68ffdd6-a443-4f4c-ae58-687e86559972.ttf
+./fonts/aga/AgaCordobaV3Qrtb-aW4a.ttf
+./fonts/Rubik/static/Rubik-Regular.ttf
+./fonts/DUBAI/DUBAI-BOLD.TTF
+./fonts/Almarai/Almarai-Light.ttf
+./fonts/KFGQPC Uthman Taha Naskh Regular/KFGQPC Uthman Taha Naskh Regular.ttf
+./fonts/advertising/advertising3.ttf
+./fonts/BKamranO/BKamranO.ttf
+./fonts/DG/DG-Sahabah-Bold-1.ttf
+./fonts/Beiruti/static/Beiruti-Bold.ttf
+./fonts/Hacen Extender X4 (1)/Hacen Extender X4 (1).ttf
+./fonts/Ruwudu/Ruwudu-SemiBold.ttf
+./fonts/Fustat/static/Fustat-ExtraLight.ttf
+./fonts/ae/ae_Nice.ttf
+./fonts/Hacen Digital Arabia LT/Hacen Digital Arabia LT.ttf
+./fonts/Hacen-Dalal-St/Hacen-Dalal-St.ttf
+./fonts/boutros/boutros3.ttf
+./fonts/nasaq/nasaq.ttf
+./fonts/VIP/VIP-TIM-Black.ttf
+./fonts/Mada/Mada-VariableFont_wght.ttf
+./fonts/ElMessiri/ElMessiri-Regular.ttf
+./fonts/A Arghavan Bold/A Arghavan Bold.ttf
+./fonts/BMashdBd/BMashdBd.ttf
+./fonts/4_4F/4_4F.ttf
+./fonts/BritishCouncil-Arabic-Regular/BritishCouncil-Arabic-Regular.ttf
+./fonts/Sara Font/Sara Font.ttf
+./fonts/Vazirmatn/static/Vazirmatn-Black.ttf
+./fonts/Arian-LT-Bold-1/Arian-LT-Bold-1.ttf
+./fonts/STC/STC-Bold.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Black.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Thin.ttf
+./fonts/BYekan/BYekan.ttf
+./fonts/bader_classic/bader_classic.ttf
+./fonts/Changa/static/Changa-SemiBold.ttf
+./fonts/KHALAAD__WAFA/KHALAAD__WAFA.TTF
+./fonts/FrutigerLTArabic/FrutigerLTArabic-65Bold.ttf
+./fonts/HSN_Naskh/HSN_Naskh.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-Medium.ttf
+./fonts/fromAkram/Fonts/wafa.TTF
+./fonts/BOUTROS_ADS_MEDIUMITALIC/BOUTROS_ADS_MEDIUMITALIC.TTF
+./fonts/Abuhmeda /Abuhmeda -f2 Regular.ttf
+./fonts/DG-Ghareeb/DG-Ghareeb-Bold.ttf
+./fonts/maze/MazeFont2-noZY.ttf
+./fonts/black/BlackCloverArabic-PKZeZ.ttf
+./fonts/ae/ae_Shado.ttf
+./fonts/GE-Contrast-Bold/GE-Contrast-Bold.ttf
+./fonts/HACEN_TYPOGRAPHER_HEAVY/HACEN_TYPOGRAPHER_HEAVY.TTF
+./fonts/ae_Arab/ae_Arab.ttf
+./fonts/Harmattan/Harmattan-Medium.ttf
+./fonts/Hacen Maghreb Bd/Hacen Maghreb Bd.ttf
+./fonts/ghanem-bold/ghanem-bold.ttf
+./fonts/Rubik/Rubik-VariableFont_wght.ttf
+./fonts/Hacen-Vanilla/Hacen-Vanilla.ttf
+./fonts/aga/AgaCordobaV2Qrtb-e5ae.ttf
+./fonts/Sulimany/Sulimany.ttf
+./fonts/BMajidS/BMajidS.ttf
+./fonts/SC_ALYERMOOK/SC_ALYERMOOK.TTF
+./fonts/BTrafcBd/BTrafcBd.ttf
+./fonts/BYagutBd/BYagutBd.ttf
+./fonts/AraJozoor/AraJozoor-Regular.ttf
+./fonts/EdilbiSouria/EdilbiSouria.ttf
+./fonts/Dima Font/Dima Font.ttf
+./fonts/AbdoMaster/AbdoMaster-Black _.ttf
+./fonts/ae/ae_Mashq.ttf
+./fonts/Ruwudu/Ruwudu-Regular.ttf
+./fonts/AraHamahKilania/AraHamahKilania-Regular.ttf
+./fonts/Kharabeesh Normal Font/Kharabeesh Normal Font.ttf
+./fonts/AbdoMaster/AbdoMaster-ExtraBold _.ttf
+./fonts/GE-Snd-Book_1/GE-Snd-Book_1.ttf
+./fonts/Kufam/static/Kufam-SemiBoldItalic.ttf
+./fonts/Digistyle Unicode/Digistyle Unicode.ttf
+./fonts/SC_LUJAYN/SC_LUJAYN.ttf
+./fonts/Marhey/static/Marhey-Medium.ttf
+./fonts/Basim Marah Beh Light/Basim Marah Beh Light.ttf
+./fonts/DimaTraffic/DimaTraffic.ttf
+./fonts/KacstArt/KacstArt.ttf
+./fonts/BRose/BRose.ttf
+./fonts/fromAkram/Fonts/Sara.TTF
+./fonts/AdvertisingBold/AdvertisingBold.ttf
+./fonts/mothanna_0_02/Mothanna-Bold.ttf
+./fonts/MOTKEN_NOQTA_II/MOTKEN_NOQTA_II.TTF
+./fonts/SC_REHAN/SC_REHAN.ttf
+./fonts/arbfonts/arbfonts-diwany-thuluth.ttf
+./fonts/BCompsBd/BCompsBd.ttf
+./fonts/mutawazi/MutawaziBold-PYz7.ttf
+./fonts/Hacen Beirut Poster/Hacen Beirut Poster.ttf
+./fonts/Hamada_light_font/Hamada_light_font.ttf
+./fonts/BArabics/BArabics.ttf
+./fonts/BSepideh/BSepideh.ttf
+./fonts/ae/AeCortoba-wPVz.ttf
+./fonts/Baloo_Bhaijaan_2/BalooBhaijaan2-VariableFont_wght.ttf
+./fonts/Droid.Arabic.Kufi_.Bold_DownloadSoftware.iR_/Droid.Arabic.Kufi_.Bold_DownloadSoftware.iR_.ttf
+./fonts/Hacen Typographer/Hacen Typographer.ttf
+./fonts/DimaNiloofar/DimaNiloofar.ttf
+./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-ExtraBold.ttf
+./fonts/HACEN_BEIRUT_MD/HACEN_BEIRUT_MD.TTF
+./fonts/KHALAAD_AL/KHALAAD_AL-ARABEH_2.TTF
+./fonts/bein/bein-ar-normal.ttf
+./fonts/HACEN_BEIRUT_HEADING/HACEN_BEIRUT_HEADING.TTF
+./fonts/Kufyan Arabic UltraLight/Kufyan Arabic UltraLight.ttf
+./fonts/Mirza/Mirza-SemiBold.ttf
+./fonts/AlHurra Font Bold/AlHurra Font Bold.ttf
+./fonts/arabic/ArabicR2013-J25x.ttf
+./fonts/Sarkha Font/Sarkha Font.ttf
+./fonts/BNarenj/BNarenj.ttf
+./fonts/Kufam/static/Kufam-BlackItalic.ttf
+./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Regular.ttf
+./fonts/AraHamahAlFidaa/AraHamahAlFidaa-Regular.ttf
+./fonts/Cairo_Play/CairoPlay-VariableFont_slnt,wght.ttf
+./fonts/GaliModern-Regular/GaliModern-Regular.ttf
+./fonts/ae/ae_Cortoba.ttf
+./fonts/Rubik/static/Rubik-SemiBold.ttf
+./fonts/SC_AMEEN/SC_AMEEN.ttf
+./fonts/ae/AeElectron-e8w3.ttf
+./fonts/Readex_Pro/ReadexPro-VariableFont_HEXP,wght.ttf
+./fonts/shasenem/shasenem-wefayi.ttf
+./fonts/FFShamelFamily/FFShamelFamily-SansOneBook (1).ttf
+./fonts/Almudid/Almudid.ttf
+./fonts/Scheherazade-Bold-1/Scheherazade-Bold-1.ttf
+./fonts/KHALAAD_DAWLAT/KHALAAD_DAWLAT.TTF
+./fonts/BLotusBd/BLotusBd.ttf
+./fonts/advertising/advertising.ttf
+./fonts/Handjet/static/Handjet-Black.ttf
+./fonts/al/AL-MAJD.TTF
+./fonts/DimaMabella/DimaMabella.ttf
+./fonts/Noto_Nastaliq_Urdu/NotoNastaliqUrdu-VariableFont_wght.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-Regular.ttf
+./fonts/ae/ae_Kayrawan.ttf
+./fonts/AlWatanHeadlines/AlWatanHeadlines-Bold.ttf
+./fonts/BNazanin/BNazanin.ttf
+./fonts/NotoKufiArabic/NotoKufiArabic-Bold.ttf
+./fonts/ElMessiri/ElMessiri-Bold.ttf
+./fonts/Afsaneh Font/Afsaneh Font.ttf
+./fonts/ae/ae_Metal.ttf
+./fonts/Hacen Extender/Hacen Extender.ttf
+./fonts/VIP/VIP-TIM-Bold.ttf
+./fonts/Hacen-Dalal/Hacen-Dalal.ttf
+./fonts/BoutrosMBCDinkum/BoutrosMBCDinkum-Medium.ttf
+./fonts/FFShamelFamily/FFShamelFamily-SansOneBold.ttf
+./fonts/Kufyan Arabic Light/Kufyan Arabic Light.ttf
+./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Bold.ttf
+./fonts/Hacen Extender Md/Hacen Extender Md.ttf
+./fonts/Hacen Promoter Md/Hacen Promoter Md.ttf
+./fonts/fromAkram/Fonts/diala.TTF
+./fonts/DimaExpo/DimaExpo.ttf
+./fonts/boutros/boutros4.ttf
+./fonts/KacstTitle/KacstTitle.ttf
+./fonts/HACEN_BEIRUT_POSTER/HACEN_BEIRUT_POSTER.TTF
+./fonts/Damavand-Regular/Damavand-Regular.ttf
+./fonts/al/AlQuranAli-L3A83.ttf
+./fonts/advertising/advertising4.ttf
+./fonts/Shahd/Shahd-Font-Regular.ttf
+./fonts/aga/AgaKyrawanV2Qyrwn-A836.ttf
+./fonts/Samim/Samim.ttf
+./fonts/Sane Font/Sane Font.ttf
+./fonts/mothanna_0_02/Mothanna-Regular.ttf
+./fonts/Beiruti/static/Beiruti-Black.ttf
+./fonts/Rubik/static/Rubik-ExtraBoldItalic.ttf
+./fonts/AraHamahAlislam/AraHamahAlislam-Regular.ttf
+./fonts/Hasan/Hasan-Alquds-Unicode-ExtraBold.ttf
+./fonts/ae/ae_Granada.ttf
+./fonts/DimaNotoBold/DimaNotoBold.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-ExtraBold.ttf
+./fonts/Cairo/Cairo-Black.ttf
+./fonts/BTraffic/BTraffic.ttf
+./fonts/HACEN_SUDAN/HACEN_SUDAN.TTF
+./fonts/fromAkram/Fonts/hadee.TTF
+./fonts/Rubik/static/Rubik-SemiBoldItalic.ttf
+./fonts/BMehrBd/BMehrBd.ttf
+./fonts/Beiruti/static/Beiruti-ExtraBold.ttf
+./fonts/bein/bein-normal.ttf
+./fonts/HACEN_LINER_SCREEN_BD/HACEN_LINER_SCREEN_BD.TTF
+./fonts/BLotus/BLotus.ttf
+./fonts/Hacen/Hacen-Sahara-St.ttf
+./fonts/ALMAS/ALMAS-Bold.ttf
+./fonts/ae/ae_Ostorah.ttf
+./fonts/Hacen Casablanca Light/Hacen Casablanca Light.ttf
+./fonts/fromAkram/Fonts/SPBLDRUL.TTF
+./fonts/aga/AgaAndalusNdls-0Gwv.ttf
+./fonts/Readex_Pro/static/ReadexPro-Bold.ttf
+./fonts/KacstDigital/KacstDigital.ttf
+./fonts/Fustat/static/Fustat-Bold.ttf
+./fonts/BBadrBd/BBadrBd.ttf
+./fonts/Harmattan/Harmattan-SemiBold.ttf
+./fonts/ae/ae_AlYermook.ttf
+./fonts/MotkenRafidainArt/MotkenRafidainArt.ttf
+./fonts/BASSAM_OSTORAH/BASSAM_OSTORAH.TTF
+./fonts/Omar Font/Omar Font.ttf
+./fonts/Kufam/static/Kufam-BoldItalic.ttf
+./fonts/K_ELHAM/K_ELHAM.TTF
+./fonts/2  Narenj Regular/2  Narenj Regular.ttf
+./fonts/Hacen Promoter/Hacen Promoter.ttf
+./fonts/GaliModern-Thin/GaliModern-Thin.ttf
+./fonts/Cairo_Play/static/CairoPlay-ExtraBold.ttf
+./fonts/4_4E/4_4E.ttf
+./fonts/BNikiB/BNikiB.ttf
+./fonts/aga/AgaRasheeqV2Rshyq-pqJy.ttf
+./fonts/Shahd Font Bold/Shahd Font Bold.ttf
+./fonts/HACEN_DALAL_ST/HACEN_DALAL_ST.TTF
+./fonts/VIP/VIP-Hakm-Bold-2016.ttf
+./fonts/ae/ae_Ouhod.ttf
+./fonts/Kufyan Arabic Regular/Kufyan Arabic Regular.ttf
+./fonts/Markazi_Text/static/MarkaziText-Regular.ttf
+./fonts/maghribi/AchamelSoftMaghribiAssileMaroc-1G9nB.ttf
+./fonts/Vazirmatn/static/Vazirmatn-ExtraBold.ttf
+./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraBold.ttf
+./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-Regular.ttf
+./fonts/hoba/HobaBoldBold-Yzrdy.ttf
+./fonts/hoba/Hoba-GOwzg.ttf
+./fonts/Handjet/static/Handjet-Bold.ttf
+./fonts/Hacen-Qatar/Hacen-Qatar.ttf
+./fonts/MOTKEN_K_ELHAM/MOTKEN_K_ELHAM.TTF
+./fonts/Amiri/Amiri-Bold.ttf
+./fonts/Lateef/Lateef-ExtraBold.ttf
+./fonts/BDavat/BDavat.ttf
+./fonts/Noto_Sans_Arabic/NotoSansArabic-ExtraLight.ttf
+./fonts/ae/ae_Rehan.ttf
+./fonts/DimaFantasy2/DimaFantasy2.ttf
+./fonts/HACEN_EGYPT/HACEN_EGYPT.TTF
+./fonts/BHelal/BHelal.ttf
+./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf
+./fonts/ae_AlMohanad Regular/ae_AlMohanad Regular.ttf
+./fonts/HSN_Khalid_Thin/HSN_Khalid_Thin.ttf
+./fonts/Hacen Beirut Lt/Hacen Beirut Lt.ttf
+./fonts/AL_EKBARIAH_FONT/AL_EKBARIAH_FONT.TTF
+./fonts/Rubik/static/Rubik-MediumItalic.ttf
+./fonts/Aswaq/Aswaq-Regular.ttf
+./fonts/Kufyan Arabic Heavy/Kufyan Arabic Heavy.ttf
+./fonts/kawkab/kawkab-bold.ttf
+./fonts/Readex_Pro/static/ReadexPro-Light.ttf
+./fonts/Dima-Yekan-Typography/Dima-Yekan-Typography.ttf
+./fonts/Frutiger-LT-Arabic-67-Bold-Cn/Frutiger-LT-Arabic-67-Bold-Cn.ttf
+./fonts/Jozoor Font/Jozoor Font.ttf
+./fonts/Samim/Samim-Bold.ttf
+./fonts/Zain/Zain-Bold.ttf
+./fonts/AZ_TOPAZ/AZ_TOPAZ.TTF
+./fonts/HACEN_TYPOGRAPHER_BOLD/HACEN_TYPOGRAPHER_BOLD.TTF
+./fonts/Marhey/static/Marhey-Light.ttf
+./fonts/Aljazeera-font/Al-Jazeera-Arabic-Light.ttf
+./fonts/Tajawal/Tajawal-Black.ttf
+./fonts/VIP/VIP-TIM-Regular.ttf
+./fonts/Beiruti/static/Beiruti-SemiBold.ttf
+./fonts/dima-sina/dima-sina.ttf
+./fonts/Kufyan Arabic Black/Kufyan Arabic Black.ttf
+./fonts/Adobe Naskh Medium/Adobe Naskh Medium.ttf
+./fonts/Aref_Menna Normal/Aref_Menna Normal.ttf
+./fonts/Marhey/static/Marhey-SemiBold.ttf
+./fonts/Droid.Arabic.Naskh_.Bold_DownloadSoftware.iR_/Droid.Arabic.Naskh_.Bold_DownloadSoftware.iR_.ttf
+./fonts/Amiri/Amiri-BoldItalic.ttf
+./fonts/4_87/4_87.ttf
+./fonts/HACEN_LINER_XL/HACEN_LINER_XL.TTF
+./fonts/PakType Tehreer/PakType Tehreer.ttf
+./fonts/Hacen-Digital-Arabia/Hacen-Digital-Arabia.ttf
+./fonts/Vazirmatn/static/Vazirmatn-Medium.ttf
+./fonts/GE-MB-Fares-Medium/GE-MB-Fares-Medium.ttf
+./fonts/ae/ae_Salem.ttf
+./fonts/BSara/BSara.ttf
+./fonts/A/A-Hemmat.ttf
+./fonts/Hacen Beirut Lt X3/Hacen Beirut Lt X3.ttf
+./fonts/AbdoLine _/AbdoLine _.ttf
+./fonts/Mirza/Mirza-Bold.ttf
+./fonts/khalaad/khalaad-al-arabeh.ttf
+./fonts/Changa/static/Changa-Bold.ttf
+./fonts/WasmFont/WasmFont.ttf
+./fonts/Changa/static/Changa-Medium.ttf
+./fonts/maghribi/AchamelSoftMaghribiAssileColor-9YBon.ttf
+./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Bold.ttf
+./fonts/XB Zar Bd/XB Zar Bd.ttf
+./fonts/maghribi/AchamelSoftMaghribiAssileSvg-nRnL0.ttf
+./fonts/MSjawhara/MSjawhara-Bold.ttf
+./fonts/Kufam/static/Kufam-Italic.ttf
+./fonts/GaliModern-Heavy/GaliModern-Heavy.ttf
+./fonts/bassam/bassam.ttf
+./fonts/HACEN_VANILLA_ULTRA_LIGHT/HACEN_VANILLA_ULTRA_LIGHT.TTF
+./fonts/4_6E/4_6E.ttf
+./fonts/aga/AgaMashqV2Mshq-3mdX.ttf
+./fonts/Sp_Ferdosi_p30download.com_/Sp_Ferdosi_p30download.com_.ttf
+./fonts/ae/ae_AlArabiya.ttf
+./fonts/Markazi_Text/static/MarkaziText-Medium.ttf
+./fonts/HACEN_LINER_PRINT/HACEN_LINER_PRINT-OUT_LIGHT.TTF
+./fonts/BAseman/BAseman.ttf
+./fonts/SC_GULF/SC_GULF.ttf
+./fonts/ae/ae_Ouhod-Bold.ttf
+./fonts/HSN_Naskh_farisi/HSN_Naskh_farisi.ttf
+./fonts/BElm/BElm.ttf
+./fonts/Beiruti/static/Beiruti-Regular.ttf
+./fonts/MOTKEN_K_FARNAZ/MOTKEN_K_FARNAZ.TTF
+./fonts/BADER_AL_GORDABIA/BADER_AL_GORDABIA-2.TTF
+./fonts/Zain/Zain-Regular.ttf
+./fonts/SC_DUBAI/SC_DUBAI.ttf
+./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf
+./fonts/ge-mb-farashah/ge-mb-farashah.ttf
+./fonts/decora-arabic/decora-arabic.ttf
+./fonts/BNikoo/BNikoo.ttf
+./fonts/Zain/Zain-Italic.ttf
+./fonts/BStarBd/BStarBd.ttf
+./fonts/SC_TARABLUS/SC_TARABLUS.TTF
+./fonts/Maghribi Font/Maghribi Font.ttf
+./fonts/SamsungOneArabic/SamsungOneArabic-700.ttf
+./fonts/Tajawal/Tajawal-Medium.ttf
+./fonts/ae/ae_AlMothnna_bold.ttf
+./fonts/Aljazeera-font/Al-Jazeera-Arabic-Bold.ttf
+./fonts/BJadidBold/BJadidBold.ttf
+./fonts/FDK_Aban/FDK_Aban.ttf
+./fonts/Arslan Wessam A Arslan Wessam A/(A) Arslan Wessam A (A) Arslan Wessam A.ttf
+./fonts/Handjet/Handjet-VariableFont_ELGR,ELSH,wght.ttf
+./fonts/ae/ae_Haramain.ttf
+./fonts/Hacen Extender X-Slant/Hacen Extender X-Slant.ttf
+./fonts/Rubik/static/Rubik-BoldItalic.ttf
+./fonts/Cairo/Cairo-SemiBold.ttf
+./fonts/Lazeez/Lazeez.ttf
+./fonts/Cairo_Play/static/CairoPlay-Black.ttf
+./fonts/Lemonada/Lemonada-Regular.ttf
+./fonts/Hacen Extender Slant/Hacen Extender Slant.ttf
+./fonts/fromAkram/Fonts/DTNASKH3.TTF
+./fonts/ElMessiri/ElMessiri-Medium.ttf
+./fonts/Lateef/Lateef-4ePB.ttf
+./fonts/Andalus/Andalus.ttf
+./fonts/ae/ae_AlManzomah.ttf
+./fonts/ge-dinarone-bold_8/ge-dinarone-bold_8.ttf
+./fonts/Cairo_Play/static/CairoPlay-Bold.ttf
+./fonts/KacstQurn/KacstQurn.ttf
+./fonts/AGCRegular/AGCRegular.ttf
+./fonts/DUBAI/DUBAI-REGULAR.TTF
+./fonts/SC_DUBAI/SC_DUBAI.TTF
+./fonts/Sukar Bold/Sukar Bold.ttf
+./fonts/DroidNaskh/DroidNaskh-Bold.ttf
+./fonts/Sukar-Black-1/Sukar-Black-1.ttf
+./fonts/b/BDavat-M8EJ.ttf
+./fonts/Alfarooq/Alfarooq.ttf
+./fonts/GESS/GESS.ttf
+./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-ExtraLight.ttf
+./fonts/MOTKEN_'3AREEB/MOTKEN_'3AREEB.TTF
+./fonts/al/AL-Gemah-Badr.ttf
+./fonts/Ubuntu/Ubuntu-Kurdish-Kurdfont.ttf
+./fonts/mothanna_0_02/Mothanna-Bold-Oblique.ttf
+./fonts/Molhim (2)/Molhim (2).ttf
+./fonts/Khayal Font /Khayal Font - Demo.ttf
+./fonts/JF Flat regular/JF Flat regular.ttf
