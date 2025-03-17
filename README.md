@@ -3,7 +3,7 @@
 ## Introduction
 
 ## $Khat^2$ Dataset
-Inspired by the $Font^2$ dataset [^1][^2], we built a large synthetic dataset of Arabic word images rendered in a wide variety of fonts—including those that mimic handwriting. In our pipeline, over **2,000** freely available Arabic calligraphic fonts were scraped from multiple websites, then manually verified to ensure they correctly render every Arabic character (with decorative fonts containing elements like hearts or stars discarded). Additionally, drawing inspiration from HATFORMER [^3], we collected more than **130** paper background images and compiled an Arabic corpus of **8.2 million** words from diverse online sources, including Wikipedia.
+Inspired by the $Font^2$ dataset[^1][^2] (which was used to train the ResNet-18 backbones in One-DM[^3] and VATr[^4]) we built a large synthetic dataset of Arabic word images rendered in a wide variety of fonts—including those that mimic handwriting. In our pipeline, over **2,000** freely available Arabic calligraphic fonts were scraped from multiple websites, then manually verified to ensure they correctly render every Arabic character (with decorative fonts containing elements like hearts or stars discarded). Additionally, drawing inspiration from HATFORMER[^5], we collected more than **130** paper background images and compiled an Arabic corpus of **8.2 million** words from diverse online sources, including Wikipedia.
 
 For a chosen number *N* (e.g., 1,000), we randomly select *N* words from the corpus (of varying lengths) and *N* fonts that pass our automated validation checks. We then render every possible combination of the selected words and fonts—resulting in $N×N$ (e.g., 1,000×1,000 = 1,000,000) image samples, with each font representing a distinct class (i.e., 1,000 images per font).
 
@@ -16,5 +16,7 @@ During the synthetic data generation process, for every *(word, font)* pair, the
 
 [^1]: https://arxiv.org/abs/2304.01842
 [^2]: https://github.com/aimagelab/font_square
-[^3]: https://arxiv.org/abs/2410.02179
+[^3]: https://arxiv.org/abs/2409.04004
+[^4]: https://arxiv.org/abs/2303.15269
+[^5]: https://arxiv.org/abs/2410.02179
 
