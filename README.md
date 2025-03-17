@@ -11,7 +11,7 @@ During the synthetic data generation process, for every *(word, font)* pair, the
 
 - Arabic corpus is from HATFormer (words.pickle): link
 - Collected arabic fonts: link
-- main generation code, basic fonts, corpus, and backgrounds are borrowed from HATFormer. we edited them to generate single words instead of lines and to maek the lable the name of the font and to generate the $N×N$ samples as done in $Font^2$. we also edit the augmentaions to be simialr what is used in $Font^2$. 
+- main generation code, basic fonts, corpus, and backgrounds are borrowed from HATFormer[^6]. we edited them to generate single words instead of lines and to maek the lable the name of the font and to generate the $N×N$ samples as done in $Font^2$. we also edit the augmentaions to be simialr what is used in $Font^2$. 
 - we follow their training settings [^1] and train our ResNet-18 model to classify the 1,000,000 samples into the 1,000 font classes to learn the style representations needed to later learn arabic handwriting properly once integrated and made to train on real handwritten images.
 
 [^1]: https://arxiv.org/abs/2304.01842
@@ -19,4 +19,5 @@ During the synthetic data generation process, for every *(word, font)* pair, the
 [^3]: https://arxiv.org/abs/2409.04004
 [^4]: https://arxiv.org/abs/2303.15269
 [^5]: https://arxiv.org/abs/2410.02179
+[^6]: https://zenodo.org/records/14165756
 
