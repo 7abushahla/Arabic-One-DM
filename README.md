@@ -21,3 +21,43 @@ During the synthetic data generation process, for every *(word, font)* pair, the
 [^5]: https://arxiv.org/abs/2410.02179
 [^6]: https://zenodo.org/records/14165756
 
+## Arabic GNU Unifont Glyph Mapping
+
+Our methodology builds on the One-DM approach by leveraging GNU Unifont as the foundational source for our glyph representations. Recognizing the context‐sensitive nature of Arabic, we generate each letter’s four typical contextual forms—isolated, initial, medial, and final—by employing a strategy that forces joining using a dummy letter (س). Each glyph is rendered on a 16×16 pixel canvas and subsequently converted into a binary NumPy array.
+
+To further enhance the accuracy of our context-sensitive rendering, we have incorporated a refined joining heuristic that dynamically determines the appropriate contextual form of each Arabic letter based on its neighboring characters. The key aspects of this heuristic are:
+
+- **Non-Joining Letters:**  
+  Certain Arabic letters—specifically "ا", "أ", "إ", "آ", "د", "ذ", "ر", "ز", and "و"—do not connect to the following letter. When these letters occur in the middle of a word, they are rendered using their final form if preceded by a joinable letter; otherwise, they appear in their isolated form.
+
+- **Joinable Letters:**  
+  For letters that can join on both sides, the heuristic evaluates the neighboring characters as follows:
+  - **Medial Form:** A letter is rendered in its medial form if it is both preceded and followed by joinable characters.
+  - **Initial Form:** If a letter is not preceded by a joinable character but is followed by one, it is rendered in its initial form.
+  - **Final Form:** If a letter is preceded by a joinable character but is not followed by one, it is rendered in its final form.
+  - **Isolated Form:** When neither neighboring character is joinable, the letter remains in its isolated form.
+
+Our glyph rendering function further enhances visual consistency by aligning each character to a common baseline using font metrics. This ensures that all characters within a word remain uniformly aligned, preventing issues such as certain letters (e.g., "ـسـ") appearing to float off the line.
+
+### Explanation of Key Components
+
+- **`arabic_reshaper`**  
+  This library applies the standard contextual reshaping rules to individual Arabic characters. It converts each letter into its correct form (isolated, initial, medial, or final) based on general joining rules, but it does not account for the dynamic structure of a full word.
+
+- **`bidi.algorithm.get_display`**  
+  The BiDi algorithm ensures that the reshaped Arabic text is correctly ordered for right-to-left display. It rearranges the characters so that they render naturally for Arabic reading.
+
+- **`shape_arabic_text` Function**  
+  Our custom `shape_arabic_text` function goes beyond the capabilities of `arabic_reshaper` by analyzing the surrounding characters in a word. It:
+  - Examines neighboring letters to decide whether a letter should be rendered in its initial, medial, final, or isolated form.
+  - Uses a joining heuristic that checks for non-joining letters to decide if a letter joins to the left, right, both, or neither.
+  - Reverses the order of glyph indices to ensure the final rendering adheres to Arabic’s right-to-left orientation.
+
+In addition to processing the basic Arabic letters, our pipeline expands to include their contextual variants along with Arabic and English numerals, punctuation, and special symbols. The final output is a pickle file that maps these contextual forms and additional glyphs, ready for integration with the provided One-DM code for accurate, context-aware text rendering.
+
+
+
+
+
+
+
