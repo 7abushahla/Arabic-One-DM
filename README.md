@@ -38,7 +38,7 @@ To further enhance the accuracy of our context-sensitive rendering, we have inco
 
 Additionally, to ensure visual consistency across words, our glyph rendering function aligns each character to a common baseline by leveraging font metrics. This alignment prevents issues such as certain letters (e.g., "ـسـ") appearing to float off the line, thereby ensuring that all characters within a word remain uniformly aligned.
 
-Finally, our text rendering pipeline reverses the order of the glyph indices to accurately simulate right-to-left writing, thus producing contextually correct and visually coherent Arabic text.
+To ensure visual consistency across words, our glyph rendering function aligns each character to a common baseline using font metrics. This alignment prevents issues such as certain letters (e.g., "ـسـ") appearing to float off the line, thereby ensuring that all characters within a word remain uniformly aligned. Our text rendering pipeline reverses the order of the glyph indices to accurately simulate right-to-left writing, producing contextually correct and visually coherent Arabic text.
 
 In addition to processing the basic Arabic letters, our pipeline expands to include their contextual variants along with Arabic and English numerals, punctuation, and special symbols. The final output is a pickle file that maps these contextual forms and additional glyphs, ready for integration with the provided One-DM code for accurate, context-aware text rendering.
 
