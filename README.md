@@ -22,7 +22,8 @@ During the synthetic data generation process, for every *(word, font)* pair, the
 [^6]: https://zenodo.org/records/14165756
 
 ## Arabic GNU Unifont Glyph Mapping
-Our methodology builds on the One-DM approach by leveraging GNU Unifont as the foundational source for our glyph representations. Recognizing the context‐sensitive nature of Arabic, we generate each letter’s four typical contextual forms—isolated, initial, medial, and final—by employing a strategy that forces joining using a dummy letter (س). The reshaping of Arabic characters is managed by the `arabic_reshaper` library, which applies the necessary transformation rules, while `bidi.algorithm.get_display` ensures the proper right-to-left orientation. Each glyph is rendered on a 16×16 pixel canvas and subsequently converted into a binary NumPy array, preserving the original pixelated quality of GNU Unifont.
+
+Our methodology builds on the One-DM approach by leveraging GNU Unifont as the foundational source for our glyph representations. Recognizing the context‐sensitive nature of Arabic, we generate each letter’s four typical contextual forms—isolated, initial, medial, and final—by employing a strategy that forces joining using a dummy letter (س). Each glyph is rendered on a 16×16 pixel canvas and subsequently converted into a binary NumPy array.
 
 To further enhance the accuracy of our context-sensitive rendering, we have incorporated a refined joining heuristic that dynamically determines the appropriate contextual form of each Arabic letter based on its neighboring characters. The key aspects of this heuristic are:
 
@@ -36,11 +37,24 @@ To further enhance the accuracy of our context-sensitive rendering, we have inco
   - **Final Form:** If a letter is preceded by a joinable character but is not followed by one, it is rendered in its final form.
   - **Isolated Form:** When neither neighboring character is joinable, the letter remains in its isolated form.
 
-Additionally, to ensure visual consistency across words, our glyph rendering function aligns each character to a common baseline by leveraging font metrics. This alignment prevents issues such as certain letters (e.g., "ـسـ") appearing to float off the line, thereby ensuring that all characters within a word remain uniformly aligned.
+Our glyph rendering function further enhances visual consistency by aligning each character to a common baseline using font metrics. This ensures that all characters within a word remain uniformly aligned, preventing issues such as certain letters (e.g., "ـسـ") appearing to float off the line.
 
-To ensure visual consistency across words, our glyph rendering function aligns each character to a common baseline using font metrics. This alignment prevents issues such as certain letters (e.g., "ـسـ") appearing to float off the line, thereby ensuring that all characters within a word remain uniformly aligned. Our text rendering pipeline reverses the order of the glyph indices to accurately simulate right-to-left writing, producing contextually correct and visually coherent Arabic text.
+### Explanation of Key Components
+
+- **`arabic_reshaper`**  
+  This library applies the standard contextual reshaping rules to individual Arabic characters. It converts each letter into its correct form (isolated, initial, medial, or final) based on general joining rules, but it does not account for the dynamic structure of a full word.
+
+- **`bidi.algorithm.get_display`**  
+  The BiDi algorithm ensures that the reshaped Arabic text is correctly ordered for right-to-left display. It rearranges the characters so that they render naturally for Arabic reading.
+
+- **`shape_arabic_text` Function**  
+  Our custom `shape_arabic_text` function goes beyond the capabilities of `arabic_reshaper` by analyzing the surrounding characters in a word. It:
+  - Examines neighboring letters to decide whether a letter should be rendered in its initial, medial, final, or isolated form.
+  - Uses a joining heuristic that checks for non-joining letters to decide if a letter joins to the left, right, both, or neither.
+  - Reverses the order of glyph indices to ensure the final rendering adheres to Arabic’s right-to-left orientation.
 
 In addition to processing the basic Arabic letters, our pipeline expands to include their contextual variants along with Arabic and English numerals, punctuation, and special symbols. The final output is a pickle file that maps these contextual forms and additional glyphs, ready for integration with the provided One-DM code for accurate, context-aware text rendering.
+
 
 
 
