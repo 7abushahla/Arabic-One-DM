@@ -57,7 +57,7 @@ In addition to processing the basic Arabic letters, our pipeline expands to incl
 
 
 ## Training Datasets
-To train our models effectively, we required a dataset of Arabic handwritten words that included both ground truth annotations and writer metadata. Given the scarcity of large-scale, high-quality handwriting datasets in Arabic (in contrast to well-established English datasets such as IAM or CVL), we opted to merge three publicly available datasets: IFN/ENIT, AlexU-Word, and the words portion of the AHAWP (Arabic Handwritten Alphabets, Words, and Paragraphs per User) dataset.This combination increases writer diversity and lexical coverage, providing a more representative sample of Arabic handwriting styles and variations.
+To train our model effectively, we required a dataset of Arabic handwritten words that included both ground truth annotations and writer information. Given the scarcity of large-scale, high-quality handwriting datasets in Arabic (in contrast to well-established English datasets such as IAM or CVL), we opted to merge three publicly available datasets: IFN/ENIT, AlexU-Word, and the words portion of the AHAWP (Arabic Handwritten Alphabets, Words, and Paragraphs per User) dataset. This combination increases writer diversity and lexical coverage, providing a more representative sample of Arabic handwriting styles and variations.
 
 ### IFN/ENIT Dataset
 
@@ -85,6 +85,3 @@ Additionally, word images with extensive scribbles or strike-throughs were disca
 | IFN/ENIT               | 26,459     | 937         | 411     |
 | AHAWP (Words Only)     | 8,137      | 10          | 82      |
 | **Final Unified Dataset** | **59,688** | **1,056** | **1,400** |
-
-This table presents a summary of the final unified Arabic handwriting dataset, which combines three distinct datasets to maximize writer diversity and lexical coverage.
-
