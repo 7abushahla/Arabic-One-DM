@@ -57,14 +57,34 @@ In addition to processing the basic Arabic letters, our pipeline expands to incl
 
 
 ## Training Datasets
+To train our models effectively, we required a dataset of Arabic handwritten words that included both ground truth annotations and writer metadata. Given the scarcity of large-scale, high-quality handwriting datasets in Arabic (in contrast to well-established English datasets such as IAM or CVL), we opted to merge three publicly available datasets: IFN/ENIT, AlexU-Word, and the words portion of the AHAWP (Arabic Handwritten Alphabets, Words, and Paragraphs per User) dataset.This combination increases writer diversity and lexical coverage, providing a more representative sample of Arabic handwriting styles and variations.
 
-We needed to find a dataset of Arabic handwritten words where the writer information and grounf truth about each handwritten word image are available. the KHATT dataset was inaccessible. For our task, we aquired the following datasets: IFN/ENIT, AlexU Word, and the words portion of the Arabic handwritten alphabets, words and paragraphs per user (AHAWP) dataset... Since Arabic is low-resource in this domain, merging them maximizes handwriting diversity while keeping a large number of writers...Compared to English (IAM, CVL, etc.), Arabic lacks large-scale, high-quality handwriting datasets.....
+### IFN/ENIT Dataset
 
-The datasets are as follows:
-- IFN/ENIT dataset: contains 937 Tunisian town/village names, each can be composed by one Arabic word or more. Arabic digits can be present in the town name. also harakat on occasion. The dataset contains a total of 26,459 Arabic word images written by 411 different writers. Each word appears at least 3 times in the database. all images were cropped and binarized (black writing, white background).
-- AlexU-Word dataset: Collected at the Faculty of Engineering, Alexandria University, Egypt, contains 25,114 word images from 109 unique Arabic words. The word samples are collected from 907 different writers. The 109 Arabic words in the dataset were chosen to cover all possible cases for each letter in the alphabet. The words were selected to be short and simple, with no diacritics present. Each writer was asked to ﬁll out only a one-page form. Each form contained a table of 28 Arabic words.Four different form models were used to cover all possible cases of Arabic letter. All images were tightky cropped and binarized (white writing, black background), so in preprocessing we inverted the images to match IFN/ENIT. Some images were removed during inspection where words were out of the dataset's vocabulary or misspelded. additionally, some were not cropped tighly so we made sure to crop them properly.
+The IFN/ENIT dataset consists of 26,459 images of handwritten Arabic words representing 937 Tunisian town and village names. These names may comprise one or more Arabic words and occasionally include digits or diacritics, namely the shadda (ـّ), though not all writers include it in their handwriting. Data was collected from 411 different writers, with each word appearing at least three times. All images were cropped and binarized (black ink on a white background), providing clean input for handwriting recognition tasks.
 
+### AlexU-Word Dataset
 
+The AlexU-Word dataset, collected at the Faculty of Engineering, Alexandria University, contains 25,114 word images corresponding to 109 unique Arabic words. These samples were gathered from 907 writers. The selected words were designed to cover all positional variations of Arabic letters (initial, medial, final, and isolated) and were chosen to be short, simple, and free of diacritics. Each writer completed a one-page form consisting of 28 words. Four distinct form templates were used to cover the complete set of letter cases.
 
+Images were originally tightly cropped and binarized (white ink on a black background). For consistency with IFN/ENIT, we inverted all images during preprocessing. We also removed incorrectly cropped images and those containing misspelled or out-of-vocabulary words.
 
+### AHAWP Dataset (Words Portion)
+
+The AHAWP dataset includes handwritten samples of 65 Arabic character forms, 10 Arabic words, and 3 paragraphs, produced by 82 writers. Each participant wrote each word and character 10 times, yielding 8,144 word images. For this work, we utilized only the word portion of the dataset. As with the other datasets, the handwriting samples were collected using structured forms, where each cell was extracted and stored as an individual image.
+
+Because the original AHAWP images were not binarized or tightly cropped, we implemented an automated preprocessing pipeline. The pipeline applied Otsu’s thresholding (with inversion) to binarize each image, detected external contours, computed the union of bounding boxes, added padding, and performed cropping. The resulting images were then binarized once more to ensure uniform formatting.
+
+Additionally, word images with extensive scribbles or strike-throughs were discarded if the writing was obscured. In cases where the core word was still legible, we retained the image after manual correction. These steps ensured consistency across all datasets in terms of image quality and formatting.
+
+#### Final Compiled Arabic Handwriting Dataset
+
+| Dataset                | Total Words | Unique Words | Writers |
+|------------------------|------------|-------------|---------|
+| ALEX-U Words           | 25,092     | 109         | 907     |
+| IFN/ENIT               | 26,459     | 937         | 411     |
+| AHAWP (Words Only)     | 8,137      | 10          | 82      |
+| **Final Unified Dataset** | **59,688** | **1,056** | **1,400** |
+
+This table presents a summary of the final unified Arabic handwriting dataset, which combines three distinct datasets to maximize writer diversity and lexical coverage.
 
