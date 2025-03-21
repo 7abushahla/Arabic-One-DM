@@ -61,8 +61,8 @@ In addition to processing the basic Arabic letters, our pipeline expands to incl
 We needed to find a dataset of Arabic handwritten words where the writer information and grounf truth about each handwritten word image are available. the KHATT dataset was inaccessible. For our task, we aquired the following datasets: IFN/ENIT, AlexU Word, and the words portion of the Arabic handwritten alphabets, words and paragraphs per user (AHAWP) dataset... Since Arabic is low-resource in this domain, merging them maximizes handwriting diversity while keeping a large number of writers...Compared to English (IAM, CVL, etc.), Arabic lacks large-scale, high-quality handwriting datasets.....
 
 The datasets are as follows:
-- IFN/ENIT dataset: contains 937 Tunisian town/village names, each can be composed by one Arabic word or more. Arabic digits can be present in the town name. also harakat on occasion. The dataset contains a total of 32492 Arabic word images written by a total of 916 writers (accross sets a-b-c-d-e). Each word appears at least 3 times in the database. all images were cropped and binarized.
-
+- IFN/ENIT (v2.0p1e) dataset: contains 937 Tunisian town/village names, each can be composed by one Arabic word or more. Arabic digits can be present in the town name. also harakat on occasion. Each word appears at least 3 times in the database. all images were cropped and binarized. The dataset contains a total of 32492 Arabic word images accross sets a-b-c-d-e. With writer information only available in sets a-d, we only use that. So this dataset has 26,459 word images written by 411 different writers. set e adds 87 new writers and 6033 new word images but writer information is not avaialable. we can use samples from set e for testing.
+- 
 
 
 
