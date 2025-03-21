@@ -56,6 +56,13 @@ Our glyph rendering function further enhances visual consistency by aligning eac
 In addition to processing the basic Arabic letters, our pipeline expands to include their contextual variants along with Arabic and English numerals, punctuation, and special symbols. The final output is a pickle file that maps these contextual forms and additional glyphs, ready for integration with the provided One-DM code for accurate, context-aware text rendering.
 
 
+## Training Datasets
+
+We needed to find a dataset of Arabic handwritten words where the writer information and grounf truth about each handwritten word image are available. the KHATT dataset was inaccessible. For our task, we aquired the following datasets: IFN/ENIT, AlexU Word, and the words portion of the Arabic handwritten alphabets, words and paragraphs per user (AHAWP) dataset... Since Arabic is low-resource in this domain, merging them maximizes handwriting diversity while keeping a large number of writers...Compared to English (IAM, CVL, etc.), Arabic lacks large-scale, high-quality handwriting datasets.....
+
+The datasets are as follows:
+- IFN/ENIT dataset: contains 937 Tunisian town/village names, each can be composed by one Arabic word or more. Arabic digits can be present in the town name. also harakat on occasion. The dataset contains a total of 32492 Arabic word images written by a total of 916 writers (accross sets a-b-c-d-e). Each word appears at least 3 times in the database. all images were cropped and binarized.
+
 
 
 
