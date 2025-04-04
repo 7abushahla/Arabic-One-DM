@@ -84,4 +84,5 @@ Additionally, word images with extensive scribbles or strike-throughs were disca
 | ALEX-U Words           | 25,092     | 109         | 906     |
 | IFN/ENIT               | 26,459     | 937         | 411     |
 | AHAWP (Words Only)     | 8,137      | 10          | 82      |
-| **Final Unified Dataset** | **59,688** | **1,056** | **1,399** |
+| IESK-ArDB              | 2,749      | 364         | 18      |
+| **Final Unified Dataset** | **62,437** | **1,412** | **1,414** |
