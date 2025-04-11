@@ -1,3 +1,4 @@
+
 import warnings
 warnings.filterwarnings("ignore", message="256 extra bytes in post.stringData array")
 
@@ -8,7 +9,7 @@ import os
 import pickle
 import numpy as np
 import glob
-from fontTools.ttLib import TTFont
+from fontTools.ttLib import TTFont, TTLibError
 import uuid
 import multiprocessing
 import re
@@ -25,20 +26,14 @@ MIN_FONT_SIZE = 8
 MAX_FONT_SIZE = 40
 
 # --- Helper to filter Arabic words (only basic letters, no diacritics, punctuation, or digits) ---
-# Only basic Arabic letters (from U+0621 to U+064A)
 arabic_letters_pattern = re.compile(r'^[\u0621-\u064A]+$')
 
 def is_arabic_word(word):
-    """
-    Returns True if the word consists solely of basic Arabic letters (excluding diacritics, punctuation, and digits)
-    and is longer than one character.
-    """
+    """Return True if the word consists solely of basic Arabic letters and is longer than one character."""
     return len(word) > 1 and bool(arabic_letters_pattern.match(word))
 
 def sample_fonts_and_words(all_fonts, all_words, dataset_size):
-    """
-    Randomly sample dataset_size unique fonts and dataset_size unique words.
-    """
+    """Randomly sample dataset_size unique fonts and dataset_size unique words."""
     if len(all_fonts) < dataset_size:
         raise ValueError(f"Not enough fonts available. Required {dataset_size}, found {len(all_fonts)}")
     if len(all_words) < dataset_size:
@@ -48,20 +43,14 @@ def sample_fonts_and_words(all_fonts, all_words, dataset_size):
     return selected_fonts, selected_words
 
 def save_img_text(img, font, output_path, unique_suffix):
-    """
-    Save the image using a file name that includes the font name and a unique suffix.
-    Returns the file name on success.
-    """
+    """Save the image using a file name that includes the font name and a unique suffix."""
     base_font = os.path.splitext(os.path.basename(font))[0]
     img_filename = os.path.join(output_path, f"{base_font}_{unique_suffix}.jpg")
     img.convert('RGB').save(img_filename)
     return img_filename
 
 def try_fix_rendered_text(rendered_text, font, font_size, all_backgrounds, image_height):
-    """
-    Try to fix rendered_text by replacing one character at a time with a space.
-    Returns a tuple (fixed_text, img) if successful, or (None, None) if not.
-    """
+    """Try to fix rendered_text by replacing one character at a time with a space."""
     for char in rendered_text:
         try:
             modified_text = rendered_text.replace(char, ' ')
@@ -78,7 +67,7 @@ def try_fix_rendered_text(rendered_text, font, font_size, all_backgrounds, image
 def create_placeholder_image(font, image_height):
     """
     Creates a placeholder image with a white background and black Arabic text.
-    A random fallback Arabic word is chosen (e.g., "كلمة", "مثال", "اختبار").
+    Uses basic_font.getsize() to compute text size.
     """
     from PIL import ImageDraw, ImageFont, Image
     import random
@@ -90,7 +79,11 @@ def create_placeholder_image(font, image_height):
     except Exception:
         basic_font = ImageFont.load_default()
     fallback_word = random.choice(["كلمة", "مثال", "اختبار"])
-    text_width, text_height = draw.textsize(fallback_word, font=basic_font)
+    try:
+        # Use basic_font.getsize() for compatibility.
+        text_width, text_height = basic_font.getsize(fallback_word)
+    except Exception:
+        text_width, text_height = draw.textsize(fallback_word, font=basic_font)
     position = ((width - text_width) // 2, (image_height - text_height) // 2)
     draw.text(position, fallback_word, fill="black", font=basic_font)
     return img
@@ -100,9 +93,8 @@ def worker_process_groups(group_list, all_backgrounds, font_size, image_height, 
     """
     Processes a list of (word, font, index) tuples.
     Each tuple is processed exactly once by calling process_tuple().
-    A dedicated logger (logging warnings/errors only) is used.
+    A dedicated logger is used; log messages are flushed immediately.
     """
-    # Setup a dedicated logger for this worker (only logging failures)
     logger = logging.getLogger(f"worker_{pos}")
     logger.setLevel(logging.WARNING)
     fh = logging.FileHandler(f"worker_{pos}.log", mode='w', encoding='utf-8')
@@ -114,29 +106,35 @@ def worker_process_groups(group_list, all_backgrounds, font_size, image_height, 
     np.random.seed(seed)
     output_dict = {}
 
-    # Local function to process a single tuple.
+    def flush_logger():
+        for handler in logger.handlers:
+            handler.flush()
+
     def process_tuple(word, font, idx):
         try:
             font_temp = TTFont(font)
             cmap = font_temp['cmap'].getBestCmap()
         except Exception as e:
             logger.error(f"Error reading font {font}: {e}")
+            flush_logger()
             return None, None
 
         if cmap is None:
             logger.error(f"No cmap for font {os.path.basename(font)}.")
+            flush_logger()
             return None, None
 
-        # Primary attempts
         current_word = word
         for attempt in range(1, max_attempts+1):
             try:
                 rendered_text = "".join([e for e in current_word if ord(e) in cmap])
             except Exception as e:
                 logger.error(f"Error processing word '{current_word}' for font {font}: {e}")
+                flush_logger()
                 continue
             if len(rendered_text) == 0:
                 logger.warning(f"Rendered text empty for '{current_word}' with font {font} on primary attempt {attempt}.")
+                flush_logger()
                 continue
             try:
                 img, _ = synthetic.main_generate_image(
@@ -145,6 +143,12 @@ def worker_process_groups(group_list, all_backgrounds, font_size, image_height, 
                 )
             except Exception as e:
                 logger.error(f"Exception during image generation for '{rendered_text}' with font {font}: {e}")
+                flush_logger()
+                # Check for problematic phrases.
+                err_str = str(e).lower()
+                if any(phrase in err_str for phrase in ["execution context too long", "invalid outline", "code overflow", "invalid argument"]):
+                    # Skip further attempts for this font.
+                    return None, None
                 fixed_text, img = try_fix_rendered_text(rendered_text, font, font_size, all_backgrounds, image_height)
                 if fixed_text is not None and img is not None:
                     current_word = fixed_text
@@ -152,19 +156,21 @@ def worker_process_groups(group_list, all_backgrounds, font_size, image_height, 
                     continue
             if img is None:
                 logger.warning(f"Image generation returned None for '{rendered_text}' with font {font} on primary attempt {attempt}.")
+                flush_logger()
                 continue
             return rendered_text, img
 
-        # Fallback attempts
         for fallback in range(1, max_fallback_attempts+1):
             current_word = random.choice(selected_words)
             try:
                 rendered_text = "".join([e for e in current_word if ord(e) in cmap])
             except Exception as e:
                 logger.error(f"Fallback error processing word '{current_word}' for font {font}: {e}")
+                flush_logger()
                 continue
             if len(rendered_text) == 0:
                 logger.warning(f"Fallback: Rendered text empty for '{current_word}' with font {font} on fallback attempt {fallback}.")
+                flush_logger()
                 continue
             try:
                 img, _ = synthetic.main_generate_image(
@@ -173,6 +179,7 @@ def worker_process_groups(group_list, all_backgrounds, font_size, image_height, 
                 )
             except Exception as e:
                 logger.error(f"Fallback exception during image generation for '{rendered_text}' with font {font}: {e}")
+                flush_logger()
                 fixed_text, img = try_fix_rendered_text(rendered_text, font, font_size, all_backgrounds, image_height)
                 if fixed_text is not None and img is not None:
                     rendered_text = fixed_text
@@ -180,29 +187,36 @@ def worker_process_groups(group_list, all_backgrounds, font_size, image_height, 
                     continue
             if img is None:
                 logger.warning(f"Fallback: Image generation returned None for '{rendered_text}' with font {font} on fallback attempt {fallback}.")
+                flush_logger()
                 continue
             return rendered_text, img
 
-        return None, None  # All attempts failed.
+        return None, None
 
-    # Process each tuple exactly once.
     for word, font, idx in group_list:
         rendered_text, img = process_tuple(word, font, idx)
         if img is None:
             logger.error(f"Failed to generate image for (word: {word}, font: {font}). Using placeholder.")
+            flush_logger()
             try:
                 img = create_placeholder_image(font, image_height)
             except Exception as e_save:
                 logger.error(f"Error creating placeholder image for font {font}: {e_save}")
+                flush_logger()
                 with progress_counter.get_lock():
                     progress_counter.value += 1
                 continue
-        # Create a globally unique suffix with worker id, tuple index, and a short UUID.
+        # Enforce a maximum width of 2304 pixels.
+        target_width = int(img.size[0] / img.size[1] * image_height)
+        if target_width > 2304:
+            target_width = 2304
+        img = img.resize((target_width, image_height))
         unique_suffix = f"{os.path.splitext(os.path.basename(font))[0]}_{pos}_{idx}_{uuid.uuid4().hex[:8]}"
         try:
             file_name = save_img_text(img, font, output_path, unique_suffix)
         except Exception as e_save:
             logger.error(f"Error saving image for (word: {word}, font: {font}): {e_save}")
+            flush_logger()
             with progress_counter.get_lock():
                 progress_counter.value += 1
             continue
@@ -215,6 +229,89 @@ def worker_process_groups(group_list, all_backgrounds, font_size, image_height, 
     with open(dict_filename, 'wb') as f:
         pickle.dump(output_dict, f)
     logger.error(f"Process (seed {seed}, pos {pos}) finished generating {len(output_dict)} images and saved dictionary as {dict_filename}.")
+    flush_logger()
+
+def validate_fonts(selected_fonts, selected_words):
+    """
+    Validate fonts to ensure they contain all basic Arabic letters.
+    This function handles both TTF fonts (with a glyf table) and OTF fonts (with a CFF table).
+    Additionally, it calls synthetic.main_generate_image on test words to catch errors like
+    "execution context too long", "invalid outline", "code overflow", or "invalid argument".
+    """
+    valid_fonts = []
+    failed_fonts = []
+    all_arabic_letters = [chr(c) for c in range(0x0621, 0x064B)]
+    for font in selected_fonts:
+        try:
+            font_temp = TTFont(font)
+            cmap = font_temp['cmap'].getBestCmap()
+        except Exception as e:
+            print(f"Error reading font {font}: {e}")
+            failed_fonts.append(font)
+            continue
+        if cmap is None:
+            print(f"No cmap for font {font}.")
+            failed_fonts.append(font)
+            continue
+        font_valid = True
+        for letter in all_arabic_letters:
+            if ord(letter) not in cmap:
+                font_valid = False
+                print(f"Font {font} is missing letter {letter} in cmap.")
+                break
+            glyph_name = cmap[ord(letter)]
+            try:
+                if "glyf" in font_temp:
+                    if glyph_name not in font_temp["glyf"].glyphs:
+                        font_valid = False
+                        print(f"Font {font} is missing glyph {glyph_name} for letter {letter} in glyf table.")
+                        break
+                    else:
+                        num_contours = getattr(font_temp["glyf"].glyphs[glyph_name], "numberOfContours", None)
+                        if not num_contours or num_contours == 0:
+                            font_valid = False
+                            print(f"Font {font} has empty glyph for letter {letter} (glyph name: {glyph_name}) in glyf table.")
+                            break
+                elif "CFF " in font_temp:
+                    cff = font_temp["CFF "]
+                    charstrings = cff.cff.topDictIndex[0].CharStrings
+                    if glyph_name not in charstrings:
+                        font_valid = False
+                        print(f"Font {font} is missing glyph {glyph_name} for letter {letter} in CFF table.")
+                        break
+                else:
+                    font_valid = False
+                    print(f"Font {font} has neither a glyf nor a CFF table.")
+                    break
+            except TTLibError as err:
+                font_valid = False
+                print(f"Font {font} failed validation: {err}")
+                break
+        if font_valid:
+            # Try generating an image for one test word to catch additional errors.
+            test_word = random.choice(selected_words)
+            try:
+                rendered_text = "".join([e for e in test_word if ord(e) in cmap])
+                img, _ = synthetic.main_generate_image(
+                    rendered_text, font, 40, [], ht=64, distort_chance=0, blur_chance=0, flip=False
+                )
+            except Exception as e:
+                err_str = str(e).lower()
+                if any(phrase in err_str for phrase in ["execution context too long", "invalid outline", "code overflow", "invalid argument"]):
+                    font_valid = False
+                    print(f"Font {font} failed image generation test: {e}")
+                else:
+                    font_valid = False
+                    print(f"Font {font} failed unknown image generation test: {e}")
+            if font_valid:
+                valid_fonts.append(font)
+            else:
+                print(f"Font {font} failed test word rendering.")
+                failed_fonts.append(font)
+        else:
+            print(f"Font {font} failed validation.")
+            failed_fonts.append(font)
+    return valid_fonts, failed_fonts
 
 def main(args):
     # Delete old worker log files.
@@ -227,7 +324,7 @@ def main(args):
 
     # Define output paths.
     OUTPUT_PATH = os.path.join("word_images", args.data_dir)
-    FONT_PATH = './fonts/'
+    FONT_PATH = '/Users/hamza/Downloads/fonts_2K_1'
     BACKGROUND_FOLDER = './images/'
 
     os.makedirs(OUTPUT_PATH, exist_ok=True)
@@ -290,86 +387,41 @@ def main(args):
                 f.write(clean_word + "\n")
     print("Exported selected words to 'selected_words.txt'.")
 
-    # Validate fonts and replace any that fail.
-    valid_fonts = []
-    failed_fonts = []
-    all_arabic_letters = [chr(c) for c in range(0x0621, 0x064B)]
-    for font in selected_fonts:
-        try:
-            font_temp = TTFont(font)
-            cmap = font_temp['cmap'].getBestCmap()
-        except Exception as e:
-            print(f"Error reading font {font}: {e}")
-            failed_fonts.append(font)
-            continue
-        if cmap is None:
-            print(f"No cmap for font {font}.")
-            failed_fonts.append(font)
-            continue
-        font_valid = True
-        for letter in all_arabic_letters:
-            if ord(letter) not in cmap:
-                font_valid = False
-                print(f"Font {font} is missing letter {letter} in cmap.")
-                break
-            glyph_name = cmap[ord(letter)]
-            if "glyf" in font_temp:
-                if glyph_name not in font_temp["glyf"].glyphs:
-                    font_valid = False
-                    print(f"Font {font} is missing bitmap for glyph {glyph_name} corresponding to letter {letter}.")
-                    break
-                else:
-                    num_contours = getattr(font_temp["glyf"].glyphs[glyph_name], "numberOfContours", None)
-                    if not num_contours or num_contours == 0:
-                        font_valid = False
-                        print(f"Font {font} has empty glyph for letter {letter} (glyph name: {glyph_name}).")
-                        break
-        if not font_valid:
-            failed_fonts.append(font)
-            continue
-
-        tests = random.sample(selected_words, 2)
-        valid = True
-        for word in tests:
-            try:
-                rendered_text = "".join([e for e in word if ord(e) in cmap])
-            except Exception as e:
-                valid = False
-                break
-            if len(rendered_text) == 0:
-                valid = False
-                break
-        if valid:
-            valid_fonts.append(font)
-        else:
-            print(f"Font {font} failed validation with test words.")
-            failed_fonts.append(font)
+    # Validate fonts (handling both TTF and OTF with CFF)
+    valid_fonts, _ = validate_fonts(selected_fonts, selected_words)
+    unique_all_fonts = list(dict.fromkeys(all_fonts))
     while len(valid_fonts) < dataset_size:
-        remaining_fonts = [f for f in all_fonts if f not in valid_fonts]
+        remaining_fonts = [f for f in unique_all_fonts if f not in valid_fonts]
         if not remaining_fonts:
-            raise ValueError("Not enough valid fonts available.")
-        new_font = random.choice(remaining_fonts)
-        try:
-            font_temp = TTFont(new_font)
-            cmap = font_temp['cmap'].getBestCmap()
-        except Exception as e:
-            continue
-        if cmap is None:
-            continue
-        tests = random.sample(selected_words, 2)
-        valid = True
-        for word in tests:
+            raise ValueError(f"Not enough valid fonts available. Only {len(valid_fonts)} valid fonts found, required {dataset_size}.")
+        added_this_round = False
+        for new_font in remaining_fonts:
             try:
-                rendered_text = "".join([e for e in word if ord(e) in cmap])
+                font_temp = TTFont(new_font)
+                cmap = font_temp['cmap'].getBestCmap()
             except Exception as e:
-                valid = False
-                break
-            if len(rendered_text) == 0:
-                valid = False
-                break
-        if valid:
-            valid_fonts.append(new_font)
-            print(f"Added replacement font {new_font}")
+                continue
+            if cmap is None:
+                continue
+            tests = random.sample(selected_words, 2)
+            valid = True
+            for word in tests:
+                try:
+                    rendered_text = "".join([e for e in word if ord(e) in cmap])
+                except Exception as e:
+                    valid = False
+                    break
+                if len(rendered_text) == 0:
+                    valid = False
+                    break
+            if valid:
+                valid_fonts.append(new_font)
+                print(f"Added replacement font {new_font}")
+                added_this_round = True
+                if len(valid_fonts) >= dataset_size:
+                    break
+        if not added_this_round:
+            raise ValueError(f"Not enough valid fonts available. Only {len(valid_fonts)} valid fonts found, required {dataset_size}.")
     selected_fonts = valid_fonts[:dataset_size]
     print(f"Final set of fonts: {[os.path.basename(f) for f in selected_fonts]}")
     print(f"Selected {len(selected_fonts)} unique fonts and {len(selected_words)} unique words for the dataset.")
@@ -429,7 +481,6 @@ def main(args):
     print(f"Total generated JPEG files: {total_generated}")
     if total_generated < total_images:
         print(f"WARNING: Only {total_generated} images were generated, but {total_images} were expected.")
-        # Only then check per-class counts.
         expected_count = len(selected_words)
         for font in selected_fonts:
             base_font = os.path.splitext(os.path.basename(font))[0]

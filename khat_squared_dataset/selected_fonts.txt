@@ -1,1000 +1,2000 @@
-./fonts/cartoon/Cartoon1471Extended-x3oyq.ttf
-./fonts/BTehran/BTehran.ttf
-./fonts/HelveticaWorld/HelveticaWorld-Bold.ttf
-./fonts/Neckar Font Bold/Neckar Font Bold.ttf
-./fonts/Marhey/static/Marhey-Bold.ttf
-./fonts/BSetareh/BSetareh.ttf
-./fonts/BIXIE/BIXIE-Regular.ttf
-./fonts/22876/22876-gen01.ttf
-./fonts/trado/trado.ttf
-./fonts/DimaNaskh/DimaNaskh.ttf
-./fonts/K_FARNAZ/K_FARNAZ.TTF
-./fonts/fromAkram/Fonts/DTNASKH1.TTF
-./fonts/Air Strip Arabic/Air Strip Arabic.ttf
-./fonts/Lemonada/Lemonada-Light.ttf
-./fonts/Hacen Samra/Hacen Samra.ttf
-./fonts/BKamran/BKamran.ttf
-./fonts/DG/DG-3asomy-Thin.ttf
-./fonts/MotkenRafidain/MotkenRafidain.ttf
-./fonts/Mj-Unique-Light/Mj-Unique-Light.ttf
-./fonts/BSahar/BSahar.ttf
-./fonts/DimaLatifi/DimaLatifi.ttf
-./fonts/pHalls/pHalls-Khodkar-phalls.com_.ttf
-./fonts/Hacen Algeria/Hacen Algeria.ttf
-./fonts/Kufam/static/Kufam-MediumItalic.ttf
-./fonts/belal/BelalBoldBold-BWrl8.ttf
-./fonts/Abdoullah Ashgar EL/Abdoullah Ashgar EL-kharef.ttf
-./fonts/ae/ae_Khalid.ttf
-./fonts/mohammed/mohammed2.ttf
-./fonts/Hasan/Hasan-Alquds-Unicode-Bold.ttf
-./fonts/HACEN_LINER_PRINT/HACEN_LINER_PRINT-OUT.TTF
-./fonts/Rubik/static/Rubik-Bold.ttf
-./fonts/fromAkram/Fonts/OLDOUTSH.TTF
-./fonts/OoredooArabic/OoredooArabic-Regular.ttf
-./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-SemiBold.ttf
-./fonts/4_51/4_51.ttf
-./fonts/Cairo/Cairo-Regular.ttf
-./fonts/BEsfhnBd/BEsfhnBd.ttf
-./fonts/AraHamah1964R/AraHamah1964R-Regular.ttf
-./fonts/arabswell_/arabswell_1.ttf
-./fonts/BigVesta Arabic Regular/BigVesta Arabic Regular.ttf
-./fonts/Elain-Regular/Elain-Regular.ttf
-./fonts/Hend Font Bold/Hend Font Bold.ttf
-./fonts/Neckar Font Regular/Neckar Font Regular.ttf
-./fonts/Arian-LT-Heavy-1/Arian-LT-Heavy-1.ttf
-./fonts/Rubik/static/Rubik-Medium.ttf
-./fonts/Hacen Trarza Hd/Hacen Trarza Hd.ttf
-./fonts/b/B_MITRA.TTF
-./fonts/boutros/boutros6.ttf
-./fonts/JannaLT/JannaLT-Regular.ttf
-./fonts/BNazannO/BNazannO.ttf
-./fonts/HACEN_TYPOGRAPHER/HACEN_TYPOGRAPHER.TTF
-./fonts/Harmattan/Harmattan-Regular.ttf
-./fonts/fromAkram/Fonts/OLDANBLD.TTF
-./fonts/aga/AgaRasheeqV2RshyqBold-DMDE.ttf
-./fonts/18271/18271-18271-18271-7438358.ttf
-./fonts/4_88/4_88.ttf
-./fonts/Vibes/Vibes-Regular.ttf
-./fonts/Hasan/Hasan-Alquds-Unicode-Medium.ttf
-./fonts/Cairo_Play/static/CairoPlay-Medium.ttf
-./fonts/ae/ae_Hani.ttf
-./fonts/al/AL-Gemah-Alhoda.ttf
-./fonts/Markazi_Text/MarkaziText-VariableFont_wght.ttf
-./fonts/AraHamahHoms/AraHamahHoms-Regular.ttf
-./fonts/HACEN_PROMOTER/HACEN_PROMOTER.TTF
-./fonts/ae_Khalid/ae_Khalid.ttf
-./fonts/BMitraBd/BMitraBd.ttf
-./fonts/Far_Fanni/Far_Fanni.ttf
-./fonts/MA3ALI/MA3ALI-AQSA.TTF
-./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-SemiBold.ttf
-./fonts/BKoodkBd/BKoodkBd.ttf
-./fonts/Cairo-SemiBold-2/Cairo-SemiBold-2.ttf
-./fonts/taro/taro.ttf
-./fonts/AlHurra Font Light/AlHurra Font Light.ttf
-./fonts/Blabeloo/Blabeloo-font-v.1.0.ttf
-./fonts/BTitrBd/BTitrBd.ttf
-./fonts/Dima-Yekan/Dima-Yekan.ttf
-./fonts/Fustat/static/Fustat-Light.ttf
-./fonts/Vazirmatn/static/Vazirmatn-Light.ttf
-./fonts/omniglot/OmniglotFont-mLWLv.ttf
-./fonts/Sp_Hadi_p30download.com_/Sp_Hadi_p30download.com_.ttf
-./fonts/Ah/Ah-moharram-bold.ttf
-./fonts/BlueOcean/BlueOcean.ttf
-./fonts/0 Titr Bold Bold/0 Titr Bold Bold.ttf
-./fonts/ae/ae_AlMohanad.ttf
-./fonts/GaliModern-Bold/GaliModern-Bold.ttf
-./fonts/MOTKEN_K_NASIM/MOTKEN_K_NASIM.TTF
-./fonts/Kufam/static/Kufam-ExtraBold.ttf
-./fonts/air/air-arabia-1.ttf
-./fonts/A Khash Medium/A Khash Medium.ttf
-./fonts/Beiruti/static/Beiruti-ExtraLight.ttf
-./fonts/ElMessiri-Bold/ElMessiri-Bold.ttf
-./fonts/b/B_BARDIYA_BOLD.TTF
-./fonts/Abdo Free Regular/Abdo Free Regular.ttf
-./fonts/Hacen Extender Bd/Hacen Extender Bd.ttf
-./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-Black.ttf
-./fonts/Hacen Tunisia/Hacen Tunisia.ttf
-./fonts/ae/ae_Nagham.ttf
-./fonts/ae/ae_Dimnah.ttf
-./fonts/HACEN_TYPOGRAPHER_BOOK/HACEN_TYPOGRAPHER_BOOK.TTF
-./fonts/shekari/shekari.ttf
-./fonts/Amiri/Amiri-Italic.ttf
-./fonts/Hacen Maghreb/Hacen Maghreb.ttf
-./fonts/BFarnaz/BFarnaz.ttf
-./fonts/ae/ae_Sindibad.ttf
-./fonts/SC_KHALID/SC_KHALID.ttf
-./fonts/BBardiya/BBardiya.ttf
-./fonts/BFantezy/BFantezy.ttf
-./fonts/Almarai/Almarai-Regular.ttf
-./fonts/Hacen/Hacen-Algeria-Hd.ttf
-./fonts/Hacen-Beirut-Light/Hacen-Beirut-Light.ttf
-./fonts/Ruwudu/Ruwudu-Bold.ttf
-./fonts/HACEN_PROMOTER_LT/HACEN_PROMOTER_LT.TTF
-./fonts/BOUTROS_ADS_BOLD/BOUTROS_ADS_BOLD.TTF
-./fonts/Hacen Beirut/Hacen Beirut.ttf
-./fonts/BBaran/BBaran.ttf
-./fonts/FFTaweel-Bold/FFTaweel-Bold.ttf
-./fonts/AdvertisingLight/AdvertisingLight.ttf
-./fonts/DTHULUTH/DTHULUTH-II-1.ttf
-./fonts/ONE/ONE.ttf
-./fonts/NotoNaskhArabic/NotoNaskhArabic-Regular.ttf
-./fonts/Arian-LT-1/Arian-LT-1.ttf
-./fonts/Qatar2022Arabic/Qatar2022Arabic-Bold.ttf
-./fonts/4_6D/4_6D.ttf
-./fonts/b/B_YAGUT.TTF
-./fonts/Amiri/Amiri-Regular.ttf
-./fonts/Sukar Regular/Sukar Regular.ttf
-./fonts/Hacen Digital Arabia/Hacen Digital Arabia.ttf
-./fonts/AraHamah1964B/AraHamah1964B-Bold.ttf
-./fonts/BOUTROS_ADS_CONDENSED_BOLD/BOUTROS_ADS_CONDENSED_BOLD.TTF
-./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Medium.ttf
-./fonts/ae/ae_Rasheeq_bold.ttf
-./fonts/ae_AlManzomah/ae_AlManzomah.ttf
-./fonts/FFTaweel/FFTaweel-Bold.ttf
-./fonts/DimaUbuntu/DimaUbuntu.ttf
-./fonts/Aljazeera/Aljazeera.ttf
-./fonts/VIP/VIP-TIM-Thin.ttf
-./fonts/Hacen Tunisia Lt/Hacen Tunisia Lt.ttf
-./fonts/Tajawal/Tajawal-Light.ttf
-./fonts/DUBAI/DUBAI-LIGHT.TTF
-./fonts/GaliModern-Medium/GaliModern-Medium.ttf
-./fonts/Lemonada/Lemonada-SemiBold.ttf
-./fonts/KacstFarsi/KacstFarsi.ttf
-./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Bold.ttf
-./fonts/KacstOneFixed/KacstOneFixed.ttf
-./fonts/Vazirmatn/static/Vazirmatn-Regular.ttf
-./fonts/GaliModern-UltraLight/GaliModern-UltraLight.ttf
-./fonts/ae/ae_Petra.ttf
-./fonts/AraHamah1982/AraHamah1982-Regular.ttf
-./fonts/DimaHallFetica22/DimaHallFetica22.ttf
-./fonts/Handjet/static/Handjet-ExtraBold.ttf
-./fonts/truetypewriter/TruetypewriterPolyglott-mELa.ttf
-./fonts/BritishCouncil-Arabic-Bold-Italic/BritishCouncil-Arabic-Bold-Italic.ttf
-./fonts/ae/AE_ALMATEEN_BOLD.TTF
-./fonts/ali-meshref/ali-meshref.ttf
-./fonts/bader_al merkaz/bader_al merkaz.ttf
-./fonts/117/117-Barada-Reqa.ttf
-./fonts/Droid_Arabic_kufi/DroidKufi-Regular.ttf
-./fonts/Abomsaab Regular/Abomsaab Regular.ttf
-./fonts/Molhim_Bold/Molhim_Bold.ttf
-./fonts/Lateef/Lateef-Regular.ttf
-./fonts/djadli_OTFal/djadli_OTFal-Qabas-Slant.ttf
-./fonts/HSN_sadiyah/HSN_sadiyah.ttf
-./fonts/BKarim/BKarim.ttf
-./fonts/DimaBarf2/DimaBarf2.ttf
-./fonts/Zain/Zain-LightItalic.ttf
-./fonts/Kufam/static/Kufam-Regular.ttf
-./fonts/DimaShekasteh/DimaShekasteh.ttf
-./fonts/riyad/riyad-bank-Light.ttf
-./fonts/DimaSalam/DimaSalam.ttf
-./fonts/Al-naqaaa-S/Al-naqaaa-S.ttf
-./fonts/scheherazade/Scheherazade-o3VB.ttf
-./fonts/GE-Cap-Medium/GE-Cap-Medium.ttf
-./fonts/Estedad/Estedad-Light.ttf
-./fonts/KacstPoster/KacstPoster.ttf
-./fonts/mohammed/mohammed3.ttf
-./fonts/BMasdBdI/BMasdBdI.ttf
-./fonts/HACEN_LINER_SCREEN/HACEN_LINER_SCREEN.TTF
-./fonts/DimaShekari/DimaShekari.ttf
-./fonts/Vazirmatn/Vazirmatn-VariableFont_wght.ttf
-./fonts/MOTKEN_K_TRAFFIC/MOTKEN_K_TRAFFIC.TTF
-./fonts/Arian-LT-Demi-1/Arian-LT-Demi-1.ttf
-./fonts/Hamdy/Hamdy-V2-Bold.ttf
-./fonts/Fanni/Fanni.ttf
-./fonts/Cairo_Play/static/CairoPlay-Light.ttf
-./fonts/Hacen Saudi Arabia/Hacen Saudi Arabia.ttf
-./fonts/Mada/static/Mada-Black.ttf
-./fonts/Kufyan Arabic Bold/Kufyan Arabic Bold.ttf
-./fonts/ae/ae_Nada.ttf
-./fonts/fantazy/fantazy.ttf
-./fonts/ae/ae_Tholoth.ttf
-./fonts/KHALAAD_HADEEL/KHALAAD_HADEEL.TTF
-./fonts/fromAkram/Fonts/Susan.TTF
-./fonts/Cairo_Play/static/CairoPlay-Regular.ttf
-./fonts/Hacen Promoter Broadcast/Hacen Promoter Broadcast.ttf
-./fonts/Tajawal/Tajawal-ExtraBold.ttf
-./fonts/Aref_Menna Light/Aref_Menna Light.ttf
-./fonts/BOUTROS_ADS_INLINE_BOLD/BOUTROS_ADS_INLINE_BOLD.TTF
-./fonts/HACEN_PROMOTER_MD/HACEN_PROMOTER_MD.TTF
-./fonts/Lateef/Lateef-Medium.ttf
-./fonts/mothanna_0_02/Mothanna-Oblique.ttf
-./fonts/KAMRB_SF/KAMRB_SF.ttf
-./fonts/HACEN_DALAL/HACEN_DALAL.TTF
-./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf
-./fonts/HACEN_CASABLANCA_HEAVY/HACEN_CASABLANCA_HEAVY.TTF
-./fonts/HACEN_VANILLA/HACEN_VANILLA.TTF
-./fonts/Aref_Ruqaa/ArefRuqaa-Regular.ttf
-./fonts/VIP Golan/VIP Golan.ttf
-./fonts/BRoya/BRoya.ttf
-./fonts/arabswell_/arabswell_2.ttf
-./fonts/SC_REHAN/SC_REHAN.TTF
-./fonts/Hacen Tunisia Bold/Hacen Tunisia Bold.ttf
-./fonts/Hacen Tunisia Bd/Hacen Tunisia Bd.ttf
-./fonts/Zain/Zain-Black.ttf
-./fonts/TanseekModernProArabic/TanseekModernProArabic-ExBold.ttf
-./fonts/Cairo_Play/static/CairoPlay-ExtraLight.ttf
-./fonts/al/AL-FARES.TTF
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Light.ttf
-./fonts/Rubik/static/Rubik-ExtraBold.ttf
-./fonts/ae/ae_Tarablus.ttf
-./fonts/Tajawal/Tajawal-Regular.ttf
-./fonts/Mj_Elit_ufont.ir_/Mj_Elit_ufont.ir_.ttf
-./fonts/KHALAAD_NOORA/KHALAAD_NOORA.TTF
-./fonts/ae/ae_Mashq_bold.ttf
-./fonts/nazli/nazli.ttf
-./fonts/fromAkram/Fonts/DWNSPOUT.TTF
-./fonts/Arbaeen_DownloadSoftware.iR_/Arbaeen_DownloadSoftware.iR_.ttf
-./fonts/BNikiOI/BNikiOI.ttf
-./fonts/Kufam/static/Kufam-ExtraBoldItalic.ttf
-./fonts/DimaThulth2/DimaThulth2.ttf
-./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Medium.ttf
-./fonts/BalooBhaijaan/BalooBhaijaan-Regular.ttf
-./fonts/Hacen Extender X4 Super Fit/Hacen Extender X4 Super Fit.ttf
-./fonts/Hacen/Hacen-Algeria-Bd.ttf
-./fonts/KAMR__SF/KAMR__SF.ttf
-./fonts/Estedad/Estedad-Black.ttf
-./fonts/Shams/Shams.ttf
-./fonts/Kalema /Kalema - Copy.ttf
-./fonts/PalatinoSansArabic/PalatinoSansArabic-Bold.ttf
-./fonts/Shoroq Font/Shoroq Font.ttf
-./fonts/DimaPlatinum/DimaPlatinum.ttf
-./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf
-./fonts/ae/ae_Furat.ttf
-./fonts/ae/ae_Arab.ttf
-./fonts/A-Massir-Spray/A-Massir-Spray.ttf
-./fonts/Oi/Oi-Regular.ttf
-./fonts/Almarai/Almarai-Bold.ttf
-./fonts/Droid_Arabic_kufi/DroidKufi-Bold.ttf
-./fonts/GaliModern-SemiBold/GaliModern-SemiBold.ttf
-./fonts/FrutigerLTArabic/FrutigerLTArabic-45Light.ttf
-./fonts/ae/ae_Graph.ttf
-./fonts/Dima-Mitra/Dima-Mitra.ttf
-./fonts/Hacen Trarza/Hacen Trarza.ttf
-./fonts/Cairo-Light-2/Cairo-Light-2.ttf
-./fonts/boutros/boutros5.ttf
-./fonts/BTehranI/BTehranI.ttf
-./fonts/BNaznnBd/BNaznnBd.ttf
-./fonts/al/al-hadaribold-1.ttf
-./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-Light.ttf
-./fonts/XB Zar BdIt/XB Zar BdIt.ttf
-./fonts/Insan/Insan-Bold.ttf
-./fonts/BNikiO/BNikiO.ttf
-./fonts/Dima-Classic-Medium/Dima-Classic-Medium.ttf
-./fonts/fromAkram/Fonts/Dawlat.TTF
-./fonts/DINArabic-CondLight/DINArabic-CondLight.ttf
-./fonts/A/A-Sogand.ttf
-./fonts/Tajawal/Tajawal-Bold.ttf
-./fonts/ae/ae_Hor.ttf
-./fonts/BOAHMED_ALHARF_BOLD/BOAHMED_ALHARF_BOLD.TTF
-./fonts/AbdoMaster/AbdoMaster-DemiBold _.ttf
-./fonts/Hacen Casablanca Lt/Hacen Casablanca Lt.ttf
-./fonts/DINArabic-CondBlack/DINArabic-CondBlack.ttf
-./fonts/Abdo Misr Black/Abdo Misr Black.ttf
-./fonts/Scheherazade_New/ScheherazadeNew-Bold.ttf
-./fonts/hacen-samra/hacen-samra.ttf
-./fonts/Hacen Newspaper/Hacen Newspaper.ttf
-./fonts/Fustat/Fustat-VariableFont_wght.ttf
-./fonts/Expo Arabic/alfont_com_AlFont_com_ExpoArabic-SemiBold.ttf
-./fonts/Noon/Noon.ttf
-./fonts/Kufyan Arabic Thin/Kufyan Arabic Thin.ttf
-./fonts/Lateef/Lateef-ExtraLight.ttf
-./fonts/Mada/static/Mada-ExtraLight.ttf
-./fonts/Amiri Slanted/Amiri Slanted.ttf
-./fonts/014.ttf
-./fonts/BMah/BMah.ttf
-./fonts/advertising/advertising2.ttf
-./fonts/Ruwudu/Ruwudu-Medium.ttf
-./fonts/HSN_Ibtisam/HSN_Ibtisam.ttf
-./fonts/BKamrnBd/BKamrnBd.ttf
-./fonts/Rubik/static/Rubik-Italic.ttf
-./fonts/4_E8/4_E8.ttf
-./fonts/BElham/BElham.ttf
-./fonts/MolsaqArabic-ExtraLight/MolsaqArabic-ExtraLight.ttf
-./fonts/GaliModern-ExtraLight/GaliModern-ExtraLight.ttf
-./fonts/fromAkram/Fonts/DTNASKH4.TTF
-./fonts/Changa/static/Changa-ExtraLight.ttf
-./fonts/BZarBd/BZarBd.ttf
-./fonts/BTabssom/BTabssom.ttf
-./fonts/BigVesta Arabic Bold/BigVesta Arabic Bold.ttf
-./fonts/Amiri Regular/Amiri Regular.ttf
-./fonts/Dubai-Bold/Dubai-Bold.ttf
-./fonts/AD/AD-Rsail Bold.ttf
-./fonts/fromAkram/Fonts/DWNSH2.TTF
-./fonts/ghanem-Medium/ghanem-Medium.ttf
-./fonts/Fustat/static/Fustat-Regular.ttf
-./fonts/BNikiS/BNikiS.ttf
-./fonts/DimaBahman/DimaBahman.ttf
-./fonts/aref/aref-regular.ttf
-./fonts/HSN_Razan_regular/HSN_Razan_regular.ttf
-./fonts/Hacen_Tehran/Hacen_Tehran.ttf
-./fonts/Sevin/Sevin.ttf
-./fonts/aga/AgaCordobaV2QrtbBold-W0vV.ttf
-./fonts/18 Khebrat Musamim Regular/18 Khebrat Musamim Regular.ttf
-./fonts/AbdoMaster/AbdoMaster-Book _.ttf
-./fonts/Thulth-Tharwat-Emara-Golden/Thulth-Tharwat-Emara-Golden.ttf
-./fonts/VIP/VIP-Hakm-Regular-2016.ttf
-./fonts/Changa/static/Changa-Light.ttf
-./fonts/BOUTROS_ADS_SHADOW_BOLD/BOUTROS_ADS_SHADOW_BOLD.TTF
-./fonts/DG/DG-Modal3at-Med.ttf
-./fonts/Lateef/Lateef-Light.ttf
-./fonts/A.Thuluth_p30download.com/A.Thuluth_p30download.com.ttf
-./fonts/Aref_Ruqaa/ArefRuqaa-Bold.ttf
-./fonts/Mada/static/Mada-Medium.ttf
-./fonts/A.Farhood/A.Farhood.ttf
-./fonts/Hacen Saudi Arabia XL/Hacen Saudi Arabia XL.ttf
-./fonts/mutawazi/Mutawazi-dEeZ.ttf
-./fonts/BSINABD/BSINABD.TTF
-./fonts/ae/ae_Jet.ttf
-./fonts/K_SINA/K_SINA.TTF
-./fonts/Hacen Promoter Lt/Hacen Promoter Lt.ttf
-./fonts/persian/persian-sooreh-.ttf
-./fonts/GEDinkum-Regular/GEDinkum-Regular.ttf
-./fonts/djadli_OTFal/djadli_OTFal-Qabas-Extrude.ttf
-./fonts/rabat/rabat.ttf
-./fonts/aga/AgaSindibadV2SndbdBold-ZWmq.ttf
-./fonts/Maghribi Assile/Maghribi Assile.ttf
-./fonts/boutros/boutros2.ttf
-./fonts/BNasimBd/BNasimBd.ttf
-./fonts/Harmattan/Harmattan-Bold.ttf
-./fonts/GaliModern-UltraLight-1/GaliModern-UltraLight-1.ttf
-./fonts/Adobe Arabic SHIN Stout Bold/Adobe Arabic SHIN Stout Bold.ttf
-./fonts/Markazi_Text/static/MarkaziText-Bold.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-Light.ttf
-./fonts/Kelma_/Kelma_-MagdySoliman-Regular.ttf
-./fonts/Katibeh/Katibeh-Regular.ttf
-./fonts/Bustan Bold/Bustan Bold.ttf
-./fonts/BShadi/BShadi.ttf
-./fonts/HSN_Golden/HSN_Golden.ttf
-./fonts/HACEN_SAMRA_LT/HACEN_SAMRA_LT.TTF
-./fonts/Damavand-Light/Damavand-Light.ttf
-./fonts/BSepidhO/BSepidhO.ttf
-./fonts/Frutiger-LT-Arabic-55-Roman/Frutiger-LT-Arabic-55-Roman.ttf
-./fonts/fromAkram/Fonts/DTNASKH2.TTF
-./fonts/Expo Arabic/Expo Arabic Medium.ttf
-./fonts/Scheherazade_New/ScheherazadeNew-Regular.ttf
-./fonts/Droid/Droid-Arabic-Kufi.ttf
-./fonts/DimaBarf/DimaBarf.ttf
-./fonts/AbdoMaster/AbdoMaster-Bold _.ttf
-./fonts/Beiruti/Beiruti-VariableFont_wght.ttf
-./fonts/Sada Regular/Sada Regular.ttf
-./fonts/Barada/Barada-Reqa.ttf
-./fonts/MotkenNoqtaii/MotkenNoqtaii.ttf
-./fonts/BBaranOI/BBaranOI.ttf
-./fonts/fromAkram/Fonts/DIWANLTR.TTF
-./fonts/Sada Bold/Sada Bold.ttf
-./fonts/Hacen-Promoter/Hacen-Promoter.ttf
-./fonts/tradbdo/tradbdo.ttf
-./fonts/Parvin-Regular/Parvin-Regular.ttf
-./fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf
-./fonts/diwany/diwany-edited.ttf
-./fonts/al/Al-samt-tow.ttf
-./fonts/Rakkas/Rakkas-Regular.ttf
-./fonts/Graffiti/Graffiti-Font-3D.ttf
-./fonts/GE-Contrast/GE-Contrast-Bold.ttf
-./fonts/GaliModern-Light/GaliModern-Light.ttf
-./fonts/Bahij_TheSansArabic/Bahij_TheSansArabic-Plain.ttf
-./fonts/Expo Arabic/Expo Arabic Book.ttf
-./fonts/SC_HANI/SC_HANI.ttf
-./fonts/Hend Font Regular/Hend Font Regular.ttf
-./fonts/FFTaweel-BoldStamp/FFTaweel-BoldStamp.ttf
-./fonts/Hacen Casablanca/Hacen Casablanca.ttf
-./fonts/Readex_Pro/static/ReadexPro-Medium.ttf
-./fonts/BritishCouncil-Arabic-Bold/BritishCouncil-Arabic-Bold.ttf
-./fonts/Mada/static/Mada-Regular.ttf
-./fonts/GRKUFMAZ/GRKUFMAZ.ttf
-./fonts/HACEN_SUDAN_BD/HACEN_SUDAN_BD.TTF
-./fonts/K_TRAFFIC/K_TRAFFIC.TTF
-./fonts/phalls_khodkar/phalls_khodkar.ttf
-./fonts/Rubik/static/Rubik-LightItalic.ttf
-./fonts/DimaMakhtom/DimaMakhtom.ttf
-./fonts/BKaj/BKaj.ttf
-./fonts/HACEN_DALAL_TEXT/HACEN_DALAL_TEXT.TTF
-./fonts/Noto_Sans_Arabic/NotoSansArabic-Thin.ttf
-./fonts/Shekari Font/Shekari Font.ttf
-./fonts/MOTKEN_DAEIRA/MOTKEN_DAEIRA.TTF
-./fonts/AL_EBDAA/AL_EBDAA.TTF
-./fonts/ae/ae_Japan.ttf
-./fonts/Lateef/Lateef-Bold.ttf
-./fonts/fromAkram/Fonts/PTBLDHAD.TTF
-./fonts/SC_HANI/SC_HANI.TTF
-./fonts/ae/ae_Electron.ttf
-./fonts/MOTKEN_K_TABASSOM/MOTKEN_K_TABASSOM.TTF
-./fonts/AraHamahAlThawra/AraHamahAlThawra-Regular.ttf
-./fonts/ElMessiri-Medium/ElMessiri-Medium.ttf
-./fonts/Cairo/Cairo-Bold.ttf
-./fonts/Zain/Zain-Light.ttf
-./fonts/FFKhallab-Italic-1/FFKhallab-Italic-1.ttf
-./fonts/DINArabic/DINArabic-CondThin.ttf
-./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-VariableFont_wght.ttf
-./fonts/Marhey/static/Marhey-Regular.ttf
-./fonts/SC_GULF/SC_GULF.TTF
-./fonts/BBaranI/BBaranI.ttf
-./fonts/Kufam/static/Kufam-Medium.ttf
-./fonts/AraHamahZanki/AraHamahZanki-Regular.ttf
-./fonts/ScheherazadeRegOT/ScheherazadeRegOT.ttf
-./fonts/K_NASIM/K_NASIM.TTF
-./fonts/DimaNastalighTahriri-1/DimaNastalighTahriri-1.ttf
-./fonts/Hasan/Hasan-Alquds-Unicode-Light.ttf
-./fonts/Zain/Zain-ExtraLight.ttf
-./fonts/almwaheb/almwaheb-by-A4D.ttf
-./fonts/Droid.Arabic.Naskh_.Regular_DownloadSoftware.iR_/Droid.Arabic.Naskh_.Regular_DownloadSoftware.iR_.ttf
-./fonts/Kufam/static/Kufam-Black.ttf
-./fonts/Hacen Egypt/Hacen Egypt.ttf
-./fonts/22016/22016-adobearabic.ttf
-./fonts/HACEN_CASABLANCA/HACEN_CASABLANCA.TTF
-./fonts/HACEN_BEIRUT_LIGHT/HACEN_BEIRUT_LIGHT.TTF
-./fonts/ae/ae_AlHor.ttf
-./fonts/Nawel/Nawel.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-Black.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Regular.ttf
-./fonts/arabic/ArabicFont2013-q6jV.ttf
-./fonts/BAsemanI/BAsemanI.ttf
-./fonts/Droid/Droid-Sans-Arabic.ttf
-./fonts/HSN_Razan_bold/HSN_Razan_bold.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-ExtraBold.ttf
-./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-SemiBold.ttf
-./fonts/SC_TARABLUS/SC_TARABLUS.ttf
-./fonts/Hacen Casablanca Hd/Hacen Casablanca Hd.ttf
-./fonts/BElmB/BElmB.ttf
-./fonts/Mirza/Mirza-Regular.ttf
-./fonts/Hacen Freehand/Hacen Freehand.ttf
-./fonts/SC_LUJAYN/SC_LUJAYN.TTF
-./fonts/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth,wght.ttf
-./fonts/Tajawal/Tajawal-ExtraLight.ttf
-./fonts/BShiraz/BShiraz.ttf
-./fonts/DroidNaskh/DroidNaskh-Regular.ttf
-./fonts/Insan/Insan-Thin.ttf
-./fonts/MARWAEL_FH/MARWAEL_FH02.TTF
-./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Regular.ttf
-./fonts/MotkenDaira/MotkenDaira.TTF
-./fonts/BNikooI/BNikooI.ttf
-./fonts/BCompset/BCompset.ttf
-./fonts/Mada/static/Mada-Light.ttf
-./fonts/BArshia/BArshia.ttf
-./fonts/TanseekModernProArabic/TanseekModernProArabic-Bold.ttf
-./fonts/Hacen-Casablanca-Heavy/Hacen-Casablanca-Heavy.ttf
-./fonts/Molhim (1)/Molhim (1).ttf
-./fonts/bein/bein-ar-black.ttf
-./fonts/MOTKEN_K_KAMRAN/MOTKEN_K_KAMRAN.TTF
-./fonts/Marhey/Marhey-VariableFont_wght.ttf
-./fonts/FrutigerLTArabic/FrutigerLTArabic-75Black.ttf
-./fonts/FFTaweel-Stamp/FFTaweel-Stamp.ttf
-./fonts/PetraGlyphDisplayLight /PetraGlyphDisplayLight 2.ttf
-./fonts/HSN_Layan/HSN_Layan.ttf
-./fonts/KHALAAD_ABEER/KHALAAD_ABEER.TTF
-./fonts/Hesham-/Hesham-.ttf
-./fonts/Changa/Changa-VariableFont_wght.ttf
-./fonts/Janna-LT-Regular/Janna-LT-Regular.ttf
-./fonts/b/B_ARSHIA.TTF
-./fonts/BZaman/BZaman.ttf
-./fonts/ElMessiri-Bold-2/ElMessiri-Bold-2.ttf
-./fonts/Mj_Yalda_0/Mj_Yalda_0.ttf
-./fonts/Dimathuluth/Dimathuluth.ttf
-./fonts/Monadi/Monadi.ttf
-./fonts/KHALAAD_DIALA/KHALAAD_DIALA.TTF
-./fonts/Mj_Tasmeem/Mj_Tasmeem.ttf
-./fonts/GE-Curves-Medium/GE-Curves-Medium.ttf
-./fonts/DimaKereshmeh/DimaKereshmeh.ttf
-./fonts/Abdo Logo Regular/Abdo Logo Regular.ttf
-./fonts/HSN_Moalla/HSN_Moalla.ttf
-./fonts/DimaMoalemBlack/DimaMoalemBlack.ttf
-./fonts/afsaneh/afsaneh.ttf
-./fonts/fromAkram/Fonts/Sima.TTF
-./fonts/DimaDigital/DimaDigital.ttf
-./fonts/Zain/Zain-ExtraBold.ttf
-./fonts/MOTKEN_K_HOMA/MOTKEN_K_HOMA.TTF
-./fonts/Hasan_Hiba/Hasan_Hiba.ttf
-./fonts/Mirza/Mirza-Medium.ttf
-./fonts/BBaranO/BBaranO.ttf
-./fonts/Insan/Insan-Regular.ttf
-./fonts/BHoma/BHoma.ttf
-./fonts/boutros/boutros.ttf
-./fonts/Amiri Bold/Amiri Bold.ttf
-./fonts/Vazirmatn/static/Vazirmatn-Bold.ttf
-./fonts/Almarai/Almarai-ExtraBold.ttf
-./fonts/Muslimah-Light/Muslimah-Light.ttf
-./fonts/azhary/azhary.ttf
-./fonts/KacstDecorative/KacstDecorative.ttf
-./fonts/SC_SHARJAH/SC_SHARJAH.TTF
-./fonts/FFTaweel/FFTaweel-Regular.ttf
-./fonts/air/air-arabia-3.ttf
-./fonts/HACEN_SAHAFA/HACEN_SAHAFA.TTF
-./fonts/BHamid/BHamid.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-SemiBold.ttf
-./fonts/Scheherazade-Regular/Scheherazade-Regular.ttf
-./fonts/BoutrosNewsH1/BoutrosNewsH1-Bold.ttf
-./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-Bold.ttf
-./fonts/Rubik/static/Rubik-BlackItalic.ttf
-./fonts/alsamt diwani (1)/alsamt diwani (1).ttf
-./fonts/MOTKEN_K_SINA/MOTKEN_K_SINA.TTF
-./fonts/Aljazeera-font/Al-Jazeera-Arabic-Regular.ttf
-./fonts/Rubik/static/Rubik-Black.ttf
-./fonts/SC_OUHOD/SC_OUHOD.TTF
-./fonts/AraHamahAlHorra/AraHamahAlHorra-Regular.ttf
-./fonts/MOHAMMAD_LAHA/MOHAMMAD_LAHA.TTF
-./fonts/Cairo/Cairo-Light.ttf
-./fonts/Adobe Arabic SHIN Typo Bold/Adobe Arabic SHIN Typo Bold.ttf
-./fonts/decotype/decotype-thuluth-ii.ttf
-./fonts/WasmFontBold/WasmFontBold.ttf
-./fonts/aref_ graffiti/aref_ graffiti.ttf
-./fonts/Massir.Ballpoint/Massir.Ballpoint.ttf
-./fonts/BritishCouncil-Arabic-Light-Italic/BritishCouncil-Arabic-Light-Italic.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Medium.ttf
-./fonts/DimaSogand/DimaSogand-new.ttf
-./fonts/Markazi_Text/static/MarkaziText-SemiBold.ttf
-./fonts/Kufam/static/Kufam-Bold.ttf
-./fonts/Readex_Pro/static/ReadexPro-Regular.ttf
-./fonts/Expo Arabic/Expo Arabic Bold.ttf
-./fonts/SC_SHMOOKH_/SC_SHMOOKH_01.TTF
-./fonts/Alkalami/Alkalami-Regular.ttf
-./fonts/Hacen-Jordan/Hacen-Jordan.ttf
-./fonts/BZar/BZar.ttf
-./fonts/B-amir/B-amir.ttf
-./fonts/arbfonts/arbfonts-samt-7017 (1).ttf
-./fonts/BTawfigO/BTawfigO.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-SemiBold.ttf
-./fonts/Hacen Liner Print-out/Hacen Liner Print-out.ttf
-./fonts/AlHurra Font Regular/AlHurra Font Regular.ttf
-./fonts/Mada/static/Mada-ExtraBold.ttf
-./fonts/KHALAAD_SIMA/KHALAAD_SIMA.TTF
-./fonts/Frutiger-LT-Arabic-57-Cn/Frutiger-LT-Arabic-57-Cn.ttf
-./fonts/Hacen-Digital-Arabia-XL/Hacen-Digital-Arabia-XL.ttf
-./fonts/Hacen Beirut Md/Hacen Beirut Md.ttf
-./fonts/Fustat/static/Fustat-ExtraBold.ttf
-./fonts/BMashhad/BMashhad.ttf
-./fonts/Hacen Dalal Text/Hacen Dalal Text.ttf
-./fonts/Hacen Beirut Hd/Hacen Beirut Hd.ttf
-./fonts/BNikiBI/BNikiBI.ttf
-./fonts/Hacen Sahafa/Hacen Sahafa.ttf
-./fonts/BFerdosi/BFerdosi.ttf
-./fonts/Kufigraph Font/Kufigraph Font.ttf
-./fonts/ae/AeAlarabiya-WGzA.ttf
-./fonts/BNikiSI/BNikiSI.ttf
-./fonts/redcal-arabic-regular/RedCal Arabic Regular/RedCal Arabic Regular.ttf
-./fonts/Frutiger-LT-Arabic-77-Black-Cn/Frutiger-LT-Arabic-77-Black-Cn.ttf
-./fonts/HACEN_LINER_XXL/HACEN_LINER_XXL.TTF
-./fonts/ArefRuqaa/ArefRuqaa-Bold-1.ttf
-./fonts/Handjet/static/Handjet-Regular.ttf
-./fonts/AraHalaBoShe/AraHalaBoShe-sha-Regular.ttf
-./fonts/Handjet/static/Handjet-SemiBold.ttf
-./fonts/BKoodakO/BKoodakO.ttf
-./fonts/Sukar Black/Sukar Black.ttf
-./fonts/AbdoMaster/AbdoMaster-ExtraLight _.ttf
-./fonts/HSN_Khalid/HSN_Khalid.ttf
-./fonts/ElMessiri/ElMessiri-SemiBold.ttf
-./fonts/AAAGoldenLotus Stg1_Ver1 Regular/AAAGoldenLotus Stg1_Ver1 Regular.ttf
-./fonts/Kufyan Arabic Medium/Kufyan Arabic Medium.ttf
-./fonts/SC_KHALID/SC_KHALID.TTF
-./fonts/Damavand-DemiBold/Damavand-DemiBold.ttf
-./fonts/DINArabic/DINArabic-Cond.ttf
-./fonts/BOUTROS_ADS_LIGHT/BOUTROS_ADS_LIGHT.TTF
-./fonts/Vazirmatn/static/Vazirmatn-Thin.ttf
-./fonts/Sonbili/Sonbili.ttf
-./fonts/ae_Sharjah/ae_Sharjah.ttf
-./fonts/Arian-LT-Light-1/Arian-LT-Light-1.ttf
-./fonts/Tasees/Tasees-Bold.ttf
-./fonts/ElMessiri-Regular/ElMessiri-Regular.ttf
-./fonts/ElMessiri-SemiBold/ElMessiri-SemiBold.ttf
-./fonts/VIP/VIP-Hakm-Thin-2016.ttf
-./fonts/Changa/static/Changa-Regular.ttf
-./fonts/Mada/static/Mada-SemiBold.ttf
-./fonts/BritishCouncil/BritishCouncil-Arabic-Black.ttf
-./fonts/Thulth/Thulth-Tharwat-Emara-Golden.ttf
-./fonts/Lemonada/Lemonada-Bold.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-ExtraLight.ttf
-./fonts/Mj_Moharram-Bold_0-1/Mj_Moharram-Bold_0-1.ttf
-./fonts/Beiruti/static/Beiruti-Light.ttf
-./fonts/JannaLT/JannaLT-Bold.ttf
-./fonts/rabi3/rabi3.ttf
-./fonts/mohammed/mohammed.ttf
-./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf
-./fonts/XB Zar/XB Zar.ttf
-./fonts/fromAkram/Fonts/DTNASKH0.TTF
-./fonts/Aref_Menna/Aref_Menna-Bold-1.ttf
-./fonts/HacenSaudiArabia/HacenSaudiArabia.ttf
-./fonts/BritishCouncil/BritishCouncil-Arabic-Light.ttf
-./fonts/KHALAAD_SUSAN/KHALAAD_SUSAN.TTF
-./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraLight.ttf
-./fonts/islamic/islamic-seven-tablog3alm.ttf
-./fonts/Elegant/Elegant-ar.ttf
-./fonts/DUBAI/DUBAI-MEDIUM.TTF
-./fonts/XB Zar It/XB Zar It.ttf
-./fonts/Kufam/Kufam-Italic-VariableFont_wght.ttf
-./fonts/KHALAAD_SARA/KHALAAD_SARA.TTF
-./fonts/Cairo_Play/static/CairoPlay-SemiBold.ttf
-./fonts/KacstBook/KacstBook.ttf
-./fonts/GE-Narrow-Light/GE-Narrow-Light.ttf
-./fonts/Ahrar Font/Ahrar Font.ttf
-./fonts/BADER_AL_GORDABIA/BADER_AL_GORDABIA.TTF
-./fonts/AbdoMasteroutline _/AbdoMasteroutline _.ttf
-./fonts/Fustat/static/Fustat-SemiBold.ttf
-./fonts/Lateef/Lateef-SemiBold.ttf
-./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Thin.ttf
-./fonts/HACEN_NEWSPAPER/HACEN_NEWSPAPER.TTF
-./fonts/Hacen Trarza Lt/Hacen Trarza Lt.ttf
-./fonts/Handjet/static/Handjet-Medium.ttf
-./fonts/K_TABASSOM/K_TABASSOM.TTF
-./fonts/MOTKEN_NOQTA/MOTKEN_NOQTA.TTF
-./fonts/Readex_Pro/static/ReadexPro-SemiBold.ttf
-./fonts/aga/AgaGranadaGrntV2-E9Ar.ttf
-./fonts/BBadr/BBadr.ttf
-./fonts/Janna/JannaLT-Regular.ttf
-./fonts/Hacen Samra Lt/Hacen Samra Lt.ttf
-./fonts/Kufam/Kufam-VariableFont_wght.ttf
-./fonts/Sheba Ye Font/Sheba Ye Font.ttf
-./fonts/Rubik/static/Rubik-Light.ttf
-./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-Thin.ttf
-./fonts/K Kamran/K Kamran.ttf
-./fonts/ae/ae_Sharjah.ttf
-./fonts/Zeytoon/Zeytoon.ttf
-./fonts/arslan/arslan-wessam-b-arslan-wessam-b.ttf
-./fonts/BRoyaBd/BRoyaBd.ttf
-./fonts/Hacen Tunisia Lt (1)/Hacen Tunisia Lt (1).ttf
-./fonts/HACEN_BEIRUT/HACEN_BEIRUT.TTF
-./fonts/ArabicUIText/ArabicUIText.ttf
-./fonts/Hacen Digital Arabia XL/Hacen Digital Arabia XL.ttf
-./fonts/BKarimBd/BKarimBd.ttf
-./fonts/BShirazI/BShirazI.ttf
-./fonts/Mada/static/Mada-Bold.ttf
-./fonts/Gulzar/Gulzar-Regular.ttf
-./fonts/Ferdaos Zd Bold/Ferdaos Zd Bold.ttf
-./fonts/fromAkram/Fonts/DWNOUTSH.TTF
-./fonts/ghanem/ghanem.ttf
-./fonts/AD/AD-STOOR Regular.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-Bold.ttf
-./fonts/fromAkram/Fonts/noora.TTF
-./fonts/Hacen Liner Print-out Light/Hacen Liner Print-out Light.ttf
-./fonts/Cairo/Cairo-ExtraLight.ttf
-./fonts/Droid.Arabic.Kufi_DownloadSoftware.iR_/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
-./fonts/Estedad/Estedad-Bold.ttf
-./fonts/18410/18410-ah-naskh-hadith(1).ttf
-./fonts/Beiruti/static/Beiruti-Medium.ttf
-./fonts/fromAkram/Fonts/DTHULUTH.TTF
-./fonts/AraHamahSahetAlAssi/AraHamahSahetAlAssi-Regular.ttf
-./fonts/Kharabeesh/Kharabeesh-Font.ttf
-./fonts/K_HOMA/K_HOMA.TTF
-./fonts/Hasan/Hasan-Alquds-Unicode.ttf
-./fonts/Assaf Font/Assaf Font.ttf
-./fonts/SC_ALYERMOOK/SC_ALYERMOOK.ttf
-./fonts/Noto_Kufi_Arabic/NotoKufiArabic-VariableFont_wght.ttf
-./fonts/aga/AgaMashqV2MshqBold-xj6j.ttf
-./fonts/Vazirmatn/static/Vazirmatn-SemiBold.ttf
-./fonts/e68ffdd6/e68ffdd6-a443-4f4c-ae58-687e86559972.ttf
-./fonts/aga/AgaCordobaV3Qrtb-aW4a.ttf
-./fonts/Rubik/static/Rubik-Regular.ttf
-./fonts/DUBAI/DUBAI-BOLD.TTF
-./fonts/Almarai/Almarai-Light.ttf
-./fonts/KFGQPC Uthman Taha Naskh Regular/KFGQPC Uthman Taha Naskh Regular.ttf
-./fonts/advertising/advertising3.ttf
-./fonts/BKamranO/BKamranO.ttf
-./fonts/DG/DG-Sahabah-Bold-1.ttf
-./fonts/Beiruti/static/Beiruti-Bold.ttf
-./fonts/Hacen Extender X4 (1)/Hacen Extender X4 (1).ttf
-./fonts/Ruwudu/Ruwudu-SemiBold.ttf
-./fonts/Fustat/static/Fustat-ExtraLight.ttf
-./fonts/ae/ae_Nice.ttf
-./fonts/Hacen Digital Arabia LT/Hacen Digital Arabia LT.ttf
-./fonts/Hacen-Dalal-St/Hacen-Dalal-St.ttf
-./fonts/boutros/boutros3.ttf
-./fonts/nasaq/nasaq.ttf
-./fonts/VIP/VIP-TIM-Black.ttf
-./fonts/Mada/Mada-VariableFont_wght.ttf
-./fonts/ElMessiri/ElMessiri-Regular.ttf
-./fonts/A Arghavan Bold/A Arghavan Bold.ttf
-./fonts/BMashdBd/BMashdBd.ttf
-./fonts/4_4F/4_4F.ttf
-./fonts/BritishCouncil-Arabic-Regular/BritishCouncil-Arabic-Regular.ttf
-./fonts/Sara Font/Sara Font.ttf
-./fonts/Vazirmatn/static/Vazirmatn-Black.ttf
-./fonts/Arian-LT-Bold-1/Arian-LT-Bold-1.ttf
-./fonts/STC/STC-Bold.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Black.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Thin.ttf
-./fonts/BYekan/BYekan.ttf
-./fonts/bader_classic/bader_classic.ttf
-./fonts/Changa/static/Changa-SemiBold.ttf
-./fonts/KHALAAD__WAFA/KHALAAD__WAFA.TTF
-./fonts/FrutigerLTArabic/FrutigerLTArabic-65Bold.ttf
-./fonts/HSN_Naskh/HSN_Naskh.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-Medium.ttf
-./fonts/fromAkram/Fonts/wafa.TTF
-./fonts/BOUTROS_ADS_MEDIUMITALIC/BOUTROS_ADS_MEDIUMITALIC.TTF
-./fonts/Abuhmeda /Abuhmeda -f2 Regular.ttf
-./fonts/DG-Ghareeb/DG-Ghareeb-Bold.ttf
-./fonts/maze/MazeFont2-noZY.ttf
-./fonts/black/BlackCloverArabic-PKZeZ.ttf
-./fonts/ae/ae_Shado.ttf
-./fonts/GE-Contrast-Bold/GE-Contrast-Bold.ttf
-./fonts/HACEN_TYPOGRAPHER_HEAVY/HACEN_TYPOGRAPHER_HEAVY.TTF
-./fonts/ae_Arab/ae_Arab.ttf
-./fonts/Harmattan/Harmattan-Medium.ttf
-./fonts/Hacen Maghreb Bd/Hacen Maghreb Bd.ttf
-./fonts/ghanem-bold/ghanem-bold.ttf
-./fonts/Rubik/Rubik-VariableFont_wght.ttf
-./fonts/Hacen-Vanilla/Hacen-Vanilla.ttf
-./fonts/aga/AgaCordobaV2Qrtb-e5ae.ttf
-./fonts/Sulimany/Sulimany.ttf
-./fonts/BMajidS/BMajidS.ttf
-./fonts/SC_ALYERMOOK/SC_ALYERMOOK.TTF
-./fonts/BTrafcBd/BTrafcBd.ttf
-./fonts/BYagutBd/BYagutBd.ttf
-./fonts/AraJozoor/AraJozoor-Regular.ttf
-./fonts/EdilbiSouria/EdilbiSouria.ttf
-./fonts/Dima Font/Dima Font.ttf
-./fonts/AbdoMaster/AbdoMaster-Black _.ttf
-./fonts/ae/ae_Mashq.ttf
-./fonts/Ruwudu/Ruwudu-Regular.ttf
-./fonts/AraHamahKilania/AraHamahKilania-Regular.ttf
-./fonts/Kharabeesh Normal Font/Kharabeesh Normal Font.ttf
-./fonts/AbdoMaster/AbdoMaster-ExtraBold _.ttf
-./fonts/GE-Snd-Book_1/GE-Snd-Book_1.ttf
-./fonts/Kufam/static/Kufam-SemiBoldItalic.ttf
-./fonts/Digistyle Unicode/Digistyle Unicode.ttf
-./fonts/SC_LUJAYN/SC_LUJAYN.ttf
-./fonts/Marhey/static/Marhey-Medium.ttf
-./fonts/Basim Marah Beh Light/Basim Marah Beh Light.ttf
-./fonts/DimaTraffic/DimaTraffic.ttf
-./fonts/KacstArt/KacstArt.ttf
-./fonts/BRose/BRose.ttf
-./fonts/fromAkram/Fonts/Sara.TTF
-./fonts/AdvertisingBold/AdvertisingBold.ttf
-./fonts/mothanna_0_02/Mothanna-Bold.ttf
-./fonts/MOTKEN_NOQTA_II/MOTKEN_NOQTA_II.TTF
-./fonts/SC_REHAN/SC_REHAN.ttf
-./fonts/arbfonts/arbfonts-diwany-thuluth.ttf
-./fonts/BCompsBd/BCompsBd.ttf
-./fonts/mutawazi/MutawaziBold-PYz7.ttf
-./fonts/Hacen Beirut Poster/Hacen Beirut Poster.ttf
-./fonts/Hamada_light_font/Hamada_light_font.ttf
-./fonts/BArabics/BArabics.ttf
-./fonts/BSepideh/BSepideh.ttf
-./fonts/ae/AeCortoba-wPVz.ttf
-./fonts/Baloo_Bhaijaan_2/BalooBhaijaan2-VariableFont_wght.ttf
-./fonts/Droid.Arabic.Kufi_.Bold_DownloadSoftware.iR_/Droid.Arabic.Kufi_.Bold_DownloadSoftware.iR_.ttf
-./fonts/Hacen Typographer/Hacen Typographer.ttf
-./fonts/DimaNiloofar/DimaNiloofar.ttf
-./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-ExtraBold.ttf
-./fonts/HACEN_BEIRUT_MD/HACEN_BEIRUT_MD.TTF
-./fonts/KHALAAD_AL/KHALAAD_AL-ARABEH_2.TTF
-./fonts/bein/bein-ar-normal.ttf
-./fonts/HACEN_BEIRUT_HEADING/HACEN_BEIRUT_HEADING.TTF
-./fonts/Kufyan Arabic UltraLight/Kufyan Arabic UltraLight.ttf
-./fonts/Mirza/Mirza-SemiBold.ttf
-./fonts/AlHurra Font Bold/AlHurra Font Bold.ttf
-./fonts/arabic/ArabicR2013-J25x.ttf
-./fonts/Sarkha Font/Sarkha Font.ttf
-./fonts/BNarenj/BNarenj.ttf
-./fonts/Kufam/static/Kufam-BlackItalic.ttf
-./fonts/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Regular.ttf
-./fonts/AraHamahAlFidaa/AraHamahAlFidaa-Regular.ttf
-./fonts/Cairo_Play/CairoPlay-VariableFont_slnt,wght.ttf
-./fonts/GaliModern-Regular/GaliModern-Regular.ttf
-./fonts/ae/ae_Cortoba.ttf
-./fonts/Rubik/static/Rubik-SemiBold.ttf
-./fonts/SC_AMEEN/SC_AMEEN.ttf
-./fonts/ae/AeElectron-e8w3.ttf
-./fonts/Readex_Pro/ReadexPro-VariableFont_HEXP,wght.ttf
-./fonts/shasenem/shasenem-wefayi.ttf
-./fonts/FFShamelFamily/FFShamelFamily-SansOneBook (1).ttf
-./fonts/Almudid/Almudid.ttf
-./fonts/Scheherazade-Bold-1/Scheherazade-Bold-1.ttf
-./fonts/KHALAAD_DAWLAT/KHALAAD_DAWLAT.TTF
-./fonts/BLotusBd/BLotusBd.ttf
-./fonts/advertising/advertising.ttf
-./fonts/Handjet/static/Handjet-Black.ttf
-./fonts/al/AL-MAJD.TTF
-./fonts/DimaMabella/DimaMabella.ttf
-./fonts/Noto_Nastaliq_Urdu/NotoNastaliqUrdu-VariableFont_wght.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-Regular.ttf
-./fonts/ae/ae_Kayrawan.ttf
-./fonts/AlWatanHeadlines/AlWatanHeadlines-Bold.ttf
-./fonts/BNazanin/BNazanin.ttf
-./fonts/NotoKufiArabic/NotoKufiArabic-Bold.ttf
-./fonts/ElMessiri/ElMessiri-Bold.ttf
-./fonts/Afsaneh Font/Afsaneh Font.ttf
-./fonts/ae/ae_Metal.ttf
-./fonts/Hacen Extender/Hacen Extender.ttf
-./fonts/VIP/VIP-TIM-Bold.ttf
-./fonts/Hacen-Dalal/Hacen-Dalal.ttf
-./fonts/BoutrosMBCDinkum/BoutrosMBCDinkum-Medium.ttf
-./fonts/FFShamelFamily/FFShamelFamily-SansOneBold.ttf
-./fonts/Kufyan Arabic Light/Kufyan Arabic Light.ttf
-./fonts/Noto_Sans_Arabic/static/NotoSansArabic-Bold.ttf
-./fonts/Hacen Extender Md/Hacen Extender Md.ttf
-./fonts/Hacen Promoter Md/Hacen Promoter Md.ttf
-./fonts/fromAkram/Fonts/diala.TTF
-./fonts/DimaExpo/DimaExpo.ttf
-./fonts/boutros/boutros4.ttf
-./fonts/KacstTitle/KacstTitle.ttf
-./fonts/HACEN_BEIRUT_POSTER/HACEN_BEIRUT_POSTER.TTF
-./fonts/Damavand-Regular/Damavand-Regular.ttf
-./fonts/al/AlQuranAli-L3A83.ttf
-./fonts/advertising/advertising4.ttf
-./fonts/Shahd/Shahd-Font-Regular.ttf
-./fonts/aga/AgaKyrawanV2Qyrwn-A836.ttf
-./fonts/Samim/Samim.ttf
-./fonts/Sane Font/Sane Font.ttf
-./fonts/mothanna_0_02/Mothanna-Regular.ttf
-./fonts/Beiruti/static/Beiruti-Black.ttf
-./fonts/Rubik/static/Rubik-ExtraBoldItalic.ttf
-./fonts/AraHamahAlislam/AraHamahAlislam-Regular.ttf
-./fonts/Hasan/Hasan-Alquds-Unicode-ExtraBold.ttf
-./fonts/ae/ae_Granada.ttf
-./fonts/DimaNotoBold/DimaNotoBold.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-ExtraBold.ttf
-./fonts/Cairo/Cairo-Black.ttf
-./fonts/BTraffic/BTraffic.ttf
-./fonts/HACEN_SUDAN/HACEN_SUDAN.TTF
-./fonts/fromAkram/Fonts/hadee.TTF
-./fonts/Rubik/static/Rubik-SemiBoldItalic.ttf
-./fonts/BMehrBd/BMehrBd.ttf
-./fonts/Beiruti/static/Beiruti-ExtraBold.ttf
-./fonts/bein/bein-normal.ttf
-./fonts/HACEN_LINER_SCREEN_BD/HACEN_LINER_SCREEN_BD.TTF
-./fonts/BLotus/BLotus.ttf
-./fonts/Hacen/Hacen-Sahara-St.ttf
-./fonts/ALMAS/ALMAS-Bold.ttf
-./fonts/ae/ae_Ostorah.ttf
-./fonts/Hacen Casablanca Light/Hacen Casablanca Light.ttf
-./fonts/fromAkram/Fonts/SPBLDRUL.TTF
-./fonts/aga/AgaAndalusNdls-0Gwv.ttf
-./fonts/Readex_Pro/static/ReadexPro-Bold.ttf
-./fonts/KacstDigital/KacstDigital.ttf
-./fonts/Fustat/static/Fustat-Bold.ttf
-./fonts/BBadrBd/BBadrBd.ttf
-./fonts/Harmattan/Harmattan-SemiBold.ttf
-./fonts/ae/ae_AlYermook.ttf
-./fonts/MotkenRafidainArt/MotkenRafidainArt.ttf
-./fonts/BASSAM_OSTORAH/BASSAM_OSTORAH.TTF
-./fonts/Omar Font/Omar Font.ttf
-./fonts/Kufam/static/Kufam-BoldItalic.ttf
-./fonts/K_ELHAM/K_ELHAM.TTF
-./fonts/2  Narenj Regular/2  Narenj Regular.ttf
-./fonts/Hacen Promoter/Hacen Promoter.ttf
-./fonts/GaliModern-Thin/GaliModern-Thin.ttf
-./fonts/Cairo_Play/static/CairoPlay-ExtraBold.ttf
-./fonts/4_4E/4_4E.ttf
-./fonts/BNikiB/BNikiB.ttf
-./fonts/aga/AgaRasheeqV2Rshyq-pqJy.ttf
-./fonts/Shahd Font Bold/Shahd Font Bold.ttf
-./fonts/HACEN_DALAL_ST/HACEN_DALAL_ST.TTF
-./fonts/VIP/VIP-Hakm-Bold-2016.ttf
-./fonts/ae/ae_Ouhod.ttf
-./fonts/Kufyan Arabic Regular/Kufyan Arabic Regular.ttf
-./fonts/Markazi_Text/static/MarkaziText-Regular.ttf
-./fonts/maghribi/AchamelSoftMaghribiAssileMaroc-1G9nB.ttf
-./fonts/Vazirmatn/static/Vazirmatn-ExtraBold.ttf
-./fonts/Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraBold.ttf
-./fonts/Noto_Naskh_Arabic/NotoNaskhArabic-Regular.ttf
-./fonts/hoba/HobaBoldBold-Yzrdy.ttf
-./fonts/hoba/Hoba-GOwzg.ttf
-./fonts/Handjet/static/Handjet-Bold.ttf
-./fonts/Hacen-Qatar/Hacen-Qatar.ttf
-./fonts/MOTKEN_K_ELHAM/MOTKEN_K_ELHAM.TTF
-./fonts/Amiri/Amiri-Bold.ttf
-./fonts/Lateef/Lateef-ExtraBold.ttf
-./fonts/BDavat/BDavat.ttf
-./fonts/Noto_Sans_Arabic/NotoSansArabic-ExtraLight.ttf
-./fonts/ae/ae_Rehan.ttf
-./fonts/DimaFantasy2/DimaFantasy2.ttf
-./fonts/HACEN_EGYPT/HACEN_EGYPT.TTF
-./fonts/BHelal/BHelal.ttf
-./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf
-./fonts/ae_AlMohanad Regular/ae_AlMohanad Regular.ttf
-./fonts/HSN_Khalid_Thin/HSN_Khalid_Thin.ttf
-./fonts/Hacen Beirut Lt/Hacen Beirut Lt.ttf
-./fonts/AL_EKBARIAH_FONT/AL_EKBARIAH_FONT.TTF
-./fonts/Rubik/static/Rubik-MediumItalic.ttf
-./fonts/Aswaq/Aswaq-Regular.ttf
-./fonts/Kufyan Arabic Heavy/Kufyan Arabic Heavy.ttf
-./fonts/kawkab/kawkab-bold.ttf
-./fonts/Readex_Pro/static/ReadexPro-Light.ttf
-./fonts/Dima-Yekan-Typography/Dima-Yekan-Typography.ttf
-./fonts/Frutiger-LT-Arabic-67-Bold-Cn/Frutiger-LT-Arabic-67-Bold-Cn.ttf
-./fonts/Jozoor Font/Jozoor Font.ttf
-./fonts/Samim/Samim-Bold.ttf
-./fonts/Zain/Zain-Bold.ttf
-./fonts/AZ_TOPAZ/AZ_TOPAZ.TTF
-./fonts/HACEN_TYPOGRAPHER_BOLD/HACEN_TYPOGRAPHER_BOLD.TTF
-./fonts/Marhey/static/Marhey-Light.ttf
-./fonts/Aljazeera-font/Al-Jazeera-Arabic-Light.ttf
-./fonts/Tajawal/Tajawal-Black.ttf
-./fonts/VIP/VIP-TIM-Regular.ttf
-./fonts/Beiruti/static/Beiruti-SemiBold.ttf
-./fonts/dima-sina/dima-sina.ttf
-./fonts/Kufyan Arabic Black/Kufyan Arabic Black.ttf
-./fonts/Adobe Naskh Medium/Adobe Naskh Medium.ttf
-./fonts/Aref_Menna Normal/Aref_Menna Normal.ttf
-./fonts/Marhey/static/Marhey-SemiBold.ttf
-./fonts/Droid.Arabic.Naskh_.Bold_DownloadSoftware.iR_/Droid.Arabic.Naskh_.Bold_DownloadSoftware.iR_.ttf
-./fonts/Amiri/Amiri-BoldItalic.ttf
-./fonts/4_87/4_87.ttf
-./fonts/HACEN_LINER_XL/HACEN_LINER_XL.TTF
-./fonts/PakType Tehreer/PakType Tehreer.ttf
-./fonts/Hacen-Digital-Arabia/Hacen-Digital-Arabia.ttf
-./fonts/Vazirmatn/static/Vazirmatn-Medium.ttf
-./fonts/GE-MB-Fares-Medium/GE-MB-Fares-Medium.ttf
-./fonts/ae/ae_Salem.ttf
-./fonts/BSara/BSara.ttf
-./fonts/A/A-Hemmat.ttf
-./fonts/Hacen Beirut Lt X3/Hacen Beirut Lt X3.ttf
-./fonts/AbdoLine _/AbdoLine _.ttf
-./fonts/Mirza/Mirza-Bold.ttf
-./fonts/khalaad/khalaad-al-arabeh.ttf
-./fonts/Changa/static/Changa-Bold.ttf
-./fonts/WasmFont/WasmFont.ttf
-./fonts/Changa/static/Changa-Medium.ttf
-./fonts/maghribi/AchamelSoftMaghribiAssileColor-9YBon.ttf
-./fonts/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Bold.ttf
-./fonts/XB Zar Bd/XB Zar Bd.ttf
-./fonts/maghribi/AchamelSoftMaghribiAssileSvg-nRnL0.ttf
-./fonts/MSjawhara/MSjawhara-Bold.ttf
-./fonts/Kufam/static/Kufam-Italic.ttf
-./fonts/GaliModern-Heavy/GaliModern-Heavy.ttf
-./fonts/bassam/bassam.ttf
-./fonts/HACEN_VANILLA_ULTRA_LIGHT/HACEN_VANILLA_ULTRA_LIGHT.TTF
-./fonts/4_6E/4_6E.ttf
-./fonts/aga/AgaMashqV2Mshq-3mdX.ttf
-./fonts/Sp_Ferdosi_p30download.com_/Sp_Ferdosi_p30download.com_.ttf
-./fonts/ae/ae_AlArabiya.ttf
-./fonts/Markazi_Text/static/MarkaziText-Medium.ttf
-./fonts/HACEN_LINER_PRINT/HACEN_LINER_PRINT-OUT_LIGHT.TTF
-./fonts/BAseman/BAseman.ttf
-./fonts/SC_GULF/SC_GULF.ttf
-./fonts/ae/ae_Ouhod-Bold.ttf
-./fonts/HSN_Naskh_farisi/HSN_Naskh_farisi.ttf
-./fonts/BElm/BElm.ttf
-./fonts/Beiruti/static/Beiruti-Regular.ttf
-./fonts/MOTKEN_K_FARNAZ/MOTKEN_K_FARNAZ.TTF
-./fonts/BADER_AL_GORDABIA/BADER_AL_GORDABIA-2.TTF
-./fonts/Zain/Zain-Regular.ttf
-./fonts/SC_DUBAI/SC_DUBAI.ttf
-./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf
-./fonts/ge-mb-farashah/ge-mb-farashah.ttf
-./fonts/decora-arabic/decora-arabic.ttf
-./fonts/BNikoo/BNikoo.ttf
-./fonts/Zain/Zain-Italic.ttf
-./fonts/BStarBd/BStarBd.ttf
-./fonts/SC_TARABLUS/SC_TARABLUS.TTF
-./fonts/Maghribi Font/Maghribi Font.ttf
-./fonts/SamsungOneArabic/SamsungOneArabic-700.ttf
-./fonts/Tajawal/Tajawal-Medium.ttf
-./fonts/ae/ae_AlMothnna_bold.ttf
-./fonts/Aljazeera-font/Al-Jazeera-Arabic-Bold.ttf
-./fonts/BJadidBold/BJadidBold.ttf
-./fonts/FDK_Aban/FDK_Aban.ttf
-./fonts/Arslan Wessam A Arslan Wessam A/(A) Arslan Wessam A (A) Arslan Wessam A.ttf
-./fonts/Handjet/Handjet-VariableFont_ELGR,ELSH,wght.ttf
-./fonts/ae/ae_Haramain.ttf
-./fonts/Hacen Extender X-Slant/Hacen Extender X-Slant.ttf
-./fonts/Rubik/static/Rubik-BoldItalic.ttf
-./fonts/Cairo/Cairo-SemiBold.ttf
-./fonts/Lazeez/Lazeez.ttf
-./fonts/Cairo_Play/static/CairoPlay-Black.ttf
-./fonts/Lemonada/Lemonada-Regular.ttf
-./fonts/Hacen Extender Slant/Hacen Extender Slant.ttf
-./fonts/fromAkram/Fonts/DTNASKH3.TTF
-./fonts/ElMessiri/ElMessiri-Medium.ttf
-./fonts/Lateef/Lateef-4ePB.ttf
-./fonts/Andalus/Andalus.ttf
-./fonts/ae/ae_AlManzomah.ttf
-./fonts/ge-dinarone-bold_8/ge-dinarone-bold_8.ttf
-./fonts/Cairo_Play/static/CairoPlay-Bold.ttf
-./fonts/KacstQurn/KacstQurn.ttf
-./fonts/AGCRegular/AGCRegular.ttf
-./fonts/DUBAI/DUBAI-REGULAR.TTF
-./fonts/SC_DUBAI/SC_DUBAI.TTF
-./fonts/Sukar Bold/Sukar Bold.ttf
-./fonts/DroidNaskh/DroidNaskh-Bold.ttf
-./fonts/Sukar-Black-1/Sukar-Black-1.ttf
-./fonts/b/BDavat-M8EJ.ttf
-./fonts/Alfarooq/Alfarooq.ttf
-./fonts/GESS/GESS.ttf
-./fonts/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-ExtraLight.ttf
-./fonts/MOTKEN_'3AREEB/MOTKEN_'3AREEB.TTF
-./fonts/al/AL-Gemah-Badr.ttf
-./fonts/Ubuntu/Ubuntu-Kurdish-Kurdfont.ttf
-./fonts/mothanna_0_02/Mothanna-Bold-Oblique.ttf
-./fonts/Molhim (2)/Molhim (2).ttf
-./fonts/Khayal Font /Khayal Font - Demo.ttf
-./fonts/JF Flat regular/JF Flat regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNikiS/BNikiS.ttf
+/Users/hamza/Downloads/fonts_2K_1/arial/arial.ttf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Normal/Swissra-Normal.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_AlMohanad Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/WasmFont/WasmFont.ttf
+/Users/hamza/Downloads/fonts_2K_1/a-rezvan/a-rezvan.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Misr.Light/Abdo.Fonts_Abdo.Misr.Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hazim-Italic/Hazim-Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/din-next-lt-w23-regular/din-next-lt-w23-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Serif-Medium_A/GE-Serif-Medium_A.otf
+/Users/hamza/Downloads/fonts_2K_1/mohammad sara_0/mohammad sara_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/taqniya/taqniya.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-ExtraBoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/hoba/HobaBoldBold-Yzrdy.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaDigital/DimaDigital.ttf
+/Users/hamza/Downloads/fonts_2K_1/splart/splart-h-mawaddah.otf
+/Users/hamza/Downloads/fonts_2K_1/Nasser-Thin/Nasser-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/arbfonts-rpt-Bold/arbfonts-rpt-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_PROMOTER_LT/HACEN_PROMOTER_LT.TTF
+/Users/hamza/Downloads/fonts_2K_1/banda/banda.ttf
+/Users/hamza/Downloads/fonts_2K_1/arabic/ArabicR2013-J25x.ttf
+/Users/hamza/Downloads/fonts_2K_1/Droid.Arabic.Naskh_.Regular_DownloadSoftware.iR_/Droid.Arabic.Naskh_.Regular_DownloadSoftware.iR_.ttf
+/Users/hamza/Downloads/fonts_2K_1/diana/diana-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/BHoma/BHoma.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_VANILLA_ULTRA_LIGHT/HACEN_VANILLA_ULTRA_LIGHT.TTF
+/Users/hamza/Downloads/fonts_2K_1/GE-Dinar-One-Light-Italic/GE-Dinar-One-Light-Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/AnNahar/AnNahar-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/Lotus-Light/Lotus-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMitraBd/BMitraBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Emad-DianaeXtra-OutLine/Emad-DianaeXtra-OutLine.otf
+/Users/hamza/Downloads/fonts_2K_1/Vibes/Vibes-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/arabswell-3/arabswell-3.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-East-ExtraBold-Italic_14/GE-East-ExtraBold-Italic_14.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-b-setareh/arfonts-b-setareh.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaHallFetica/DimaHallFetica22.ttf
+/Users/hamza/Downloads/fonts_2K_1/Generator Black/Generator Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/خط_الفرج/خط_الفرج.otf
+/Users/hamza/Downloads/fonts_2K_1/Monadi/Monadi.ttf
+/Users/hamza/Downloads/fonts_2K_1/AA Sameer mosan/AA Sameer mosan.ttf
+/Users/hamza/Downloads/fonts_2K_1/shahd/shahd-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamahAlislam-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/42- Aban Font/FDK_Aban.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN Omar/HSN Omar.ttf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_AQEEQSANSPRO/alfont_com_AQEEQSANSPRO-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-SemiBold/Abdo-Master-SemiBold.otf
+/Users/hamza/Downloads/fonts_2K_1/BMASJED/BMASJED.TTF
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Saeed-Thin/Saeed-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ff-malmoom-regular/arfonts-ff-malmoom-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Farasha-Light_23/GE-MB-Farasha-Light_23.otf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamah1964B-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GEDinkum/GEDinkum-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/8- Urkida Font/VIP Urkida Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/BZarBd/BZarBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/MahmoudArt Bold/MahmoudArt Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BTawfigO/BTawfigO.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Nastaliq_Urdu/NotoNastaliqUrdu-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/HarfD1/HarfD1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amiri Quran/Amiri Quran.ttf
+/Users/hamza/Downloads/fonts_2K_1/BSepidhO/BSepidhO.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Hor/ae_Hor.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Arab/ae_Arab.ttf
+/Users/hamza/Downloads/fonts_2K_1/DINArabic/DINArabic-CondLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/PTBLDBRK_0/PTBLDBRK_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/islamic-six/islamic-six.ttf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Black/Swissra-Black.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Thin/Abdo-Master-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/truetypewriter/TruetypewriterPolyglott-mELa.ttf
+/Users/hamza/Downloads/fonts_2K_1/BTehran/BTehran.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sp_Ferdosi_p30download.com_/Sp_Ferdosi_p30download.com_.ttf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster/AbdoMaster-Heavy _.ttf
+/Users/hamza/Downloads/fonts_2K_1/shorooq/shorooq.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo/Cairo-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE MB Farah Medium Italic/GE MB Farah Medium Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/ALVI_NASTALEEQ_LAHORI_SHIPPED/ALVI_NASTALEEQ_LAHORI_SHIPPED.TTF
+/Users/hamza/Downloads/fonts_2K_1/djadli_khatAnnasrSlant/djadli_khatAnnasrSlant.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Jarida-Heavy_23/GE-Jarida-Heavy_23.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Farasha-Medium_10/GE-MB-Farasha-Medium_10.otf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE/GE-Contrast-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE/ge-mb-farashah.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdvertisingBold Regular/AdvertisingBold Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Fares-Bold_10/GE-MB-Fares-Bold_10.otf
+/Users/hamza/Downloads/fonts_2K_1/scheherazade/Scheherazade-Bold-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Droid_Arabic_kufi/DroidKufi-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ishraq/ishraq.ttf
+/Users/hamza/Downloads/fonts_2K_1/Aref_Menna-Light-1/Aref_Menna-Light-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/22- Halah Font/TTF/AraHalaBoShe-sha-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/osama/osama.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKaj/BKaj.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraAqeeq/AraAqeeq-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/AeCortoba-wPVz.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/66- Lamar Font/Lamar Font.otf
+/Users/hamza/Downloads/fonts_2K_1/GE/GE-MB-Fares-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Badeen_Display/BadeenDisplay-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mahdi/Mahdi-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen/Hacen-Digital-Arabia-XL.ttf
+/Users/hamza/Downloads/fonts_2K_1/tradbdo_0/tradbdo_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/BSara/BSara.ttf
+/Users/hamza/Downloads/fonts_2K_1/TheYearofPoetry/TheYearofPoetry.otf
+/Users/hamza/Downloads/fonts_2K_1/shahd/shahd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Tajawal-Medium/Tajawal-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/khalaad Noora/khalaad Noora.ttf
+/Users/hamza/Downloads/fonts_2K_1/Luxury/Luxury-1.0.otf
+/Users/hamza/Downloads/fonts_2K_1/VIP/vip-hakm-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-caricaturey-regular/arfonts-caricaturey-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/NeoSansArabic-Medium/NeoSansArabic-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Handjet/static/Handjet-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Aridi-NaskhBlack_8/GE-Aridi-NaskhBlack_8.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Elegant-Bold_1F/GE-Elegant-Bold_1F.otf
+/Users/hamza/Downloads/fonts_2K_1/boutros2/boutros2.ttf
+/Users/hamza/Downloads/fonts_2K_1/kharabeesh/kharabeesh.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada-Light/Mada-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/TSKufidia-Normal/TSKufidia-Normal.otf
+/Users/hamza/Downloads/fonts_2K_1/VIP/vip-tim.ttf
+/Users/hamza/Downloads/fonts_2K_1/islamic-five/islamic-five.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen/Hacen-Beirut-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_SHMOOKH_/SC_SHMOOKH_01.TTF
+/Users/hamza/Downloads/fonts_2K_1/setareh/setareh.ttf
+/Users/hamza/Downloads/fonts_2K_1/Omid Bold/Omid Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaCordobaV2QrtbBold-W0vV.ttf
+/Users/hamza/Downloads/fonts_2K_1/arabswell_2/arabswell_2.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_13/4_13.otf
+/Users/hamza/Downloads/fonts_2K_1/DimaBlue/DimaBlue.ttf
+/Users/hamza/Downloads/fonts_2K_1/K Elham/K Elham.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rehan Regular/Rehan Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_LIGHT/BOUTROS_ADS_LIGHT.TTF
+/Users/hamza/Downloads/fonts_2K_1/GE_Dinar_One_Light/GE_Dinar_One_Light.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Snd-Book_1/GE-Snd-Book_1.ttf
+/Users/hamza/Downloads/fonts_2K_1/FrutigerLTArabic/FrutigerLTArabic-55Roman.ttf
+/Users/hamza/Downloads/fonts_2K_1/DG/DG-Sahabah-Bold-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlHurra Font Light/AlHurra Font Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/scheherazade/Scheherazade-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlWatanHeadlines/AlWatanHeadlines-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKamrnBd/BKamrnBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sp_Owj/Sp_Owj-Bold_p30download.com.ttf
+/Users/hamza/Downloads/fonts_2K_1/fromAkram/Fonts/diala.TTF
+/Users/hamza/Downloads/fonts_2K_1/KoufiyaLT-Regular/KoufiyaLT-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/bahij_muna_bold_by_bahijvirtualacademy-damta5a/bahij_muna_bold_by_bahijvirtualacademy-damta5a.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Farsi/Kacst Farsi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Changa-Regular/Changa-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/B_YEKAN/B_YEKAN.TTF
+/Users/hamza/Downloads/fonts_2K_1/PakType_Naqsh_2_2/PakType_Naqsh_2_2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lava Arabic v1./Lava Arabic v1.00.otf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamahAlFidaa-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/djadli-soumam/djadli-soumam.ttf
+/Users/hamza/Downloads/fonts_2K_1/ghanem/ghanem-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Almarai-Light/Almarai-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/AAAGoldenLotus Stg1_Ver1 Regular/AAAGoldenLotus Stg1_Ver1 Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sevin/Sevin.ttf
+/Users/hamza/Downloads/fonts_2K_1/khalaad Susan/khalaad Susan.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/LAXR/LAXR.otf
+/Users/hamza/Downloads/fonts_2K_1/AdobeArabic-BoldItalic/AdobeArabic-BoldItalic.otf
+/Users/hamza/Downloads/fonts_2K_1/fixed/fixed-kufi.ttf
+/Users/hamza/Downloads/fonts_2K_1/zahra/zahra-arabic-bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Lotus-Bold/Lotus-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/hassan/hassan-lt-bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Droid/droid-sans.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_D5/4_D5.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-qts-manga-semi-bold/arfonts-qts-manga-semi-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BVOSTAI/BVOSTAI.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-a-salama/arfonts-a-salama.ttf
+/Users/hamza/Downloads/fonts_2K_1/DTNASKH2_0/DTNASKH2_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/PakType Tehreer/PakType Tehreer.ttf
+/Users/hamza/Downloads/fonts_2K_1/A_Nefel_Botan/A_Nefel_Botan.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-dongol-regular/arfonts-dongol-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Tehran/Hacen Tehran.ttf
+/Users/hamza/Downloads/fonts_2K_1/OUTLINED V001/OUTLINED V001.OTF
+/Users/hamza/Downloads/fonts_2K_1/KufiLTOutlineRegular/KufiLTOutlineRegular.ttf
+/Users/hamza/Downloads/fonts_2K_1/16- Typo Graphic Font/TTF/VIP Arabic Typo.ttf
+/Users/hamza/Downloads/fonts_2K_1/Insan/insan.ttf
+/Users/hamza/Downloads/fonts_2K_1/taro/taro.ttf
+/Users/hamza/Downloads/fonts_2K_1/Shorooq Yara Bold/Shorooq Yara Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Aref_Menna-Bold-1/Aref_Menna-Bold-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster-Light _/AbdoMaster-Light _.ttf
+/Users/hamza/Downloads/fonts_2K_1/Readex_Pro/static/ReadexPro-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BLotusBd/BLotusBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Salem.ttf
+/Users/hamza/Downloads/fonts_2K_1/ASVCodarLTLight/ASVCodarLTLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/colors'adv1/colors'adv1.ttf
+/Users/hamza/Downloads/fonts_2K_1/AA-JAD/AA-JAD.otf
+/Users/hamza/Downloads/fonts_2K_1/WasmFontBold/WasmFontBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNikiSI/BNikiSI.ttf
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 65 Bold/Frutiger LT Arabic 65 Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/static/Fustat-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BF-Dima/BF-Dima.ttf
+/Users/hamza/Downloads/fonts_2K_1/yaraa/yaraa.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-shekari/shekari.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Qantarat-ExtraBold_A/GE-Qantarat-ExtraBold_A.otf
+/Users/hamza/Downloads/fonts_2K_1/GHAITH SANS/GHAITHSANS-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/MolsaqArabic-ExtraBold/MolsaqArabic-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ntaqat/ntaqat.otf
+/Users/hamza/Downloads/fonts_2K_1/Handjet/static/Handjet-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/NOOREHIRA_VOLT_0/NOOREHIRA_VOLT_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Blabeloo-font-v.1.0/Blabeloo-font-v.1.0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Dima/Dima-Yekan.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKarim/BKarim.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdvertisingExtraBold/AdvertisingExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Maghreb/Hacen Maghreb.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad naskh/mohammad naskh.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/50- Neckar Font/Neckar Font Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/AGA-Mashq/AGA-Mashq.ttf
+/Users/hamza/Downloads/fonts_2K_1/b-shams/b-shams.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Alharbi Alhanoof Font/Alharbi Alhanoof Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_HANI REGULAR/SC_HANI REGULAR.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_209/UniSalar_F_209.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Rajab.Light/Abdo.Fonts_Abdo.Rajab.Light.otf
+/Users/hamza/Downloads/fonts_2K_1/Lemonada/lemonada.ttf
+/Users/hamza/Downloads/fonts_2K_1/ara/ara-alharbi-alhanoof.otf
+/Users/hamza/Downloads/fonts_2K_1/BCHSHMEH/BCHSHMEH.TTF
+/Users/hamza/Downloads/fonts_2K_1/MotkenNoqtaii/MotkenNoqtaii.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Casablanca Lt/Hacen Casablanca Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE Dinar One Medium Italic/GE Dinar One Medium Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/Marhey/static/Marhey-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP-Rawy-Thin/VIP-Rawy-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/milano/milano.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNARM/BNARM.TTF
+/Users/hamza/Downloads/fonts_2K_1/Kacst Poster/Kacst Poster.ttf
+/Users/hamza/Downloads/fonts_2K_1/alqalam/alqalam-khat-e-sumbali.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Dinar-One-Medium/GE-Dinar-One-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/HS-Ishraq-Thin/HS-Ishraq-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster-Black _/AbdoMaster-Black _.ttf
+/Users/hamza/Downloads/fonts_2K_1/maze/MazeFont2-noZY.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Beirut Md/Hacen Beirut Md.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE MB Farah Medium/GE MB Farah Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/BPAATCH/BPAATCH.TTF
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Misr.Black/Abdo.Fonts_Abdo.Misr.Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP Hakm Bold 2016/VIP Hakm Bold 2016.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Fares-Medium-Italic_10/GE-MB-Fares-Medium-Italic_10.otf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_SHADOW_BOLD/BOUTROS_ADS_SHADOW_BOLD.TTF
+/Users/hamza/Downloads/fonts_2K_1/KoufiyaLT-Bold_0/KoufiyaLT-Bold_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_AlMothnna_bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sonbili/Sonbili.ttf
+/Users/hamza/Downloads/fonts_2K_1/A.Jannat.LT.Regular_6/A.Jannat.LT.Regular_6.ttf
+/Users/hamza/Downloads/fonts_2K_1/BAsemanI/BAsemanI.ttf
+/Users/hamza/Downloads/fonts_2K_1/BIGX/BIGX.otf
+/Users/hamza/Downloads/fonts_2K_1/Sada-Ultra-Light-Italic/Sada-Ultra-Light-Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/zahra/zahra-arabic.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo Salem Black/Abdo Salem Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdamScript.ttf
+/Users/hamza/Downloads/fonts_2K_1/MOTKEN_K_TABASSOM/MOTKEN_K_TABASSOM.TTF
+/Users/hamza/Downloads/fonts_2K_1/Insan-Thin/Insan-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Ishraq-Medium/HS-Ishraq-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/GE Heritage One Light/GE Heritage One Light.otf
+/Users/hamza/Downloads/fonts_2K_1/GE_ASIFA_BOLD/GE_ASIFA_BOLD.OTF
+/Users/hamza/Downloads/fonts_2K_1/SHAHRIAR-/SHAHRIAR-.ttf
+/Users/hamza/Downloads/fonts_2K_1/Readex_Pro/static/ReadexPro-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/NORMAL/NORMAL.otf
+/Users/hamza/Downloads/fonts_2K_1/Al Qalam Quran/Al Qalam Quran.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_PRO_BOLD_SHADOW_0/BOUTROS_ADS_PRO_BOLD_SHADOW_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/Ara  Hamah City/Ara  Hamah City.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Lady-Medium_A/GE-Lady-Medium_A.otf
+/Users/hamza/Downloads/fonts_2K_1/KohinoorArabic-Semibold/KohinoorArabic-Semibold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo/Cairo-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP Hakm Regular 2016/VIP Hakm Regular 2016.ttf
+/Users/hamza/Downloads/fonts_2K_1/Harmattan/harmattan.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_147/UniSalar_F_147.otf
+/Users/hamza/Downloads/fonts_2K_1/K Nasim Bold/K Nasim Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AGA-Mashq-Bold/AGA-Mashq-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Fares-Medium_23/GE-MB-Fares-Medium_23.otf
+/Users/hamza/Downloads/fonts_2K_1/msuighur_0/msuighur_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/aa-sameer-bassam-bold-regular-1/aa-sameer-bassam-bold-regular-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-aa-galaxy-bold/arfonts-aa-galaxy-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_B8/4_B8.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-BlackItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/gaza/gaza.otf
+/Users/hamza/Downloads/fonts_2K_1/18270-intel-clear-arabic-light/18270-intel-clear-arabic-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-BoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/a-refaghat/a-refaghat.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Extender/Hacen Extender.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/taha/taha-naskh.ttf
+/Users/hamza/Downloads/fonts_2K_1/toyor/toyor-aljanah.ttf
+/Users/hamza/Downloads/fonts_2K_1/BSahar/BSahar.ttf
+/Users/hamza/Downloads/fonts_2K_1/TheYearofHandicrafts/TheYearofHandicrafts-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Reem_Kufi/static/ReemKufi-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Poolad Bold/Poolad Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Dima/dima.ttf
+/Users/hamza/Downloads/fonts_2K_1/noorehuda/noorehuda.ttf
+/Users/hamza/Downloads/fonts_2K_1/STC/stc.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amine Bold/Amine Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaExpo/DimaExpo.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Fares-Light_10/GE-MB-Fares-Light_10.otf
+/Users/hamza/Downloads/fonts_2K_1/Sp_Bardia-Normal_p30download.com_/Sp_Bardia-Normal_p30download.com_.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-b-phrtch/arfonts-b-phrtch.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Metal/ae_Metal.ttf
+/Users/hamza/Downloads/fonts_2K_1/almawadah/almawadah.ttf
+/Users/hamza/Downloads/fonts_2K_1/hesham/Hesham-.ttf
+/Users/hamza/Downloads/fonts_2K_1/lines-and-circles/lines-and-circles.ttf
+/Users/hamza/Downloads/fonts_2K_1/DINNextLTArabic-Light/DINNextLTArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_079/UniSalar_F_079.otf
+/Users/hamza/Downloads/fonts_2K_1/mutawazi/Mutawazi-dEeZ.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Modern-Medium_23/GE-Modern-Medium_23.otf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-Black/URWGeometricArabic-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/MA3ALI-AQSA/MA3ALI-AQSA.TTF
+/Users/hamza/Downloads/fonts_2K_1/sheba/sheba.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mohannad_New/Mohannad_New.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/خط_قرطاج (2)/خط_قرطاج (2).ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaKereshmeh/DimaKereshmeh.ttf
+/Users/hamza/Downloads/fonts_2K_1/22876-gen01/22876-gen01.ttf
+/Users/hamza/Downloads/fonts_2K_1/Negaar.Regular/Negaar.Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/a-rezvan-fat/a-rezvan-fat.ttf
+/Users/hamza/Downloads/fonts_2K_1/Damavand/Damavand-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Dalal Text/Hacen Dalal Text.ttf
+/Users/hamza/Downloads/fonts_2K_1/Tajawal-ExtraLight/Tajawal-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad bold art 1_0/mohammad bold art 1_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/(A) Arslan Wessam A (A) Arslan Wessam A/(A) Arslan Wessam A (A) Arslan Wessam A.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_113/UniSalar_F_113.otf
+/Users/hamza/Downloads/fonts_2K_1/b/B_BARDIYA_BOLD.TTF
+/Users/hamza/Downloads/fonts_2K_1/BHamid/BHamid.ttf
+/Users/hamza/Downloads/fonts_2K_1/hassan/hassan-lt-light.otf
+/Users/hamza/Downloads/fonts_2K_1/SC_HANI/SC_HANI.TTF
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_AlHor.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN_Naskh_farisi/HSN_Naskh_farisi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Almarai/Almarai-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/KufiLTRegular_0/KufiLTRegular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/TanseekModernProArabic-Light/TanseekModernProArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Ishraq-Light/HS-Ishraq-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/kawkab/kawkab-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-DemiBold_1/Abdo-Master-DemiBold_1.otf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/static/Fustat-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BadiyaLT-Regular_0/BadiyaLT-Regular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-zapfino-arabic/arfonts-zapfino-arabic.ttf
+/Users/hamza/Downloads/fonts_2K_1/hsn-sadiyah/hsn-sadiyah.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Minaret-Medium_10/GE-Minaret-Medium_10.otf
+/Users/hamza/Downloads/fonts_2K_1/KanYaMaKanFree-Regular/KanYaMaKanFree-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Heavy/Swissra-Heavy.otf
+/Users/hamza/Downloads/fonts_2K_1/MarkaziText-VariableFont_wght/MarkaziText-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/black/BlackCloverArabic-PKZeZ.ttf
+/Users/hamza/Downloads/fonts_2K_1/FrutigerLTArabic/FrutigerLTArabic-75Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/BTANAB/BTANAB.TTF
+/Users/hamza/Downloads/fonts_2K_1/Rakkas/rakkas.ttf
+/Users/hamza/Downloads/fonts_2K_1/a-sina-pc/a-sina-pc.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE Heritage One Bold/GE Heritage One Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/nasaq/nasaq.ttf
+/Users/hamza/Downloads/fonts_2K_1/MofidMahdiLTRegular/MofidMahdiLTRegular.ttf
+/Users/hamza/Downloads/fonts_2K_1/redcal-arabic-regular/RedCal Arabic Regular/RedCal Arabic Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_004/UniSalar_F_004.otf
+/Users/hamza/Downloads/fonts_2K_1/M-Unicode-Noora/M-Unicode-Noora.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_248/UniSalar_F_248.otf
+/Users/hamza/Downloads/fonts_2K_1/GE_Flow_Bold/GE_Flow_Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad bold art 2/mohammad bold art 2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lemonada/Lemonada-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nizar Aldhabi/Nizar Aldhabi.otf
+/Users/hamza/Downloads/fonts_2K_1/Abd ElRady Thin/Abd ElRady Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_170/UniSalar_F_170.otf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Thin/Swissra-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/ali/ali-meshref.ttf
+/Users/hamza/Downloads/fonts_2K_1/KhadashArabic_Demo/KhadashArabic_Demo-Arabic.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_AlManzomah.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNaznnBd/BNaznnBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/ToyorAljanah-Regular/ToyorAljanah-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/aldhabi/aldhabi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Thabit-Oblique/Thabit-Oblique.ttf
+/Users/hamza/Downloads/fonts_2K_1/WINSOFT_NASKH_PRO_BOLD/WINSOFT_NASKH_PRO_BOLD.OTF
+/Users/hamza/Downloads/fonts_2K_1/Expo Arabic/Expo Arabic Book.ttf
+/Users/hamza/Downloads/fonts_2K_1/Muslimah/muslimah.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Hani.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Flow-Regular-Italic_1A/GE-Flow-Regular-Italic_1A.otf
+/Users/hamza/Downloads/fonts_2K_1/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_160/UniSalar_F_160.otf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic/DINArabic.ttf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMasteroutline _/AbdoMasteroutline _.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Farasha-Medium-Italic_10/GE-MB-Farasha-Medium-Italic_10.otf
+/Users/hamza/Downloads/fonts_2K_1/adwa-assalaf-B/adwa-assalaf-B.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_BOLD/BOUTROS_ADS_BOLD.TTF
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-THARWATEMARARUQAA/THARWATEMARARUQAA.ttf
+/Users/hamza/Downloads/fonts_2K_1/univers/univers-next-arabic-regular.otf
+/Users/hamza/Downloads/fonts_2K_1/jordan/jordan.ttf
+/Users/hamza/Downloads/fonts_2K_1/bein-ar-black/bein-ar-black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Arian/Arian-LT-Light-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/grosha-ar-photoshop/grosha-ar-photoshop.ttf
+/Users/hamza/Downloads/fonts_2K_1/maghrebi/maghrebi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Arian/Arian-LT-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/69- Tachkili Font/Otf Version/Tachkili Font OTF Shadow.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Thameen-Book-Italic_12/GE-Thameen-Book-Italic_12.otf
+/Users/hamza/Downloads/fonts_2K_1/Nawar Font/Nawar Font.otf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster/AbdoMaster-DemiBold _.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad sahan_0/mohammad sahan_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/neckar/neckar.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraJozoor/AraJozoor-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/A.Banoo Light/A.Banoo Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/FrutigerLTArabic/FrutigerLTArabic-45Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/timesbd_0/timesbd_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/fantezy/fantezy.ttf
+/Users/hamza/Downloads/fonts_2K_1/Harmattan/Harmattan-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/THARWATEMARARUQAAhollow/THARWATEMARARUQAAhollow.ttf
+/Users/hamza/Downloads/fonts_2K_1/LotusLinotype-Bold/LotusLinotype-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/motairah/motairah.ttf
+/Users/hamza/Downloads/fonts_2K_1/Shorooq Yara Thin/Shorooq Yara Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/bukra-bold-italic/bukra-bold-italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/bahij/bahij.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Nagham.ttf
+/Users/hamza/Downloads/fonts_2K_1/A.Jannat.LT.Bold_6/A.Jannat.LT.Bold_6.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP/VIP-TIM-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/Shahd Font Bold/Shahd Font Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hasan-Alquds-Unicode-ExtraBold/Hasan-Alquds-Unicode-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HassanLTLight/HassanLTLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/DUBAI/DUBAI-BOLD.TTF
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/Handjet/static/Handjet-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/BTraffic/BTraffic.ttf
+/Users/hamza/Downloads/fonts_2K_1/A/A-Hemmat.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_027/UniSalar_F_027.otf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Promoter/Hacen Promoter.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/e68ffdd/e68ffdd6-a443-4f4c-ae58-687e86559972.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nimbus Sans ME Black Italic/Nimbus Sans ME Black Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/boutros/boutros-ads.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaGranadaGrntV2-E9Ar.ttf
+/Users/hamza/Downloads/fonts_2K_1/Expo Arabic/Expo Arabic Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hasan_Hiba/Hasan_Hiba.ttf
+/Users/hamza/Downloads/fonts_2K_1/2 bold/2 bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Omar-Bold/Omar-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-BlackItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Markazi_Text/static/MarkaziText-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Almudid/Almudid.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_229/UniSalar_F_229.otf
+/Users/hamza/Downloads/fonts_2K_1/2- Taweel Font/TTF/FFTaweel-Stamp.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/49- Hend Font/Hend Font Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Gandhara Suls/Gandhara Suls.ttf
+/Users/hamza/Downloads/fonts_2K_1/ElMessiri/elmessiri-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_خط/alfont_com_خط-قلم-يدوي.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-mikhak-light/arfonts-mikhak-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Firas_0/Firas_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/خط مسعد المغربي/خط مسعد المغربي.ttf
+/Users/hamza/Downloads/fonts_2K_1/Emad Diana Light/Emad Diana Light.otf
+/Users/hamza/Downloads/fonts_2K_1/BadiyaLT-Bold/BadiyaLT-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Al-Basim-B/HS-Al-Basim-B.otf
+/Users/hamza/Downloads/fonts_2K_1/BIXIE/BIXIE-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hazim-Regular/Hazim-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Tajawal-ExtraBold/Tajawal-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Narrow-Light_1F/GE-Narrow-Light_1F.otf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen/Hacen-Promoter.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Rehan.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_89/4_89.ttf
+/Users/hamza/Downloads/fonts_2K_1/Emad/emad-diana-extra.otf
+/Users/hamza/Downloads/fonts_2K_1/Andalus/Andalus.ttf
+/Users/hamza/Downloads/fonts_2K_1/bedayah/bedayah.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-k-kamran/arfonts-k-kamran.ttf
+/Users/hamza/Downloads/fonts_2K_1/خط_المودة_1_-_أسود/خط_المودة_1_-_أسود.ttf
+/Users/hamza/Downloads/fonts_2K_1/iwanzazapersonal-Regular/iwanzazapersonal-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/4_E6/4_E6.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hasan-Alquds-Unicode-Light/Hasan-Alquds-Unicode-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/aqeeq/aqeeq.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BBadrBd/BBadrBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Naskh_Arabic/NotoNaskhArabic-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HarfWebCD/HarfWebCD.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad shabab/mohammad shabab.ttf
+/Users/hamza/Downloads/fonts_2K_1/Damavand/Damavand-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/AmerLTRegular_0/AmerLTRegular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Hili-Light_15/GE-Hili-Light_15.otf
+/Users/hamza/Downloads/fonts_2K_1/adnoc-2/adnoc-2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/baghdad/baghdad.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abd ElRady Italic/Abd ElRady Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/BSINABD/BSINABD.TTF
+/Users/hamza/Downloads/fonts_2K_1/HacenSaudiArabia/HacenSaudiArabia.ttf
+/Users/hamza/Downloads/fonts_2K_1/117-Barada-Reqa/117-Barada-Reqa.ttf
+/Users/hamza/Downloads/fonts_2K_1/QADI_LINOTYPE_0/QADI_LINOTYPE_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/DroidNaskh-Regular/DroidNaskh-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/53- Israr Syria Font/TTF/Israr-Syria.ttf
+/Users/hamza/Downloads/fonts_2K_1/AnNahar/AnNahar-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/BTabssom/BTabssom.ttf
+/Users/hamza/Downloads/fonts_2K_1/Adobe Naskh Medium/Adobe Naskh Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Aswaq/Aswaq-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/cartoon/Cartoon1471Extended-x3oyq.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_REHAN/SC_REHAN.TTF
+/Users/hamza/Downloads/fonts_2K_1/mbc/mbc.ttf
+/Users/hamza/Downloads/fonts_2K_1/air/air-arabia-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNazannO/BNazannO.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_BEIRUT_POSTER/HACEN_BEIRUT_POSTER.TTF
+/Users/hamza/Downloads/fonts_2K_1/BTehranI/BTehranI.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-AL-Gemah-Alhoda/AL-Gemah-Alhoda.ttf
+/Users/hamza/Downloads/fonts_2K_1/micross/micross.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/Rubik-Italic-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/BJadidBold/BJadidBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic-Thin/DINArabic-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nishan-Bold/Nishan-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/static/Fustat-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_AL/KHALAAD_AL-ARABEH_2.TTF
+/Users/hamza/Downloads/fonts_2K_1/ghala/ghala-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Droid/Droid-Arabic-Kufi.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_AlHor Regular/ae_AlHor Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Droid.Arabic.Kufi.Bold_DownloadSoftware.iR/Droid.Arabic.Kufi.Bold_DownloadSoftware.iR.TTF
+/Users/hamza/Downloads/fonts_2K_1/4_7/4_7.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo Free Regular/Abdo Free Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BlueOcean/BlueOcean.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Almidad-Medium/HS-Almidad-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/Sukar/Sukar-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amiri-BoldItalic/Amiri-BoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/BYagutBd/BYagutBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaBarf/DimaBarf2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Emad-DianaeXtra-Regular/Emad-DianaeXtra-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Jet.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniversNextArabic-Regular_0/UniversNextArabic-Regular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN Moalla/HSN Moalla.ttf
+/Users/hamza/Downloads/fonts_2K_1/stoor/stoor.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nishan-Regular/Nishan-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/AL-MAJD_0/AL-MAJD_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/BZar/BZar.ttf
+/Users/hamza/Downloads/fonts_2K_1/Changa-VariableFont_wght/Changa-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Dinar-Two-Medium_1E/GE-Dinar-Two-Medium_1E.otf
+/Users/hamza/Downloads/fonts_2K_1/Mada/static/Mada-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/artro/artro.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/hala jamil fonts.otf
+/Users/hamza/Downloads/fonts_2K_1/mj-tv-light/mj-tv-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Digital Arabia LT/Hacen Digital Arabia LT.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_REHAN REGULAR/SC_REHAN REGULAR.ttf
+/Users/hamza/Downloads/fonts_2K_1/MOHAMMAD_BOLD_ART/MOHAMMAD_BOLD_ART.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-a-farhood/arfonts-a-farhood.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraAlBayan Bold/AraAlBayan Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/DG/DG-3asomy-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Najm-Bold_23/GE-MB-Najm-Bold_23.otf
+/Users/hamza/Downloads/fonts_2K_1/DimaBahman/DimaBahman.ttf
+/Users/hamza/Downloads/fonts_2K_1/Aqlaam-Regular/Aqlaam-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/KohinoorArabic-Bold/KohinoorArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amiri Slanted/Amiri Slanted.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ae-arab/arfonts-ae-arab.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-MB-Medium_10/GE-MB-MB-Medium_10.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Dinar-Two-Medium-Italic_20/GE-Dinar-Two-Medium-Italic_20.otf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaRasheeqV2Rshyq-pqJy.ttf
+/Users/hamza/Downloads/fonts_2K_1/almwaheb/almwaheb.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_WIDE_EXTRABOLD_3/GE_WIDE_EXTRABOLD_3.otf
+/Users/hamza/Downloads/fonts_2K_1/scheherazade/Scheherazade-o3VB.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlSharkTitle-Black/AlSharkTitle-Black.otf
+/Users/hamza/Downloads/fonts_2K_1/BPAATCBD/BPAATCBD.TTF
+/Users/hamza/Downloads/fonts_2K_1/Asmaa Font/Asmaa Font.otf
+/Users/hamza/Downloads/fonts_2K_1/Kitab/Kitab-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaRasheeqV2RshyqBold-DMDE.ttf
+/Users/hamza/Downloads/fonts_2K_1/BSIAVASH/BSIAVASH.TTF
+/Users/hamza/Downloads/fonts_2K_1/Sada-Regular-Italic/Sada-Regular-Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/mothanna_0_/Mothanna-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Shorooq Yara Regular/Shorooq Yara Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamahHoms-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/AD/AD-STOOR Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/The-Sans-Plain/The-Sans-Plain.otf
+/Users/hamza/Downloads/fonts_2K_1/Insan-Regular_0/Insan-Regular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/FRSSPBL/FRSSPBL.TTF
+/Users/hamza/Downloads/fonts_2K_1/mohammad koufi bold_0/mohammad koufi bold_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Motken-K-Kamran/Motken-K-Kamran.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amin Font Bold/Amin Font Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/sc-tarablus/sc-tarablus.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_PROMOTER_MD/HACEN_PROMOTER_MD.TTF
+/Users/hamza/Downloads/fonts_2K_1/arbfonts/arbfonts-samt-7017 (1).ttf
+/Users/hamza/Downloads/fonts_2K_1/DiodrumArabic-Semibold/DiodrumArabic-Semibold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HelveticaWorld-BoldItalic/HelveticaWorld-BoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/pdms/pdms-saleem-quranfont.otf
+/Users/hamza/Downloads/fonts_2K_1/Abd ElRady Medium/Abd ElRady Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/KindahThin-Thin/KindahThin-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/BritishCouncil/BritishCouncil-Arabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdoullah Ashgar EL-kharef/Abdoullah Ashgar EL-kharef.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Beirut Poster/Hacen Beirut Poster.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Graph.ttf
+/Users/hamza/Downloads/fonts_2K_1/HarfD2/HarfD2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amiri-Italic/Amiri-Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_Hili_Book/GE_Hili_Book.otf
+/Users/hamza/Downloads/fonts_2K_1/Alama-Bold-1[1]/Alama-Bold-1[1].otf
+/Users/hamza/Downloads/fonts_2K_1/HS-Almidad-Light/HS-Almidad-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/GRKUFMAZ/GRKUFMAZ.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Egypt/Hacen Egypt.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_D7/4_D7.ttf
+/Users/hamza/Downloads/fonts_2K_1/WINSOFT_NASKH_PRO_EXTRABOLD/WINSOFT_NASKH_PRO_EXTRABOLD.OTF
+/Users/hamza/Downloads/fonts_2K_1/b-davat/b-davat.ttf
+/Users/hamza/Downloads/fonts_2K_1/PF-Nuyork-Arabic-Bold/PF-Nuyork-Arabic-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/BYAGUT/BYAGUT.TTF
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_DAWLAT/KHALAAD_DAWLAT.TTF
+/Users/hamza/Downloads/fonts_2K_1/JalalLTBold/JalalLTBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/rawi/rawi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Readex_Pro/static/ReadexPro-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/UrdType/UrdType.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/2- Taweel Font/TTF/FFTaweel-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DUBAI/DUBAI-MEDIUM.TTF
+/Users/hamza/Downloads/fonts_2K_1/Expo Arabic/Expo Arabic Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Light/Swissra-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/41- Diana Xtra Font/Emad-DianaeXtra-Normal.otf
+/Users/hamza/Downloads/fonts_2K_1/BNikiOI/BNikiOI.ttf
+/Users/hamza/Downloads/fonts_2K_1/tradbdo/tradbdo.ttf
+/Users/hamza/Downloads/fonts_2K_1/BoutrosART-Medium/BoutrosART-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/B_MASHHAD_ITALIC/B_MASHHAD_ITALIC.TTF
+/Users/hamza/Downloads/fonts_2K_1/4_1B/4_1B.otf
+/Users/hamza/Downloads/fonts_2K_1/Lateef Font/Lateef Font-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-runya-regular/arfonts-runya-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/29ltbukrabold/29ltbukrabold.ttf
+/Users/hamza/Downloads/fonts_2K_1/MarkaziText-Bold/MarkaziText-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaSalam/DimaSalam.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMAJIDSH/BMAJIDSH.TTF
+/Users/hamza/Downloads/fonts_2K_1/BNikiO/BNikiO.ttf
+/Users/hamza/Downloads/fonts_2K_1/BShadi/BShadi.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Almidad-Thin/HS-Almidad-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/Estedad/Estedad-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/static/Fustat-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-farsi-kamran/arfonts-farsi-kamran.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-THARWATEMARARUQAALIGHTrand/THARWATEMARARUQAALIGHTrand.ttf
+/Users/hamza/Downloads/fonts_2K_1/belal/BelalBoldBold-BWrl8.ttf
+/Users/hamza/Downloads/fonts_2K_1/DG/DG Ghayaty Regular F.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_/4_51.ttf
+/Users/hamza/Downloads/fonts_2K_1/FF Bouya Messy/FF Bouya Messy.otf
+/Users/hamza/Downloads/fonts_2K_1/A/A-Sogand.ttf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_AlFont_com_dima/alfont_com_AlFont_com_dima-sina.ttf
+/Users/hamza/Downloads/fonts_2K_1/islamic-three/islamic-three.ttf
+/Users/hamza/Downloads/fonts_2K_1/arialbd_0/arialbd_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amin Font Regular/Amin Font Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Fixed kofi Bold/Fixed kofi Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/me_quranR3HOQ/me_quranR3HOQ.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Najm-Medium_10/GE-MB-Najm-Medium_10.otf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_ABEER/KHALAAD_ABEER.TTF
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster/AbdoMaster-ExtraBold _.ttf
+/Users/hamza/Downloads/fonts_2K_1/Motken Unicode Claseec/Motken Unicode Claseec.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hamada_light_font/Hamada_light_font.ttf
+/Users/hamza/Downloads/fonts_2K_1/QadiLinotype/QadiLinotype.ttf
+/Users/hamza/Downloads/fonts_2K_1/FFKhallab/FFKhallab-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-paktype-naqsh/arfonts-paktype-naqsh.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Mashq.ttf
+/Users/hamza/Downloads/fonts_2K_1/bein/bein.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sada Regular/Sada Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/b-bardiya/b-bardiya.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad bold normal/mohammad bold normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/fromAkram/Fonts/Sima.TTF
+/Users/hamza/Downloads/fonts_2K_1/HelveticaWorld-Italic_0/HelveticaWorld-Italic_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-sp-kamran-bold/arfonts-sp-kamran-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BZIBA/BZIBA.TTF
+/Users/hamza/Downloads/fonts_2K_1/sky/sky.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-q-ghafoori/arfonts-q-ghafoori.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/lateef.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hasan-Alquds-Unicode-Bold/Hasan-Alquds-Unicode-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/PTSEPBAL_0/PTSEPBAL_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/HACEN_DALAL_ST/HACEN_DALAL_ST.TTF
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/76- Menna Font/Aref_Menna Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/Kufam-Italic-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/BritishCouncil/BritishCouncil-Arabic-Bold-Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKoodakO/BKoodakO.ttf
+/Users/hamza/Downloads/fonts_2K_1/KindahRegular-Regular/KindahRegular-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/37- Bon Font/AraAlmBon.otf
+/Users/hamza/Downloads/fonts_2K_1/STC/STC-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/diwany/diwany-edited.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMAHSA/BMAHSA.TTF
+/Users/hamza/Downloads/fonts_2K_1/AL-Gemah-Alhoda_0/AL-Gemah-Alhoda_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/WINSOFT_NASKH_PRO_LIGHT/WINSOFT_NASKH_PRO_LIGHT.OTF
+/Users/hamza/Downloads/fonts_2K_1/Tki Art/Tki Art.ttf
+/Users/hamza/Downloads/fonts_2K_1/A Arghavan Bold/A Arghavan Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Katibeh/Katibeh-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_045/UniSalar_F_045.otf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamahKilania-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Dawlat/Dawlat.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Nada.ttf
+/Users/hamza/Downloads/fonts_2K_1/NotoNaskhArabic/NotoNaskhArabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Samra Lt/Hacen Samra Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Rajab.Bold/Abdo.Fonts_Abdo.Rajab.Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hasan/Hasan-Alquds-Unicode-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Office/Kacst Office.ttf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_NOORA/KHALAAD_NOORA.TTF
+/Users/hamza/Downloads/fonts_2K_1/ITLOUTAR/ITLOUTAR.TTF
+/Users/hamza/Downloads/fonts_2K_1/DWNSPSTR_0/DWNSPSTR_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-dima/arfonts-dima.ttf
+/Users/hamza/Downloads/fonts_2K_1/Marhey/static/Marhey-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth,wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_SS_Unique_Light_1/GE_SS_Unique_Light_1.otf
+/Users/hamza/Downloads/fonts_2K_1/Damavand/Damavand-DemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/simpfxo/simpfxo.ttf
+/Users/hamza/Downloads/fonts_2K_1/Digistyle Unicode/Digistyle Unicode.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-aga-andalus/arfonts-aga-andalus.ttf
+/Users/hamza/Downloads/fonts_2K_1/The Year of The Camel/TheYearofTheCamel-ExtraLight.otf
+/Users/hamza/Downloads/fonts_2K_1/Janna LT Bold/Janna LT Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamahAlHorra-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Assaf Font/Assaf Font.otf
+/Users/hamza/Downloads/fonts_2K_1/Readex_Pro/static/ReadexPro-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/alshohadaa/alshohadaa.ttf
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-Heavy.ttf
+/Users/hamza/Downloads/fonts_2K_1/tahomabd/tahomabd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ah/Ah-moharram-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nasser-Bold/Nasser-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/UthmanicHafs/UthmanicHafs1-ver13.otf
+/Users/hamza/Downloads/fonts_2K_1/khalaad/khalaad-dorai.ttf
+/Users/hamza/Downloads/fonts_2K_1/UthmanTN1B Ver/UthmanTN1B Ver09.otf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_DIALA/KHALAAD_DIALA.TTF
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 45 Light/Frutiger LT Arabic 45 Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/BJadidBd/BJadidBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/alnaqaa/alnaqaa.ttf
+/Users/hamza/Downloads/fonts_2K_1/kamran/kamran.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Saudi Arabia XL/Hacen Saudi Arabia XL.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-SemiBold/URWGeometricArabic-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/b-news-almstqubl/b-news-almstqubl.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_8B/4_8B.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraHamah/AraHamah1982-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/hacen-vanilla/hacen-vanilla.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNikiBI/BNikiBI.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/NotoKufiArabic-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/ElMessiri/ElMessiri-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Anamil Font/TSAnamil-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/MARWAEL_FH02/MARWAEL_FH02.TTF
+/Users/hamza/Downloads/fonts_2K_1/DimaNotoBold/DimaNotoBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/persian/persian-sooreh-.ttf
+/Users/hamza/Downloads/fonts_2K_1/jannat/jannat.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaShekasteh/DimaShekasteh.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_165/UniSalar_F_165.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-SS-Text-Light-Italic_24/GE-SS-Text-Light-Italic_24.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Elegant-Italic_D/GE-Elegant-Italic_D.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Maghreb Bd/Hacen Maghreb Bd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Arbaeen/Arbaeen.ttf
+/Users/hamza/Downloads/fonts_2K_1/Thabit-Bold/Thabit-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_SAMRA_LT/HACEN_SAMRA_LT.TTF
+/Users/hamza/Downloads/fonts_2K_1/AraESTaqniya-Regular/AraESTaqniya-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/18 Khebrat Musamim Regular/18 Khebrat Musamim Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/SST Arabic Roman/SST Arabic Roman.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_067/UniSalar_F_067.otf
+/Users/hamza/Downloads/fonts_2K_1/thuluth/thuluth-decorated.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_/4_87.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/FrutigerLTArabic-65Bold/FrutigerLTArabic-65Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BritishCouncil/BritishCouncil-Arabic-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Muslimah-Thin/Muslimah-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/GE Heritage One Medium/GE Heritage One Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/4_E7/4_E7.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad short/mohammad short.ttf
+/Users/hamza/Downloads/fonts_2K_1/FFYaseer/FFYaseer-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-kheot-ar-photoshop-bold-bold/arfonts-kheot-ar-photoshop-bold-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraESTaqniya-Bold/AraESTaqniya-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/STV-Bold/STV-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zeytn_sf/Zeytn_sf.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zeytb_sf/Zeytb_sf.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Newspaper/Hacen Newspaper.ttf
+/Users/hamza/Downloads/fonts_2K_1/Khat e Sulas Shipped.ttf
+/Users/hamza/Downloads/fonts_2K_1/Alnaseeb/Alnaseeb.otf
+/Users/hamza/Downloads/fonts_2K_1/Castile-Bold/Castile-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/HassanLTLight_0/HassanLTLight_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaMoalemBlack/DimaMoalemBlack.ttf
+/Users/hamza/Downloads/fonts_2K_1/BHALEHBD/BHALEHBD.TTF
+/Users/hamza/Downloads/fonts_2K_1/PF-Nuyork-Arabic/PF-Nuyork-Arabic.otf
+/Users/hamza/Downloads/fonts_2K_1/Mohammad Dawlat_0/Mohammad Dawlat_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-SS-Two-Light_28/GE-SS-Two-Light_28.otf
+/Users/hamza/Downloads/fonts_2K_1/SC_KHALID/SC_KHALID.TTF
+/Users/hamza/Downloads/fonts_2K_1/KacstTitle/KacstTitle.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_SS_Unique_Bold_5/GE_SS_Unique_Bold_5.otf
+/Users/hamza/Downloads/fonts_2K_1/arabswell/arabswell-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Ouhod.ttf
+/Users/hamza/Downloads/fonts_2K_1/Estedad/Estedad-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_MEDIUM/BOUTROS_ADS_MEDIUM.TTF
+/Users/hamza/Downloads/fonts_2K_1/Sulimany/Sulimany.ttf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_AL/KHALAAD_AL-ARABEH.TTF
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/SamsungOneArabic/SamsungOneArabic-700.ttf
+/Users/hamza/Downloads/fonts_2K_1/MJ_AFAAQ_0/MJ_AFAAQ_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sahara TX Lt/Hacen Sahara TX Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/The Year of The Camel/TheYearofTheCamel-ExtraBold.otf
+/Users/hamza/Downloads/fonts_2K_1/Changa-Medium/Changa-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/sultan-art/sultan-art.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlHarfAlJadid-Two/AlHarfAlJadid-Two.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_D6/4_D6.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/29ltbukralight_1/29ltbukralight_1.otf
+/Users/hamza/Downloads/fonts_2K_1/al-faris35/al-faris35.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-digi-mahtab-bold/arfonts-digi-mahtab-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Marhey/static/Marhey-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_TYPOGRAPHER_BOOK/HACEN_TYPOGRAPHER_BOOK.TTF
+/Users/hamza/Downloads/fonts_2K_1/Ekleel/Ekleel.ttf
+/Users/hamza/Downloads/fonts_2K_1/Omar/omar.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Logo/Abdo.Fonts_Abdo.Logo.otf
+/Users/hamza/Downloads/fonts_2K_1/mohammad circle_0/mohammad circle_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/XB Zar BdIt/XB Zar BdIt.ttf
+/Users/hamza/Downloads/fonts_2K_1/WINSOFT_NASKH_PRO_MEDIUMITALIC/WINSOFT_NASKH_PRO_MEDIUMITALIC.OTF
+/Users/hamza/Downloads/fonts_2K_1/b-lotus-bold/b-lotus-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Maghreb Lt/Hacen Maghreb Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-ExtraLight/Abdo-Master-ExtraLight.otf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Najm-Medium-Italic_10/GE-MB-Najm-Medium-Italic_10.otf
+/Users/hamza/Downloads/fonts_2K_1/Kaleem/Kaleem-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/DimaBarf/DimaBarf.ttf
+/Users/hamza/Downloads/fonts_2K_1/BAseman/BAseman.ttf
+/Users/hamza/Downloads/fonts_2K_1/homa/homa.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Modern-Light_23/GE-Modern-Light_23.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Khalid.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo Joody Bold/Abdo Joody Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-KAMR__SF/KAMR__SF.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Almidad-Regular/HS-Almidad-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Art/Kacst Art.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sarkha Font/Sarkha Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/(A) Arslan Wessam B (A) Arslan Wessam B/(A) Arslan Wessam B (A) Arslan Wessam B.ttf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-ExtraLight/URWGeometricArabic-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada-Black/Mada-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/FFKhallab/FFKhallab-Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abomsaab Regular/Abomsaab Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP/VIP-TIM-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/a-sardar-hoor/a-sardar-hoor.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-karwad/arfonts-karwad.ttf
+/Users/hamza/Downloads/fonts_2K_1/M Unicode Abeer/M Unicode Abeer.ttf
+/Users/hamza/Downloads/fonts_2K_1/WINSOFT_THULUTH_PRO_LIGHT/WINSOFT_THULUTH_PRO_LIGHT.OTF
+/Users/hamza/Downloads/fonts_2K_1/japan/japan.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/13- Sukar Font/Sukar Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Arbaeen_DownloadSoftware.iR_/Arbaeen_DownloadSoftware.iR_.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada-Bold/Mada-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/hadee/hadee.ttf
+/Users/hamza/Downloads/fonts_2K_1/BBaranOI/BBaranOI.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nusaibah-Regular/Nusaibah-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_AlMohanad.ttf
+/Users/hamza/Downloads/fonts_2K_1/DTHULUTH/DTHULUTH-II-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Samim/Samim-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-4ePB.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ff-bouya-normal/arfonts-ff-bouya-normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/spiritofdoha/spiritofdoha-bold.otf
+/Users/hamza/Downloads/fonts_2K_1/mutawazi/MutawaziBold-PYz7.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/Vazirmatn-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/Jadid Bold/Jadid Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster/AbdoMaster-ExtraLight _.ttf
+/Users/hamza/Downloads/fonts_2K_1/MyriadArabic-BoldIt/MyriadArabic-BoldIt.otf
+/Users/hamza/Downloads/fonts_2K_1/BTrafcBd/BTrafcBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/ALGERIA Bold_0/ALGERIA Bold_0.otf
+/Users/hamza/Downloads/fonts_2K_1/a-gam-azad/a-gam-azad.ttf
+/Users/hamza/Downloads/fonts_2K_1/Arian/Arian-LT-Bold-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Heritage-Two-Bold_A/GE-Heritage-Two-Bold_A.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-MB-Medium-Italic_10/GE-MB-MB-Medium-Italic_10.otf
+/Users/hamza/Downloads/fonts_2K_1/ayman15/ayman15.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraHamah1964B-Bold_3/AraHamah1964B-Bold_3.otf
+/Users/hamza/Downloads/fonts_2K_1/18271-18271-18271-7438358/18271-18271-18271-7438358.ttf
+/Users/hamza/Downloads/fonts_2K_1/tahoma/tahoma.ttf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_Tasees/alfont_com_Tasees-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/hsn-layan/hsn-layan.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zawiya-Bold/Zawiya-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/al/Al-Jazeera-Arabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/simpo/simpo.ttf
+/Users/hamza/Downloads/fonts_2K_1/b/b-compset.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-nasma/arfonts-nasma.ttf
+/Users/hamza/Downloads/fonts_2K_1/Chilrenpoint/Chilrenpoint.ttf
+/Users/hamza/Downloads/fonts_2K_1/azhary/azhary.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amin Font Medium/Amin Font Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/ge-ss-tv-bold/ge-ss-tv-bold.otf
+/Users/hamza/Downloads/fonts_2K_1/HelveticaWorld-Regular/HelveticaWorld-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lemonada-Medium/Lemonada-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/DG/DG Ghayaty Thin F.ttf
+/Users/hamza/Downloads/fonts_2K_1/adarghal-1/adarghal-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/MZ Hend Bold/MZ Hend Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/SAKKAL_MAYA_PRO/SAKKAL_MAYA_PRO.OTF
+/Users/hamza/Downloads/fonts_2K_1/18711-makkah/18711-makkah.otf
+/Users/hamza/Downloads/fonts_2K_1/TanseekModernProArabic-Bold/TanseekModernProArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-mj-faraz/arfonts-mj-faraz.ttf
+/Users/hamza/Downloads/fonts_2K_1/BFantezy/BFantezy.ttf
+/Users/hamza/Downloads/fonts_2K_1/BBADKONK/BBADKONK.TTF
+/Users/hamza/Downloads/fonts_2K_1/djadli_OTFAures/djadli_OTFAures.ttf
+/Users/hamza/Downloads/fonts_2K_1/Harmattan/Harmattan-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/SST Arabic Light/SST Arabic Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/childrendots/childrendots.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Bold_0/Abdo-Master-Bold_0.otf
+/Users/hamza/Downloads/fonts_2K_1/SC_AMEEN/SC_AMEEN.TTF
+/Users/hamza/Downloads/fonts_2K_1/K_TABASSOM/K_TABASSOM.TTF
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/70- Five Farisi Fonts/HSN_Golden.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sahafa/Hacen Sahafa.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_246/UniSalar_F_246.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Heritage-One-UltraLight_A/GE-Heritage-One-UltraLight_A.otf
+/Users/hamza/Downloads/fonts_2K_1/bahij_janna_bold_by_bahijvirtualacademy-damoz8o/bahij_janna_bold_by_bahijvirtualacademy-damoz8o.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sada-Regular/Sada-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/BTitrBd/BTitrBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamahSahetAlAssi-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMehrBd/BMehrBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/AbdoLine _/AbdoLine _.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fo Da - FodaKufi-Regular-Free/Fo Da - FodaKufi-Regular-Free.otf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/ghanem/ghanem-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE Heritage Two Medium/GE Heritage Two Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/MOHAMMAD_LAHA/MOHAMMAD_LAHA.TTF
+/Users/hamza/Downloads/fonts_2K_1/OLDANBLD_0/OLDANBLD_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_039/UniSalar_F_039.otf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-THARWATEMARARUQAALIGHT/THARWATEMARARUQAALIGHT.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mj/Mj-Unique-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/PTBLDHAD_0/PTBLDHAD_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/bader-al-naseem/bader-al-naseem.ttf
+/Users/hamza/Downloads/fonts_2K_1/Marhey/static/Marhey-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Hor Regular/ae_Hor Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/aa-sameer-rafiya-unicode-regular-1/aa-sameer-rafiya-unicode-regular-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ff-yaseer-solid/arfonts-ff-yaseer-solid.ttf
+/Users/hamza/Downloads/fonts_2K_1/18 Khebrat Musamim Bold/18 Khebrat Musamim Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-marshmallow/arfonts-marshmallow.ttf
+/Users/hamza/Downloads/fonts_2K_1/Reem_Kufi/static/ReemKufi-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/RAOOF/RAOOF-REALROUND.otf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster/AbdoMaster-Bold _.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fanni/Fanni.ttf
+/Users/hamza/Downloads/fonts_2K_1/Aref_Menna-Normal-1/Aref_Menna-Normal-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/b/b-hamid.ttf
+/Users/hamza/Downloads/fonts_2K_1/LEDITFNT/LEDITFNT.TTF
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/bader-al-dergham/bader-al-dergham.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abd ElRady Bold/Abd ElRady Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Japan.ttf
+/Users/hamza/Downloads/fonts_2K_1/khayal-2-arphotoshop/khayal-2-arphotoshop.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Markazi_Text/static/MarkaziText-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdobeNaskh/AdobeNaskh-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/DimaFantasy/DimaFantasy2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Tunisia Bd/Hacen Tunisia Bd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Tajawal-Light/Tajawal-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen/Hacen-Eltaroute-Text.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-alqalam-ishtiaq/arfonts-alqalam-ishtiaq.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sukar/Sukar-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/majallab/majallab.ttf
+/Users/hamza/Downloads/fonts_2K_1/almushaf/almushaf.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-SS-TV-Light_10/GE-SS-TV-Light_10.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Medium/Abdo-Master-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Tunisia Lt/Hacen Tunisia Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/PF-Nuyork-Arabic-Black/PF-Nuyork-Arabic-Black.otf
+/Users/hamza/Downloads/fonts_2K_1/alarabiya/alarabiya.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_PRO_BOLD_INLINE/BOUTROS_ADS_PRO_BOLD_INLINE.OTF
+/Users/hamza/Downloads/fonts_2K_1/MSUIGHUB_0/MSUIGHUB_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/DG-Ghareeb-Bold/DG-Ghareeb-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-Medium/URWGeometricArabic-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 47 Light Cn/Frutiger LT Arabic 47 Light Cn.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ahlan-Regular_0/Ahlan-Regular_0.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-molhim-bold/arfonts-molhim-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef/Lateef-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/me_quran/me_quran2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sukar Regular/Sukar Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DG/DG-Modal3at-Bold (1).ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Pen/Kacst Pen.ttf
+/Users/hamza/Downloads/fonts_2K_1/BARASH/BARASH.TTF
+/Users/hamza/Downloads/fonts_2K_1/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE Unique Bold Expanded/GE UNIQUE BOLD EXPANDED.OTF
+/Users/hamza/Downloads/fonts_2K_1/DroidNaskh-Bold/DroidNaskh-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sheba Ye Font/Sheba Ye Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/58- AlHurra Font/AlHurra Font Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaMakhtom/DimaMakhtom.ttf
+/Users/hamza/Downloads/fonts_2K_1/KFGQPC Uthman Taha Naskh Regular/KFGQPC Uthman Taha Naskh Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BArabics/BArabics.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_238/UniSalar_F_238.otf
+/Users/hamza/Downloads/fonts_2K_1/farsi-two-light/farsi-two-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/A.Farhood/A.Farhood.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Algeria/Hacen Algeria.ttf
+/Users/hamza/Downloads/fonts_2K_1/strick/strick.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Al-Basim-A/HS-Al-Basim-A.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-mrt-faraz-bold/arfonts-mrt-faraz-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Title/Kacst Title.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-LightItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lemonada/Lemonada-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/electron/electron.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/Fustat-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/BADER_AL_GORDABIA-2/BADER_AL_GORDABIA-2.TTF
+/Users/hamza/Downloads/fonts_2K_1/M_Unicode_Wafa/M_Unicode_Wafa.ttf
+/Users/hamza/Downloads/fonts_2K_1/Arian/Arian-LT-Demi-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sudan/Hacen Sudan.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Book/Abdo-Master-Book.otf
+/Users/hamza/Downloads/fonts_2K_1/rawy/rawy-thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/MotkenKElham/MotkenKElham.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_INLINE_BOLD/BOUTROS_ADS_INLINE_BOLD.TTF
+/Users/hamza/Downloads/fonts_2K_1/DimaNastalighTahriri/DimaNastalighTahriri-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/al/Al-Jazeera-Arabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/rustam_quranR3HOQ/rustam_quranR3HOQ.ttf
+/Users/hamza/Downloads/fonts_2K_1/b/B-amir.ttf
+/Users/hamza/Downloads/fonts_2K_1/DINArabic-Extlight/DINArabic-Extlight.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-MediumItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-nastarkib-bold/arfonts-nastarkib-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/beer/beer.ttf
+/Users/hamza/Downloads/fonts_2K_1/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Harmattan/Harmattan-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Shafrah-ConnectedDots/Shafrah-ConnectedDots.otf
+/Users/hamza/Downloads/fonts_2K_1/rabi/rabi3.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-faris25/al-faris25.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP cartoon /VIP cartoon -.otf
+/Users/hamza/Downloads/fonts_2K_1/ar-photoshop2/ar-photoshop2.ttf
+/Users/hamza/Downloads/fonts_2K_1/SultanNahia_0/SultanNahia_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/64- Sane Font/Sane Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad dawlat art_0/mohammad dawlat art_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Screen/Kacst Screen.ttf
+/Users/hamza/Downloads/fonts_2K_1/advertising/advertising4.ttf
+/Users/hamza/Downloads/fonts_2K_1/Marhey/Marhey-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/XB Zar Bd/XB Zar Bd.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic-Black/DINArabic-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNikooI/BNikooI.ttf
+/Users/hamza/Downloads/fonts_2K_1/Reem_Kufi/static/ReemKufi-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rakkas/Rakkas-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-mawash-bold/al-mawash-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mariam_0/Mariam_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sultan - 3 LINE/Sultan - 3 LINE.ttf
+/Users/hamza/Downloads/fonts_2K_1/MOLarabicRegular/MOLarabicRegular.ttf
+/Users/hamza/Downloads/fonts_2K_1/led-italic-font/led-italic-font.ttf
+/Users/hamza/Downloads/fonts_2K_1/OoredooArabic/OoredooArabic-Heavy.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-gemah-assarim/al-gemah-assarim.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE/GE-Cap-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-SS-Text-Medium/GE-SS-Text-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/NazaninLTBold_0/NazaninLTBold_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Baloo_Bhaijaan_2/static/BalooBhaijaan2-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Free/Abdo.Fonts_Abdo.Free.ttf
+/Users/hamza/Downloads/fonts_2K_1/TheSans-Bold/TheSans-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Shorooq Yara Medium/Shorooq Yara Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/DTHULUTH/DTHULUTH.TTF
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BoutrosMBCDinkum/BoutrosMBCDinkum-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-aref-menna-bold/arfonts-aref-menna-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN_Khalid_Thin/HSN_Khalid_Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/55- Maghribi Font/Maghribi Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/KFOUTSHD_0/KFOUTSHD_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-4_4F/4_4F.ttf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Ultra-Light/Swissra-Ultra-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/times_0/times_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP Golan/VIP Golan.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-islamicpalestine/arfonts-islamicpalestine.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaSindibadV2Sndbd-OwRO.ttf
+/Users/hamza/Downloads/fonts_2K_1/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-Amiri Bold/Amiri Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BRose/BRose.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo Misr Black/Abdo Misr Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Anamil Font/TSAnamil-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/alsamt diwani/alsamt diwani.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_4D/4_4D.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Shado/ae_Shado.ttf
+/Users/hamza/Downloads/fonts_2K_1/KawkabMono/KawkabMono-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ebhaar/Ebhaar.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Tunisia/Hacen Tunisia.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nishan-Light/Nishan-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/Sada-Bold/Sada-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/DimaTraffic/DimaTraffic.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNikoo/BNikoo.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Book/Kacst Book.ttf
+/Users/hamza/Downloads/fonts_2K_1/Qatar2022Arabic/Qatar2022Arabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Changa-SemiBold/Changa-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArabicUIText/ArabicUIText.ttf
+/Users/hamza/Downloads/fonts_2K_1/albayan/albayan.ttf
+/Users/hamza/Downloads/fonts_2K_1/Bahij_TheSansArabic/Bahij_TheSansArabic-Plain.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP/vip-hakm.ttf
+/Users/hamza/Downloads/fonts_2K_1/GEDinkum/GEDinkum-Bold-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lateef Font/LateefroundedFont-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/ara-kordi/ara-kordi.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad bold/mohammad bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/MO_Nawel/MO_Nawel.ttf
+/Users/hamza/Downloads/fonts_2K_1/MSjawhara/MSjawhara-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo-Regular/Cairo-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/TheYearofHandicrafts/TheYearofHandicrafts-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/BLDITLAR_0/BLDITLAR_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/BFerdosi/BFerdosi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sahara TX Thin/Hacen Sahara TX Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/shiraz/shiraz.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdvertisingLight/AdvertisingLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic-CondMedium/DINArabic-CondMedium.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP/vip-tim-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_078/UniSalar_F_078.otf
+/Users/hamza/Downloads/fonts_2K_1/BNazanin/BNazanin.ttf
+/Users/hamza/Downloads/fonts_2K_1/hoba/Hoba-GOwzg.ttf
+/Users/hamza/Downloads/fonts_2K_1/old/Old-Antic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae-almohanad/ae-almohanad.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Najm-Light_10/GE-MB-Najm-Light_10.otf
+/Users/hamza/Downloads/fonts_2K_1/4_23/4_23.otf
+/Users/hamza/Downloads/fonts_2K_1/Dima Font/Dima Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/sky/sky-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/STC/STC-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlSharkTitle-Bold/AlSharkTitle-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Tail-Medium_A/GE-Tail-Medium_A.otf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/34- Jozoor Font/Jozoor Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Tunisia Lt (1)/Hacen Tunisia Lt (1).ttf
+/Users/hamza/Downloads/fonts_2K_1/PalatinoSansArabic-Bold/PalatinoSansArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Thuluth-Light_10/GE-Thuluth-Light_10.otf
+/Users/hamza/Downloads/fonts_2K_1/hacen-typographer-heavy/hacen-typographer-heavy.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMORVARD/BMORVARD.TTF
+/Users/hamza/Downloads/fonts_2K_1/hsn-moalla/hsn-moalla.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/Beiruti-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/Old Antic Decorative/Old Antic Decorative.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo Logo Regular/Abdo Logo Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DIN Next LT Arabic Heavy/DIN Next LT Arabic Heavy.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Mashq_bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/A Noor_6/A Noor_6.ttf
+/Users/hamza/Downloads/fonts_2K_1/Alkalami/Alkalami-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/MARIAM_LINOTYPE/MARIAM_LINOTYPE.OTF
+/Users/hamza/Downloads/fonts_2K_1/AraESNawar-Regular/AraESNawar-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/DimaNiloofar/DimaNiloofar.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst One Bold/Kacst One Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/1-Caramel-Light/1-Caramel-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/18410-ah-naskh-hadith(1)/18410-ah-naskh-hadith(1).ttf
+/Users/hamza/Downloads/fonts_2K_1/BJALALBD/BJALALBD.TTF
+/Users/hamza/Downloads/fonts_2K_1/K_HOMA/K_HOMA.TTF
+/Users/hamza/Downloads/fonts_2K_1/DG/DG-Modal3at-Med.ttf
+/Users/hamza/Downloads/fonts_2K_1/29ltbukrabolditalic/29ltbukrabolditalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/ARIALUNI_0/ARIALUNI_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Helvetica/HelveticaNeueLT Arabic 75 Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ghanem/ghanem.ttf
+/Users/hamza/Downloads/fonts_2K_1/djadli_khatAnnasrExtrude/djadli_khatAnnasrExtrude.ttf
+/Users/hamza/Downloads/fonts_2K_1/GESSTextUltraLight-UltraLight/GESSTextUltraLight-UltraLight.otf
+/Users/hamza/Downloads/fonts_2K_1/shasenem-soran/shasenem-soran.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE Heritage Two Light Itali/GE Heritage Two Light Itali.otf
+/Users/hamza/Downloads/fonts_2K_1/Nasser-1/Nasser-1.otf
+/Users/hamza/Downloads/fonts_2K_1/djadli_khatAnnasr/djadli_khatAnnasr.ttf
+/Users/hamza/Downloads/fonts_2K_1/2  Narenj Regular/2  Narenj Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/zahra/zahra.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaKyrawanV2Qyrwn-A836.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/68- Shoroq Font/Shoroq Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Dalal/Hacen Dalal.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Ishraq-Bold/HS-Ishraq-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/LateefRegOT/LateefRegOT.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-sayeh-2/arfonts-sayeh-2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-SemiBoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/asmaa/asmaa.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rawafed Zainab/Rawafed Zainab.otf
+/Users/hamza/Downloads/fonts_2K_1/BHALEH/BHALEH.TTF
+/Users/hamza/Downloads/fonts_2K_1/Hacen Casablanca Light/Hacen Casablanca Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/GoldenLotus Stg1_Ver2/GoldenLotus Stg1_Ver2.ttf
+/Users/hamza/Downloads/fonts_2K_1/A.Banoo Thin/A.Banoo Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-SemiBoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nokta/Nokta.ttf
+/Users/hamza/Downloads/fonts_2K_1/Samim/Samim.ttf
+/Users/hamza/Downloads/fonts_2K_1/NeoSansArabic/NeoSansArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Thabit-BoldOblique/Thabit-BoldOblique.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen/Hacen-Algeria-Hd.ttf
+/Users/hamza/Downloads/fonts_2K_1/simpbdo_0/simpbdo_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Afsaneh Font/Afsaneh Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 77 Black Cn/Frutiger LT Arabic 77 Black Cn.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlSharkTitle-Light/AlSharkTitle-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Sharjah.ttf
+/Users/hamza/Downloads/fonts_2K_1/djadli_OTFal/djadli_OTFal-Qabas-Slant.ttf
+/Users/hamza/Downloads/fonts_2K_1/PTBLDDSK_0/PTBLDDSK_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Hamdy/Hamdy-V2-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/pHalls-Khodkar-phalls.com_/pHalls-Khodkar-phalls.com_.ttf
+/Users/hamza/Downloads/fonts_2K_1/Helvetica/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_B1/4_B1.ttf
+/Users/hamza/Downloads/fonts_2K_1/rawy/rawy-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BSAHRA/BSAHRA.TTF
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Tholoth.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Typographical line_/Typographical line_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Beirut Hd/Hacen Beirut Hd.ttf
+/Users/hamza/Downloads/fonts_2K_1/KohinoorArabic-Regular/KohinoorArabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE Heritage Two Bold/GE Heritage Two Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/alqalam-tafseer-regular-1/alqalam-tafseer-regular-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zawiya/Zawiya.otf
+/Users/hamza/Downloads/fonts_2K_1/Fixed kofi/Fixed kofi.otf
+/Users/hamza/Downloads/fonts_2K_1/BNasimBd/BNasimBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-ExtraBold/URWGeometricArabic-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/FaKacstBook/FaKacstBook.ttf
+/Users/hamza/Downloads/fonts_2K_1/Dima/Dima-Mitra.ttf
+/Users/hamza/Downloads/fonts_2K_1/JannaLT/JannaLT-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Granada.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/BZaman/BZaman.ttf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_Shekari/alfont_com_Shekari-Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Changa/static/Changa-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lemonada/Lemonada-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE MB Farah Light/GE MB Farah Light.otf
+/Users/hamza/Downloads/fonts_2K_1/SC_ALYERMOOK/SC_ALYERMOOK.TTF
+/Users/hamza/Downloads/fonts_2K_1/Maghribi Assile/Maghribi Assile.ttf
+/Users/hamza/Downloads/fonts_2K_1/Phalls Khodkar/Phalls Khodkar.ttf
+/Users/hamza/Downloads/fonts_2K_1/Shams/Shams.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_AlArabiya/ae_AlArabiya.ttf
+/Users/hamza/Downloads/fonts_2K_1/Al Ekbariah font/Al Ekbariah font.ttf
+/Users/hamza/Downloads/fonts_2K_1/abo2sadam Regular/abo2sadam Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-paktype-ajrak/arfonts-paktype-ajrak.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Heritage-One-Bold_A/GE-Heritage-One-Bold_A.otf
+/Users/hamza/Downloads/fonts_2K_1/FFDushaArabic/FFDushaArabic-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/GE MB Farah Bold/GE MB FARAH BOLD.OTF
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_006/UniSalar_F_006.otf
+/Users/hamza/Downloads/fonts_2K_1/Sada-Ultra-Light/Sada-Ultra-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sudan Bd/Hacen Sudan Bd.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-Sp_Hadi_p30download.com_/Sp_Hadi_p30download.com_.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lazeez/Lazeez.ttf
+/Users/hamza/Downloads/fonts_2K_1/arabtype/arabtype.ttf
+/Users/hamza/Downloads/fonts_2K_1/b-mitra/b-mitra.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_E9/4_E9.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada/static/Mada-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/khalid-art-bold/khalid-art-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/خط_المودة/خط_المودة.ttf
+/Users/hamza/Downloads/fonts_2K_1/aures/aures.ttf
+/Users/hamza/Downloads/fonts_2K_1/Tajawal-Bold/Tajawal-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/trado/trado.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo Misr Light/Abdo Misr Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-sanabel-khebrat-musamem-2021/arfonts-sanabel-khebrat-musamem-2021.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad head/mohammad head.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mj_Moharram/Mj_Moharram-Bold_0-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/MarkaziText-Medium/MarkaziText-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/BRoyaBd/BRoyaBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-gemah-alqemmah/al-gemah-alqemmah.ttf
+/Users/hamza/Downloads/fonts_2K_1/b/b-sepideh_1.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-husrev-hatti-osmanlica/arfonts-husrev-hatti-osmanlica.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMEDAD/BMEDAD.TTF
+/Users/hamza/Downloads/fonts_2K_1/Zawiya-Thin/Zawiya-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/DUBAI/DUBAI-REGULAR.TTF
+/Users/hamza/Downloads/fonts_2K_1/BNarenj/BNarenj.ttf
+/Users/hamza/Downloads/fonts_2K_1/BritishCouncil/BritishCouncil-Arabic-Light-Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/7- Lalezar Font/TTF/Lalezar-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/bon/bon.ttf
+/Users/hamza/Downloads/fonts_2K_1/MOTKEN_K_FARNAZ/MOTKEN_K_FARNAZ.TTF
+/Users/hamza/Downloads/fonts_2K_1/MyriadArabic-Regular/MyriadArabic-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/TheYearofHandicrafts/TheYearofHandicrafts-SemiBold.otf
+/Users/hamza/Downloads/fonts_2K_1/Kufigraph Font/Kufigraph Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Cortoba Regular/ae_Cortoba Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_PRO_LIGHT/BOUTROS_ADS_PRO_LIGHT.OTF
+/Users/hamza/Downloads/fonts_2K_1/Droid_Arabic_kufi/DroidKufi-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amiri Bold Slanted/Amiri Bold Slanted.ttf
+/Users/hamza/Downloads/fonts_2K_1/B_MASHHAD/B_MASHHAD.TTF
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_AlFont_com_4_/alfont_com_AlFont_com_4_22.ttf
+/Users/hamza/Downloads/fonts_2K_1/ge dinarone bold/ge dinarone bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Expo Arabic/alfont_com_AlFont_com_ExpoArabic-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BElm/BElm.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_194/UniSalar_F_194.otf
+/Users/hamza/Downloads/fonts_2K_1/flat/flat-jooza-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaCordobaV3Qrtb-aW4a.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Beirut Lt/Hacen Beirut Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Beirut/Hacen Beirut.ttf
+/Users/hamza/Downloads/fonts_2K_1/kharabeesh/Kharabeesh-Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Neckar Font Bold/Neckar Font Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Liner Print-out/Hacen Liner Print-out.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Modern-Bold_23/GE-Modern-Bold_23.otf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/15- Hakm Font/VIP Hakm Thin 2016.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN_Razan_bold/HSN_Razan_bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/zahra/zahra-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/fp-arsoo/fp-arsoo.ttf
+/Users/hamza/Downloads/fonts_2K_1/fantazy/fantazy.ttf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Bold/Swissra-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Air Strip Arabic/Air Strip Arabic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sada-Bold-Italic/Sada-Bold-Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/lotus-linotype-light/lotus-linotype-light.otf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/hacen-beirut-md/hacen-beirut-md.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/static/Fustat-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Marhey/static/Marhey-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/DINArabic-Cond/DINArabic-Cond.ttf
+/Users/hamza/Downloads/fonts_2K_1/BVOSTA/BVOSTA.TTF
+/Users/hamza/Downloads/fonts_2K_1/AlHarfAlJadid-One/AlHarfAlJadid-One.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Shareb/Shareb.ttf
+/Users/hamza/Downloads/fonts_2K_1/majalla/majalla.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Saudi Arabia/Hacen Saudi Arabia.ttf
+/Users/hamza/Downloads/fonts_2K_1/DWNOUTSH/DWNOUTSH.TTF
+/Users/hamza/Downloads/fonts_2K_1/Cairo/Cairo-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-bader-al-naseem/arfonts-bader-al-naseem.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mothanna/Mothanna.ttf
+/Users/hamza/Downloads/fonts_2K_1/alhorr/alhorr.ttf
+/Users/hamza/Downloads/fonts_2K_1/Raqami/Raqami.ttf
+/Users/hamza/Downloads/fonts_2K_1/bader_al gorthabia/bader_al gorthabia.ttf
+/Users/hamza/Downloads/fonts_2K_1/The Year of The Camel/TheYearofTheCamel-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Aref_Menna Bold/Aref_Menna Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/spiritofdoha/spiritofdoha-black.otf
+/Users/hamza/Downloads/fonts_2K_1/esfahan/esfahan.ttf
+/Users/hamza/Downloads/fonts_2K_1/diwani/Diwani-Bent.ttf
+/Users/hamza/Downloads/fonts_2K_1/rudawregular2/rudawregular2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BigVesta Arabic Regular/BigVesta Arabic Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DTNASKH1/DTNASKH1.TTF
+/Users/hamza/Downloads/fonts_2K_1/Aref_Menna Normal/Aref_Menna Normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/Oi/Oi-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/decotype/decotype-thuluth-ii.ttf
+/Users/hamza/Downloads/fonts_2K_1/BBadr/BBadr.ttf
+/Users/hamza/Downloads/fonts_2K_1/AqmarArabic/AqmarArabic.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaNaskh/DimaNaskh.ttf
+/Users/hamza/Downloads/fonts_2K_1/KacstQurn/KacstQurn.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nimbus Sans ME Bold Italic/Nimbus Sans ME Bold Italic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Typographer/Hacen Typographer.ttf
+/Users/hamza/Downloads/fonts_2K_1/Changa-Light/Changa-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Jomhuria-Regular/Jomhuria-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/ALMAS/ALMAS-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/OoredooArabic/OoredooArabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-phalls-khodkar-phalls/arfonts-phalls-khodkar-phalls.ttf
+/Users/hamza/Downloads/fonts_2K_1/NeoSansArabic-Bold/NeoSansArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mirza/Mirza-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AD-Rsail/AD-Rsail.ttf
+/Users/hamza/Downloads/fonts_2K_1/MyriadArabic-It/MyriadArabic-It.otf
+/Users/hamza/Downloads/fonts_2K_1/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-a-massir-ballpoint/arfonts-a-massir-ballpoint.ttf
+/Users/hamza/Downloads/fonts_2K_1/aa-sameer-almas-regular-1/aa-sameer-almas-regular-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP/VIP-TIM-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ASVCodarLTBold_0/ASVCodarLTBold_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/KarimLTRegular_0/KarimLTRegular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/70- Five Farisi Fonts/HSN_Naskh.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_/4_88.ttf
+/Users/hamza/Downloads/fonts_2K_1/0 Titr Bold Bold/0 Titr Bold Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/samir-khouaja-maghribi-bold/samir-khouaja-maghribi-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Bustan Bold/Bustan Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/Kufam-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/Rubik-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/al/AL-FARES.TTF
+/Users/hamza/Downloads/fonts_2K_1/Ferdaos Zd Normal/Ferdaos Zd Normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Sindibad.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Ostorah/ae_Ostorah.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ruwudu/Ruwudu-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BSORKHPU/BSORKHPU.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-kufyanarabic-medium/arfonts-kufyanarabic-medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-b-setareh-bold/arfonts-b-setareh-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/djadli_OTFal-Qabas-Extrude/djadli_OTFal-Qabas-Extrude.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-faris29/al-faris29.ttf
+/Users/hamza/Downloads/fonts_2K_1/BBaranO/BBaranO.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hend Font Bold/Hend Font Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen/hacen-samra.ttf
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 55 Roman/Frutiger LT Arabic 55 Roman.ttf
+/Users/hamza/Downloads/fonts_2K_1/Dima/Dima-Classic-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammaddiala_0/mohammaddiala_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-faris15/al-faris15.ttf
+/Users/hamza/Downloads/fonts_2K_1/bader_al merkaz/bader_al merkaz.ttf
+/Users/hamza/Downloads/fonts_2K_1/bn-arabic-bold/bn-arabic-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad lotus/mohammad lotus.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ff-yaseer/arfonts-ff-yaseer.ttf
+/Users/hamza/Downloads/fonts_2K_1/Readex_Pro/ReadexPro-VariableFont_HEXP,wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/AbdoMaster/AbdoMaster-Book _.ttf
+/Users/hamza/Downloads/fonts_2K_1/mj-tunisia-lt/mj-tunisia-lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_DUBAI/SC_DUBAI.TTF
+/Users/hamza/Downloads/fonts_2K_1/decotype-naskh-variants/decotype-naskh-variants.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sada Bold/Sada Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Massir.Ballpoint/Massir.Ballpoint.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-Droid.Arabic.Kufi_DownloadSoftware.iR_/Droid.Arabic.Kufi_DownloadSoftware.iR_.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdobeArabic-Regular/AdobeArabic-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Old Antic Bold/Old Antic Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/al/AL-Gemah-Badr.ttf
+/Users/hamza/Downloads/fonts_2K_1/b-kidnap/b-kidnap.ttf
+/Users/hamza/Downloads/fonts_2K_1/BLotus/BLotus.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Nice.ttf
+/Users/hamza/Downloads/fonts_2K_1/THARWATEMARARUQAALIGHT/THARWATEMARARUQAALIGHT2.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKOUROSH/BKOUROSH.TTF
+/Users/hamza/Downloads/fonts_2K_1/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/Beiruti/static/Beiruti-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Bahij_TheSansArabic-Bold/Bahij_TheSansArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/djadli_linearHour/djadli_linearHour.ttf
+/Users/hamza/Downloads/fonts_2K_1/maghribi/AchamelSoftMaghribiAssileMaroc-1G9nB.ttf
+/Users/hamza/Downloads/fonts_2K_1/Almarai-Regular/Almarai-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Far_Fanni/Far_Fanni.ttf
+/Users/hamza/Downloads/fonts_2K_1/Copy of bassam/Copy of bassam.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKamranO/BKamranO.ttf
+/Users/hamza/Downloads/fonts_2K_1/Al Mohannad_0/Al Mohannad_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN_Ibtisam/HSN_Ibtisam.ttf
+/Users/hamza/Downloads/fonts_2K_1/andlso/andlso.ttf
+/Users/hamza/Downloads/fonts_2K_1/mylotusB/mylotusB.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Normal/Abdo-Master-Normal.otf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_Tasees/alfont_com_Tasees-Saudi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Lemonada-VariableFont_wght/Lemonada-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/tasmeem/tasmeem-med.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Heritage-One-Light_A/GE-Heritage-One-Light_A.otf
+/Users/hamza/Downloads/fonts_2K_1/BSetareh/BSetareh.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Flow-Bold-Italic_1A/GE-Flow-Bold-Italic_1A.otf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/alqalam/alqalam-ferdaos-1.otf
+/Users/hamza/Downloads/fonts_2K_1/VIP-Hakm-Bold-2016/VIP-Hakm-Bold-2016.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-khat-e-kamal/arfonts-khat-e-kamal.ttf
+/Users/hamza/Downloads/fonts_2K_1/A/A-Massir-Spray.ttf
+/Users/hamza/Downloads/fonts_2K_1/BStarBd/BStarBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/BElham/BElham.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlHadari Bold 2/AlHadari Bold 2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Dimathuluth/Dimathuluth.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/70- Five Farisi Fonts/HSN_Layan.ttf
+/Users/hamza/Downloads/fonts_2K_1/PF-Nuyork-Arabic-Light/PF-Nuyork-Arabic-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/B_MASHHAD_BOLD/B_MASHHAD_BOLD.TTF
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/din/din-next-lt-arabic-light.otf
+/Users/hamza/Downloads/fonts_2K_1/splart-h-mawaddah2black/splart-h-mawaddah2black.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN Naskh farisi/HSN Naskh farisi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/10- Molhim Font/Molhim.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-hsalmidad-thin/arfonts-hsalmidad-thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/almwaheb-3/almwaheb-3.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_SS_Two_Bold/GE_SS_Two_Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/al/AL.TTF
+/Users/hamza/Downloads/fonts_2K_1/AnNahar-Black/AnNahar-Black.otf
+/Users/hamza/Downloads/fonts_2K_1/HSN_Razan_regular/HSN_Razan_regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-tubqal-pro-medium/arfonts-tubqal-pro-medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/KohinoorArabic-Light/KohinoorArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-ExtraBoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/majallab_0/majallab_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/BigVesta Arabic Bold/BigVesta Arabic Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Ouhod-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DWNSPOUT/DWNSPOUT.TTF
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/ABO SLMAN Alomar/ABO SLMAN Alomar.ttf
+/Users/hamza/Downloads/fonts_2K_1/AlRaiMediaBlack/AlRaiMediaBlack.otf
+/Users/hamza/Downloads/fonts_2K_1/maidan/maidan.ttf
+/Users/hamza/Downloads/fonts_2K_1/omniglot/OmniglotFont-mLWLv.ttf
+/Users/hamza/Downloads/fonts_2K_1/JalalLTLight/JalalLTLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/13- Sukar Font/Sukar Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-kamva/arfonts-kamva.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Cortoba_0/ae_Cortoba_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Outline/Abdo-Master-Outline.otf
+/Users/hamza/Downloads/fonts_2K_1/DIWANBNT_0/DIWANBNT_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Kalema /Kalema - Copy.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-aref-menna-light/arfonts-aref-menna-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/helal/helal.ttf
+/Users/hamza/Downloads/fonts_2K_1/traditional-arabic-bold/traditional-arabic-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ElMessiri-SemiBold/ElMessiri-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMOJ/BMOJ.TTF
+/Users/hamza/Downloads/fonts_2K_1/Dima/Dima-Yekan-Typography.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_CAP_MEDIUM_7/GE_CAP_MEDIUM_7.otf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/CairoPlay-VariableFont_slnt,wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/UTHMANICHAFS1 VER09_0/UTHMANICHAFS1 VER09_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/B Elm Regular/B Elm Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sahara St/Hacen Sahara St.ttf
+/Users/hamza/Downloads/fonts_2K_1/hacen-saudi-arabia-xl/hacen-saudi-arabia-xl.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Decorative/Kacst Decorative.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-shekari-font/arfonts-shekari-font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ubuntu/Ubuntu-Kurdish-Kurdfont.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammed/mohammed3.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMajidS/BMajidS.ttf
+/Users/hamza/Downloads/fonts_2K_1/KacstTitleL/KacstTitleL.ttf
+/Users/hamza/Downloads/fonts_2K_1/tahoma_0/tahoma_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nawel/Nawel.ttf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-Bold/URWGeometricArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/MitraLTBold/MitraLTBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_70/4_70.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_Kayrawan/ae_Kayrawan.ttf
+/Users/hamza/Downloads/fonts_2K_1/yassin/yassin.ttf
+/Users/hamza/Downloads/fonts_2K_1/GESS/GESS.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/48- Yaraa Font/Shorooq Yara black.otf
+/Users/hamza/Downloads/fonts_2K_1/Handjet/static/Handjet-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/din-next-arabic-bold/din-next-arabic-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AZ_TOPAZ/AZ_TOPAZ.TTF
+/Users/hamza/Downloads/fonts_2K_1/GE_Smooth_Light_2/GE_Smooth_Light_2.otf
+/Users/hamza/Downloads/fonts_2K_1/arialbd/arialbd.ttf
+/Users/hamza/Downloads/fonts_2K_1/old/old-antic-decorative.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sukar/Sukar-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Digital Arabia XL/Hacen Digital Arabia XL.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_OUHOD/SC_OUHOD.TTF
+/Users/hamza/Downloads/fonts_2K_1/Basim Marah Beh Light/Basim Marah Beh Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/26- Al-Bayan Font/AraAlBayan Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-MediumItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_E3/4_E3.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mothanna-Oblique/Mothanna-Oblique.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaUbuntu/DimaUbuntu.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad sahab_0/mohammad sahab_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/HassanLTBold/HassanLTBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/IBM_Plex_Sans_Arabic/IBMPlexSansArabic-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/XB Zar/XB Zar.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_AlYermook.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Light/Abdo-Master-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_SIMA/KHALAAD_SIMA.TTF
+/Users/hamza/Downloads/fonts_2K_1/UrdTypeb/UrdTypeb.ttf
+/Users/hamza/Downloads/fonts_2K_1/samman-regular/samman-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 75 Black/Frutiger LT Arabic 75 Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/algeria/algeria.ttf
+/Users/hamza/Downloads/fonts_2K_1/b-elm-border/b-elm-border.ttf
+/Users/hamza/Downloads/fonts_2K_1/Tajawal-Black/Tajawal-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-nastarkib/arfonts-nastarkib.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fertigo Pro/Fertigo Pro.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraAqeeq/AraAqeeq-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ElMessiri-Regular/ElMessiri-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DWNSH2_0/DWNSH2_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Damavand/Damavand-Heavy.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mj_Tasmeem/Mj_Tasmeem.ttf
+/Users/hamza/Downloads/fonts_2K_1/K_FARNAZ/K_FARNAZ.TTF
+/Users/hamza/Downloads/fonts_2K_1/mohammad mashtoof_0/mohammad mashtoof_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Isra-Thin/Isra-Thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Furat.ttf
+/Users/hamza/Downloads/fonts_2K_1/SST Arabic Bold/SST Arabic Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/DINArabic-CondExtlight/DINArabic-CondExtlight.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Heritage-Two-Light-Itali_8/GE-Heritage-Two-Light-Itali_8.otf
+/Users/hamza/Downloads/fonts_2K_1/lamar/lamar.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-dg-jory-light/arfonts-dg-jory-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP/VIP-TIM-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/b/b-qmr.otf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-BoldItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/damas/damas.ttf
+/Users/hamza/Downloads/fonts_2K_1/bader-dam3a/bader-dam3a.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Petra.ttf
+/Users/hamza/Downloads/fonts_2K_1/1_0/1_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Regular/Abdo-Master-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/AL-QUDS/AL-QUDS.OTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-aref-menna/arfonts-aref-menna.ttf
+/Users/hamza/Downloads/fonts_2K_1/Khaled Font/Khaled Font.otf
+/Users/hamza/Downloads/fonts_2K_1/4/4.ttf
+/Users/hamza/Downloads/fonts_2K_1/NazaninLTLight/NazaninLTLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/RAOOF-SLIGHTROUND/RAOOF-SLIGHTROUND.otf
+/Users/hamza/Downloads/fonts_2K_1/Ruwudu/Ruwudu-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ae-petra/arfonts-ae-petra.ttf
+/Users/hamza/Downloads/fonts_2K_1/FFShamelFamily/FFShamelFamily-SansOneBook (1).ttf
+/Users/hamza/Downloads/fonts_2K_1/Al Mawash Shatt Al-Arab/Al Mawash Shatt Al-Arab.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/58- AlHurra Font/AlHurra Font Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_AlManzomah Regular/ae_AlManzomah Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/khalaad Sara/khalaad Sara.ttf
+/Users/hamza/Downloads/fonts_2K_1/al/AlQuranAli-L3A83.ttf
+/Users/hamza/Downloads/fonts_2K_1/saudi/saudi.ttf
+/Users/hamza/Downloads/fonts_2K_1/OLDANOUT/OLDANOUT.TTF
+/Users/hamza/Downloads/fonts_2K_1/smartman/smartman.ttf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_PRO_BOLD_OUTLINE/BOUTROS_ADS_PRO_BOLD_OUTLINE.OTF
+/Users/hamza/Downloads/fonts_2K_1/MagedLTRegular_0/MagedLTRegular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Castile/Castile.otf
+/Users/hamza/Downloads/fonts_2K_1/BJALAL/BJALAL.TTF
+/Users/hamza/Downloads/fonts_2K_1/HACEN_BEIRUT_HEADING/HACEN_BEIRUT_HEADING.TTF
+/Users/hamza/Downloads/fonts_2K_1/sara/sara.ttf
+/Users/hamza/Downloads/fonts_2K_1/Swissra-Medium/Swissra-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Promoter Lt/Hacen Promoter Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-dima-latifi-regular/arfonts-dima-latifi-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/shasenem/shasenem-wefayi.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ahrar Font/Ahrar Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sahara/Hacen Sahara.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad naskh extra bold/mohammad naskh extra bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/A Noor Bold_6/A Noor Bold_6.ttf
+/Users/hamza/Downloads/fonts_2K_1/maghribi/AchamelSoftMaghribiAssileColor-9YBon.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaSindibadV2SndbdBold-ZWmq.ttf
+/Users/hamza/Downloads/fonts_2K_1/ToyorAljanah-Fat/ToyorAljanah-Fat.otf
+/Users/hamza/Downloads/fonts_2K_1/Lemonada/Lemonada-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Changa/static/Changa-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kelma_/Kelma_-MagdySoliman-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Poolad Light/Poolad Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/rudawbold/rudawbold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Changa-Bold/Changa-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nishan-Elegance/Nishan-Elegance.otf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_MEDIUMITALIC/BOUTROS_ADS_MEDIUMITALIC.TTF
+/Users/hamza/Downloads/fonts_2K_1/GE SS TWO ETISALAT/GE SS TWO ETISALAT.OTF
+/Users/hamza/Downloads/fonts_2K_1/ae_Electron/ae_Electron.ttf
+/Users/hamza/Downloads/fonts_2K_1/MolsaqArabicLight/MolsaqArabicLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/alqalam/alqalam-mehfil.otf
+/Users/hamza/Downloads/fonts_2K_1/MitraLTLight/MitraLTLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/bein/bein-normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/URW DIN Arabic Demi/URW DIN Arabic Demi.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Heritage-One-Medium_A/GE-Heritage-One-Medium_A.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Promoter Broadcast/Hacen Promoter Broadcast.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-a-bad-khat/arfonts-a-bad-khat.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst One/Kacst One.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Title L/Kacst Title L.ttf
+/Users/hamza/Downloads/fonts_2K_1/BARIA/BARIA.TTF
+/Users/hamza/Downloads/fonts_2K_1/Hacen Samra/Hacen Samra.ttf
+/Users/hamza/Downloads/fonts_2K_1/TanseekModernProArabic-ExBold/TanseekModernProArabic-ExBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/bein-ar-normal/bein-ar-normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/K_TRAFFIC/K_TRAFFIC.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-arab/arfonts-arab.ttf
+/Users/hamza/Downloads/fonts_2K_1/MO_NAWEL_0/MO_NAWEL_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Urdu Najd v1/Urdu Najd v1.ttf
+/Users/hamza/Downloads/fonts_2K_1/courbd/courbd.ttf
+/Users/hamza/Downloads/fonts_2K_1/NeoSansArabic/NeoSansArabic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Jordan/Hacen Jordan.ttf
+/Users/hamza/Downloads/fonts_2K_1/BMah/BMah.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad annoktah_0/mohammad annoktah_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/b-arshia/b-arshia.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Almidad-Bold/HS-Almidad-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/4_E5/4_E5.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Meem-Medium_A/GE-Meem-Medium_A.otf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/56- Graffiti Font/TTF/Graffiti Font 3D.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Casablanca Heavy/Hacen Casablanca Heavy.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP-Hakm-Thin-2016/VIP-Hakm-Thin-2016.ttf
+/Users/hamza/Downloads/fonts_2K_1/HSN_Khalid/HSN_Khalid.ttf
+/Users/hamza/Downloads/fonts_2K_1/Khayal Font /Khayal Font - Demo.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-mikhak-medium/arfonts-mikhak-medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/TheYearofHandicrafts/TheYearofHandicrafts-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/decotype/DecoType-Thuluth.ttf
+/Users/hamza/Downloads/fonts_2K_1/DG/DG Ghayaty Bold F.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Heritage-Two-Medium_A/GE-Heritage-Two-Medium_A.otf
+/Users/hamza/Downloads/fonts_2K_1/BKamran/BKamran.ttf
+/Users/hamza/Downloads/fonts_2K_1/DTHULUTH_0/DTHULUTH_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/GE/GE-Curves-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-MB-Bold_E/GE-MB-MB-Bold_E.otf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/The Year of The Camel/TheYearofTheCamel-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/Adobe Arabic SHIN Stout Bold/Adobe Arabic SHIN Stout Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/DINArabic/DINArabic-CondBlack.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hayah/hayah.ttf
+/Users/hamza/Downloads/fonts_2K_1/AGCBold/AGCBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/afsaneh/afsaneh.ttf
+/Users/hamza/Downloads/fonts_2K_1/arbfonts/arbfonts-diwany-thuluth.ttf
+/Users/hamza/Downloads/fonts_2K_1/AD-STOOR_1/AD-STOOR_1.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Heavy/Abdo-Master-Heavy.otf
+/Users/hamza/Downloads/fonts_2K_1/FRSSPOUT/FRSSPOUT.TTF
+/Users/hamza/Downloads/fonts_2K_1/LBC/LBC.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen/Hacen-Algeria-Bd.ttf
+/Users/hamza/Downloads/fonts_2K_1/DINArabic/DINArabic-CondThin.ttf
+/Users/hamza/Downloads/fonts_2K_1/aldhabi_2/aldhabi_2.ttf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_خط/alfont_com_خط-فارسي-رفيع-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada/mada.ttf
+/Users/hamza/Downloads/fonts_2K_1/TSKufidia-semiRounded/TSKufidia-semiRounded.otf
+/Users/hamza/Downloads/fonts_2K_1/air/air-arabia-3.ttf
+/Users/hamza/Downloads/fonts_2K_1/29ltbukraregular_1/29ltbukraregular_1.otf
+/Users/hamza/Downloads/fonts_2K_1/arial_0/arial_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/BNikiB/BNikiB.ttf
+/Users/hamza/Downloads/fonts_2K_1/Gulzar/Gulzar-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/NOOREHIDAYAT_0/NOOREHIDAYAT_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/GaliModern/GaliModern-UltraLight-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/OLDOUTSH_0/OLDOUTSH_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Tajawal-Regular/Tajawal-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_E/4_E8.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hasan-Alquds-Unicode/Hasan-Alquds-Unicode.ttf
+/Users/hamza/Downloads/fonts_2K_1/The Year of The Camel/TheYearofTheCamel-Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/KindahBold-Bold/KindahBold-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Jomhuria/jomhuria.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-AridiKoufiItalic_8/GE-AridiKoufiItalic_8.otf
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Rajab.Black/Abdo.Fonts_Abdo.Rajab.Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/grosha-ar-photoshop-h/grosha-ar-photoshop-h.ttf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD__WAFA/KHALAAD__WAFA.TTF
+/Users/hamza/Downloads/fonts_2K_1/areeq-al-gafelh/areeq-al-gafelh.ttf
+/Users/hamza/Downloads/fonts_2K_1/jooza/jooza-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaMashqV2Mshq-3mdX.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_SS_Two_Medium-1/GE_SS_Two_Medium-1.otf
+/Users/hamza/Downloads/fonts_2K_1/noto/noto-urdu.ttf
+/Users/hamza/Downloads/fonts_2K_1/BVAHIDBD/BVAHIDBD.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-sayeh-1/arfonts-sayeh-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/BBaranI/BBaranI.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada/Mada-VariableFont_wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-SS-Text-Bold_26/GE-SS-Text-Bold_26.otf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Qatar/Hacen Qatar.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaShekari/DimaShekari.ttf
+/Users/hamza/Downloads/fonts_2K_1/YakoutLinotypeLight-Bold_0/YakoutLinotypeLight-Bold_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Dawshah/Dawshah-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Thabit/Thabit.ttf
+/Users/hamza/Downloads/fonts_2K_1/Best Arabic Font/14- Hala Font/VIP Hala Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/simpfxo_0/simpfxo_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-gemah-almajd/al-gemah-almajd.ttf
+/Users/hamza/Downloads/fonts_2K_1/11- Sbgh Font/TTF/VIP Sbgh.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-hudhud-ar-light/arfonts-hudhud-ar-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mothanna-Bold/Mothanna-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Sonbili_DownloadSoftware.iR_/Sonbili_DownloadSoftware.iR_.otf
+/Users/hamza/Downloads/fonts_2K_1/Samman/Samman.otf
+/Users/hamza/Downloads/fonts_2K_1/Sara Font/Sara Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/tachkili/tachkili.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kharabeesh Normal Font/Kharabeesh Normal Font.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_055/UniSalar_F_055.otf
+/Users/hamza/Downloads/fonts_2K_1/ALHARFALJADID_LINOTYPE_ONE_0/ALHARFALJADID_LINOTYPE_ONE_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/Noto_Nastaliq_Urdu/static/NotoNastaliqUrdu-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaSogand/DimaSogand-new.ttf
+/Users/hamza/Downloads/fonts_2K_1/yaraa/yaraa-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Promoter Md/Hacen Promoter Md.ttf
+/Users/hamza/Downloads/fonts_2K_1/Katibeh/katibeh.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo-SemiBold/Cairo-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-maheeb-regular/arfonts-maheeb-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Droid-Sans-Arabic/Droid-Sans-Arabic.ttf
+/Users/hamza/Downloads/fonts_2K_1/BShirazI/BShirazI.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP-Hakm-Regular-2016/VIP-Hakm-Regular-2016.ttf
+/Users/hamza/Downloads/fonts_2K_1/april/April-K70po.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-Alfarooq/Alfarooq.ttf
+/Users/hamza/Downloads/fonts_2K_1/FFBouya-Normal/FFBouya-Normal.otf
+/Users/hamza/Downloads/fonts_2K_1/al/Al-Jazeera-Arabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/trado (1)/trado (1).ttf
+/Users/hamza/Downloads/fonts_2K_1/mohamedamer-ebn-elnile/mohamedamer-ebn-elnile.ttf
+/Users/hamza/Downloads/fonts_2K_1/DecoType Thuluth/DecoType Thuluth.ttf
+/Users/hamza/Downloads/fonts_2K_1/HishamLTRegular/HishamLTRegular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Beirut Lt X3/Hacen Beirut Lt X3.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP/vip-hakm-thin.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-KAMRB_SF/KAMRB_SF.ttf
+/Users/hamza/Downloads/fonts_2K_1/Scheherazade_New/ScheherazadeNew-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ruwudu/Ruwudu-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BRoya/BRoya.ttf
+/Users/hamza/Downloads/fonts_2K_1/alqalam-telenor-regular-1/alqalam-telenor-regular-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-Black/Abdo-Master-Black.otf
+/Users/hamza/Downloads/fonts_2K_1/OLDANDEC/OLDANDEC.TTF
+/Users/hamza/Downloads/fonts_2K_1/hadeel-ar-photoshop-bold-bold/hadeel-ar-photoshop-bold-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/The Year of The Camel/TheYearofTheCamel-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_019/UniSalar_F_019.otf
+/Users/hamza/Downloads/fonts_2K_1/5- Alnaqaa Font/TTF/Alnaqaaa-S.ttf
+/Users/hamza/Downloads/fonts_2K_1/BElmI/BElmI.ttf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-Regular/URWGeometricArabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/alqalam-miki/alqalam-miki.ttf
+/Users/hamza/Downloads/fonts_2K_1/DTNASKH3/DTNASKH3.TTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-azar-mehr-msrs1/arfonts-azar-mehr-msrs1.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae_AlMateen/ae_AlMateen.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_25/4_25.otf
+/Users/hamza/Downloads/fonts_2K_1/HakimGhazali_0/HakimGhazali_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraEtabAlMonieee-Regular/AraEtabAlMonieee-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/GE/GE-Narrow-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/artrbdo/artrbdo.ttf
+/Users/hamza/Downloads/fonts_2K_1/HS-Ishraq-Regular/HS-Ishraq-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/PNU-Bold/PNU-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BCHSHMHB/BCHSHMHB.TTF
+/Users/hamza/Downloads/fonts_2K_1/12_Sarchia_Ameer/12_Sarchia_Ameer.ttf
+/Users/hamza/Downloads/fonts_2K_1/maghribi/AchamelSoftMaghribiAssileSvg-nRnL0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Tajm3kufi-Light/Tajm3kufi-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Dimnah.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ae-hor/arfonts-ae-hor.ttf
+/Users/hamza/Downloads/fonts_2K_1/decora/decora-arabic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Scheherazade_New/ScheherazadeNew-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/WINSOFT_THULUTH_PRO_BOLD/WINSOFT_THULUTH_PRO_BOLD.OTF
+/Users/hamza/Downloads/fonts_2K_1/DOTTED V001_0/DOTTED V001_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/RAOOF-REAL-SMOOTH/RAOOF-REAL-SMOOTH.otf
+/Users/hamza/Downloads/fonts_2K_1/014/014.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abuhmeda -f2 Regular/Abuhmeda -f2 Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DTNASKH0/DTNASKH0.TTF
+/Users/hamza/Downloads/fonts_2K_1/BSOOREH/BSOOREH.TTF
+/Users/hamza/Downloads/fonts_2K_1/BADER_AL_GORDABIA/BADER_AL_GORDABIA.TTF
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_AlJalilDot_v/alfont_com_AlJalilDot_v01.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-shahriar/arfonts-shahriar.ttf
+/Users/hamza/Downloads/fonts_2K_1/ge-dinarone-bold_8/ge-dinarone-bold_8.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP Urkida BBlack/VIP Urkida BBlack.otf
+/Users/hamza/Downloads/fonts_2K_1/KFEXTOUT_0/KFEXTOUT_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/mobily/mobily.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-bader_classic/bader_classic.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad head art_0/mohammad head art_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo-Master-ExtraBold/Abdo-Master-ExtraBold.otf
+/Users/hamza/Downloads/fonts_2K_1/GE-Elegant-Medium_24/GE-Elegant-Medium_24.otf
+/Users/hamza/Downloads/fonts_2K_1/FFYaseer/FFYaseer-Solid.otf
+/Users/hamza/Downloads/fonts_2K_1/BSOOREHB/BSOOREHB.TTF
+/Users/hamza/Downloads/fonts_2K_1/Ruwudu/Ruwudu-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-mawash-shatt-al-arab/al-mawash-shatt-al-arab.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKarimBd/BKarimBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad arafah/mohammad arafah.ttf
+/Users/hamza/Downloads/fonts_2K_1/al/al-qalam-kolkatta-quranic-font.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-ff-wahm-two/arfonts-ff-wahm-two.ttf
+/Users/hamza/Downloads/fonts_2K_1/BKoodkBd/BKoodkBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Expo Arabic/Expo Arabic Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/sadiyah/sadiyah.ttf
+/Users/hamza/Downloads/fonts_2K_1/baran/baran.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Jarida-Heavy-Italic_14/GE-Jarida-Heavy-Italic_14.otf
+/Users/hamza/Downloads/fonts_2K_1/BDavat/BDavat.ttf
+/Users/hamza/Downloads/fonts_2K_1/Osama Font/Osama Font.otf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_PRO_MEDIUM_ITALIC_0/BOUTROS_ADS_PRO_MEDIUM_ITALIC_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_PRO_MEDIUM_0/BOUTROS_ADS_PRO_MEDIUM_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/arfonts-khalkmd-hadeel/arfonts-khalkmd-hadeel.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_GULF/SC_GULF.TTF
+/Users/hamza/Downloads/fonts_2K_1/Readex_Pro/static/ReadexPro-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/bader_s7r/bader_s7r-al-sharq.ttf
+/Users/hamza/Downloads/fonts_2K_1/PF-Nuyork-Arabic-ExtraBold/PF-Nuyork-Arabic-ExtraBold.otf
+/Users/hamza/Downloads/fonts_2K_1/GE_SS_TEXT_LIGHT/GE_SS_TEXT_LIGHT.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-rammallah-palestine/arfonts-rammallah-palestine.ttf
+/Users/hamza/Downloads/fonts_2K_1/Balaleen-Line/Balaleen-Line.otf
+/Users/hamza/Downloads/fonts_2K_1/FFHekaya-Light/FFHekaya-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/ReemKufi-Regular/ReemKufi-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_Contrast_Bold_2/GE_Contrast_Bold_2.otf
+/Users/hamza/Downloads/fonts_2K_1/Shahd Font Regular/Shahd Font Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_BEIRUT/HACEN_BEIRUT.TTF
+/Users/hamza/Downloads/fonts_2K_1/SC_SHARJAH/SC_SHARJAH.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Dinar-Two-Light-Italic_20/GE-Dinar-Two-Light-Italic_20.otf
+/Users/hamza/Downloads/fonts_2K_1/23- Jozoor Flat Font/otf/JF Flat regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Muslimah-Light/Muslimah-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/K Sina Bold/K Sina Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_24/4_24.otf
+/Users/hamza/Downloads/fonts_2K_1/AGCRegular/AGCRegular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BritishCouncil/BritishCouncil-Arabic-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_TASMEEM_MEDIUM/GE_TASMEEM_MEDIUM.otf
+/Users/hamza/Downloads/fonts_2K_1/b/B_YAGUT.TTF
+/Users/hamza/Downloads/fonts_2K_1/4_10/4_10.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Haramain.ttf
+/Users/hamza/Downloads/fonts_2K_1/Alhadari Bold/Alhadari Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic-Bold/DINArabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Arian/Arian-LT-Heavy-1.ttf
+/Users/hamza/Downloads/fonts_2K_1/boahmed-alharf-bold/boahmed-alharf-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaMashqV2MshqBold-xj6j.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abd ElRady Regular/Abd ElRady Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/static/Fustat-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/nazli/nazli.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Liner XL/Hacen Liner XL.ttf
+/Users/hamza/Downloads/fonts_2K_1/djadli_khatAnnasrShadow/djadli_khatAnnasrShadow.ttf
+/Users/hamza/Downloads/fonts_2K_1/Jalal/Jalal-LT-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ghalam-1/Ghalam-1.otf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-digi-maryam/arfonts-digi-maryam.ttf
+/Users/hamza/Downloads/fonts_2K_1/Spirit Of Doha Medium/Spirit Of Doha Medium.otf
+/Users/hamza/Downloads/fonts_2K_1/mohammad ishbilia_0/mohammad ishbilia_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-New-Bold_A/GE-New-Bold_A.otf
+/Users/hamza/Downloads/fonts_2K_1/ONE/ONE.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/HelveticaWorld/HelveticaWorld-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdobeArabic-Bold/AdobeArabic-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/AL-QURANALKAREEMB/AL-QURANALKAREEMB.TTF
+/Users/hamza/Downloads/fonts_2K_1/KacstOneFixed/KacstOneFixed.ttf
+/Users/hamza/Downloads/fonts_2K_1/WINSOFT_NASKH_PRO_MEDIUM/WINSOFT_NASKH_PRO_MEDIUM.OTF
+/Users/hamza/Downloads/fonts_2K_1/Cairo/Cairo-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Midan_0/Midan_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/ElMessiri/ElMessiri-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mothanna-Bold-Oblique/Mothanna-Bold-Oblique.ttf
+/Users/hamza/Downloads/fonts_2K_1/2- Taweel Font/TTF/FFTaweel-BoldStamp.ttf
+/Users/hamza/Downloads/fonts_2K_1/Amiri Regular/Amiri Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/PalatinoLTArabic-Regular_0/PalatinoLTArabic-Regular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/almwaheb/almwaheb-by-A4D.ttf
+/Users/hamza/Downloads/fonts_2K_1/sahlnaskh/sahlnaskh-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/BBaran/BBaran.ttf
+/Users/hamza/Downloads/fonts_2K_1/AdobeArabic-Italic/AdobeArabic-Italic.otf
+/Users/hamza/Downloads/fonts_2K_1/Thwar_Fared/Thwar_Fared.ttf
+/Users/hamza/Downloads/fonts_2K_1/The Year of The Camel/TheYearofTheCamel-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/hsn-omar/hsn-omar.ttf
+/Users/hamza/Downloads/fonts_2K_1/MagedLTBold_0/MagedLTBold_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Zain/Zain-LightItalic.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Sahara TX/Hacen Sahara TX.ttf
+/Users/hamza/Downloads/fonts_2K_1/PTBLSSTR_0/PTBLSSTR_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Isra-Regular/Isra-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE Dinar Two Medium /GE Dinar Two Medium 2.otf
+/Users/hamza/Downloads/fonts_2K_1/al-farooq/al-farooq.ttf
+/Users/hamza/Downloads/fonts_2K_1/JannaLT/JannaLT-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/msuighub/msuighub.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mirza-SemiBold/Mirza-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noon/Noon.ttf
+/Users/hamza/Downloads/fonts_2K_1/themixarab/themixarab.ttf
+/Users/hamza/Downloads/fonts_2K_1/Al Qalam Kaman.ttf
+/Users/hamza/Downloads/fonts_2K_1/ghala/ghala.ttf
+/Users/hamza/Downloads/fonts_2K_1/SOGAND/SOGAND.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Thameen-DemiBold-Italic_12/GE-Thameen-DemiBold-Italic_12.otf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic-CondBold/DINArabic-CondBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/tahomabd_0/tahomabd_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/471btehran/471btehran.ttf
+/Users/hamza/Downloads/fonts_2K_1/Graffiti-Font-3D/Graffiti-Font-3D.ttf
+/Users/hamza/Downloads/fonts_2K_1/A.Thuluth_p30download.com/A.Thuluth_p30download.com.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_E4/4_E4.ttf
+/Users/hamza/Downloads/fonts_2K_1/UniversNextW/UniversNextW23-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Tunisia Bold/Hacen Tunisia Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Estedad/Estedad-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_AlBattar.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Trarza/Hacen Trarza.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-falak/arfonts-falak.ttf
+/Users/hamza/Downloads/fonts_2K_1/DimaPlatinum/DimaPlatinum.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammed/mohammed2.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mj_Yalda_/Mj_Yalda_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/fromAkram/Fonts/Susan.TTF
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamah1964R-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Molhim Bold/Molhim Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Elegant/Elegant-ar.ttf
+/Users/hamza/Downloads/fonts_2K_1/SAKKAL_SETA_PRO/SAKKAL_SETA_PRO.OTF
+/Users/hamza/Downloads/fonts_2K_1/DimaThulth/DimaThulth2.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaCordobaV2Qrtb-e5ae.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-b-phrtch-bold/arfonts-b-phrtch-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Elshan Regular/Elshan Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/MOTKEN_DAEIRA/MOTKEN_DAEIRA.TTF
+/Users/hamza/Downloads/fonts_2K_1/diana/diana-regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Aljazeera/Aljazeera.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Aridi-NaskhBold_8/GE-Aridi-NaskhBold_8.otf
+/Users/hamza/Downloads/fonts_2K_1/mohammad ghornata_0/mohammad ghornata_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/times/times.ttf
+/Users/hamza/Downloads/fonts_2K_1/A Sardar Hoor otf_4/A Sardar Hoor otf_4.otf
+/Users/hamza/Downloads/fonts_2K_1/hacen-freehand/hacen-freehand.ttf
+/Users/hamza/Downloads/fonts_2K_1/Typographical line/Typographical line.ttf
+/Users/hamza/Downloads/fonts_2K_1/MyriadArabic-Bold/MyriadArabic-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Parvin/Parvin-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Thameen-Light-Italic_12/GE-Thameen-Light-Italic_12.otf
+/Users/hamza/Downloads/fonts_2K_1/BKAVEH/BKAVEH.TTF
+/Users/hamza/Downloads/fonts_2K_1/Ghalam-2/Ghalam-2.otf
+/Users/hamza/Downloads/fonts_2K_1/rabat/rabat.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Trarza Lt/Hacen Trarza Lt.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-SS-TV-Medium_10/GE-SS-TV-Medium_10.otf
+/Users/hamza/Downloads/fonts_2K_1/XB Zar It/XB Zar It.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cocon® Next Arabic/Cocon® Next Arabic-Light.otf
+/Users/hamza/Downloads/fonts_2K_1/msuighur/msuighur.ttf
+/Users/hamza/Downloads/fonts_2K_1/Readex_Pro/static/ReadexPro-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ITC/alfont_com_ITC-Handel-Gothic-Arabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kacst Digital/Kacst Digital.ttf
+/Users/hamza/Downloads/fonts_2K_1/Far_Kamran/Far_Kamran.ttf
+/Users/hamza/Downloads/fonts_2K_1/spirit/spirit-of-doha.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-gemah-king/al-gemah-king.ttf
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Free.Bold_1/Abdo.Fonts_Abdo.Free.Bold_1.ttf
+/Users/hamza/Downloads/fonts_2K_1/alqusair/alqusair.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic-Light/DINArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 57 Cn/Frutiger LT Arabic 57 Cn.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-Curves-Medium_2B/GE-Curves-Medium_2B.otf
+/Users/hamza/Downloads/fonts_2K_1/Elain/Elain-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Vazirmatn/static/Vazirmatn-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-faris24/al-faris24.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE EAST EXTRABOLD/GE EAST EXTRABOLD.OTF
+/Users/hamza/Downloads/fonts_2K_1/thameen/thameen.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/nawar/nawar.ttf
+/Users/hamza/Downloads/fonts_2K_1/A Khash Medium/A Khash Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/motairah/motairah-light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Jameel Noori Nastaleeq/Jameel Noori Nastaleeq.ttf
+/Users/hamza/Downloads/fonts_2K_1/Khebrat Musamim 2018 New/Khebrat Musamim 2018 New.ttf
+/Users/hamza/Downloads/fonts_2K_1/DUBAI/DUBAI-LIGHT.TTF
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-Light/URWGeometricArabic-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/alfont_com_Tasees/alfont_com_Tasees-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/alqalam/alqalam-ishtiaq.otf
+/Users/hamza/Downloads/fonts_2K_1/arwa/arwa.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada/static/Mada-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Questv1-Regular/Questv1-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/AR Baghdad Font/AR Baghdad Font.otf
+/Users/hamza/Downloads/fonts_2K_1/Mirza/mirza.ttf
+/Users/hamza/Downloads/fonts_2K_1/AhmedLTOutlineRegular_0/AhmedLTOutlineRegular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mothnna3_0/Mothnna3_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Harmattan/Harmattan-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Scheherazade-Bold/Scheherazade-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/PetraGlyphDisplayLight /PetraGlyphDisplayLight 2.ttf
+/Users/hamza/Downloads/fonts_2K_1/MotkenRafidain/MotkenRafidain.ttf
+/Users/hamza/Downloads/fonts_2K_1/Adobe Arabic SHIN Typo Bold/Adobe Arabic SHIN Typo Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/KHALAAD_HADEEL/KHALAAD_HADEEL.TTF
+/Users/hamza/Downloads/fonts_2K_1/BASSAM_OSTORAH/BASSAM_OSTORAH.TTF
+/Users/hamza/Downloads/fonts_2K_1/arabic/ArabicFont2013-q6jV.ttf
+/Users/hamza/Downloads/fonts_2K_1/Almarai-ExtraBold/Almarai-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Sans_Arabic/NotoSansArabic-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/bokra/bokra.ttf
+/Users/hamza/Downloads/fonts_2K_1/Noto_Kufi_Arabic/static/NotoKufiArabic-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ALGERIA Light_0/ALGERIA Light_0.otf
+/Users/hamza/Downloads/fonts_2K_1/BEsfhnBd/BEsfhnBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-SS-Three-Light_19/GE-SS-Three-Light_19.otf
+/Users/hamza/Downloads/fonts_2K_1/BCHINI/BCHINI.TTF
+/Users/hamza/Downloads/fonts_2K_1/Abdo.Fonts_Abdo.Misr.Bold/Abdo.Fonts_Abdo.Misr.Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/خط_بسيط/خط_بسيط.otf
+/Users/hamza/Downloads/fonts_2K_1/BCompset/BCompset.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad rafidain/mohammad rafidain.ttf
+/Users/hamza/Downloads/fonts_2K_1/IranNastaliq/IranNastaliq.ttf
+/Users/hamza/Downloads/fonts_2K_1/Yasmb_sf_0/Yasmb_sf_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/al/AL-MAJD.TTF
+/Users/hamza/Downloads/fonts_2K_1/VIP Rawy Regular/VIP Rawy Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/MOHAMMAD_ANNOKTAH/MOHAMMAD_ANNOKTAH.TTF
+/Users/hamza/Downloads/fonts_2K_1/Graffiti Font Normal/Graffiti Font Normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/ArbFONTS-DINArabic-Medium/DINArabic-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/SC_LUJAYN/SC_LUJAYN.TTF
+/Users/hamza/Downloads/fonts_2K_1/2- Taweel Font/TTF/FFTaweel-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BoutrosNewsH1-Bold/BoutrosNewsH1-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Rubik/static/Rubik-ExtraBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/aga/AgaAndalusNdls-0Gwv.ttf
+/Users/hamza/Downloads/fonts_2K_1/BShiraz/BShiraz.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Extender Slant/Hacen Extender Slant.ttf
+/Users/hamza/Downloads/fonts_2K_1/AhmedLTRegular_0/AhmedLTRegular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/MahmoudArt Black/MahmoudArt Black.otf
+/Users/hamza/Downloads/fonts_2K_1/Mirza-Regular/Mirza-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Thulth/Thulth-Tharwat-Emara-Golden.ttf
+/Users/hamza/Downloads/fonts_2K_1/arfonts-mehrajan-bold/arfonts-mehrajan-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/mylotus/mylotus.ttf
+/Users/hamza/Downloads/fonts_2K_1/al-faris14/al-faris14.ttf
+/Users/hamza/Downloads/fonts_2K_1/Bold Italic Art/Bold Italic Art.ttf
+/Users/hamza/Downloads/fonts_2K_1/BritishCouncil/BritishCouncil-Arabic-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/K Kamran/K Kamran.ttf
+/Users/hamza/Downloads/fonts_2K_1/AraHamahZanki/AraHamahZanki-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_TYPOGRAPHER_BOLD/HACEN_TYPOGRAPHER_BOLD.TTF
+/Users/hamza/Downloads/fonts_2K_1/AlRaiMediaBold/AlRaiMediaBold.otf
+/Users/hamza/Downloads/fonts_2K_1/ALHARFALJADID_LINOTYPE_TWO/ALHARFALJADID_LINOTYPE_TWO.OTF
+/Users/hamza/Downloads/fonts_2K_1/almwaheb by A4D/almwaheb by A4D.ttf
+/Users/hamza/Downloads/fonts_2K_1/Balabeloo.ttf
+/Users/hamza/Downloads/fonts_2K_1/FFShamelFamily/FFShamelFamily-SansOneBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/farsi/farsi-simple-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Rasheeq_bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/simpbdo/simpbdo.ttf
+/Users/hamza/Downloads/fonts_2K_1/Aref_Ruqaa/ArefRuqaa-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/DIWANLTR_0/DIWANLTR_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/TS Split/TS Split-Black.otf
+/Users/hamza/Downloads/fonts_2K_1/YakoutLinotypeLight-Regular_0/YakoutLinotypeLight-Regular_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/Olfah/Olfah-Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/24- Hamah Fonts/TTF-AraHamah/AraHamahAlThawra-Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/HACEN_LEBANON/HACEN_LEBANON.TTF
+/Users/hamza/Downloads/fonts_2K_1/UniSalar_F_059/UniSalar_F_059.otf
+/Users/hamza/Downloads/fonts_2K_1/BOUTROS_ADS_PRO_BOLD_0/BOUTROS_ADS_PRO_BOLD_0.OTF
+/Users/hamza/Downloads/fonts_2K_1/AdvertisingBold/AdvertisingBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nimbus Sans ME Demi/Nimbus Sans ME Demi.ttf
+/Users/hamza/Downloads/fonts_2K_1/neckar/neckar-bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Kufam/static/Kufam-Black.ttf
+/Users/hamza/Downloads/fonts_2K_1/Nastarki/Nastarki.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE-MB-Farasha-Bold_10/GE-MB-Farasha-Bold_10.otf
+/Users/hamza/Downloads/fonts_2K_1/riyad/riyad-bank-Light.ttf
+/Users/hamza/Downloads/fonts_2K_1/Cairo_Play/static/CairoPlay-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/VLAX/VLAX-01.otf
+/Users/hamza/Downloads/fonts_2K_1/BSepideh/BSepideh.ttf
+/Users/hamza/Downloads/fonts_2K_1/SST Arabic Medium/SST Arabic Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/cour_0/cour_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/DTNASKH4/DTNASKH4.TTF
+/Users/hamza/Downloads/fonts_2K_1/AdvertisingMedium Regular/AdvertisingMedium Regular.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mj_Elit_ufont.ir_/Mj_Elit_ufont.ir_.ttf
+/Users/hamza/Downloads/fonts_2K_1/UthmanTN1_Ver/UthmanTN1_Ver07.otf
+/Users/hamza/Downloads/fonts_2K_1/Mirza/Mirza-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Frutiger LT Arabic 67 Bold Cn/Frutiger LT Arabic 67 Bold Cn.ttf
+/Users/hamza/Downloads/fonts_2K_1/URWGeometricArabic-Heavy/URWGeometricArabic-Heavy.ttf
+/Users/hamza/Downloads/fonts_2K_1/Maa Aldahab/MaaAldahab-Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/Castile-Thin/Castile-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/DimaMabella/DimaMabella.ttf
+/Users/hamza/Downloads/fonts_2K_1/Handjet/Handjet-VariableFont_ELGR,ELSH,wght.ttf
+/Users/hamza/Downloads/fonts_2K_1/PTBLDARC/PTBLDARC.TTF
+/Users/hamza/Downloads/fonts_2K_1/BCompsBd/BCompsBd.ttf
+/Users/hamza/Downloads/fonts_2K_1/GE_Flow_Regular/GE_Flow_Regular.otf
+/Users/hamza/Downloads/fonts_2K_1/Damavand-Bold/Damavand-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/timesbd/timesbd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada-SemiBold/Mada-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/ScheherazadeRegOT/ScheherazadeRegOT.ttf
+/Users/hamza/Downloads/fonts_2K_1/Mada-ExtraLight/Mada-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/Alama-Regular[1]/Alama-Regular[1].otf
+/Users/hamza/Downloads/fonts_2K_1/Graffiti-Font-Normal/Graffiti-Font-Normal.ttf
+/Users/hamza/Downloads/fonts_2K_1/Handjet/static/Handjet-SemiBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/4C3G D5E/4C3G D5E.ttf
+/Users/hamza/Downloads/fonts_2K_1/Insan-Bold_0/Insan-Bold_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/VIP Rawy Bold/VIP Rawy Bold.otf
+/Users/hamza/Downloads/fonts_2K_1/BadrLTLight/BadrLTLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/mohammad naskh bold/mohammad naskh bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/BadrLTBold/BadrLTBold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Droid.Arabic.Naskh_.Bold_DownloadSoftware.iR_/Droid.Arabic.Naskh_.Bold_DownloadSoftware.iR_.ttf
+/Users/hamza/Downloads/fonts_2K_1/AL-QURANALKAREEM_0/AL-QURANALKAREEM_0.TTF
+/Users/hamza/Downloads/fonts_2K_1/Handjet/static/Handjet-Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Muslimah Light/Muslimah Light.otf
+/Users/hamza/Downloads/fonts_2K_1/a-maktoob/a-maktoob.ttf
+/Users/hamza/Downloads/fonts_2K_1/sabgha/sabgha.ttf
+/Users/hamza/Downloads/fonts_2K_1/Hacen Trarza Hd/Hacen Trarza Hd.ttf
+/Users/hamza/Downloads/fonts_2K_1/Alhadari Medium_0/Alhadari Medium_0.ttf
+/Users/hamza/Downloads/fonts_2K_1/4_22/4_22.otf
+/Users/hamza/Downloads/fonts_2K_1/ae/ae_Tarablus.ttf
+/Users/hamza/Downloads/fonts_2K_1/BFarnaz/BFarnaz.ttf
+/Users/hamza/Downloads/fonts_2K_1/Ferdaos Zd Bold/Ferdaos Zd Bold.ttf
+/Users/hamza/Downloads/fonts_2K_1/Fustat/static/Fustat-ExtraLight.ttf
+/Users/hamza/Downloads/fonts_2K_1/Baloo_Bhaijaan_2/static/BalooBhaijaan2-Medium.ttf
+/Users/hamza/Downloads/fonts_2K_1/Wahaj-Thin/Wahaj-Thin.otf
+/Users/hamza/Downloads/fonts_2K_1/4_8A/4_8A.ttf
+/Users/hamza/Downloads/fonts_2K_1/منقط لتعليم الأطفال/منقط لتعليم الأطفال.OTF

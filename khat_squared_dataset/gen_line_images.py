@@ -26,22 +26,57 @@ MIN_WORDS_IN_LINE = 12
 MAX_WORDS_IN_LINE = 25
 MAX_SPECIAL_IN_LINE = 0
 
-FONT_PATH = './fonts/'
+FONT_PATH = './fonts_otf/'
 MIN_FONT_SIZE = 8
 MAX_FONT_SIZE = 40
 BUFFER_x = 5  # Buffer to leave in line images (x-axis)
 BUFFER_y = 5  # Buffer (y-axis)
 IMAGE_HT = 64  # Image height to save
 
+# def get_fonts(font_path=None, type='regular'):
+#     if font_path is None:
+#         font_path = FONT_PATH
+#     font_files = []
+#     for dname, dirs, files in os.walk(font_path):
+#         for fname in files:
+#             # Check for .ttf or .otf extension (case-insensitive) and that the 'type' is in the filename,
+#             # and that "Condensed" is not in the filename.
+#             if fname.lower().endswith(('ttf', 'otf')) and type in fname.lower() and 'condensed' not in fname.lower():
+#                 font_files.append(os.path.join(dname, fname))
+#     return font_files
+
 def get_fonts(font_path=None, type='regular'):
+    """
+    Walks through the font_path (or FONT_PATH if None) and returns a list of font file paths.
+    It accepts both .ttf and .otf files (case-insensitive) that contain the string `type`
+    in their filename and do not include 'condensed'. If the same font (by base name) exists
+    in both .otf and .ttf formats in the same folder, only the .ttf version is kept.
+    """
     if font_path is None:
-        font_path = FONT_PATH
-    font_files = []
+        font_path = './fonts_otf/'
+    font_dict = {}
     for dname, dirs, files in os.walk(font_path):
         for fname in files:
-            if fname.lower().endswith('ttf') and type in fname.lower() and 'Condensed' not in fname:
-                font_files.append(os.path.join(dname, fname))
-    return font_files
+            fname_lower = fname.lower()
+            # Only consider .ttf or .otf files.
+            if not fname_lower.endswith(('ttf', 'otf')):
+                continue
+            # Filter by desired type and exclude "condensed"
+            if type not in fname_lower or 'condensed' in fname_lower:
+                continue
+            full_path = os.path.join(dname, fname)
+            # Use the base name (without extension) as key, in lower case.
+            base = os.path.splitext(fname)[0].lower()
+            ext = os.path.splitext(fname)[1].lower()  # either ".ttf" or ".otf"
+            # If a font with the same base name is already stored, choose the .ttf version if available.
+            if base in font_dict:
+                existing_ext = os.path.splitext(os.path.basename(font_dict[base]))[1].lower()
+                if existing_ext == '.otf' and ext == '.ttf':
+                    font_dict[base] = full_path
+            else:
+                font_dict[base] = full_path
+    return list(font_dict.values())
+
 
 def set_buffers(x, y):
     global BUFFER_x, BUFFER_y
