@@ -77,6 +77,10 @@ Because the original AHAWP images were not binarized or tightly cropped, we impl
 
 Additionally, word images with extensive scribbles or strike-throughs were discarded if the writing was obscured. In cases where the core word was still legible, we retained the image after manual correction. These steps ensured consistency across all datasets in terms of image quality and formatting.
 
+
+### IESK-ArDB Dataset
+...
+
 #### Final Compiled Arabic Handwriting Dataset
 
 | Dataset                | Total Words | Unique Words | Writers |
