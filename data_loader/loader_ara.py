@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 # ---------------------------------------
 # Global Switch for Arabic
 # ---------------------------------------
-SHOW_HARAKAT = False  # or True if you want diacritics
+SHOW_HARAKAT = False  # or True if you want diacritics 
 
 # ---------------------------------------
 # Arabic / Unifont Setup
@@ -29,7 +29,7 @@ arabic_chars   = "ءاأإآابتثجحخدذرزسشصضطظعغفقكلمنه
 arabic_numbers = "٠١٢٣٤٥٦٧٨٩"
 english_numbers= "0123456789"
 punctuation    = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~،؛؟"
-symbols        = "$€£¥¢©®±×÷"
+symbols        = "$€£¥¢©®±×÷ "
 
 # Combined letters (for content mapping)
 letters = arabic_chars + arabic_numbers + english_numbers + punctuation + symbols
@@ -160,15 +160,35 @@ def shape_arabic_text(text, letter2index):
     # Reverse for RTL
     return list(reversed(indices)), list(reversed(forms_detected))
 
+# def strip_harakat(text):
+#     """
+#     Removes all diacritics (harakāt) from the input text.
+#     This function first normalizes the text to NFD (decomposed form) and then
+#     filters out any combining characters.
+#     """
+#     decomposed = unicodedata.normalize("NFD", text)
+#     stripped = "".join([ch for ch in decomposed if not unicodedata.combining(ch)])
+#     return stripped
+
+
 def strip_harakat(text):
     """
-    Removes all diacritics (harakāt) from the input text.
-    This function first normalizes the text to NFD (decomposed form) and then
-    filters out any combining characters.
+    Remove only the Arabic harakāt in `harakat_set`,
+    but preserve all other combining marks (e.g. hamza above/below, madda).
     """
+    harakat_set = set("ًٌٍَُِّْ")
+    
+    # 1) Decompose to separate base + combining marks
     decomposed = unicodedata.normalize("NFD", text)
-    stripped = "".join([ch for ch in decomposed if not unicodedata.combining(ch)])
-    return stripped
+    out_chars = []
+    for ch in decomposed:
+        # if it's a combining character *and* one of our harakāt, skip it
+        if unicodedata.combining(ch) and ch in harakat_set:
+            continue
+        # otherwise keep it
+        out_chars.append(ch)
+    # 2) Re-compose so e.g. ALEF + HAMZA_ABOVE → 'أ'
+    return unicodedata.normalize("NFC", "".join(out_chars))
 
 
 def plot_glyphs(glyphs, word, labels):
@@ -184,6 +204,9 @@ def plot_glyphs(glyphs, word, labels):
         ax.axis('off')
     plt.tight_layout()
     plt.show()
+    
+def split_writer_id(wr_id):
+    return tuple(wr_id.split('-',1)) if '-' in wr_id else (wr_id, "")
 
 # =======================================
 # IAMDataset for Training/Inferences
@@ -199,23 +222,28 @@ class IAMDataset(Dataset):
         
         self.max_len = max_len
         self.style_len = style_len
+        self.split     = type
         
         # read lines from e.g. data/train.txt
         data_file = text_path[type]
         self.data_dict = self.load_data(data_file)
 
         # Now join the 'type' folder to each of the paths.
-        self.image_path   = os.path.join(image_path, type)
-        self.style_path   = os.path.join(style_path, type)
-        self.laplace_path = os.path.join(laplace_path, type)
+        # flat combined_dataset with split
+        self.image_path   = os.path.join(image_path,   type)
+        self.style_root   = os.path.join(style_path,   type)
+        self.laplace_root = os.path.join(laplace_path, type)
         
         # these are used for the content (Arabic)
         self.letters = letters
         self.tokens = {"PAD_TOKEN": len(self.letters)}
-        self.letter2index = {label: n for n, label in enumerate(self.letters)}
+        # self.letter2index = {label: n for n, label in enumerate(self.letters)}
+        self.letter2index = {label: n+1 for n, label in enumerate(self.letters)}
         self.indices = list(self.data_dict.keys())
 
         self.transforms = torchvision.transforms.Compose([
+            # Force the line image to be 256×256
+            torchvision.transforms.Resize((256, 256)),
             torchvision.transforms.ToTensor(),
             torchvision.transforms.Normalize((0.5, 0.5, 0.5),
                                              (0.5, 0.5, 0.5))
@@ -251,6 +279,7 @@ class IAMDataset(Dataset):
 
         return con_symbols, letter2index
 
+    
     def load_data(self, data_path):
         """
         Expects lines like:
@@ -259,377 +288,375 @@ class IAMDataset(Dataset):
         If SHOW_HARAKAT is False, diacritics are stripped from transcription.
         Lines with transcription length > self.max_len are skipped.
         """
+        full_dict = {}
+        idx = 0
         with open(data_path, 'r', encoding='utf-8') as f:
             lines = f.readlines()
 
-        full_dict = {}
-        idx = 0
         for line in lines:
-            parts = line.strip().split(' ', 1)  # e.g. ["alexuw-648,648-1.jpg", "شأن"]
+            parts = line.strip().split(' ', 1)
             if len(parts) < 2:
                 continue
-            first_field, transcription = parts[0], parts[1]
+            first_field, transcription = parts
             first_parts = first_field.split(',')
             if len(first_parts) < 2:
                 continue
-            s_id = first_parts[0]     # e.g. "alexuw-648"
-            image = first_parts[1]    # e.g. "648-1.jpg"
+            s_id  = first_parts[0]
+            image = first_parts[1]
 
-            # If harakat are turned off, strip them from the ground truth transcription.
             if not SHOW_HARAKAT:
                 transcription = strip_harakat(transcription)
 
             if effective_length(transcription) > self.max_len:
                 continue
 
-            full_dict[idx] = {
-                'image': image,
-                's_id': s_id,        # string, e.g. "alexuw-648"
-                'label': transcription
-            }
+            full_dict[idx] = {'s_id': s_id, 'image': image, 'label': transcription}
             idx += 1
+
         return full_dict
 
     def get_style_ref(self, wr_id):
         """
-        Writer ID might be "ifnenit-cj11". But style images are named "cj11_028.tif", etc.
-        So we parse the suffix after the dash.
-        E.g. wr_id.split('-',1)[1] => "cj11".
-        Then we find files in style_path that start with that suffix. 
-        We pick 2 random among them, load them (and the corresponding laplace images),
-        and if their heights differ, we force the second image to match the first image's height.
-        Finally, we build and return new_style_images and new_laplace_images.
+        Force 256×256 resizing of style & laplace images so that
+        your subsequent code doesn't produce weird shapes in the ResNet.
         """
-        import cv2
-        
-        # 1) Parse the suffix after the dash (if any)
-        parts = wr_id.split('-', 1)
-        if len(parts) > 1:
-            suffix = parts[1]
+        prefix, suffix = split_writer_id(wr_id)
+        files = os.listdir(self.style_root)
+
+        # special cases
+        if prefix == "iesk":
+            candidates = [f for f in files if f.endswith(f"_{suffix}.bmp")]
+        elif prefix == "ahawp":
+            key = f"user{int(suffix):03d}"
+            candidates = [f for f in files if f.startswith(key + "_")]
         else:
-            suffix = wr_id  # If no dash present, use the entire wr_id
+            candidates = [f for f in files
+                          if f.startswith(suffix + "_") or f.startswith(suffix + "-")]
 
-        # 2) Collect all style filenames that start with suffix
-        style_list = [f for f in os.listdir(self.style_path) if f.startswith(suffix)]
-        if len(style_list) < 2:
-            raise RuntimeError(f"Not enough style images found for writer suffix {suffix} in {self.style_path}")
+        if len(candidates) < 2:
+            raise RuntimeError(f"No style images for writer '{wr_id}' in {self.style_root}")
 
-        # 3) Pick two random files from style_list
-        style_index = random.sample(range(len(style_list)), 2)  # anchor + positive
+        pick = random.sample(candidates, 2)
+        imgs = [cv2.imread(os.path.join(self.style_root, fn), 0) for fn in pick]
+        laps = [cv2.imread(os.path.join(self.laplace_root, fn), 0) for fn in pick]
 
-        # 4) Read the chosen files (style + laplace), storing them in lists
-        style_images = [
-            cv2.imread(os.path.join(self.style_path, style_list[idx]), flags=0)
-            for idx in style_index
-        ]
-        laplace_images = [
-            cv2.imread(os.path.join(self.laplace_path, style_list[idx]), flags=0)
-            for idx in style_index
-        ]
+        # force 256×256
+        style_arr = np.zeros((2,256,256), dtype=np.float32)
+        lap_arr   = np.zeros((2,256,256), dtype=np.float32)
+        for j,(im,lp) in enumerate(zip(imgs,laps)):
+            if im is None or lp is None:
+                raise RuntimeError(f"Error reading {pick[j]}")
+            im2 = cv2.resize(im,  (256,256), interpolation=cv2.INTER_AREA)
+            lp2 = cv2.resize(lp, (256,256), interpolation=cv2.INTER_AREA)
+            style_arr[j] = im2.astype(np.float32)/255.0
+            lap_arr[j]   = lp2.astype(np.float32)/255.0
 
-        # 5) If heights are inconsistent, resize the second image (and its laplace)
-        h0 = style_images[0].shape[0]
-        h1 = style_images[1].shape[0]
-        if h0 != h1:
-            import cv2  # ensure cv2 is imported
-            scale = h0 / float(h1)
-            new_w = int(style_images[1].shape[1] * scale)
-            style_images[1] = cv2.resize(style_images[1], (new_w, h0), interpolation=cv2.INTER_LINEAR)
-            laplace_images[1] = cv2.resize(laplace_images[1], (new_w, h0), interpolation=cv2.INTER_LINEAR)
+        return style_arr, lap_arr
 
-            
-        # 6) Now heights are consistent; compute max width
-        height = style_images[0].shape[0]
-        max_w = max(img.shape[1] for img in style_images)
-
-        # 7) Convert images to float32 [0,1]
-        style_images   = [img.astype(np.float32) / 255.0 for img in style_images]
-        laplace_images = [img.astype(np.float32) / 255.0 for img in laplace_images]
-
-        # 8) Build final arrays with shape [2, height, max_w]
-        new_style_images = np.ones((2, height, max_w), dtype=np.float32)
-        new_style_images[0, :, :style_images[0].shape[1]] = style_images[0]
-        new_style_images[1, :, :style_images[1].shape[1]] = style_images[1]
-
-        new_laplace_images = np.zeros((2, height, max_w), dtype=np.float32)
-        new_laplace_images[0, :, :laplace_images[0].shape[1]] = laplace_images[0]
-        new_laplace_images[1, :, :laplace_images[1].shape[1]] = laplace_images[1]
-
-        return new_style_images, new_laplace_images
-
-    
     def __len__(self):
         return len(self.indices)
-    
-    ### Borrowed from GANwriting ###
-    def label_padding(self, labels, max_len):
-        ll = [self.letter2index[i] for i in labels]
-        num = max_len - len(ll)
-        if not num == 0:
-            ll.extend([self.tokens["PAD_TOKEN"]] * num)  # replace PAD_TOKEN
-        return ll
 
     def __getitem__(self, idx):
-        sample = self.data_dict[self.indices[idx]]
-        image_name = sample['image']    
-        label = sample['label']         
-        wr_id = sample['s_id']          
+        sample     = self.data_dict[self.indices[idx]]
+        img_path   = os.path.join(self.image_path, sample['image'])
+        image      = Image.open(img_path).convert('RGB')
+        image      = self.transforms(image)
 
-        # Now the image is in self.image_path (flat structure)
-        img_path = os.path.join(self.image_path, image_name)
-        image = Image.open(img_path).convert('RGB')
-        image = self.transforms(image)
+        style_arr, lap_arr = self.get_style_ref(sample['s_id'])
+        style   = torch.from_numpy(style_arr).float()
+        laplace = torch.from_numpy(lap_arr).float()
 
-        # dummy style
-        style_ref, laplace_ref = self.get_style_ref(wr_id)
-        style_ref = torch.from_numpy(style_ref).float()
-        laplace_ref = torch.from_numpy(laplace_ref).float()
-
-        # store wr_id as a string, no int() casting
         return {
-            'img': image,          # [3,H,W]
-            'content': label,      # e.g. "شأن"
-            'style': style_ref,    # [2, h, w]
-            'laplace': laplace_ref,# [2, h, w]
-            'wid': wr_id,          # store as string (e.g. "alexuw-648")
-            'transcr': label,
-            'image_name': image_name
+            'img':        image,
+            'content':    sample['label'],
+            'style':      style,
+            'laplace':    laplace,
+            'wid':        sample['s_id'],
+            'transcr':    sample['label'],
+            'image_name': sample['image']
         }
 
+
     def collate_fn_(self, batch):
-        width = [item['img'].shape[2] for item in batch]
-        c_width = [len(item['content']) for item in batch]
-        s_width = [item['style'].shape[2] for item in batch]
-
-        transcr = [item['transcr'] for item in batch]
-        target_lengths = torch.IntTensor([len(t) for t in transcr])
-        image_name = [item['image_name'] for item in batch]
-
-        max_s_width = max(s_width) if max(s_width) < self.style_len else self.style_len
-
+        """
+        Collate function that pads:
+          - main images => same H/W
+          - style images => same H, clamp W
+          - glyph => used for content
+        """
         B = len(batch)
 
-        imgs = torch.ones(
-            [B,
-             batch[0]['img'].shape[0],
-             batch[0]['img'].shape[1],
-             max(width)], dtype=torch.float32
-        )
-        content_ref = torch.zeros([B, max(c_width), 16, 16], dtype=torch.float32)
-        
-        style_ref = torch.ones([B,
-                                batch[0]['style'].shape[0],
-                                batch[0]['style'].shape[1],
-                                max_s_width], dtype=torch.float32)
-        
-        laplace_ref = torch.zeros([B,
-                                   batch[0]['laplace'].shape[0],
-                                   batch[0]['laplace'].shape[1],
-                                   max_s_width], dtype=torch.float32)
-        
-        target = torch.zeros([B, max(target_lengths)], dtype=torch.int32)
+        # ============ 1) MAIN IMAGES (3,H,W) => pad =============
+        img_heights = [item['img'].shape[1] for item in batch]
+        img_widths  = [item['img'].shape[2] for item in batch]
+        max_h = max(img_heights)
+        max_w = max(img_widths)
+
+        imgs = torch.ones([B, 3, max_h, max_w], dtype=torch.float32)
+        for i, item in enumerate(batch):
+            cur_h = item['img'].shape[1]
+            cur_w = item['img'].shape[2]
+            imgs[i, :, :cur_h, :cur_w] = item['img']
+
+        # ============ 2) STYLE IMAGES (2,256,256) => pad if needed =============
+        #   but we already forced them to be 256×256 above, so no mismatch expected
+        style_heights = [item['style'].shape[1] for item in batch]  # each is 256
+        style_widths  = [item['style'].shape[2] for item in batch]  # each is 256
+        max_style_h = max(style_heights)  # probably 256
+        raw_max_style_w = max(style_widths)  # also 256
+        max_style_w = min(raw_max_style_w, self.style_len)  # e.g. 256 vs style_len=416 => 256
+
+        style_ref   = torch.ones([B, 2, max_style_h, max_style_w], dtype=torch.float32)
+        laplace_ref = torch.zeros([B, 2, max_style_h, max_style_w], dtype=torch.float32)
 
         for i, item in enumerate(batch):
-            w_cur = item['img'].shape[2]
-            imgs[i, :, :, :w_cur] = item['img']
+            sh = item['style'].shape[1]  # should be 256
+            sw = item['style'].shape[2]  # should be 256
+            # clamp if you want (256 vs style_len=416 => 256)
+            clamped_w = min(sw, max_style_w)
+            style_ref[i, :, :sh, :clamped_w]   = item['style'][:, :sh, :clamped_w]
+            laplace_ref[i, :, :sh, :clamped_w] = item['laplace'][:, :sh, :clamped_w]
 
-            # fill content
-            content_inds = [self.letter2index[ch] for ch in item['content']]
-            glyphs = self.con_symbols[content_inds]
+        # ============ 3) CONTENT => glyph references =============
+        transcr = [item['transcr'] for item in batch]
+        c_width = [len(txt) for txt in transcr]  # number of chars in each label
+        max_c_width = max(c_width)
+        content_ref = torch.zeros([B, max_c_width, 16, 16], dtype=torch.float32)
+        # also build OCR ctc target
+        target_lengths = torch.IntTensor([len(t) for t in transcr])
+        max_tlen = max(target_lengths)
+        target = torch.zeros([B, max_tlen], dtype=torch.int32)
+
+        for i, item in enumerate(batch):
+            label = item['content']
+            # For glyph references
+            content_inds = [self.letter2index[ch] for ch in label]
+            glyphs = self.con_symbols[content_inds]  # [len(label), 16, 16]
             content_ref[i, :len(glyphs)] = glyphs
+            # For ctc target
+            tinds = [self.letter2index[ch] for ch in label]
+            target[i, :len(tinds)] = torch.tensor(tinds, dtype=torch.int32)
 
-            # fill target
-            target[i, :len(transcr[i])] = torch.tensor(
-                [self.letter2index[ch] for ch in transcr[i]], dtype=torch.int32
-            )
+        writer_ids  = [item['wid'] for item in batch]
+        image_names = [item['image_name'] for item in batch]
 
-            # fill style
-            cur_style_w = item['style'].shape[2]
-            if max_s_width < self.style_len:
-                style_ref[i, :, :, :cur_style_w] = item['style']
-                laplace_ref[i, :, :, :cur_style_w] = item['laplace']
-            else:
-                style_ref[i, :, :, :cur_style_w] = item['style'][:, :, :self.style_len]
-                laplace_ref[i, :, :, :cur_style_w] = item['laplace'][:, :, :self.style_len]
-
-        # Instead of converting wid to tensor, we keep them in a list
-        writer_ids = [item['wid'] for item in batch]
-
+        # invert glyph bitmaps if needed
         content_ref = 1.0 - content_ref
 
         return {
-            'img': imgs,
-            'style': style_ref,
-            'content': content_ref,
-            'wid': writer_ids,   # List of strings
-            'laplace': laplace_ref,
-            'target': target,
+            'img':            imgs,
+            'style':          style_ref,
+            'laplace':        laplace_ref,
+            'content':        content_ref,
+            'wid':            writer_ids,
+            'transcr':        transcr,
+            'target':         target,
             'target_lengths': target_lengths,
-            'image_name': image_name
+            'image_name':     image_names
         }
 
 # ---------------------------------------
 # Random_StyleIAMDataset
 # ---------------------------------------
-
 class Random_StyleIAMDataset(IAMDataset):
-    def __init__(self, style_path, laplace_path, ref_num, text_file) -> None:
-        """
-        style_path: a single flat folder containing style images
-        laplace_path: single flat folder containing matching laplace images
-        ref_num: how many times we want to sample references
-        text_file: the path to e.g. 'data/train.txt' or 'data/test.txt' that includes writer IDs
-
-        We'll parse that file to gather a set of writer IDs.
-        """
-        self.style_path = style_path
-        self.laplace_path = laplace_path
+    """
+    Now we also forcibly resize the single style image to (256,256)
+    so that it won't cause shape mismatches in the fusion code.
+    """
+    def __init__(self, style_path, laplace_path, ref_num) -> None:
+        self.style_path = style_path        # flat folder with all style images
+        self.laplace_path = laplace_path    # flat folder with all laplace images
         self.style_len = style_len
         self.ref_num = ref_num
 
-        # Collect author IDs from the text file, e.g. "alexuw-648" from lines like:
-        #   alexuw-648,648-1.jpg نفق
-        self.author_id = self._get_all_writer_ids(text_file)
+        # self.author_id = self._get_all_writer_ids(text_file) # GPT
+        self.author_id = os.listdir(os.path.join(self.style_path))
 
-    def _get_all_writer_ids(self, text_file):
+    def get_style_ref(self, wr_id):
         """
-        Reads the lines from text_file, extracts wr_id from each line 
-        (the part before the comma), e.g. "alexuw-648",
-        stores them in a set to avoid duplicates, then returns a list.
+        Directly load the style and laplace image corresponding to the given file name.
+        The image is resized to 256x256 if its width is greater than 20.
         """
-        wr_set = set()
-        with open(text_file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-        for line in lines:
-            parts = line.strip().split(' ', 1)
-            if len(parts) < 2:
-                continue
-            first_field = parts[0]  # e.g. "alexuw-648,648-1.jpg"
-            ff = first_field.split(',')
-            if len(ff) < 2:
-                continue
-            wr_id = ff[0]  # e.g. "alexuw-648"
-            wr_set.add(wr_id)
-        return list(wr_set)
+        import cv2
+        s_path = os.path.join(self.style_path, wr_id)
+        l_path = os.path.join(self.laplace_path, wr_id)  # assuming laplace images share the same file name
+        s_img = cv2.imread(s_path, flags=0)
+        l_img = cv2.imread(l_path, flags=0)
+        if s_img is None or l_img is None:
+            raise RuntimeError(f"Error reading style or laplace image for file '{wr_id}' in {self.style_path}")
+        if s_img.shape[1] > 58:
+            # Resize both images to 256x256
+            s_img = cv2.resize(s_img, (256, 256), interpolation=cv2.INTER_AREA)
+            l_img = cv2.resize(l_img, (256, 256), interpolation=cv2.INTER_AREA)
+            style_image = s_img.astype(np.float32) / 255.0
+            laplace_image = l_img.astype(np.float32) / 255.0
+            return style_image, laplace_image
+        else:
+            raise RuntimeError(f"Style image '{wr_id}' width <= 58 in {self.style_path}")
 
     def __len__(self):
         return self.ref_num
 
-    def parse_suffix(self, wr_id):
-        """
-        e.g.: "alexuw-648" -> "648", "ifnenit-cj11" -> "cj11"
-        If there's no dash, we keep the entire wr_id as suffix.
-        """
-        parts = wr_id.split('-', 1)
-        if len(parts) > 1:
-            return parts[1]
-        else:
-            return wr_id
-
-    def get_style_ref(self, wr_id): # Choose the style image whose length exceeds 58 pixels
-        """
-        - Parse suffix
-        - style_list = all files in self.style_path that start with that suffix
-        - random.shuffle => pick the first whose width > 58
-        - read style, laplace => scale => return
-        """
-        suffix = self.parse_suffix(wr_id)
-
-        # gather all style files that start with suffix
-        style_list = [f for f in os.listdir(self.style_path) if f.startswith(suffix)]
-        random.shuffle(style_list)
-
-        style_image = None
-        laplace_image = None
-        
-        for style_ref in style_list:
-            
-            s_img_path = os.path.join(self.style_path, style_ref)
-            l_img_path = os.path.join(self.laplace_path, style_ref)
-
-            s_img = cv2.imread(s_img_path, flags=0)
-            l_img = cv2.imread(l_img_path, flags=0)
-            if s_img is None or l_img is None:
-                # skip if file not found or read error
-                continue
-
-            # your snippet: "if style_image.shape[1] > 58: break"
-            if s_img.shape[1] > 58:
-                style_image = s_img.astype(np.float32) / 255.0
-                laplace_image = l_img.astype(np.float32) / 255.0
-                break
-            else:
-                continue
-
-        if style_image is None or laplace_image is None:
-            raise RuntimeError(f"No style image with width>58 found for suffix='{suffix}' (writer '{wr_id}') in {self.style_path}.")
-
-        return style_image, laplace_image
-
     def __getitem__(self, _):
         """
-        We mimic your snippet: 
-          - iterate over self.author_id
-          - get style/laplace
-          - store them, build final Tensors
+        Gather one style/laplace image per file (author) and unify them into a single batch.
         """
         batch = []
         for idx in self.author_id:
             style_img, laplace_img = self.get_style_ref(idx)
-
-            style_t = torch.from_numpy(style_img).unsqueeze(0).to(torch.float32)
-            laplace_t = torch.from_numpy(laplace_img).unsqueeze(0).to(torch.float32)
-            # shape is [1, H, W]
-
-            wid = idx
+            # Convert to tensors with an added channel dimension.
+            style_t = torch.from_numpy(style_img).unsqueeze(0).to(torch.float32)    # [1,256,256]
+            laplace_t = torch.from_numpy(laplace_img).unsqueeze(0).to(torch.float32)  # [1,256,256]
             batch.append({
                 'style': style_t,
                 'laplace': laplace_t,
-                'wid': wid
+                'wid': idx
             })
 
-        # Now replicate final logic to unify them
+        # Unify the batch using similar logic as in IAMDataset.
         s_width = [item['style'].shape[2] for item in batch]
-        if max(s_width) < self.style_len:
-            max_s_width = max(s_width)
-        else:
-            max_s_width = self.style_len
+        max_s_width = max(s_width) if max(s_width) < self.style_len else self.style_len
 
-        # shape: [len(batch), 1, H, max_s_width]
-        style_ref = torch.ones([
-            len(batch),
-            batch[0]['style'].shape[0],
-            batch[0]['style'].shape[1],
-            max_s_width
-        ], dtype=torch.float32)
-        laplace_ref = torch.zeros([
-            len(batch),
-            batch[0]['laplace'].shape[0],
-            batch[0]['laplace'].shape[1],
-            max_s_width
-        ], dtype=torch.float32)
+        style_ref = torch.ones([len(batch), batch[0]['style'].shape[0], batch[0]['style'].shape[1], max_s_width], dtype=torch.float32)
+        laplace_ref = torch.zeros([len(batch), batch[0]['laplace'].shape[0], batch[0]['laplace'].shape[1], max_s_width], dtype=torch.float32)
 
         wid_list = []
         for i, item in enumerate(batch):
             cur_w = item['style'].shape[2]
-            try:
-                if max_s_width < self.style_len:
-                    style_ref[i, :, :, :cur_w] = item['style']
-                    laplace_ref[i, :, :, :cur_w] = item['laplace']
-                else:
-                    style_ref[i, :, :, :cur_w]   = item['style'][:, :, :self.style_len]
-                    laplace_ref[i, :, :, :cur_w] = item['laplace'][:, :, :self.style_len]
-                
-                wid_list.append(item['wid'])
-            except:
-                print('style', item['style'].shape)
+            if max_s_width < self.style_len:
+                style_ref[i, :, :, :cur_w] = item['style']
+                laplace_ref[i, :, :, :cur_w] = item['laplace']
+            else:
+                style_ref[i, :, :, :cur_w] = item['style'][:, :, :self.style_len]
+                laplace_ref[i, :, :, :cur_w] = item['laplace'][:, :, :self.style_len]
+            wid_list.append(item['wid'])
 
         return {
-            'style': style_ref,
-            'laplace': laplace_ref,
+            'style': style_ref,   # [N,1,256,256]
+            'laplace': laplace_ref,  # [N,1,256,256]
             'wid': wid_list
         }
-        
+
+    # def _get_all_writer_ids(self, text_file):
+    #         wr_set = set()
+    #         with open(text_file, 'r', encoding='utf-8') as f:
+    #             lines = f.readlines()
+    #         for line in lines:
+    #             parts = line.strip().split(' ', 1)
+    #             if len(parts) < 2:
+    #                 continue
+    #             first_field = parts[0]  # e.g., "alexuw-648,648-1.jpg"
+    #             ff = first_field.split(',', 1)
+    #             if len(ff) < 2:
+    #                 continue
+    #             wr_id = ff[0]
+    #             wr_set.add(wr_id)
+    #         return list(wr_set)
+
+    # def get_style_ref(self, wr_id):
+    #     """
+    #     We forcibly resize each style/laplace image to 256×256,
+    #     just like in IAMDataset. For writer IDs with prefix "iesk",
+    #     we match files ending with _{suffix}.bmp; for all others,
+    #     we match files starting with "{suffix}_" or "{suffix}-".
+    #     """
+    #     import cv2
+    #     prefix, suffix = split_writer_id(wr_id)
+    #     files = os.listdir(self.style_path)
+                
+    #     if prefix == "iesk":
+    #         cands = [f for f in files if f.endswith(f"_{suffix}.bmp")]
+    #     elif prefix == "ahawp":
+    #         key = f"user{int(suffix):03d}"
+    #         cands = [f for f in files if f.startswith(key + "_")]
+    #     else:
+    #         cands = [f for f in files if f.startswith(suffix + "_") or f.startswith(suffix + "-")]
+
+    #     random.shuffle(cands)
+
+    #     style_image = None
+    #     laplace_image = None
+
+    #     for fn in cands:
+    #         s_path = os.path.join(self.style_path, fn)
+    #         l_path = os.path.join(self.laplace_path, fn)
+    #         s_img = cv2.imread(s_path, flags=0)
+    #         l_img = cv2.imread(l_path, flags=0)
+    #         if s_img is None or l_img is None:
+    #             continue
+    #         if s_img.shape[1] > 20:
+    #         # if s_img.shape[1] > 58: # GPT
+    #             # Now forcibly resize to 256×256
+    #             s_img = cv2.resize(s_img, (256, 256), interpolation=cv2.INTER_AREA)
+    #             l_img = cv2.resize(l_img, (256, 256), interpolation=cv2.INTER_AREA)
+    #             style_image = s_img.astype(np.float32)/255.0
+    #             laplace_image = l_img.astype(np.float32)/255.0
+    #             break
+
+    #     if style_image is None or laplace_image is None:
+    #         raise RuntimeError(f"No style image with width> 20 found or read error for writer '{wr_id}' in {self.style_path}")
+
+    #     return style_image, laplace_image
+    
+    # def __len__(self):
+    #     return self.ref_num
+
+    # def __getitem__(self, _):
+    #     """
+    #     We'll gather exactly 1 style-laplace image per author,
+    #     forcibly sized 256×256, then unify them in a single big batch.
+    #     """
+    #     batch = []
+    #     for idx in self.author_id:
+    #         style_img, laplace_img = self.get_style_ref(idx)
+    #         # shape is now 256×256
+    #         style_t   = torch.from_numpy(style_img).unsqueeze(0).to(torch.float32)    # [1,256,256]
+    #         laplace_t = torch.from_numpy(laplace_img).unsqueeze(0).to(torch.float32)  # [1,256,256]
+    #         batch.append({
+    #             'style':   style_t,
+    #             'laplace': laplace_t,
+    #             'wid':     idx
+    #         })
+
+    #     # unify them (the collate logic is simpler here)
+    #     s_width = [item['style'].shape[2] for item in batch]  # each 256
+    #     if max(s_width) < self.style_len:
+    #         max_s_width = max(s_width)  # 256
+    #     else:
+    #         max_s_width = self.style_len
+
+    #     # shape: [N,1,256,256] => pad if needed
+    #     style_ref = torch.ones([
+    #         len(batch),
+    #         batch[0]['style'].shape[0],
+    #         batch[0]['style'].shape[1],
+    #         max_s_width
+    #     ], dtype=torch.float32)
+    #     laplace_ref = torch.zeros([
+    #         len(batch),
+    #         batch[0]['laplace'].shape[0],
+    #         batch[0]['laplace'].shape[1],
+    #         max_s_width
+    #     ], dtype=torch.float32)
+
+    #     wid_list = []
+    #     for i, item in enumerate(batch):
+    #         cur_w = item['style'].shape[2]  # probably 256
+    #         if max_s_width < self.style_len:
+    #             style_ref[i, :, :, :cur_w]   = item['style']
+    #             laplace_ref[i, :, :, :cur_w] = item['laplace']
+    #         else:
+    #             style_ref[i, :, :, :cur_w]   = item['style'][:, :, :self.style_len]
+    #             laplace_ref[i, :, :, :cur_w] = item['laplace'][:, :, :self.style_len]
+    #         wid_list.append(item['wid'])
+
+    #     return {
+    #         'style':   style_ref,   # [N,1,256,256]
+    #         'laplace': laplace_ref, # [N,1,256,256]
+    #         'wid':     wid_list
+    #     }
+
+
 # =======================================
 # Prepare the Content Image During Inference
 # =======================================
@@ -640,7 +667,12 @@ class ContentData(IAMDataset):
     def __init__(self, content_type='unifont_arabic'):
         # letters used for fallback
         self.letters = letters
-        self.letter2index = {label: n for n, label in enumerate(self.letters)}
+
+        # self.letter2index = {label: n for n, label in enumerate(self.letters)}
+
+        # So that hamza is not considered for blank tokens
+        self.letter2index = {label: n+1 for n, label in enumerate(self.letters)}
+
         # load the con_symbols from pickle
         self.con_symbols, self.letter2index = self.get_symbols(content_type)
 
