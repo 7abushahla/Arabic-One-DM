@@ -1,4 +1,7 @@
 # One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation
+_Hamza A. Abushahla, Ariel Justine Navarro Panopio, Sarah Elfattal, and Imran A. Zualkernan_
+
+This repository contains code and resources for the paper: "[One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4234)".
 
 ## Introduction
 
@@ -90,3 +93,27 @@ Additionally, word images with extensive scribbles or strike-throughs were disca
 | AHAWP (Words Only)     | 8,137      | 10          | 82      |
 | IESK-ArDB              | 2,749      | 364         | 18      |
 | **Final Unified Dataset** | **62,437** | **1,412** | **1,414** |
+
+
+
+## Citation & Reaching out
+If you use our work for your own research, please cite us with the below: 
+
+```bibtex
+@Article{abushahla2025cognitive,
+AUTHOR = {Abushahla, Hamza A. and Panopio, Ariel J. N. Elfattal, Sarah and Zualkernan, Imran A.},
+TITLE = {One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation},
+JOURNAL = { },
+VOLUME = {},
+YEAR = {},
+NUMBER = {},
+ARTICLE-NUMBER = {},
+URL = {},
+ISSN = {},
+ABSTRACT = {},
+DOI = {}
+}
+```
+
+You can also reach out through email to: 
+- Hamza Abushahla - b00090279@alumni.aus.edu
