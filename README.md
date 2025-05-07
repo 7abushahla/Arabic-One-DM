@@ -99,7 +99,7 @@ Additionally, word images with extensive scribbles or strike-throughs were disca
 | IFN/ENIT               | 26,459     | 937         | 411     |
 | AHAWP (Words Only)     | 8,137      | 10          | 82      |
 | IESK-ArDB              | 2,749      | 364         | 18      |
-| **Final Unified Dataset** | **62,437** | **1,412** | **1,414** |
+| **Final Unified Dataset** | **62,437** | **1,412** | **1,417** |
 
 
 
