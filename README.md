@@ -1,25 +1,35 @@
 # One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation
+_Hamza A. Abushahla, Ariel Justine Navarro Panopio, Sarah Elfattal, and Imran A. Zualkernan_
+
+This repository contains code and resources for the paper: "[One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4234)".
 
 ## Introduction
+This project/paper presents an adaptation/extention of the One-DM (One-shot Diffusion Mimicker)[^1][^2] originally developed for English, in addition to Chinese and Japanese to enable Arabic handwriting generation. We adapt the One-DM framework to address Arabic-specific challenges including cursive structure, contextual letter forms, special symbols such as the همزة (hamzah), and diacritical marks, known as حركات (harakat). In order to achieve that, we accomlished 3 stages: synthetic data pretraining, real-world dataset aggregation, and architectural adaptation. The One-DM model involved several pretrained blocks: ResNet-18 feature extractors, OCR/HTR model, and VAE (stable-diffusion-v1-5). So then, following their process/methodology we had to pre-train our ResNet-18 on a large synthetic dataset of Arabic word images, which we call $Khat^2$, we collected a large dataset of arabic words by combining 4 publicly available datasets (detailed below), and we also pretrain/fine-tune an OCR/HTR network on this combined dataset before using it as part of the overall architecture. In addition, we build our own custom GNU Unifont module (?) capable of generating glyphs of individual letters of the input word in their correct contextual forms (used to guide the content encoder) (also detailed below) this is also capable of generating letters with harakat. Finally, we train and evaluate our overall model (using all the pre-trained blocks) on its ability to generate Arabic handwriting in a writer-specific style from a single reference sample. 
+
+Our contributions can be summarized as follows:
+- We introduce a large-scale synthetic dataset of Arabic word images rendered in fonts that emulate various calligraphic styles, enabling pretraining of deep generative models.
+- We create the first large-scale Arabic handwriting gen eration benchmark by merging four publicly available datasets to en sure diversity in writers and vocabulary.
+- We adapt the One-DM diffusion framework to address Arabic-specific challenges including cursive structure, contextual letter forms, and diacritics.
+- We train and evaluate the first diffusion-based model capable of generating Arabic handwriting in a writer-specific style from a single reference sample.
 
 ## $Khat^2$ Dataset
-Inspired by the $Font^2$ dataset[^1][^2] (which was used to train the ResNet-18 backbones in One-DM[^3] and VATr[^4]) we built a large synthetic dataset of Arabic word images rendered in a wide variety of fonts—including those that mimic handwriting. In our pipeline, over **2,000** freely available Arabic calligraphic fonts were scraped from multiple websites, then manually verified to ensure they correctly render every Arabic character (with decorative fonts containing elements like hearts or stars discarded). Additionally, drawing inspiration from HATFORMER[^5][^6], we collected more than **130** paper background images and compiled an Arabic corpus of **8.2 million** words from diverse online sources, including Wikipedia.
+Inspired by the $Font^2$ dataset[^3][^4] (which was used to train the ResNet-18 backbones in One-DM[^1][^2] and VATr[^5] before it) we built a large synthetic dataset of Arabic word images rendered in a wide variety of fonts—including those that mimic handwriting. In our pipeline, **2,000+** freely available Arabic calligraphic fonts were scraped from multiple websites, then manually verified to ensure they correctly render every Arabic character (with decorative fonts containing elements like hearts or stars discarded). Additionally, drawing inspiration from HATFORMER[^6][^7],  we collected **130+** paper background images and used the large Arabic corpus they compiled which contains over **8.2 million** words collected from diverse online sources, including Wikipedia.
 
 For a chosen number *N* (e.g., 1,000), we randomly select *N* words from the corpus (of varying lengths) and *N* fonts that pass our automated validation checks. We then render every possible combination of the selected words and fonts—resulting in $N×N$ (e.g., 1,000×1,000 = 1,000,000) image samples, with each font representing a distinct class (i.e., 1,000 images per font).
 
 During the synthetic data generation process, for every *(word, font)* pair, the system randomly selects one of the background images and applies random augmentations (such as distortions and blur) before exporting the final image. Ground-truth labels—mapped to the corresponding font names—are stored in a CSV file, and these images are later used to train a ResNet-18 convolutional neural network backbone as part of a style encoder.
 
-- Arabic corpus is from HATFormer (words.pickle): link
 - Collected arabic fonts: link
 - main generation code, basic fonts, corpus, and backgrounds are borrowed from HATFormer[^6]. we edited them to generate single words instead of lines and to maek the lable the name of the font and to generate the $N×N$ samples as done in $Font^2$. we also edit the augmentaions to be simialr what is used in $Font^2$. 
 - we follow their training settings [^1] and train our ResNet-18 model to classify the 1,000,000 samples into the 1,000 font classes to learn the style representations needed to later learn arabic handwriting properly once integrated and made to train on real handwritten images.
 
-[^1]: https://arxiv.org/abs/2304.01842
-[^2]: https://github.com/aimagelab/font_square
-[^3]: https://arxiv.org/abs/2409.04004
-[^4]: https://arxiv.org/abs/2303.15269
-[^5]: https://arxiv.org/abs/2410.02179
-[^6]: https://zenodo.org/records/14165756
+[^1]: https://arxiv.org/abs/2409.04004
+[^2]: https://github.com/dailenson/One-DM
+[^3]: https://github.com/aimagelab/font_square
+[^4]: https://arxiv.org/abs/2304.01842
+[^5]: https://arxiv.org/abs/2303.15269 
+[^6]: https://arxiv.org/abs/2410.02179
+[^7]: https://zenodo.org/records/14165756 
 
 ## Arabic GNU Unifont Glyph Mapping
 
@@ -90,4 +100,28 @@ Developed at the Institute for Electronics, Signal Processing and Communications
 | IFN/ENIT               | 26,459     | 937         | 411     |
 | AHAWP (Words Only)     | 8,137      | 10          | 82      |
 | IESK-ArDB              | 2,749      | 364         | 18      |
-| **Final Unified Dataset** | **62,437** | **1,412** | **1,414** |
+| **Final Unified Dataset** | **62,437** | **1,412** | **1,417** |
+
+
+
+## Citation & Reaching out
+If you use our work for your own research, please cite us with the below: 
+
+```bibtex
+@Article{abushahla2025cognitive,
+AUTHOR = {Abushahla, Hamza A. and Panopio, Ariel J. N. Elfattal, Sarah and Zualkernan, Imran A.},
+TITLE = {One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation},
+JOURNAL = { },
+VOLUME = {},
+YEAR = {},
+NUMBER = {},
+ARTICLE-NUMBER = {},
+URL = {},
+ISSN = {},
+ABSTRACT = {},
+DOI = {}
+}
+```
+
+You can also reach out through email to: 
+- Hamza Abushahla - b00090279@alumni.aus.edu

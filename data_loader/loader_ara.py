@@ -160,17 +160,6 @@ def shape_arabic_text(text, letter2index):
     # Reverse for RTL
     return list(reversed(indices)), list(reversed(forms_detected))
 
-# def strip_harakat(text):
-#     """
-#     Removes all diacritics (harakāt) from the input text.
-#     This function first normalizes the text to NFD (decomposed form) and then
-#     filters out any combining characters.
-#     """
-#     decomposed = unicodedata.normalize("NFD", text)
-#     stripped = "".join([ch for ch in decomposed if not unicodedata.combining(ch)])
-#     return stripped
-
-
 def strip_harakat(text):
     """
     Remove only the Arabic harakāt in `harakat_set`,
