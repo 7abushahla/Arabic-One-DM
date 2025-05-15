@@ -79,7 +79,8 @@ Additionally, word images with extensive scribbles or strike-throughs were disca
 
 
 ### IESK-ArDB Dataset
-...
+
+Developed at the Institute for Electronics, Signal Processing and Communications (IESK) in Magdeburg, this dataset includes over 4,000 handwritten Arabic word images and 6,000 segmented character images. It covers a diverse vocabulary including nouns, verbs, city names, security terms, and bank-related expressions. For this work, we use only the word portion of the dataset. Although the full dataset was collected from 22 writers, the subset we obtained contains 2,750 word images with corresponding ground truth, comprising 364 unique words written by 18 different writers.
 
 #### Final Compiled Arabic Handwriting Dataset
 

@@ -1,103 +1,31 @@
-# # models/recognition.py
-
 import torch.nn as nn
 import torch.nn.functional as F
-import torch
-import json
-import os
-import copy
 
-from .cnn_lstm import create_model
+class HTRNet(nn.Module):
+    def __init__(self,nclasses, vae=True, head='rnn', flattening='maxpool'):
+        super(HTRNet, self).__init__()
+        cnn_cfg = [(2, 64), 'M', (4, 128), 'M', (4, 256)]
+        head_cfg = (256,3)
+        
+        if vae:
+            self.features = VAE_CNN(cnn_cfg, flattening=flattening)
+        else:
+            self.features = CNN(cnn_cfg, flattening=flattening)
 
-def partial_load_ocr_model(model, checkpoint_path):
-    """
-    Loads only the CNN layers from a checkpoint (skipping final conv or RNN weights)
-    so you can partially initialize your OCR model.
-    """
-    print(f"Attempt partial load from {checkpoint_path} (OCR model - CNN only).")
-    state_dict = torch.load(checkpoint_path, map_location='cpu')
-    filtered = {}
-    for k, v in state_dict.items():
-        # Skip final conv6 and any RNN layers
-        if "cnn.conv6" in k or "rnn." in k:
-            continue
-        filtered[k] = v
-    missing, unexpected = model.load_state_dict(filtered, strict=False)
-    print("Partial load done.")
-    print("Missing keys:", missing)
-    print("Unexpected keys:", unexpected)
+        if flattening=='maxpool':
+            hidden = cnn_cfg[-1][-1]
+        elif flattening=='concat':
+            hidden = 2 * 8 * cnn_cfg[-1][-1]
+        else:
+            print('problem!')
+        if head=='rnn':
+            self.top = CTCtopR(hidden, head_cfg, nclasses)
 
-def load_arabic_ocr_model(hw_weights_path: str, charset_path: str, partial: bool = False):
-    """
-    Builds a CRNN-based CNN-BLSTM model and loads the pretrained Arabic OCR weights.
-    
-    If partial==True, it loads only the CNN layers from the provided checkpoint (skipping
-    final conv or RNN weights), so that you can integrate the finetuned last layer.
-    """
-    # 1) Load the character mapping
-    with open(charset_path, 'r') as f:
-        char_set = json.load(f)
-    idx_to_char = {}
-    for k, v in char_set['idx_to_char'].items():
-        idx_to_char[int(k)] = v
+    def forward(self, x):
+        y = self.features(x)
+        y = self.top(y)
 
-    # 2) Prepare a config for your CRNN.
-    #    Make sure num_of_outputs equals len(idx_to_char) + 1 (for the blank token).
-    model_config = {
-        "cnn_out_size": 1024,         # adjust as needed
-        "num_of_channels": 3,         # or 3 or 4
-        "num_of_outputs": len(idx_to_char) + 1,
-        "use_instance_norm": False,   # adjust if your model was trained with instance norm
-        "nh": 512                   # hidden size of LSTM
-    }
-    
-    # 3) Create the model
-    model = create_model(model_config)
-    
-    # 4) Load the pretrained weights
-    if partial:
-        partial_load_ocr_model(model, hw_weights_path)
-    else:
-        state_dict = torch.load(hw_weights_path, map_location='cpu')
-        model.load_state_dict(state_dict)
-        print(f"Loaded Arabic OCR weights from {hw_weights_path}")
-    
-    # 5) Return the model (and the character mapping)
-    return model, idx_to_char
-
-# def load_arabic_ocr_model(hw_weights_path: str, charset_path: str):
-#     """
-#     Builds a CRNN-based CNN-BLSTM model and loads the pretrained Arabic handwriting weights.
-#     """
-#     # 1) Load the character mapping
-#     with open(charset_path, 'r') as f:
-#         char_set = json.load(f)
-#     # E.g. `char_set['char_to_idx']` and `char_set['idx_to_char']`
-    
-#     idx_to_char = {}
-#     for k, v in char_set['idx_to_char'].items():
-#         idx_to_char[int(k)] = v
-    
-#     # 2) Prepare a config for your CRNN
-#     #    - Adjust these to match the exact channels/cnn_out_size that your hw.pt expects
-#     model_config = {
-#         "cnn_out_size": 1024,         # typical setting in your code
-#         "num_of_channels": 3,        # or 3 or 4, depending on how you trained
-#         "num_of_outputs": len(idx_to_char) + 1,
-#         "use_instance_norm": False,   # or True if that's how you trained
-#         "nh": 512                   # LSTM hidden size (so that 4 * 512 = 2048)
-#     }
-    
-#     # 3) Create the model
-#     model = create_model(model_config)
-    
-#     # 4) Load the pretrained weights
-#     state_dict = torch.load(hw_weights_path, map_location='cpu')
-#     model.load_state_dict(state_dict)
-#     print(f"Loaded Arabic OCR weights from {hw_weights_path}")
-    
-#     # 5) Return the model (and anything else you need)
-#     return model, idx_to_char
+        return y
     
 class CTCtopR(nn.Module):
     def __init__(self, input_size, rnn_cfg, nclasses):

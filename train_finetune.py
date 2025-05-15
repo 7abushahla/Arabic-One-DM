@@ -14,9 +14,9 @@ from diffusers import AutoencoderKL
 from torch.utils.data.distributed import DistributedSampler
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
-# from models.recognition import HTRNet
-from models.recognition import load_arabic_ocr_model
-from data_loader.loader import letters
+from models.recognition import HTRNet
+# from models.recognition import load_arabic_ocr_model
+from data_loader.loader_ara import letters
 from models.loss import SupConLoss
 
 def main(opt):
@@ -83,22 +83,34 @@ def main(opt):
     '''load pretrained ocr model'''
     # ocr_model = HTRNet(nclasses = len(letters), vae=True)
     
+    # if len(opt.ocr_model) > 0:
+    #     # miss, unxep = ocr_model.load_state_dict(torch.load(opt.ocr_model, map_location=torch.device('cpu')), strict=False)
+    #     # ocr_model, idx_to_char = load_arabic_ocr_model(opt.ocr_model, "models/charset.json")
+
+    #     # To load the OCR model with partial loading:
+    #     ocr_model, idx_to_char = load_arabic_ocr_model("./ocr_checkpoints/ocr_best_state.pth", "models/charset.json", partial=True)
+
+    #     ocr_model = ocr_model.to(device)
+    #     ocr_model.requires_grad_(False)  # freeze it so it doesn't get updated
+    #     # print('load pretrained ocr model from {}'.format(opt.ocr_model))
+    #     print('Loaded the Arabic OCR model.')
+    # else:
+    #     print('failed to load the pretrained ocr model')
+    #     exit()
+    # # ocr_model.requires_grad_(False)
+    # # ocr_model = ocr_model.to(device)
+    
+    '''load pretrained ocr model'''
+    ocr_model = HTRNet(nclasses = len(letters)+1, vae=False)
     if len(opt.ocr_model) > 0:
         # miss, unxep = ocr_model.load_state_dict(torch.load(opt.ocr_model, map_location=torch.device('cpu')), strict=False)
-        # ocr_model, idx_to_char = load_arabic_ocr_model(opt.ocr_model, "models/charset.json")
-
-        # To load the OCR model with partial loading:
-        ocr_model, idx_to_char = load_arabic_ocr_model("./ocr_checkpoints/ocr_best_state.pth", "models/charset.json", partial=True)
-
-        ocr_model = ocr_model.to(device)
-        ocr_model.requires_grad_(False)  # freeze it so it doesn't get updated
-        # print('load pretrained ocr model from {}'.format(opt.ocr_model))
-        print('Loaded the Arabic OCR model.')
+        ocr_model.load_state_dict(torch.load(opt.ocr_model, map_location='cpu'), strict=True)
+        print('load pretrained ocr model from {}'.format(opt.ocr_model))
     else:
         print('failed to load the pretrained ocr model')
         exit()
-    # ocr_model.requires_grad_(False)
-    # ocr_model = ocr_model.to(device)
+    ocr_model.requires_grad_(False)
+    ocr_model = ocr_model.to(device)
     
     
     """load pretrained vae"""

@@ -28,7 +28,7 @@ TEST:
   IMG_H: 64
   IMG_W: 64
 DATA_LOADER:
-  NUM_THREADS: 8
+  NUM_THREADS: 128
   IAMGE_PATH: ./data/combined_dataset
   STYLE_PATH: ./data/combined_dataset
   LAPLACE_PATH: ./data/combined_dataset_laplace

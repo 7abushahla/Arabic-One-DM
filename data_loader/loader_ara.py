@@ -49,7 +49,7 @@ generate_type = {
     'iv_s': ['train', 'data/in_vocab.subset.tro.37'],
     'iv_u': ['test',  'data/in_vocab.subset.tro.37'],
     'oov_s': ['train', 'data/oov.common_words'],
-    'oov_u': ['test',  'data/oov.common_words']
+    'oov_u': ['test',  'data/test.txt']
 }
 
 # ---------------------------------------

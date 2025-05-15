@@ -2,7 +2,7 @@ import argparse
 import os
 from parse_config import cfg, cfg_from_file, assert_and_infer_cfg
 import torch
-from data_loader.loader_ara import Random_StyleIAMDataset, ContentData, generate_type
+from data_loader.loader_ara import ContentData, generate_type
 from models.unet import UNetModel
 from tqdm import tqdm
 from diffusers import AutoencoderKL
@@ -10,6 +10,58 @@ from models.diffusion import Diffusion
 import torchvision
 import torch.distributed as dist
 from utils.util import fix_seed
+import cv2
+import numpy as np
+
+def get_writer_to_first_image(test_txt_path):
+    writer_to_image = {}
+    with open(test_txt_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            parts = line.strip().split(' ', 1)
+            if len(parts) < 2:
+                continue
+            first_field = parts[0]
+            writer_id, image_name = first_field.split(',')
+            if writer_id not in writer_to_image:
+                writer_to_image[writer_id] = image_name
+    return writer_to_image
+
+def get_words_from_oov(oov_path):
+    with open(oov_path, 'r', encoding='utf-8') as f:
+        words = [line.strip() for line in f if line.strip()]
+    return words
+
+class StyleRefDataset(torch.utils.data.Dataset):
+    def __init__(self, style_path, laplace_path, writer_to_image, writer_ids):
+        self.style_path = style_path
+        self.laplace_path = laplace_path
+        self.writer_to_image = writer_to_image
+        self.writer_ids = writer_ids
+
+    def __len__(self):
+        return len(self.writer_ids)
+
+    def __getitem__(self, idx):
+        wr_id = self.writer_ids[idx]
+        image_name = self.writer_to_image[wr_id]
+        s_path = os.path.join(self.style_path, image_name)
+        l_path = os.path.join(self.laplace_path, image_name)
+        s_img = cv2.imread(s_path, flags=0)
+        l_img = cv2.imread(l_path, flags=0)
+        if s_img is None or l_img is None:
+            raise RuntimeError(f"Error reading style or laplace image for file '{image_name}' (writer '{wr_id}') in {self.style_path}")
+        s_img = cv2.resize(s_img, (256, 256), interpolation=cv2.INTER_AREA)
+        l_img = cv2.resize(l_img, (256, 256), interpolation=cv2.INTER_AREA)
+        style_t = torch.from_numpy(s_img.astype(np.float32) / 255.0).unsqueeze(0)  # [1,256,256]
+        laplace_t = torch.from_numpy(l_img.astype(np.float32) / 255.0).unsqueeze(0)  # [1,256,256]
+        # Repeat to get [2,256,256] for model compatibility
+        style_t = style_t.repeat(2, 1, 1)
+        laplace_t = laplace_t.repeat(2, 1, 1)
+        return {
+            'style': style_t,
+            'laplace': laplace_t,
+            'wid': wr_id
+        }
 
 def main(opt):
     """ load config file into cfg"""
@@ -26,37 +78,43 @@ def main(opt):
     load_content = ContentData()
     totol_process = dist.get_world_size()
 
-    text_corpus = generate_type[opt.generate_type][1]
-    with open(text_corpus, 'r') as _f:
-        texts = _f.read().split()
-    each_process = len(texts)//totol_process
+    # Paths
+    test_txt_path = 'data/test.txt'
+    oov_words_path = 'data/oov.common_words'
 
-    """split the data for each GPU process"""
-    if  len(texts)%totol_process == 0:
-        temp_texts = texts[dist.get_rank()*each_process:(dist.get_rank()+1)*each_process]
-    else:
-        each_process += 1
-        temp_texts = texts[dist.get_rank()*each_process:(dist.get_rank()+1)*each_process]
+    # Get mapping: writer_id -> first style image
+    writer_to_image = get_writer_to_first_image(test_txt_path)
+    writer_ids = list(writer_to_image.keys())
+    words = get_words_from_oov(oov_words_path)
 
-    
-    """setup data_loader instances"""
-    style_dataset = Random_StyleIAMDataset(os.path.join(cfg.DATA_LOADER.STYLE_PATH,generate_type[opt.generate_type][0]), 
-                                           os.path.join(cfg.DATA_LOADER.LAPLACE_PATH, generate_type[opt.generate_type][0]), len(temp_texts))
-    
-    # style_dataset = Random_StyleIAMDataset(
-    # os.path.join(cfg.DATA_LOADER.STYLE_PATH, generate_type[opt.generate_type][0]),
-    # os.path.join(cfg.DATA_LOADER.LAPLACE_PATH, generate_type[opt.generate_type][0]),
-    # len(temp_texts),
-    # "data/oov.common_words"  # <-- Pass the text_file argument here
-    # )
-    print('this process handle characters: ', len(style_dataset))
+    print(f"[DEBUG] Total writers found in test.txt: {len(writer_ids)}")
+    print(f"[DEBUG] Total words found in oov.common_words: {len(words)}")
+    print(f"[DEBUG] Sample writer IDs: {writer_ids[:5]}")
+    print(f"[DEBUG] Sample words: {words[:5]}")
+
+    if len(writer_ids) == 0 or len(words) == 0:
+        print("[ERROR] No writers or words found. Exiting.")
+        return
+
+    # Split writers for distributed processing
+    each_process = len(writer_ids) // totol_process
+    remainder = len(writer_ids) % totol_process
+    start_idx = local_rank * each_process + min(local_rank, remainder)
+    end_idx = start_idx + each_process + (1 if local_rank < remainder else 0)
+    temp_writer_ids = writer_ids[start_idx:end_idx]
+
+    style_dataset = StyleRefDataset(
+        os.path.join(cfg.DATA_LOADER.STYLE_PATH, generate_type[opt.generate_type][0]),
+        os.path.join(cfg.DATA_LOADER.LAPLACE_PATH, generate_type[opt.generate_type][0]),
+        writer_to_image,
+        temp_writer_ids
+    )
     style_loader = torch.utils.data.DataLoader(style_dataset,
-                                                batch_size=1,
-                                                shuffle=True,
-                                                drop_last=False,
-                                                num_workers=cfg.DATA_LOADER.NUM_THREADS,
-                                                pin_memory=True
-                                                )
+                                               batch_size=1,
+                                               shuffle=False,
+                                               drop_last=False,
+                                               num_workers=cfg.DATA_LOADER.NUM_THREADS,
+                                               pin_memory=True)
 
     target_dir = os.path.join(opt.save_dir, opt.generate_type)
 
@@ -81,27 +139,17 @@ def main(opt):
     # Freeze vae and text_encoder
     vae.requires_grad_(False)
 
-
-    """generate the handwriting datasets"""
     loader_iter = iter(style_loader)
-    for x_text in tqdm(temp_texts, position=0, desc='batch_number'):
+    for i, writer_id in enumerate(temp_writer_ids):
         data = next(loader_iter)
-        data_val, laplace, wid = data['style'][0], data['laplace'][0], data['wid']
-        
-        data_loader = []
-        # split the data into two parts when the length of data is two large
-        if len(data_val) > 224:
-            data_loader.append((data_val[:224], laplace[:224], wid[:224]))
-            data_loader.append((data_val[224:], laplace[224:], wid[224:]))
-        else:
-            data_loader.append((data_val, laplace, wid))
-        for (data_val, laplace, wid) in data_loader:
-            style_input = data_val.to(opt.device)
-            laplace = laplace.to(opt.device)
-            text_ref = load_content.get_content(x_text)
+        style_input = data['style'].to(opt.device)      # [1,2,256,256]
+        laplace = data['laplace'].to(opt.device)        # [1,2,256,256]
+        wid = data['wid']                               # [1] or string
+        for word in words:
+            text_ref = load_content.get_content(word)
             text_ref = text_ref.to(opt.device).repeat(style_input.shape[0], 1, 1, 1)
-            x = torch.randn((text_ref.shape[0], 4, style_input.shape[2]//8, (text_ref.shape[1]*32)//8)).to(opt.device)
-            
+            x = torch.randn((text_ref.shape[0], 4, style_input.shape[3]//8, (text_ref.shape[1]*32)//8)).to(opt.device)
+
             if opt.sample_method == 'ddim':
                 ema_sampled_images = diffusion.ddim_sample(unet, vae, style_input.shape[0], 
                                                         x, style_input, laplace, text_ref,
@@ -111,13 +159,13 @@ def main(opt):
                                                         x, style_input, laplace, text_ref)
             else:
                 raise ValueError('sample method is not supported')
-            
+
             for index in range(len(ema_sampled_images)):
                 im = torchvision.transforms.ToPILImage()(ema_sampled_images[index])
                 image = im.convert("L")
-                out_path = os.path.join(target_dir, wid[index][0])
+                out_path = os.path.join(target_dir, writer_id)
                 os.makedirs(out_path, exist_ok=True)
-                image.save(os.path.join(out_path, x_text + ".png"))
+                image.save(os.path.join(out_path, word + ".png"))
 
 if __name__ == '__main__':
     """Parse input arguments"""
