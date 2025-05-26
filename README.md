@@ -4,7 +4,7 @@ _Hamza A. Abushahla, Ariel Justine Navarro Panopio, Sarah Elfattal, and Imran A.
 This repository contains code and resources for the paper: "[One Stroke, One Shot: Diffusing a New Era in Arabic Handwriting Generation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4234)".
 
 ## Introduction
-This project/paper presents an adaptation/extention of the One-DM (One-shot Diffusion Mimicker)[^1][^2] originally developed for English, in addition to Chinese and Japanese to enable Arabic handwriting generation. We adapt the One-DM framework to address Arabic-specific challenges including cursive structure, contextual letter forms, special symbols such as the همزة (hamzah), and diacritical marks, known as حركات (harakat). In order to achieve that, we accomlished 3 stages: synthetic data pretraining, real-world dataset aggregation, and architectural adaptation. The One-DM model involved several pretrained blocks: ResNet-18 feature extractors, OCR/HTR model, and VAE (stable-diffusion-v1-5). So then, following their process/methodology we had to pre-train our ResNet-18 on a large synthetic dataset of Arabic word images, which we call $Khat^2$, we collected a large dataset of arabic words by combining 4 publicly available datasets (detailed below), and we also pretrain/fine-tune an OCR/HTR network on this combined dataset before using it as part of the overall architecture. In addition, we build our own custom GNU Unifont module (?) capable of generating glyphs of individual letters of the input word in their correct contextual forms (used to guide the content encoder) (also detailed below) this is also capable of generating letters with harakat. Finally, we train and evaluate our overall model (using all the pre-trained blocks) on its ability to generate Arabic handwriting in a writer-specific style from a single reference sample. 
+This project presents an adaptation/extention of the One-DM (One-shot Diffusion Mimicker)[^1][^2] originally developed for English, in addition to Chinese and Japanese to enable Arabic handwriting generation. We adapt the One-DM framework to address Arabic-specific challenges including cursive structure, contextual letter forms, special symbols such as the همزة (hamzah), and diacritical marks, known as حركات (harakat). In order to achieve that, we accomlished 3 stages: synthetic data pretraining, real-world dataset aggregation, and architectural adaptation. The One-DM model involved several pretrained blocks: ResNet-18 feature extractors, OCR/HTR model, and VAE (stable-diffusion-v1-5). So then, following their process/methodology we had to pre-train our ResNet-18 on a large synthetic dataset of Arabic word images, which we call $Khat^2$, we collected a large dataset of arabic words by combining 4 publicly available datasets (detailed below), and we also pretrain/fine-tune an OCR/HTR network on this combined dataset before using it as part of the overall architecture. In addition, we build our own custom GNU Unifont module (?) capable of generating glyphs of individual letters of the input word in their correct contextual forms (used to guide the content encoder) (also detailed below) this is also capable of generating letters with harakat. Finally, we train and evaluate our overall model (using all the pre-trained blocks) on its ability to generate Arabic handwriting in a writer-specific style from a single reference sample. 
 
 Our contributions can be summarized as follows:
 - We introduce a large-scale synthetic dataset of Arabic word images rendered in fonts that emulate various calligraphic styles, enabling pretraining of deep generative models.
@@ -103,6 +103,38 @@ Developed at the Institute for Electronics, Signal Processing and Communications
 | **Final Unified Dataset** | **62,437** | **1,412** | **1,417** |
 
 
+## Training & Testing
+- **Training on the Sutoor dataset**
+```Shell
+CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 train.py \
+    --feat_model model_zoo/resnet18_pretrained_2k.pth \
+    --stable_dif_path model_zoo/stable-diffusion-v1-5 \
+    --log Arabic
+```
+- **Finetuning on the Sutoor dataset, introducing the HTR module**
+```Shell
+CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 train_finetune.py \
+    --one_dm ./Saved/IAM64_scratch/Arabic-timestamp/model/epoch-ckpt \
+    --ocr_model ./models/ocr_best_state_recognition_OG.pth \
+    --stable_dif_path model_zoo/stable-diffusion-v1-5 --log Arabic
+ ```
+**Note**:
+Please modify ``timestamp`` and ``epoch`` according to your own path.
+
+- **Test genration using the test set**
+ ```Shell
+CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 test.py \
+   --one_dm ./Saved/IAM64_finetune/Arabic-timestamp/model/epoch-ckpt \
+   --generate_type oov_u --dir ./Generated/Arabic
+```
+**Note**:
+Please modify ``timestamp`` and ``epoch`` according to your own path.
+
+- **Run evaluation script to obtain metrics**
+ ```Shell
+python evaluate_generated.py --gen_dir Generated/Arabic/oov_u \
+   --ocr_model ./models/ocr_best_state_recognition_OG.pth
+```
 
 ## Citation & Reaching out
 If you use our work for your own research, please cite us with the below: 

@@ -49,9 +49,9 @@ def main():
         try:
             shutil.copy(src, dst)
         except FileNotFoundError:
-            print(f"❌ File not found: {src}")
+            print(f"File not found: {src}")
 
-    print(f"✅ Sampled {SAMPLE_SIZE} images from 4 datasets into '{OUTPUT_FOLDER}/'")
+    print(f"Sampled {SAMPLE_SIZE} images from 4 datasets into '{OUTPUT_FOLDER}/'")
 
 if __name__ == "__main__":
     main()
