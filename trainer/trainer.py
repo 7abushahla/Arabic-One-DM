@@ -101,8 +101,20 @@ class Trainer:
         recon_loss = self.recon_criterion(predicted_noise, noise)
 
         # Proposed fix: decode to 3-ch
-        decoded_img = self.vae.decode(x_start / 0.18215).sample  # or .mode(), depends on your pipeline
-        rec_out = self.ocr_model(decoded_img)  # now [B, 3, H, W]
+        # decoded_img = self.vae.decode(x_start / 0.18215).sample  # or .mode(), depends on your pipeline
+        # rec_out = self.ocr_model(decoded_img)  # now [B, 3, H, W]
+        
+        # ---------- ADD / MODIFY THESE THREE LINES ----------
+        # 1) Decode latents (still in 0‒1)
+        decoded_img = self.vae.decode(x_start / 0.18215).sample
+
+        # 2) Match the scale the OCR was trained on (−0.5)/0.5  →  [-1, 1]
+        decoded_img = decoded_img.sub_(0.5).div_(0.5)
+
+        # 3) Forward through whichever OCR you loaded (OG or Muha​raf)
+        rec_out = self.ocr_model(decoded_img)
+        # -----------------------------------------------------
+
 
         # rec_out = self.ocr_model(x_start)
         input_lengths = torch.IntTensor(latent_images.shape[0] * [rec_out.shape[0]])
@@ -162,7 +174,7 @@ class Trainer:
 
         load_content = ContentData()
         # Define a fixed set of texts for visualization.
-        texts = ["مرحبا", "شكرا", "اللغة", "سلام", "وداعا"]
+        texts = ["مرحبا", "شكرا", "أستاذ", "سلام", "وداعا"]
         for text in texts:
             rank = dist.get_rank()
             # Get content glyphs for the text and repeat to match the batch size.
