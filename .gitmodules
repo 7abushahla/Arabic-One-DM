@@ -1,0 +1,3 @@
+[submodule "khat_squared"]
+	path = khat_squared
+	url = https://github.com/7abushahla/Khat_Squared
