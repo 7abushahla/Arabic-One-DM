@@ -13,15 +13,10 @@ Our contributions can be summarized as follows:
 - We train and evaluate the first diffusion-based model capable of generating Arabic handwriting in a writer-specific style from a single reference sample.
 
 ## $Khat^2$ Dataset
-Inspired by the $Font^2$ dataset[^3][^4] (which was used to train the ResNet-18 backbones in One-DM[^1][^2] and VATr[^5] before it) we built a large synthetic dataset of Arabic word images rendered in a wide variety of fonts—including those that mimic handwriting. In our pipeline, **2,000+** freely available Arabic calligraphic fonts were scraped from multiple websites, then manually verified to ensure they correctly render every Arabic character (with decorative fonts containing elements like hearts or stars discarded). Additionally, drawing inspiration from HATFORMER[^6][^7],  we collected **130+** paper background images and used the large Arabic corpus they compiled which contains over **8.2 million** words collected from diverse online sources, including Wikipedia.
+Inspired by the $Font^2$ dataset[^3][^4]—which was used to train the ResNet-18 backbones in One-DM[^1][^2] and VATr[^5]—we built a large-scale synthetic dataset of Arabic word images rendered in a wide variety of fonts, including many that mimic handwriting. Each font serves as a distinct style class, and the dataset is used to pretrain a ResNet-18 model for learning robust Arabic writing styles.
 
-For a chosen number *N* (e.g., 1,000), we randomly select *N* words from the corpus (of varying lengths) and *N* fonts that pass our automated validation checks. We then render every possible combination of the selected words and fonts—resulting in $N×N$ (e.g., 1,000×1,000 = 1,000,000) image samples, with each font representing a distinct class (i.e., 1,000 images per font).
+**Full generation details, scripts, and download links are available in the** [Khat_Squared](https://github.com/7abushahla/Khat_Squared) **repository**
 
-During the synthetic data generation process, for every *(word, font)* pair, the system randomly selects one of the background images and applies random augmentations (such as distortions and blur) before exporting the final image. Ground-truth labels—mapped to the corresponding font names—are stored in a CSV file, and these images are later used to train a ResNet-18 convolutional neural network backbone as part of a style encoder.
-
-- Collected arabic fonts: link
-- main generation code, basic fonts, corpus, and backgrounds are borrowed from HATFormer[^6]. we edited them to generate single words instead of lines and to maek the lable the name of the font and to generate the $N×N$ samples as done in $Font^2$. we also edit the augmentaions to be simialr what is used in $Font^2$. 
-- we follow their training settings [^1] and train our ResNet-18 model to classify the 1,000,000 samples into the 1,000 font classes to learn the style representations needed to later learn arabic handwriting properly once integrated and made to train on real handwritten images.
 
 [^1]: https://arxiv.org/abs/2409.04004
 [^2]: https://github.com/dailenson/One-DM
