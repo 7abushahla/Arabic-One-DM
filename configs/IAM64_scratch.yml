@@ -8,27 +8,27 @@ MODEL:
   EMB_DIM: 512
 SOLVER:
   BASE_LR: 0.0001
-  EPOCHS: 300
+  EPOCHS: 101
   WARMUP_ITERS: 20000
   TYPE: AdamW  # TODO, support optional optimizer
   GRAD_L2_CLIP: 5.0
 TRAIN:
   TYPE: train
-  IMS_PER_BATCH: 128
-  SNAPSHOT_BEGIN: 5
+  IMS_PER_BATCH: 352
+  SNAPSHOT_BEGIN: 1
   SNAPSHOT_ITERS: 5
   VALIDATE_BEGIN: 1
-  VALIDATE_ITERS: 40
+  VALIDATE_ITERS: 100
   SEED: 1001
   IMG_H: 64
   IMG_W: 64
 VAL:
   TYPE: val
-  IMS_PER_BATCH: 128
+  IMS_PER_BATCH: 352
   IMG_H: 64
   IMG_W: 64
 DATA_LOADER:
-  NUM_THREADS: 64
+  NUM_THREADS: 128
   IAMGE_PATH: ./data/combined_dataset
   STYLE_PATH: ./data/combined_dataset
   LAPLACE_PATH: ./data/combined_dataset_laplace

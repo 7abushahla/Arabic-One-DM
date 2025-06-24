@@ -2,17 +2,16 @@
 # coding: utf-8
 
 """
-finetune_ocr_onedm.py
+finetune_recognition.py
 
 Example usage:
-  python finetune_ocr_onedm.py \
+  python finetune_recognition.py \
     --image_path data/combined_dataset \
     --style_path data/combined_dataset \
     --laplace_path data/laplace \
     --train_type train \
     --val_type val \
     --test_type test \
-    --pretrained_ocr ./model_zoo/vae_HTR138.pth \
     --save_ckpt_dir ./ocr_checkpoints \
     --lr 1e-4 \
     [--resume]
@@ -29,6 +28,10 @@ import torch.nn.functional as F
 from tqdm import tqdm
 from torch.optim.lr_scheduler import ExponentialLR
 from torch.utils.data import DataLoader
+import torch.multiprocessing as mp
+
+# Avoid 'Bad file descriptor' issue on some Linux systems when many workers are used
+mp.set_sharing_strategy('file_system')
 
 # For reshaping Arabic text for proper visualization (if needed)
 import arabic_reshaper
@@ -42,11 +45,11 @@ import datetime
 
 # 1) Imports from your code:
 from data_loader.loader_ara import IAMDataset, letters
-from models.recognition_OG import HTRNet
+from models.recognition import HTRNet
 
 # ----- Define constants -----
-BATCH_SIZE = 96     # e.g., 784 or 32 or 64 based on GPU memory
-NUM_WORKERS = 8    # e.g., 64 if you have enough CPU cores
+BATCH_SIZE = 784     # e.g., 784 or 32 or 64 based on GPU memory
+NUM_WORKERS = 64    # e.g., 64 if you have enough CPU cores
 MAX_EPOCHS = 1_000     # e.g., up to 2500 in production
 EPOCHS_TO_VALIDATE = 50
 EPOCHS_TO_CHECKPOINT = 25
@@ -55,54 +58,59 @@ PATIENCE = 5
 
 MAX_LEN = 10
 
+# CTC Setup: letters are indexed 0-102, CTC BLANK is at index 103
+# The data loader only puts letter indices (0-102) in CTC targets, never PAD tokens
+n_classes = len(letters) + 1  # +1 for CTC blank (index 103) 104 classes
+BLANK_IDX = len(letters)      # CTC blank is at index 103
+
 # Set random seeds for reproducibility
 SEED = 1001
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
 
-def partial_load_onedm(model: nn.Module, checkpoint_path: str):
-    """
-    Partially load 'HTRNet' from a large stable-diffusion style checkpoint,
-    ignoring the 'vae.' submodule and skipping final-layer mismatches.
-
-    model: your HTRNet instance
-    checkpoint_path: path to the .pth file
-    """
-    print(f"Attempting partial load from {checkpoint_path} (skipping 'vae.' and final mismatch).")
-    old_sd = torch.load(checkpoint_path, map_location='cpu')
-
-    # Get the model's current state_dict (so we know shapes).
-    model_sd = model.state_dict()
-
-    filtered_sd = {}
-    for k, v in old_sd.items():
-        # 1) Skip large stable-diffusion VAE submodule keys (which your HTRNet doesn't have).
-        if k.startswith("vae."):
-            continue
-
-        # 2) For the final linear layer, skip if shape mismatches
-        if ("top.fnl.1.weight" in k or "top.fnl.1.bias" in k):
-            if k in model_sd:
-                if model_sd[k].shape != v.shape:
-                    print(f"Skipping final layer param => {k} due to shape mismatch.")
-                    continue
-            else:
-                # If doesn't exist in new model
-                continue
-
-        # 3) Check if the key even exists + shape matches
-        if k in model_sd and model_sd[k].shape == v.shape:
-            filtered_sd[k] = v
-        else:
-            # We skip any unmatched shapes or keys
-            pass
-
-    # Load the filtered checkpoint
-    missing, unexpected = model.load_state_dict(filtered_sd, strict=False)
-    print("Partial load done.")
-    print("Missing keys after partial load:", missing)
-    print("Unexpected keys (ignored):", unexpected)
+# def partial_load_onedm(model: nn.Module, checkpoint_path: str):
+#     """
+#     Partially load 'HTRNet' from a large stable-diffusion style checkpoint,
+#     ignoring the 'vae.' submodule and skipping final-layer mismatches.
+#
+#     model: your HTRNet instance
+#     checkpoint_path: path to the .pth file
+#     """
+#     print(f"Attempting partial load from {checkpoint_path} (skipping 'vae.' and final mismatch).")
+#     old_sd = torch.load(checkpoint_path, map_location='cpu')
+#
+#     # Get the model's current state_dict (so we know shapes).
+#     model_sd = model.state_dict()
+#
+#     filtered_sd = {}
+#     for k, v in old_sd.items():
+#         # 1) Skip large stable-diffusion VAE submodule keys (which your HTRNet doesn't have).
+#         if k.startswith("vae."):
+#             continue
+#
+#         # 2) For the final linear layer, skip if shape mismatches
+#         if ("top.fnl.1.weight" in k or "top.fnl.1.bias" in k):
+#             if k in model_sd:
+#                 if model_sd[k].shape != v.shape:
+#                     print(f"Skipping final layer param => {k} due to shape mismatch.")
+#                     continue
+#             else:
+#                 # If doesn't exist in new model
+#                 continue
+#
+#         # 3) Check if the key even exists + shape matches
+#         if k in model_sd and model_sd[k].shape == v.shape:
+#             filtered_sd[k] = v
+#         else:
+#             # We skip any unmatched shapes or keys
+#             pass
+#
+#     # Load the filtered checkpoint
+#     missing, unexpected = model.load_state_dict(filtered_sd, strict=False)
+#     print("Partial load done.")
+#     print("Missing keys after partial load:", missing)
+#     print("Unexpected keys (ignored):", unexpected)
 
 # --------------------------
 # Editdistance-based metrics
@@ -140,7 +148,7 @@ def evaluate(model, loader, ctc_loss, device, idx_to_char, max_val_batches=None)
         if max_val_batches is not None and batch_idx >= max_val_batches:
             break
 
-        images = batch["img"].to(device)    # shape [B,3,H,W]
+        images = ensure_four_channels(batch["img"].to(device))    # shape [B,4,H,W]
         targets       = batch["target"].to(device)
         target_lengths= batch["target_lengths"].to(device)
 
@@ -164,7 +172,7 @@ def evaluate(model, loader, ctc_loss, device, idx_to_char, max_val_batches=None)
             dedup = []
             prev = None
             for ch_idx in raw_seq:
-                if ch_idx != prev and ch_idx != 0:
+                if ch_idx != prev and ch_idx != BLANK_IDX:
                     dedup.append(ch_idx)
                 prev = ch_idx
             recognized = "".join(idx_to_char.get(ch, "?") for ch in dedup)
@@ -259,7 +267,7 @@ def naive_decode_samples(model, loader, device, idx_to_char, max_samples=3):
     data_iter = iter(loader)
     batch = next(data_iter)
 
-    images        = batch["img"][:max_samples].to(device)
+    images        = ensure_four_channels(batch["img"][:max_samples].to(device))
     ground_truths = batch["transcr"][:max_samples]  # ground truth transcriptions (as strings)
     image_paths   = batch["image_name"][:max_samples] # paths to the samples
 
@@ -275,7 +283,7 @@ def naive_decode_samples(model, loader, device, idx_to_char, max_samples=3):
         dedup   = []
         prev    = None
         for ch_idx in raw_seq:
-            if ch_idx != prev and ch_idx != 0:  # skip blank=0
+            if ch_idx != prev and ch_idx != BLANK_IDX:
                 dedup.append(ch_idx)
             prev = ch_idx
         recognized = "".join(idx_to_char.get(ch, "?") for ch in dedup)
@@ -297,6 +305,16 @@ def naive_decode_samples(model, loader, device, idx_to_char, max_samples=3):
         sample_list.append(sample_info)
     return sample_list
 
+# ---------------------------------
+# Helper: ensure image tensor has 4 channels (duplicate red if necessary)
+# ---------------------------------
+
+def ensure_four_channels(img_tensor: torch.Tensor) -> torch.Tensor:
+    """If img_tensor has shape [B,3,H,W] duplicate the first channel to obtain [B,4,H,W]."""
+    if img_tensor.dim() == 4 and img_tensor.shape[1] == 3:
+        return torch.cat([img_tensor, img_tensor[:, 0:1, ...]], dim=1)
+    return img_tensor
+
 def main():
     parser = argparse.ArgumentParser()
     # Data paths and types
@@ -309,9 +327,7 @@ def main():
     parser.add_argument("--test_type",  type=str, default="test")
 
     # Path to the pretrained One-DM OCR model checkpoint
-    parser.add_argument("--pretrained_ocr", type=str, default="./model_zoo/vae_HTR138.pth",
-                        help="Path to the pretrained One-DM OCR model weights that we want to partially load")
-    parser.add_argument("--save_ckpt_dir", type=str, default="./ocr_checkpoints_recognition_OG")
+    parser.add_argument("--save_ckpt_dir", type=str, default="./ocr_checkpoints")
 
     # Training hyperparameters
     parser.add_argument("--epochs", type=int, default=MAX_EPOCHS)
@@ -359,22 +375,21 @@ def main():
     test_loader  = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False,
                               collate_fn=test_dataset.collate_fn_, num_workers=NUM_WORKERS)
 
-    # Create the One-DM OCR model with 104 classes
-    # (You said you have 104 total classes, including blank=0)
+    # Create the One-DM OCR model
+    # Total classes: 103 letters + 1 CTC_BLANK = 104 classes
+    # Letters: indices 0-102, CTC_BLANK: index 103
 
-    n_classes = len(letters) + 1  # blank index = 0     
+    # Training from scratch with VAE enabled to work properly with the rest of the code
+    model = HTRNet(nclasses=n_classes, vae=True, head='rnn', flattening='maxpool').to(device)
 
-    model = HTRNet(nclasses=n_classes, vae=False, head='rnn', flattening='maxpool').to(device)
-    # model = HTRNet(nclasses=n_classes, vae=True, head='rnn', flattening='maxpool').to(device)
-
-    # Partially load from the user-provided checkpoint
-    partial_load_onedm(model, args.pretrained_ocr)
+    # We are training from scratch – skip loading any pretrained weights.
+    # partial_load_onedm(model, args.pretrained_ocr)
 
     # Set checkpoint file paths
-    ckpt_last = os.path.join(args.save_ckpt_dir, "checkpoint_last_recognition_OG.pth")
-    ckpt_model_state = os.path.join(args.save_ckpt_dir, "checkpoint_last_state_recognition_OG.pth")
-    ckpt_best = os.path.join(args.save_ckpt_dir, "ocr_best_recognition_OG.pth")
-    ckpt_best_state = os.path.join(args.save_ckpt_dir, "ocr_best_state_recognition_OG.pth")
+    ckpt_last = os.path.join(args.save_ckpt_dir, "checkpoint_last_recognition.pth")
+    ckpt_model_state = os.path.join(args.save_ckpt_dir, "checkpoint_last_state_recognition.pth")
+    ckpt_best = os.path.join(args.save_ckpt_dir, "ocr_best_recognition.pth")
+    ckpt_best_state = os.path.join(args.save_ckpt_dir, "ocr_best_state_recognition.pth")
 
     # Tracking training progress
     start_epoch = 0
@@ -383,7 +398,7 @@ def main():
     patience = args.patience
 
     # Prepare training components
-    criterion = nn.CTCLoss(blank=0, reduction="mean")
+    criterion = nn.CTCLoss(blank=BLANK_IDX, reduction="mean")
     optimizer = optim.AdamW(model.parameters(), lr=args.lr)
     scheduler = ExponentialLR(optimizer, gamma=10**(-1/90000))
 
@@ -399,8 +414,10 @@ def main():
         print(f"Resumed at epoch={start_epoch}, best_cer={best_cer:.4f}")
 
     # Training loop
-    # If blank=0, letters are 1..N => build decode map
-    idx_to_char = {i+1: ch for i, ch in enumerate(letters)}
+    # For decoding: indices 0-102 correspond to actual characters (letters)
+    # Index 103 (BLANK_IDX) is reserved for the CTC blank and is **NOT** mapped to a character.
+    # PAD tokens (index 103 in data loader) are not used in CTC targets
+    idx_to_char = {i: ch for i, ch in enumerate(letters)}
     early_stopped = False
 
     for epoch in range(start_epoch, args.epochs):
@@ -410,7 +427,7 @@ def main():
 
         pbar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{args.epochs}", leave=True)
         for step, batch in enumerate(pbar):
-            images = batch["img"].to(device)
+            images = ensure_four_channels(batch["img"].to(device))
             targets = batch["target"].to(device)
             target_lengths = batch["target_lengths"].to(device)
 
@@ -505,7 +522,7 @@ def main():
                     }
 
                     # Append the new log entry to the JSON file (each entry on a separate line)
-                    with open("finetune_recognition_validation_log_recognition_OG.json", "a") as log_file:
+                    with open("finetune_recognition_validation_log_recognition.json", "a") as log_file:
                         log_file.write(json.dumps(log_entry) + "\n")
 
                     break
@@ -526,7 +543,7 @@ def main():
             }
 
             # Append the new log entry to the JSON file (each entry on a separate line)
-            with open("finetune_recognition_validation_log_recognition_OG.json", "a") as log_file:
+            with open("finetune_recognition_validation_log_recognition.json", "a") as log_file:
                 log_file.write(json.dumps(log_entry) + "\n")
             
         else:
@@ -550,7 +567,7 @@ def main():
     test_wer_count = 0
     with torch.no_grad():
         for batch in test_loader:
-            images = batch["img"].to(device)
+            images = ensure_four_channels(batch["img"].to(device))
 
             logits = model(images)
             probs  = F.log_softmax(logits, dim=2)
@@ -562,7 +579,7 @@ def main():
                 dedup = []
                 prev = None
                 for ch_idx in raw_seq:
-                    if ch_idx != prev and ch_idx != 0:
+                    if ch_idx != prev and ch_idx != BLANK_IDX:
                         dedup.append(ch_idx)
                     prev = ch_idx
                 recognized = "".join(idx_to_char.get(ch, "?") for ch in dedup)

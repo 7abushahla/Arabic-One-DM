@@ -16,6 +16,10 @@ import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 from models.loss import SupConLoss
 
+import torch.multiprocessing as mp
+# Avoid Bad file descriptor error with many DataLoader workers
+mp.set_sharing_strategy('file_system')
+
 
 def main(opt):
     """ load config file into cfg"""
@@ -92,12 +96,12 @@ def main(opt):
         checkpoint = strip_prefix(raw_ckpt)
 
         # Convert the 3‑channel conv1 → 1‑channel
-        checkpoint["conv1.weight"] = checkpoint["conv1.weight"].mean(1, keepdim=True)
+        checkpoint['conv1.weight'] = checkpoint['conv1.weight'].mean(1).unsqueeze(1)
 
         # Load into your Feat_Encoder
         miss, unexp = unet.mix_net.Feat_Encoder.load_state_dict(checkpoint, strict=False)
         assert len(unexp) <= 32, "failed to load the pretrained model"
-        print(f'load pretrained model from {opt.feat_model}')
+        print('load pretrained model from {}'.format(opt.feat_model))
         
     """Initialize the U-Net model for parallel training on multiple GPUs"""
     unet = DDP(unet, device_ids=[local_rank])
@@ -115,7 +119,7 @@ def main(opt):
     """build trainer"""
     trainer = Trainer(diffusion, unet, vae, criterion, optimizer, train_loader, logs, val_loader, device)
     trainer.train()
-
+ 
 if __name__ == '__main__':
     """Parse input arguments"""
     parser = argparse.ArgumentParser()

@@ -4,9 +4,11 @@ import os
 import torch
 import numpy as np
 import pickle
+from torchvision import transforms
+import lmdb
+from PIL import Image
 import torchvision
 import cv2
-from PIL import Image
 from einops import rearrange, repeat
 import time
 import torch.nn.functional as F
@@ -51,43 +53,18 @@ generate_type = {
 }
 
 # ---------------------------------------
-# GLOBAL writer-ID ↔ integer lookup (shared across splits)
-# ---------------------------------------
-_GLOBAL_WID2IDX = None  # str  -> int
-_GLOBAL_IDX2WID = None  # int  -> str
-
-
-def _build_writer_lookup():
-    """Scan all text files once and build a global writer-id mapping."""
-    global _GLOBAL_WID2IDX, _GLOBAL_IDX2WID
-    if _GLOBAL_WID2IDX is not None:
-        return  # already initialised
-
-    writer_set = set()
-    for path in text_path.values():
-        try:
-            with open(path, 'r', encoding='utf-8') as f:
-                for line in f:
-                    first_field = line.split(' ', 1)[0]
-                    wid = first_field.split(',')[0]
-                    writer_set.add(wid)
-        except FileNotFoundError:
-            # Some splits (e.g. val) may not exist – just skip
-            continue
-
-    _GLOBAL_WID2IDX = {w: i for i, w in enumerate(sorted(writer_set))}
-    _GLOBAL_IDX2WID = {i: w for w, i in _GLOBAL_WID2IDX.items()}
-
-# ---------------------------------------
 # Arabic Helper Functions
 # ---------------------------------------
 
-def preprocess_text(text: str) -> str:
+def preprocess_text(text):
     """
-    For the new logical-order pipeline we do *not* touch the order of digits.
-    You can still normalise whitespace or do other cleaning here if you want.
+    Pre-process the text so that any contiguous sequence of English digits
+    is reversed. This ensures that after the overall reversal for RTL display,
+    the English numbers appear in their original order.
     """
-    return unicodedata.normalize("NFC", text)
+    def reverse_digits(match):
+        return match.group(0)[::-1]
+    return re.sub(r'\d+', reverse_digits, text)
 
 def effective_length(text):
     """
@@ -98,90 +75,7 @@ def effective_length(text):
     decomposed = unicodedata.normalize("NFD", text)
     return len([ch for ch in decomposed if not unicodedata.combining(ch)])
 
-def shape_arabic_text(text: str, letter2index: dict):
-    """
-    Convert an Arabic (RTL) string into a sequence of Unifont glyph indices
-    *in logical order*.  Nothing is reversed at the end.
-
-    Steps
-    -----
-    1. Normalise + light pre-processing            (preprocess_text)
-    2. Tokenise into (char, diacritic) pairs
-    3. Force all diacritics to "base" when SHOW_HARAKAT==False
-    4. Decide contextual form (isolated / initial / medial / final)
-    5. Map to glyph index →   indices list   +   list of detected forms
-    6. Return (indices, forms)   **logical order preserved**
-    """
-    # -------------------------------------------------- 1) pre-processing
-    text = preprocess_text(text)
-
-    # -------------------------------------------------- 2) constants
-    non_joining = set("اأإآدذرزو")
-    harakat_set = set("ًٌٍَُِّْ")
-
-    # -------------------------------------------------- 3) tokenise
-    tokens = []                       # [(char, diacritic | None), ...]
-    i = 0
-    while i < len(text):
-        ch = text[i]
-
-        if ch in arabic_chars:        # Arabic base letter
-            diac = "base"
-            if i + 1 < len(text) and text[i + 1] in harakat_set:
-                diac = text[i + 1]
-                i += 2
-            else:
-                i += 1
-            tokens.append((ch, diac))
-
-        elif ch in harakat_set:       # stray haraka – skip
-            i += 1
-
-        else:                         # non-Arabic char
-            tokens.append((ch, None))
-            i += 1
-
-    # ---------------------------------------- 4) strip diacritics if desired
-    if not SHOW_HARAKAT:
-        tokens = [(c, "base") if c in arabic_chars else (c, d)
-                   for (c, d) in tokens]
-
-    # ---------------------------------------- 5) contextual forms + indices
-    indices, forms = [], []
-    N = len(tokens)
-
-    for t, (ch, d) in enumerate(tokens):
-        if ch in arabic_chars:
-            prev_join = t > 0 and tokens[t-1][0] in arabic_chars \
-                              and tokens[t-1][0] not in non_joining
-            next_join = t < N-1 and tokens[t+1][0] in arabic_chars
-            joinable  = ch not in non_joining
-
-            if not joinable:
-                form = "final" if prev_join else "isolated"
-            else:
-                if   prev_join and next_join: form = "medial"
-                elif prev_join and not next_join: form = "final"
-                elif not prev_join and next_join: form = "initial"
-                else: form = "isolated"
-
-            idx = letter2index[ch].get(form, {}).get(d,
-                  letter2index[ch]["isolated"]["base"])
-            indices.append(idx)
-            forms.append(form)
-
-        else:   # non-Arabic
-            if ch in letter2index:
-                idx  = letter2index[ch] if not isinstance(
-                      letter2index[ch], dict) else letter2index[ch]["default"]
-            else:
-                idx = letter2index["PAD"]
-            indices.append(idx)
-            forms.append("default")
-
-    # -------------------------------------------------- 6) done – no reversal
-    return indices, forms
-
+ 
 
 def strip_harakat(text):
     """
@@ -230,11 +124,15 @@ class IAMDataset(Dataset):
                  laplace_path,
                  type,
                  content_type='unifont_arabic',
-                 max_len=10):
+                 max_len=10,
+                 img_h=256,
+                 img_w=256):
         
         self.max_len = max_len
         self.style_len = style_len
         self.split     = type
+        self.img_h = img_h
+        self.img_w = img_w
         
         # read lines from e.g. data/train.txt
         data_file = text_path[type]
@@ -249,15 +147,15 @@ class IAMDataset(Dataset):
         # these are used for the content (Arabic)
         self.letters = letters
         self.tokens = {"PAD_TOKEN": len(self.letters)}
-
-        self.letter2index = {label: n for n, label in enumerate(self.letters)}
-        
+        # self.letter2index = {label: n for n, label in enumerate(self.letters)}
+        self.letter2index = {label: n+1 for n, label in enumerate(self.letters)}
         self.indices = list(self.data_dict.keys())
 
-        # Image preprocessing (identical to English loader): just ToTensor + Normalize.
         self.transforms = torchvision.transforms.Compose([
+            torchvision.transforms.Resize((self.img_h, self.img_w)),
             torchvision.transforms.ToTensor(),
-            torchvision.transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
+            torchvision.transforms.Normalize((0.5, 0.5, 0.5),
+                                             (0.5, 0.5, 0.5))
         ])
 
         # load unifont_arabic or unifont, etc.
@@ -269,11 +167,28 @@ class IAMDataset(Dataset):
                                      [0, 1, 0]], dtype=torch.float32
                                    ).to(torch.float32).view(1, 1, 3, 3).contiguous()
 
-        # Build / fetch global writer-ID lookup
-        _build_writer_lookup()
-        self.wid2idx = _GLOBAL_WID2IDX
-        self.idx2wid = _GLOBAL_IDX2WID
+    def get_symbols(self, input_type):
+        """
+        Load Arabic symbols from data/{input_type}.pickle
+        Returns con_symbols + letter2index
+        """
+        with open(f"data/{input_type}.pickle", "rb") as f:
+            data = pickle.load(f)
+        glyph_entries = data['with_harakat']['glyph_entries']
+        letter2index = data['with_harakat']['letter2index']
 
+        max_idx = max(e['idx'][0] for e in glyph_entries)
+        glyph_list = [None]*(max_idx+1)
+
+        for entry in glyph_entries:
+            idx_val = entry['idx'][0]
+            mat_16x16 = entry['mat'].astype(np.float32)
+            glyph_list[idx_val] = torch.from_numpy(mat_16x16)
+        con_symbols = torch.stack(glyph_list)
+
+        return con_symbols, letter2index
+
+    
     def load_data(self, data_path):
         """
         Expects lines like:
@@ -311,82 +226,44 @@ class IAMDataset(Dataset):
 
     def get_style_ref(self, wr_id):
         """
-        Match English loader approach: keep natural dimensions, pad to max width
+        Force img_h × img_w resizing of style & laplace images so that
+        your subsequent code doesn't produce weird shapes in the ResNet.
         """
         prefix, suffix = split_writer_id(wr_id)
         files = os.listdir(self.style_root)
 
-        # Collect all candidate images for the requested writer
-        if prefix == "iesk":            # special naming scheme
+        # special cases
+        if prefix == "iesk":
             candidates = [f for f in files if f.endswith(f"_{suffix}.bmp")]
-        elif prefix == "ahawp":         # another special scheme
+        elif prefix == "ahawp":
             key = f"user{int(suffix):03d}"
             candidates = [f for f in files if f.startswith(key + "_")]
-        else:                            # default  "suffix_"  or  "suffix-"
+        else:
             candidates = [f for f in files
                           if f.startswith(suffix + "_") or f.startswith(suffix + "-")]
 
         if len(candidates) < 2:
             raise RuntimeError(f"No style images for writer '{wr_id}' in {self.style_root}")
 
-        # Randomly pick anchor & positive
         pick = random.sample(candidates, 2)
-        style_images = [cv2.imread(os.path.join(self.style_root, fn), 0) for fn in pick]
-        laplace_images = [cv2.imread(os.path.join(self.laplace_root, fn), 0) for fn in pick]
+        imgs = [cv2.imread(os.path.join(self.style_root, fn), 0) for fn in pick]
+        laps = [cv2.imread(os.path.join(self.laplace_root, fn), 0) for fn in pick]
 
-        height = style_images[0].shape[0]
-        assert height == style_images[1].shape[0], 'the heights of style images are not consistent'
-        max_w = max([style_image.shape[1] for style_image in style_images])
-        
-        '''style images'''
-        style_images = [style_image/255.0 for style_image in style_images]
-        new_style_images = np.ones([2, height, max_w], dtype=np.float32)
-        new_style_images[0, :, :style_images[0].shape[1]] = style_images[0]
-        new_style_images[1, :, :style_images[1].shape[1]] = style_images[1]
+        # force img_h × img_w
+        style_arr = np.zeros((2, self.img_h, self.img_w), dtype=np.float32)
+        lap_arr   = np.zeros((2, self.img_h, self.img_w), dtype=np.float32)
+        for j,(im,lp) in enumerate(zip(imgs,laps)):
+            if im is None or lp is None:
+                raise RuntimeError(f"Error reading {pick[j]}")
+            im2 = cv2.resize(im,  (self.img_w, self.img_h), interpolation=cv2.INTER_AREA)
+            lp2 = cv2.resize(lp, (self.img_w, self.img_h), interpolation=cv2.INTER_AREA)
+            style_arr[j] = im2.astype(np.float32)/255.0
+            lap_arr[j]   = lp2.astype(np.float32)/255.0
 
-        '''laplace images'''
-        laplace_images = [laplace_image/255.0 for laplace_image in laplace_images]
-        new_laplace_images = np.zeros([2, height, max_w], dtype=np.float32)
-        new_laplace_images[0, :, :laplace_images[0].shape[1]] = laplace_images[0]
-        new_laplace_images[1, :, :laplace_images[1].shape[1]] = laplace_images[1]
-        
-        return new_style_images, new_laplace_images
-    
-    def get_symbols(self, input_type):
-        """
-        Load Arabic symbols from data/{input_type}.pickle
-        Returns con_symbols + letter2index
-        """
-        with open(f"data/{input_type}.pickle", "rb") as f:
-            data = pickle.load(f)
-        glyph_entries = data['with_harakat']['glyph_entries']
-        letter2index = data['with_harakat']['letter2index']
-
-        max_idx = max(e['idx'][0] for e in glyph_entries)
-        glyph_list = [None]*(max_idx+1)
-
-        for entry in glyph_entries:
-            idx_val = entry['idx'][0]
-            mat_16x16 = entry['mat'].astype(np.float32)
-            glyph_list[idx_val] = torch.from_numpy(mat_16x16)
-        con_symbols = torch.stack(glyph_list)
-
-        return con_symbols, letter2index
+        return style_arr, lap_arr
 
     def __len__(self):
         return len(self.indices)
-    
-    # --------------------------------------------------
-    # Borrowed from original IAM loader (GANwriting)
-    # Pads a list of character indices with the special PAD token so
-    # that all strings in a batch share the same length.
-    # --------------------------------------------------
-    def label_padding(self, labels, max_len):
-        ll = [self.letter2index[i] for i in labels]
-        num = max_len - len(ll)
-        if not num == 0:
-            ll.extend([self.tokens["PAD_TOKEN"]] * num)  # replace PAD_TOKEN
-        return ll
 
     def __getitem__(self, idx):
         sample     = self.data_dict[self.indices[idx]]
@@ -415,8 +292,6 @@ class IAMDataset(Dataset):
           - main images => same H/W
           - style images => same H, clamp W
           - glyph => used for content
-          Additionally converts writer IDs to an int tensor (like English loader)
-          and keeps their string form under 'wid_str'.
         """
         B = len(batch)
 
@@ -424,32 +299,29 @@ class IAMDataset(Dataset):
         img_heights = [item['img'].shape[1] for item in batch]
         img_widths  = [item['img'].shape[2] for item in batch]
         max_h = max(img_heights)
-        # Use raw maximum width in the batch (same logic as English loader).
-        # All images were pre-processed so their widths are already multiples
-        # of 16, so the UNet skip connections will align without extra padding.
         max_w = max(img_widths)
 
-        # Build 3-channel RGB tensor (same as original English loader)
         imgs = torch.ones([B, 3, max_h, max_w], dtype=torch.float32)
         for i, item in enumerate(batch):
             cur_h = item['img'].shape[1]
             cur_w = item['img'].shape[2]
             imgs[i, :, :cur_h, :cur_w] = item['img']
 
-        # ============ 2) STYLE IMAGES =============
-
-        style_heights = [item['style'].shape[1] for item in batch]  
-        style_widths  = [item['style'].shape[2] for item in batch]  
-        max_style_h = max(style_heights)  
-        raw_max_style_w = max(style_widths)  
-        max_style_w = min(raw_max_style_w, self.style_len) 
+        # ============ 2) STYLE IMAGES (2,256,256) => pad if needed =============
+        #   but we already forced them to be 256×256 above, so no mismatch expected
+        style_heights = [item['style'].shape[1] for item in batch]  # each is 256
+        style_widths  = [item['style'].shape[2] for item in batch]  # each is 256
+        max_style_h = max(style_heights)  # probably 256
+        raw_max_style_w = max(style_widths)  # also 256
+        max_style_w = min(raw_max_style_w, self.style_len)  # e.g. 256 vs style_len=416 => 256
 
         style_ref   = torch.ones([B, 2, max_style_h, max_style_w], dtype=torch.float32)
         laplace_ref = torch.zeros([B, 2, max_style_h, max_style_w], dtype=torch.float32)
 
         for i, item in enumerate(batch):
-            sh = item['style'].shape[1]  # 
-            sw = item['style'].shape[2]  # 
+            sh = item['style'].shape[1]  # should be 256
+            sw = item['style'].shape[2]  # should be 256
+            # clamp if you want (256 vs style_len=416 => 256)
             clamped_w = min(sw, max_style_w)
             style_ref[i, :, :sh, :clamped_w]   = item['style'][:, :sh, :clamped_w]
             laplace_ref[i, :, :sh, :clamped_w] = item['laplace'][:, :sh, :clamped_w]
@@ -474,10 +346,7 @@ class IAMDataset(Dataset):
             tinds = [self.letter2index[ch] for ch in label]
             target[i, :len(tinds)] = torch.tensor(tinds, dtype=torch.int32)
 
-        # ---------- writer IDs (numeric + string) ----------
-        wid_str = [item['wid'] for item in batch]  # list[str]
-        wid_tensor = torch.tensor([self.wid2idx[w] for w in wid_str], dtype=torch.long)
-
+        writer_ids  = [item['wid'] for item in batch]
         image_names = [item['image_name'] for item in batch]
 
         # invert glyph bitmaps if needed
@@ -488,64 +357,51 @@ class IAMDataset(Dataset):
             'style':          style_ref,
             'laplace':        laplace_ref,
             'content':        content_ref,
-            'wid':            wid_tensor,
-            'wid_str':        wid_str,
+            'wid':            writer_ids,
             'transcr':        transcr,
             'target':         target,
             'target_lengths': target_lengths,
             'image_name':     image_names
         }
 
-    
-
 # ---------------------------------------
 # Random_StyleIAMDataset
 # ---------------------------------------
 class Random_StyleIAMDataset(IAMDataset):
     """
-    Minimal wrapper used during inference to fetch a single style/laplace
-    reference per writer.  Mirrors the constructor signature in the English
-    implementation (`loader.py`) so downstream utility code can stay the same.
+    Now we also forcibly resize the single style image to (256,256)
+    so that it won't cause shape mismatches in the fusion code.
     """
-    def __init__(self, style_path, laplace_path, ref_num):
-        """Light-weight dataset used only to fetch 1-image style references.
-
-        Unlike the full IAMDataset it does *not* need the text annotations, so
-        we purposefully do **not** call super().__init__.  We only record the
-        paths, list the available writer IDs and store a few geometry params.
-        """
-
-        self.style_path   = style_path
-        self.laplace_path = laplace_path
-        self.ref_num      = ref_num
-
-        # padding parameter (max allowed width when batching)
-        self.style_len = style_len  # global constant defined at top of file
-
-        # every file name in style_path corresponds to one writer
-        self.author_id = os.listdir(self.style_path)
+    def __init__(self, style_path, laplace_path, ref_num, img_h=256, img_w=256) -> None:
+        super().__init__(image_path=None, style_path=style_path, laplace_path=laplace_path, type=None, img_h=img_h, img_w=img_w)
+        self.style_path = style_path        # flat folder with all style images
+        self.laplace_path = laplace_path    # flat folder with all laplace images
+        self.style_len = style_len
+        self.ref_num = ref_num
+        self.img_h = img_h
+        self.img_w = img_w
+        self.author_id = os.listdir(os.path.join(self.style_path))
 
     def get_style_ref(self, wr_id):
         """
         Directly load the style and laplace image corresponding to the given file name.
+        The image is resized to 256x256 if its width is greater than 20.
         """
+        import cv2
         s_path = os.path.join(self.style_path, wr_id)
         l_path = os.path.join(self.laplace_path, wr_id)  # assuming laplace images share the same file name
         s_img = cv2.imread(s_path, flags=0)
         l_img = cv2.imread(l_path, flags=0)
         if s_img is None or l_img is None:
             raise RuntimeError(f"Error reading style or laplace image for file '{wr_id}' in {self.style_path}")
-
-        # Validate pre-processing: expect height exactly 64 px.
-        if s_img.shape[0] != 64:
-            raise RuntimeError(
-                f"Style image '{wr_id}' height is {s_img.shape[0]} (expected 64). "
-                "Run the preprocessing script first."
-            )
-
-        style_image   = s_img.astype(np.float32) / 255.0
-        laplace_image = l_img.astype(np.float32) / 255.0
-        return style_image, laplace_image
+        if s_img.shape[1] > 58:
+            s_img = cv2.resize(s_img, (self.img_w, self.img_h), interpolation=cv2.INTER_AREA)
+            l_img = cv2.resize(l_img, (self.img_w, self.img_h), interpolation=cv2.INTER_AREA)
+            style_image = s_img.astype(np.float32) / 255.0
+            laplace_image = l_img.astype(np.float32) / 255.0
+            return style_image, laplace_image
+        else:
+            raise RuntimeError(f"Style image '{wr_id}' width <= 58 in {self.style_path}")
 
     def __len__(self):
         return self.ref_num
@@ -604,17 +460,14 @@ class ContentData(IAMDataset):
         # self.letter2index = {label: n for n, label in enumerate(self.letters)}
 
         # So that hamza is not considered for blank tokens
-        self.letter2index = {label: n for n, label in enumerate(self.letters)}
+        self.letter2index = {label: n+1 for n, label in enumerate(self.letters)}
 
         # load the con_symbols from pickle
         self.con_symbols, self.letter2index = self.get_symbols(content_type)
-        
-        # Store reference to the instance method
-        self.shape_arabic_text = shape_arabic_text
 
     def get_content(self, text):
-        # shape the text using the instance method
-        indices, _ = self.shape_arabic_text(text, self.letter2index)
+        # shape the text
+        indices, _ = shape_arabic_text(text, self.letter2index)
         indices_tensor = torch.tensor(indices, dtype=torch.long)
         glyphs = self.con_symbols[indices_tensor]
         glyphs = 1.0 - glyphs

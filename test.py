@@ -2,7 +2,7 @@ import argparse
 import os
 from parse_config import cfg, cfg_from_file, assert_and_infer_cfg
 import torch
-from data_loader.loader_ara import ContentData, generate_type
+from data_loader.loader_ara import Random_StyleIAMDataset, ContentData, generate_type
 from models.unet import UNetModel
 from tqdm import tqdm
 from diffusers import AutoencoderKL
@@ -31,37 +31,47 @@ def get_words_from_oov(oov_path):
         words = [line.strip() for line in f if line.strip()]
     return words
 
+# ---------------------------------------
+# Dataset: one reference image per writer
+# ---------------------------------------
+
 class StyleRefDataset(torch.utils.data.Dataset):
-    def __init__(self, style_path, laplace_path, writer_to_image, writer_ids):
-        self.style_path = style_path
-        self.laplace_path = laplace_path
-        self.writer_to_image = writer_to_image
-        self.writer_ids = writer_ids
+    """Load *one* style + laplace reference per writer using the mapping
+    built from test.txt (get_writer_to_first_image).  Returns a 2-channel
+    reference (anchor & positive are identical) so shapes stay compatible
+    with the original network.
+    """
+
+    def __init__(self, style_root, laplace_root, writer_to_image):
+        self.style_root   = style_root
+        self.laplace_root = laplace_root
+        self.mapping      = writer_to_image               # dict[writer] → imgName
+        self.writers      = list(self.mapping.keys())     # stable order
 
     def __len__(self):
-        return len(self.writer_ids)
+        return len(self.writers)
 
     def __getitem__(self, idx):
-        wr_id = self.writer_ids[idx]
-        image_name = self.writer_to_image[wr_id]
-        s_path = os.path.join(self.style_path, image_name)
-        l_path = os.path.join(self.laplace_path, image_name)
+        wid   = self.writers[idx]
+        fname = self.mapping[wid]
+
+        s_path = os.path.join(self.style_root, fname)
+        l_path = os.path.join(self.laplace_root, fname)
+
         s_img = cv2.imread(s_path, flags=0)
         l_img = cv2.imread(l_path, flags=0)
         if s_img is None or l_img is None:
-            raise RuntimeError(f"Error reading style or laplace image for file '{image_name}' (writer '{wr_id}') in {self.style_path}")
-        s_img = cv2.resize(s_img, (256, 256), interpolation=cv2.INTER_AREA)
-        l_img = cv2.resize(l_img, (256, 256), interpolation=cv2.INTER_AREA)
-        style_t = torch.from_numpy(s_img.astype(np.float32) / 255.0).unsqueeze(0)  # [1,256,256]
-        laplace_t = torch.from_numpy(l_img.astype(np.float32) / 255.0).unsqueeze(0)  # [1,256,256]
-        # Repeat to get [2,256,256] for model compatibility
-        style_t = style_t.repeat(2, 1, 1)
-        laplace_t = laplace_t.repeat(2, 1, 1)
-        return {
-            'style': style_t,
-            'laplace': laplace_t,
-            'wid': wr_id
-        }
+            raise RuntimeError(f"Cannot read style/laplace for {fname} (writer {wid})")
+
+        # normalise & convert → tensor, [1,H,W]
+        s_t = torch.from_numpy(s_img.astype(np.float32) / 255.0).unsqueeze(0)
+        l_t = torch.from_numpy(l_img.astype(np.float32) / 255.0).unsqueeze(0)
+
+        # repeat so network sees 2 refs (anchor+pos)
+        s_t = s_t.repeat(2, 1, 1)
+        l_t = l_t.repeat(2, 1, 1)
+
+        return {"style": s_t, "laplace": l_t, "wid": wid}
 
 def main(opt):
     """ load config file into cfg"""
@@ -96,25 +106,28 @@ def main(opt):
         print("[ERROR] No writers or words found. Exiting.")
         return
 
-    # Split writers for distributed processing
-    each_process = len(writer_ids) // totol_process
-    remainder = len(writer_ids) % totol_process
-    start_idx = local_rank * each_process + min(local_rank, remainder)
-    end_idx = start_idx + each_process + (1 if local_rank < remainder else 0)
-    temp_writer_ids = writer_ids[start_idx:end_idx]
+    # Split words across processes (mirrors original generation logic)
+    each_process = len(words) // totol_process
+    if len(words) % totol_process == 0:
+        temp_words = words[local_rank * each_process:(local_rank + 1) * each_process]
+    else:
+        each_process += 1
+        temp_words = words[local_rank * each_process:(local_rank + 1) * each_process]
 
+    # One reference image per writer (no 6 k aggregation)
     style_dataset = StyleRefDataset(
         os.path.join(cfg.DATA_LOADER.STYLE_PATH, generate_type[opt.generate_type][0]),
         os.path.join(cfg.DATA_LOADER.LAPLACE_PATH, generate_type[opt.generate_type][0]),
-        writer_to_image,
-        temp_writer_ids
+        writer_to_image
     )
-    style_loader = torch.utils.data.DataLoader(style_dataset,
-                                               batch_size=1,
-                                               shuffle=False,
-                                               drop_last=False,
-                                               num_workers=cfg.DATA_LOADER.NUM_THREADS,
-                                               pin_memory=True)
+    style_loader = torch.utils.data.DataLoader(
+        style_dataset,
+        batch_size=1,
+        shuffle=True,
+        drop_last=False,
+        num_workers=cfg.DATA_LOADER.NUM_THREADS,
+        pin_memory=True
+    )
 
     target_dir = os.path.join(opt.save_dir, opt.generate_type)
 
@@ -139,29 +152,32 @@ def main(opt):
     # Freeze vae and text_encoder
     vae.requires_grad_(False)
 
-    loader_iter = iter(style_loader)
-    for i, writer_id in enumerate(temp_writer_ids):
-        data = next(loader_iter)
-        style_input = data['style'].to(opt.device)      # [1,2,256,256]
-        laplace = data['laplace'].to(opt.device)        # [1,2,256,256]
-        wid = data['wid']                               # [1] or string
-        for word in words:
+    # Iterate writer-by-writer so each writer folder is filled with all words at once
+    for data in tqdm(style_loader, position=0, desc='writer'):
+        style_input   = data['style'].to(opt.device)   # [1,2,H,W]
+        laplace_input = data['laplace'].to(opt.device) # [1,2,H,W]
+        writer_id     = data['wid'][0] if isinstance(data['wid'], (list, tuple)) else data['wid']
+
+        for word in temp_words:
             text_ref = load_content.get_content(word)
             text_ref = text_ref.to(opt.device).repeat(style_input.shape[0], 1, 1, 1)
-            x = torch.randn((text_ref.shape[0], 4, style_input.shape[3]//8, (text_ref.shape[1]*32)//8)).to(opt.device)
+
+            x = torch.randn((text_ref.shape[0], 4, style_input.shape[2]//8, (text_ref.shape[1]*32)//8)).to(opt.device)
 
             if opt.sample_method == 'ddim':
-                ema_sampled_images = diffusion.ddim_sample(unet, vae, style_input.shape[0], 
-                                                        x, style_input, laplace, text_ref,
-                                                        opt.sampling_timesteps, opt.eta)
+                ema_sampled_images = diffusion.ddim_sample(
+                    unet, vae, style_input.shape[0], x, style_input, laplace_input, text_ref,
+                    opt.sampling_timesteps, opt.eta
+                )
             elif opt.sample_method == 'ddpm':
-                ema_sampled_images = diffusion.ddpm_sample(unet, vae, style_input.shape[0], 
-                                                        x, style_input, laplace, text_ref)
+                ema_sampled_images = diffusion.ddpm_sample(
+                    unet, vae, style_input.shape[0], x, style_input, laplace_input, text_ref
+                )
             else:
                 raise ValueError('sample method is not supported')
 
-            for index in range(len(ema_sampled_images)):
-                im = torchvision.transforms.ToPILImage()(ema_sampled_images[index])
+            for img_idx in range(len(ema_sampled_images)):
+                im = torchvision.transforms.ToPILImage()(ema_sampled_images[img_idx])
                 image = im.convert("L")
                 out_path = os.path.join(target_dir, writer_id)
                 os.makedirs(out_path, exist_ok=True)

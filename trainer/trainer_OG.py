@@ -4,12 +4,15 @@ import time
 from parse_config import cfg
 import os
 import sys
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 import torchvision
 from tqdm import tqdm
 from data_loader.loader_ara import ContentData
 import torch.distributed as dist
 import torch.nn.functional as F
+
+import arabic_reshaper
+from bidi.algorithm import get_display
 
 class Trainer:
     def __init__(self, diffusion, unet, vae, criterion, optimizer, data_loader, 
@@ -31,42 +34,42 @@ class Trainer:
       
     def _train_iter(self, data, step, pbar):
         self.model.train()
-
-        images, style_ref, laplace_ref, content_ref, wid = data['img'].to(self.device), \
-            data['style'].to(self.device), \
-            data['laplace'].to(self.device), \
-            data['content'].to(self.device), \
-            data['wid'].to(self.device)
+        # Prepare inputs: move all tensors except writer IDs (wid)
+        images = data['img'].to(self.device)
+        style_ref = data['style'].to(self.device)
+        laplace_ref = data['laplace'].to(self.device)
+        content_ref = data['content'].to(self.device)
+        # Do NOT move wid; they are strings
+        wid = data['wid']
         
-        # Extract string writer IDs for annotations
-        wid_str = data.get('wid_str', None)
-        
-        # vae encode
+        # VAE encode
         images = self.vae.encode(images).latent_dist.sample()
         images = images * 0.18215
 
-
-        # forward
+        # Forward diffusion step
         t = self.diffusion.sample_timesteps(images.shape[0]).to(self.device)
         x_t, noise = self.diffusion.noise_images(images, t)
         
-       
-        predicted_noise, high_nce_emb, low_nce_emb = self.model(x_t, t, style_ref, laplace_ref, content_ref, tag='train')
-        # calculate loss
+        predicted_noise, high_nce_emb, low_nce_emb = self.model(
+            x_t, t, style_ref, laplace_ref, content_ref, tag='train'
+        )
+        # Calculate losses
         recon_loss = self.recon_criterion(predicted_noise, noise)
         high_nce_loss = self.nce_criterion(high_nce_emb, labels=wid)
         low_nce_loss = self.nce_criterion(low_nce_emb, labels=wid)
         loss = recon_loss + high_nce_loss + low_nce_loss
 
-        # backward and update trainable parameters
+        # Backward and update parameters
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
 
         if dist.get_rank() == 0:
-            # log file
-            loss_dict = {"reconstruct_loss": recon_loss.item(), "high_nce_loss": high_nce_loss.item(),
-                         "low_nce_loss": low_nce_loss.item()}
+            loss_dict = {
+                "reconstruct_loss": recon_loss.item(), 
+                "high_nce_loss": high_nce_loss.item(),
+                "low_nce_loss": low_nce_loss.item()
+            }
             self.tb_summary.add_scalars("loss", loss_dict, step)
             self._progress(recon_loss.item(), pbar)
 
@@ -75,41 +78,51 @@ class Trainer:
 
     def _finetune_iter(self, data, step, pbar):
         self.model.train()
-        # prepare input
-
-        images, style_ref, laplace_ref, content_ref, wid, target, target_lengths = data['img'].to(self.device), \
-            data['style'].to(self.device), \
-            data['laplace'].to(self.device), \
-            data['content'].to(self.device), \
-            data['wid'].to(self.device), \
-            data['target'].to(self.device), \
-            data['target_lengths'].to(self.device)
+        images = data['img'].to(self.device)
+        style_ref = data['style'].to(self.device)
+        laplace_ref = data['laplace'].to(self.device)
+        content_ref = data['content'].to(self.device)
+        # Do not move writer IDs to device
+        wid = data['wid']
+        target = data['target'].to(self.device)
+        target_lengths = data['target_lengths'].to(self.device)
         
-        # Extract string writer IDs for annotations
-        wid_str = data.get('wid_str', None)
-        
-        # vae encode
+        # VAE encode
         latent_images = self.vae.encode(images).latent_dist.sample()
         latent_images = latent_images * 0.18215
 
-
-        # forward
         t = self.diffusion.sample_timesteps(latent_images.shape[0], finetune=True).to(self.device)
         x_t, noise = self.diffusion.noise_images(latent_images, t)
         
-        x_start, predicted_noise, high_nce_emb, low_nce_emb = self.diffusion.train_ddim(self.model, x_t, style_ref, laplace_ref,
-                                                        content_ref, t, sampling_timesteps=5)
+        x_start, predicted_noise, high_nce_emb, low_nce_emb = self.diffusion.train_ddim(
+            self.model, x_t, style_ref, laplace_ref, content_ref, t, sampling_timesteps=5
+        )
  
-        # calculate loss
         recon_loss = self.recon_criterion(predicted_noise, noise)
-        rec_out = self.ocr_model(x_start)
-        input_lengths = torch.IntTensor(x_start.shape[0]*[rec_out.shape[0]])
+
+        # Proposed fix: decode to 3-ch
+        # decoded_img = self.vae.decode(x_start / 0.18215).sample  # or .mode(), depends on your pipeline
+        # rec_out = self.ocr_model(decoded_img)  # now [B, 3, H, W]
+        
+        # ---------- ADD / MODIFY THESE THREE LINES ----------
+        # 1) Decode latents (still in 0‒1)
+        decoded_img = self.vae.decode(x_start / 0.18215).sample
+
+        # 2) Match the scale the OCR was trained on (−0.5)/0.5  →  [-1, 1]
+        decoded_img = decoded_img.sub_(0.5).div_(0.5)
+
+        # 3) Forward through whichever OCR you loaded (OG or Muha​raf)
+        rec_out = self.ocr_model(decoded_img)
+        # -----------------------------------------------------
+
+
+        # rec_out = self.ocr_model(x_start)
+        input_lengths = torch.IntTensor(latent_images.shape[0] * [rec_out.shape[0]])
         ctc_loss = self.ctc_criterion(F.log_softmax(rec_out, dim=2), target, input_lengths, target_lengths)
         high_nce_loss = self.nce_criterion(high_nce_emb, labels=wid)
         low_nce_loss = self.nce_criterion(low_nce_emb, labels=wid)
-        loss = recon_loss + high_nce_loss + low_nce_loss + 0.1*ctc_loss
+        loss = recon_loss + high_nce_loss + low_nce_loss + 0.1 * ctc_loss
 
-        # backward and update trainable parameters
         self.optimizer.zero_grad()
         loss.backward()
         if cfg.SOLVER.GRAD_L2_CLIP > 0:
@@ -117,52 +130,39 @@ class Trainer:
         self.optimizer.step()
 
         if dist.get_rank() == 0:
-            # log file
-            loss_dict = {"reconstruct_loss": recon_loss.item(), "high_nce_loss": high_nce_loss.item(),
-                         "low_nce_loss": low_nce_loss.item(), "ctc_loss": ctc_loss.item()}
+            loss_dict = {
+                "reconstruct_loss": recon_loss.item(), 
+                "high_nce_loss": high_nce_loss.item(),
+                "low_nce_loss": low_nce_loss.item(), 
+                "ctc_loss": ctc_loss.item()
+            }
             self.tb_summary.add_scalars("loss", loss_dict, step)
             self._progress(recon_loss.item(), pbar)
 
         del data, loss
         torch.cuda.empty_cache()
 
-    def _save_images(self, images, path, writer_ids=None):
-        # Create grid of images
+    def _save_images(self, images, path):
         grid = torchvision.utils.make_grid(images)
         im = torchvision.transforms.ToPILImage()(grid)
-        
-        # If we have writer IDs, add them as text
-        if writer_ids is not None:
-            draw = ImageDraw.Draw(im)
-            font = ImageFont.load_default()  # Use default font for simplicity
-            
-            # Calculate grid dimensions
-            n_cols = min(8, images.shape[0])  # Default nrow in make_grid is 8
-            n_rows = (images.shape[0] + n_cols - 1) // n_cols
-            single_img_w = images.shape[3]
-            single_img_h = images.shape[2]
-            
-            # Add text for each image
-            for idx, wid in enumerate(writer_ids):
-                row = idx // n_cols
-                col = idx % n_cols
-                x = col * (single_img_w + 2)  # +2 for padding in make_grid
-                y = row * (single_img_h + 2)
-                # Draw white background for better visibility
-                text = str(wid)
-                bbox = draw.textbbox((x, y), text, font=font)
-                draw.rectangle(bbox, fill='white')
-                # Draw text
-                draw.text((x, y), text, fill='black', font=font)
-        
         im.save(path)
         return im
 
+
+    # def _save_images(self, images, path):
+    #     # Use nrow to control layout. Set to number of images to make a row
+    #     grid = torchvision.utils.make_grid(images, nrow=images.shape[0])  # stack horizontally
+    #     im = torchvision.transforms.ToPILImage()(grid)
+    #     im = im.transpose(Image.ROTATE_270)  # Optional: rotate if needed
+    #     im.save(path)
+    #     return im
+
     @torch.no_grad()
     def _valid_iter(self, epoch):
-        print('loading test dataset, the number is', len(self.valid_data_loader))
+        print(f"Running validation for epoch {epoch}")
         self.model.eval()
-        # use the first batch of dataloader in all validations for better visualization comparisons
+
+        # Use the first batch from the validation loader for consistency.
         test_loader_iter = iter(self.valid_data_loader)
         test_data = next(test_loader_iter)
 
@@ -171,7 +171,6 @@ class Trainer:
         style_ref = test_data['style'].to(self.device)
         laplace_ref = test_data['laplace'].to(self.device)
         content_ref = test_data['content'].to(self.device)
-        writer_ids = test_data.get('wid_str', None) or [str(w.item()) for w in test_data['wid']]
 
         load_content = ContentData()
         # Define a fixed set of texts for visualization.
@@ -181,12 +180,21 @@ class Trainer:
             # Get content glyphs for the text and repeat to match the batch size.
             text_ref = load_content.get_content(text)
             text_ref = text_ref.to(self.device).repeat(style_ref.shape[0], 1, 1, 1)
-            x = torch.randn((text_ref.shape[0], 4, style_ref.shape[2]//8, (text_ref.shape[1]*32)//8)).to(self.device)
-            preds = self.diffusion.ddim_sample(self.model, self.vae, images.shape[0], x, style_ref, laplace_ref, text_ref)
+            # Generate a random noise vector. The shape is determined by the text_ref dimensions.
+            x = torch.randn((style_ref.shape[0],
+                            4,
+                            style_ref.shape[2] // 8,
+                            (text_ref.shape[1] * 32) // 8)).to(self.device)
+            # Generate predictions using the diffusion process.
+            preds = self.diffusion.ddim_sample(self.model, self.vae, 
+                                            images.shape[0], x, 
+                                            style_ref, laplace_ref, text_ref)
             out_path = os.path.join(self.save_sample_dir, f"epoch-{epoch}-{text}-process-{rank}.png")
-            self._save_images(preds, out_path, writer_ids=writer_ids)
+            self._save_images(preds, out_path)
 
-            print(f"Saved generated outputs for text '{text}' at epoch {epoch}")
+            # Reshape text using arabic_reshaper and bidi for correct display.
+            reshaped_text = get_display(arabic_reshaper.reshape(text))
+            print(f"Saved generated outputs for text '{reshaped_text}' at epoch {epoch}")
 
     def train(self):
         """start training iterations"""
@@ -203,29 +211,21 @@ class Trainer:
                 total_step = epoch * len(self.data_loader) + step
                 if self.ocr_model is not None:
                     self._finetune_iter(data, total_step, pbar)
-                    if (total_step+1) > cfg.TRAIN.SNAPSHOT_BEGIN and (total_step+1) % cfg.TRAIN.SNAPSHOT_ITERS == 0:
+                    if (total_step + 1) > cfg.TRAIN.SNAPSHOT_BEGIN and (total_step + 1) % cfg.TRAIN.SNAPSHOT_ITERS == 0:
                         if dist.get_rank() == 0:
                             self._save_checkpoint(total_step)
-                    else:
-                        pass
                     if self.valid_data_loader is not None:
-                        if (total_step+1) > cfg.TRAIN.VALIDATE_BEGIN  and (total_step+1) % cfg.TRAIN.VALIDATE_ITERS == 0:
-                            self._valid_iter(total_step)
-                        else:
-                            pass 
+                        if (total_step + 1) > cfg.TRAIN.VALIDATE_BEGIN and (total_step + 1) % cfg.TRAIN.VALIDATE_ITERS == 0:
+                            self._valid_iter(total_step) # ACTUAL VALIDATION
                 else:
                     self._train_iter(data, total_step, pbar)
 
-            if (epoch+1) > cfg.TRAIN.SNAPSHOT_BEGIN and (epoch+1) % cfg.TRAIN.SNAPSHOT_ITERS == 0:
+            if (epoch + 1) > cfg.TRAIN.SNAPSHOT_BEGIN and (epoch + 1) % cfg.TRAIN.SNAPSHOT_ITERS == 0:
                 if dist.get_rank() == 0:
                     self._save_checkpoint(epoch)
-                else:
-                    pass
             if self.valid_data_loader is not None:
-                if (epoch+1) > cfg.TRAIN.VALIDATE_BEGIN  and (epoch+1) % cfg.TRAIN.VALIDATE_ITERS == 0:
+                if (epoch + 1) > cfg.TRAIN.VALIDATE_BEGIN and (epoch + 1) % cfg.TRAIN.VALIDATE_ITERS == 0:
                     self._valid_iter(epoch)
-            else:
-                pass
 
             if dist.get_rank() == 0:
                 pbar.close()
@@ -234,4 +234,4 @@ class Trainer:
         pbar.set_postfix(mse='%.6f' % (loss))
 
     def _save_checkpoint(self, epoch):
-        torch.save(self.model.module.state_dict(), os.path.join(self.save_model_dir, str(epoch)+'-'+"ckpt.pt"))
+        torch.save(self.model.module.state_dict(), os.path.join(self.save_model_dir, f"{epoch}-ckpt.pt"))
