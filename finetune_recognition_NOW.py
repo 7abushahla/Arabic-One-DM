@@ -4,10 +4,6 @@
 """
 finetune_recognition.py
 
-Modified to train a model that matches the English vae_HTR138.pth structure:
-- HTRNet for OCR recognition 
-- Full VAE component for latent space processing
-
 Example usage:
   python finetune_recognition.py \
     --image_path data/combined_dataset \
@@ -50,9 +46,6 @@ import datetime
 # 1) Imports from your code:
 from data_loader.loader_ara import IAMDataset, letters
 from models.recognition import HTRNet
-
-# Import VAE from diffusers
-from diffusers import AutoencoderKL
 
 # ----- Define constants -----
 BATCH_SIZE = 784     # e.g., 784 or 32 or 64 based on GPU memory
@@ -155,7 +148,7 @@ def evaluate(model, loader, ctc_loss, device, idx_to_char, max_val_batches=None)
         if max_val_batches is not None and batch_idx >= max_val_batches:
             break
 
-        images = batch["img"].to(device)    # No need for ensure_four_channels
+        images = ensure_four_channels(batch["img"].to(device))    # shape [B,4,H,W]
         targets       = batch["target"].to(device)
         target_lengths= batch["target_lengths"].to(device)
 
@@ -274,7 +267,7 @@ def naive_decode_samples(model, loader, device, idx_to_char, max_samples=3):
     data_iter = iter(loader)
     batch = next(data_iter)
 
-    images        = batch["img"][:max_samples].to(device)  # No need for ensure_four_channels
+    images        = ensure_four_channels(batch["img"][:max_samples].to(device))
     ground_truths = batch["transcr"][:max_samples]  # ground truth transcriptions (as strings)
     image_paths   = batch["image_name"][:max_samples] # paths to the samples
 
@@ -322,72 +315,6 @@ def ensure_four_channels(img_tensor: torch.Tensor) -> torch.Tensor:
         return torch.cat([img_tensor, img_tensor[:, 0:1, ...]], dim=1)
     return img_tensor
 
-class OCRModelWithVAE(nn.Module):
-    """
-    Combined model that includes both HTRNet and VAE to match the English model structure.
-    This trains on latent space data like the English version.
-    """
-    def __init__(self, nclasses, vae_model_path):
-        super(OCRModelWithVAE, self).__init__()
-        
-        # Load pretrained VAE (same as used in main pipeline)
-        self.vae = AutoencoderKL.from_pretrained(vae_model_path, subfolder="vae")
-        # Freeze VAE parameters - we only train the HTRNet part
-        for param in self.vae.parameters():
-            param.requires_grad = False
-            
-        # HTRNet expects 4-channel input (latent space)
-        self.htr_net = HTRNet(nclasses=nclasses, vae=True, head='rnn', flattening='maxpool')
-        
-    def forward(self, images):
-        """
-        Forward pass:
-        1. Encode images to latent space using VAE
-        2. Scale latents (like in main pipeline)
-        3. Pass through HTRNet for recognition
-        """
-        # Encode to latent space
-        with torch.no_grad():
-            latents = self.vae.encode(images).latent_dist.sample()
-            # Scale latents like in the main pipeline
-            latents = latents * 0.18215
-            
-        # HTRNet processes the latent space
-        return self.htr_net(latents)
-        
-    def get_htr_parameters(self):
-        """Return only HTRNet parameters for training"""
-        return self.htr_net.parameters()
-
-    def state_dict(self):
-        """Return combined state dict with proper prefixes to match English model"""
-        combined_dict = {}
-        
-        # Add VAE parameters with 'vae.' prefix
-        for key, value in self.vae.state_dict().items():
-            combined_dict[f"vae.{key}"] = value
-            
-        # Add HTRNet parameters directly (no prefix)
-        for key, value in self.htr_net.state_dict().items():
-            combined_dict[key] = value
-            
-        return combined_dict
-        
-    def load_state_dict(self, state_dict, strict=True):
-        """Load from combined state dict"""
-        vae_dict = {}
-        htr_dict = {}
-        
-        for key, value in state_dict.items():
-            if key.startswith('vae.'):
-                vae_dict[key[4:]] = value  # Remove 'vae.' prefix
-            else:
-                htr_dict[key] = value
-                
-        # Load only HTRNet parameters (VAE is frozen)
-        missing, unexpected = self.htr_net.load_state_dict(htr_dict, strict=strict)
-        return missing, unexpected
-
 def main():
     parser = argparse.ArgumentParser()
     # Data paths and types
@@ -401,10 +328,6 @@ def main():
 
     # Path to the pretrained One-DM OCR model checkpoint
     parser.add_argument("--save_ckpt_dir", type=str, default="./ocr_checkpoints")
-    
-    # VAE model path (same as used in main pipeline)
-    parser.add_argument("--vae_model_path", type=str, default="model_zoo/stable-diffusion-v1-5",
-                        help="Path to the stable diffusion model containing the VAE")
 
     # Training hyperparameters
     parser.add_argument("--epochs", type=int, default=MAX_EPOCHS)
@@ -452,16 +375,21 @@ def main():
     test_loader  = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False,
                               collate_fn=test_dataset.collate_fn_, num_workers=NUM_WORKERS)
 
-    # Create the combined OCR model with VAE (like English version)
+    # Create the One-DM OCR model
     # Total classes: 103 letters + 1 CTC_BLANK = 104 classes
     # Letters: indices 0-102, CTC_BLANK: index 103
-    model = OCRModelWithVAE(nclasses=n_classes, vae_model_path=args.vae_model_path).to(device)
+
+    # Training from scratch with VAE enabled to work properly with the rest of the code
+    model = HTRNet(nclasses=n_classes, vae=True, head='rnn', flattening='maxpool').to(device)
+
+    # We are training from scratch – skip loading any pretrained weights.
+    # partial_load_onedm(model, args.pretrained_ocr)
 
     # Set checkpoint file paths
-    ckpt_last = os.path.join(args.save_ckpt_dir, "checkpoint_last_recognition_vae.pth")
-    ckpt_model_state = os.path.join(args.save_ckpt_dir, "checkpoint_last_state_recognition_vae.pth")
-    ckpt_best = os.path.join(args.save_ckpt_dir, "ocr_best_recognition_vae.pth")
-    ckpt_best_state = os.path.join(args.save_ckpt_dir, "ocr_best_state_recognition_vae.pth")
+    ckpt_last = os.path.join(args.save_ckpt_dir, "checkpoint_last_recognition.pth")
+    ckpt_model_state = os.path.join(args.save_ckpt_dir, "checkpoint_last_state_recognition.pth")
+    ckpt_best = os.path.join(args.save_ckpt_dir, "ocr_best_recognition.pth")
+    ckpt_best_state = os.path.join(args.save_ckpt_dir, "ocr_best_state_recognition.pth")
 
     # Tracking training progress
     start_epoch = 0
@@ -469,9 +397,9 @@ def main():
     stagnant_epochs = 0
     patience = args.patience
 
-    # Prepare training components - only train HTRNet parameters
+    # Prepare training components
     criterion = nn.CTCLoss(blank=BLANK_IDX, reduction="mean")
-    optimizer = optim.AdamW(model.get_htr_parameters(), lr=args.lr)
+    optimizer = optim.AdamW(model.parameters(), lr=args.lr)
     scheduler = ExponentialLR(optimizer, gamma=10**(-1/90000))
 
     # Optionally resume from checkpoint
@@ -499,8 +427,7 @@ def main():
 
         pbar = tqdm(train_loader, desc=f"Epoch {epoch+1}/{args.epochs}", leave=True)
         for step, batch in enumerate(pbar):
-            # No need for ensure_four_channels - model handles the conversion internally
-            images = batch["img"].to(device)
+            images = ensure_four_channels(batch["img"].to(device))
             targets = batch["target"].to(device)
             target_lengths = batch["target_lengths"].to(device)
 
@@ -548,9 +475,11 @@ def main():
         # Validate every EPOCHS_TO_VALIDATE epochs
         if (epoch + 1) % args.epochs_to_validate == 0:
             val_loss, val_cer = evaluate(model, val_loader, criterion, device, idx_to_char)
+            # val_loss = evaluate(model, val_loader, criterion, device, max_val_batches=None)
             print(f"[Every {EPOCHS_TO_VALIDATE} epoch check] VALIDATION: End of epoch {epoch+1}, val_loss={val_loss:.4f}, CER={val_cer:.4f}")
 
             # Call our new sample decoding function:
+            # naive_decode_samples(model, loader, device, idx_to_char, max_samples=3):
             sample_outputs = naive_decode_samples(model, val_loader, device, idx_to_char, max_samples=5)
 
             if val_cer < best_cer:
@@ -567,6 +496,7 @@ def main():
                 torch.save(model.state_dict(), ckpt_best_state)
                 torch.save(ckpt_data, ckpt_best)
                 print(f"** New best => val_loss={val_loss:.4f}, CER={best_cer:.4f}, saved best model based on lowest CER.")
+                # print(f"** New best => val_loss improved to {best_val_loss:.4f}, saved best model.")
             else:
                 stagnant_epochs += 1
                 print(f"No improvement in CER for {stagnant_epochs} epoch(s).")
@@ -592,7 +522,7 @@ def main():
                     }
 
                     # Append the new log entry to the JSON file (each entry on a separate line)
-                    with open("finetune_recognition_validation_log_recognition_vae.json", "a") as log_file:
+                    with open("finetune_recognition_validation_log_recognition.json", "a") as log_file:
                         log_file.write(json.dumps(log_entry) + "\n")
 
                     break
@@ -613,7 +543,7 @@ def main():
             }
 
             # Append the new log entry to the JSON file (each entry on a separate line)
-            with open("finetune_recognition_validation_log_recognition_vae.json", "a") as log_file:
+            with open("finetune_recognition_validation_log_recognition.json", "a") as log_file:
                 log_file.write(json.dumps(log_entry) + "\n")
             
         else:
@@ -626,6 +556,9 @@ def main():
 
     # Final test evaluation
     model.eval()
+    # test_loss = evaluate(model, test_loader, criterion, device)
+    # print(f"Test set CTC loss => {test_loss:.4f}")
+
     test_loss, test_cer = evaluate(model, test_loader, criterion, device, idx_to_char)
     print(f"Test set => CTC loss={test_loss:.4f}, CER={test_cer:.4f}")
 
@@ -634,7 +567,7 @@ def main():
     test_wer_count = 0
     with torch.no_grad():
         for batch in test_loader:
-            images = batch["img"].to(device)
+            images = ensure_four_channels(batch["img"].to(device))
 
             logits = model(images)
             probs  = F.log_softmax(logits, dim=2)
