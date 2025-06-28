@@ -31,6 +31,7 @@ class Trainer:
       
     def _train_iter(self, data, step, pbar):
         self.model.train()
+        # prepare input
 
         images, style_ref, laplace_ref, content_ref, wid = data['img'].to(self.device), \
             data['style'].to(self.device), \
@@ -118,9 +119,17 @@ class Trainer:
 
         if dist.get_rank() == 0:
             # log file
-            loss_dict = {"reconstruct_loss": recon_loss.item(), "high_nce_loss": high_nce_loss.item(),
-                         "low_nce_loss": low_nce_loss.item(), "ctc_loss": ctc_loss.item()}
+            loss_dict = {"reconstruct_loss": recon_loss.item(),
+                         "high_nce_loss": high_nce_loss.item(),
+                         "low_nce_loss": low_nce_loss.item(),
+                         "ctc_loss": ctc_loss.item()}
             self.tb_summary.add_scalars("loss", loss_dict, step)
+
+            # --- Extra debugging output ---
+            # Print CTC loss to stdout so we can monitor for explosion.
+            if step % 10 == 0:  # reduce spam – adjust frequency as needed
+                print(f"[Finetune] Step {step} | CTC loss: {ctc_loss.item():.4f}")
+
             self._progress(recon_loss.item(), pbar)
 
         del data, loss
