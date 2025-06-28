@@ -81,7 +81,8 @@ def main(opt):
 
     unet = DDP(unet, device_ids=[local_rank], broadcast_buffers=False)
     optimizer = optim.AdamW(unet.parameters(), lr=cfg.SOLVER.BASE_LR)
-    ctc_loss = nn.CTCLoss()
+    # ctc_loss = nn.CTCLoss()
+    ctc_loss = nn.CTCLoss(blank=len(letters))
     criterion = dict(nce=SupConLoss(contrast_mode='all'), recon=nn.MSELoss())
     diffusion = Diffusion(device=device, noise_offset=opt.noise_offset)
 
