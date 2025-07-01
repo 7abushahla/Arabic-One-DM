@@ -14,29 +14,6 @@ import unicodedata
 import re
 import matplotlib.pyplot as plt
 
-# ---------------------------------------
-# Global Switch for Arabic
-# ---------------------------------------
-SHOW_HARAKAT = False  # or True if you want diacritics 
-
-# ---------------------------------------
-# Arabic / Unifont Setup
-# ---------------------------------------
-# For an Arabic scenario:
-arabic_chars   = "ءاأإآابتثجحخدذرزسشصضطظعغفقكلمنهويىئؤة"
-arabic_numbers = "٠١٢٣٤٥٦٧٨٩"
-english_numbers= "0123456789"
-punctuation    = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~،؛؟"
-symbols        = "$€£¥¢©®±×÷ "
-
-# Combined letters (for content mapping)
-letters = arabic_chars + arabic_numbers + english_numbers + punctuation + symbols
-
-style_len = 416 #target width in pixels for style images (around avg. width of images in the dataset)
-
-# =======================================
-# Dataset File Paths and Generation Types
-# =======================================
 text_path = {
     'train': 'data/train.txt',
     'val': 'data/val.txt',
@@ -49,6 +26,25 @@ generate_type = {
     'oov_s': ['train', 'data/oov.common_words'],
     'oov_u': ['test',  'data/test.txt']
 }
+
+# ---------------------------------------
+# Global Switch for Arabic
+# ---------------------------------------
+SHOW_HARAKAT = False  # or True if you want diacritics 
+
+# ---------------------------------------
+# Arabic / Unifont Setup
+# ---------------------------------------
+# For an Arabic scenario:
+arabic_chars   = "ءأإآابتثجحخدذرزسشصضطظعغفقكلمنهويىئؤة"
+arabic_numbers = "٠١٢٣٤٥٦٧٨٩"
+english_numbers= "0123456789"
+punctuation    = "!\"#%&'()*+-./:<=>@[\\]^_`{|}~،؛؟ " 
+
+# Combined letters (for content mapping)
+letters = arabic_chars + arabic_numbers + english_numbers + punctuation
+
+style_len = 416 #target width in pixels for style images (around avg. width of images in the dataset)
 
 # ---------------------------------------
 # GLOBAL writer-ID ↔ integer lookup (shared across splits)
@@ -98,90 +94,100 @@ def effective_length(text):
     decomposed = unicodedata.normalize("NFD", text)
     return len([ch for ch in decomposed if not unicodedata.combining(ch)])
 
-def shape_arabic_text(text: str, letter2index: dict):
-    """
-    Convert an Arabic (RTL) string into a sequence of Unifont glyph indices
-    *in logical order*.  Nothing is reversed at the end.
+# ---------------------------------------
+# Contextual-forms mapping (Arabic subset)
+# ---------------------------------------
+forms_mapping = {
+    'ب': {'isolated': 0x0628, 'initial': 0xFE91, 'medial': 0xFE92, 'final': 0xFE90},
+    'ت': {'isolated': 0x062A, 'initial': 0xFE97, 'medial': 0xFE98, 'final': 0xFE96},
+    'ث': {'isolated': 0x062B, 'initial': 0xFE9B, 'medial': 0xFE9C, 'final': 0xFE9A},
+    'ج': {'isolated': 0x062C, 'initial': 0xFE9F, 'medial': 0xFEA0, 'final': 0xFE9E},
+    'ح': {'isolated': 0x062D, 'initial': 0xFEA3, 'medial': 0xFEA4, 'final': 0xFEA2},
+    'خ': {'isolated': 0x062E, 'initial': 0xFEA7, 'medial': 0xFEA8, 'final': 0xFEA6},
+    'س': {'isolated': 0x0633, 'initial': 0xFEB3, 'medial': 0xFEB4, 'final': 0xFEB2},
+    'ش': {'isolated': 0x0634, 'initial': 0xFEB7, 'medial': 0xFEB8, 'final': 0xFEB6},
+    'ص': {'isolated': 0x0635, 'initial': 0xFEBB, 'medial': 0xFEBC, 'final': 0xFEBA},
+    'ض': {'isolated': 0x0636, 'initial': 0xFEBF, 'medial': 0xFEC0, 'final': 0xFEBE},
+    'ط': {'isolated': 0x0637, 'initial': 0xFEC3, 'medial': 0xFEC4, 'final': 0xFEC2},
+    'ظ': {'isolated': 0x0638, 'initial': 0xFEC7, 'medial': 0xFEC8, 'final': 0xFEC6},
+    'ع': {'isolated': 0x0639, 'initial': 0xFECB, 'medial': 0xFECC, 'final': 0xFECA},
+    'غ': {'isolated': 0x063A, 'initial': 0xFECF, 'medial': 0xFED0, 'final': 0xFECE},
+    'ف': {'isolated': 0x0641, 'initial': 0xFED3, 'medial': 0xFED4, 'final': 0xFED2},
+    'ق': {'isolated': 0x0642, 'initial': 0xFED7, 'medial': 0xFED8, 'final': 0xFED6},
+    'ك': {'isolated': 0x0643, 'initial': 0xFEDB, 'medial': 0xFEDC, 'final': 0xFEDA},
+    'ل': {'isolated': 0x0644, 'initial': 0xFEDF, 'medial': 0xFEE0, 'final': 0xFEDE},
+    'م': {'isolated': 0x0645, 'initial': 0xFEE3, 'medial': 0xFEE4, 'final': 0xFEE2},
+    'ن': {'isolated': 0x0646, 'initial': 0xFEE7, 'medial': 0xFEE8, 'final': 0xFEE6},
+    'ه': {'isolated': 0x0647, 'initial': 0xFEEB, 'medial': 0xFEEC, 'final': 0xFEEA},
+    'و': {'isolated': 0x0648, 'initial': 0x0648, 'medial': 0x0648, 'final': 0xFEEE},
+    'ي': {'isolated': 0x064A, 'initial': 0xFEF3, 'medial': 0xFEF4, 'final': 0xFEF2},
+    'ا': {'isolated': 0x0627, 'initial': 0x0627, 'medial': 0x0627, 'final': 0xFE8E},
+    'د': {'isolated': 0x062F, 'initial': 0x062F, 'medial': 0x062F, 'final': 0xFEAA},
+    'ذ': {'isolated': 0x0630, 'initial': 0x0630, 'medial': 0x0630, 'final': 0xFEAC},
+    'ر': {'isolated': 0x0631, 'initial': 0x0631, 'medial': 0x0631, 'final': 0xFEAE},
+    'ز': {'isolated': 0x0632, 'initial': 0x0632, 'medial': 0x0632, 'final': 0xFEB0},
+    'ة': {'isolated': 0x0629, 'initial': 0x0629, 'medial': 0x0629, 'final': 0xFE94},
+    'أ': {'isolated': 0x0623, 'initial': 0x0623, 'medial': 0x0623, 'final': 0xFE84},
+    'إ': {'isolated': 0x0625, 'initial': 0x0625, 'medial': 0x0625, 'final': 0xFE88},
+    'آ': {'isolated': 0x0622, 'initial': 0x0622, 'medial': 0x0622, 'final': 0xFE82},
+    'ء': {'isolated': 0x0621, 'initial': 0x0621, 'medial': 0x0621, 'final': 0x0621},
+    'ؤ': {'isolated': 0x0624, 'initial': 0x0624, 'medial': 0x0624, 'final': 0xFE86},
+    'ى': {'isolated': 0x0649, 'initial': 0x0649, 'medial': 0x0649, 'final': 0xFEF0},
+    'ئ': {'isolated': 0x0626, 'initial': 0xFE8B, 'medial': 0xFE8C, 'final': 0xFE8A}
+}
 
-    Steps
-    -----
-    1. Normalise + light pre-processing            (preprocess_text)
-    2. Tokenise into (char, diacritic) pairs
-    3. Force all diacritics to "base" when SHOW_HARAKAT==False
-    4. Decide contextual form (isolated / initial / medial / final)
-    5. Map to glyph index →   indices list   +   list of detected forms
-    6. Return (indices, forms)   **logical order preserved**
+non_joining_letters = set("اأإآدذرزوؤىء")
+
+# Helper to decide contextual form key (isolated/initial/medial/final)
+def _decide_form(word: str, idx: int) -> str:
+    ch = word[idx]
+    if ch not in forms_mapping:
+        return 'isolated'
+    L = len(word)
+    prev = word[idx-1] if idx>0 else None
+    next_ = word[idx+1] if idx < L-1 else None
+    prev_join = prev and prev not in non_joining_letters and prev in forms_mapping
+    next_join = next_ and ch not in non_joining_letters and next_ in forms_mapping
+    if prev_join and next_join:
+        return 'medial'
+    elif prev_join and not next_join:
+        return 'final'
+    elif not prev_join and next_join:
+        return 'initial'
+    else:
+        return 'isolated'
+
+def shape_arabic_text(text: str, letter2index: dict):
+    """Light-weight shaper that returns *base-character* indices while also
+    computing contextual-form tags for debugging/analysis.
+
+    The returned `indices` are suitable for indexing `con_symbols` which is
+    constructed in the same order as `letters` (base characters only).
+    `forms` contains the chosen contextual form string for each Arabic letter
+    ("isolated", "initial", …) so that downstream visualisers can still paint
+    the correct glyph if they wish.
     """
-    # -------------------------------------------------- 1) pre-processing
+
     text = preprocess_text(text)
 
-    # -------------------------------------------------- 2) constants
-    non_joining = set("اأإآدذرزو")
-    harakat_set = set("ًٌٍَُِّْ")
+    indices: list[int] = []
+    forms:   list[str] = []
 
-    # -------------------------------------------------- 3) tokenise
-    tokens = []                       # [(char, diacritic | None), ...]
-    i = 0
-    while i < len(text):
-        ch = text[i]
-
-        if ch in arabic_chars:        # Arabic base letter
-            diac = "base"
-            if i + 1 < len(text) and text[i + 1] in harakat_set:
-                diac = text[i + 1]
-                i += 2
-            else:
-                i += 1
-            tokens.append((ch, diac))
-
-        elif ch in harakat_set:       # stray haraka – skip
-            i += 1
-
-        else:                         # non-Arabic char
-            tokens.append((ch, None))
-            i += 1
-
-    # ---------------------------------------- 4) strip diacritics if desired
-    if not SHOW_HARAKAT:
-        tokens = [(c, "base") if c in arabic_chars else (c, d)
-                   for (c, d) in tokens]
-
-    # ---------------------------------------- 5) contextual forms + indices
-    indices, forms = [], []
-    N = len(tokens)
-
-    for t, (ch, d) in enumerate(tokens):
+    for idx, ch in enumerate(text):
         if ch in arabic_chars:
-            prev_join = t > 0 and tokens[t-1][0] in arabic_chars \
-                              and tokens[t-1][0] not in non_joining
-            next_join = t < N-1 and tokens[t+1][0] in arabic_chars
-            joinable  = ch not in non_joining
-
-            if not joinable:
-                form = "final" if prev_join else "isolated"
-            else:
-                if   prev_join and next_join: form = "medial"
-                elif prev_join and not next_join: form = "final"
-                elif not prev_join and next_join: form = "initial"
-                else: form = "isolated"
-
-            idx = letter2index[ch].get(form, {}).get(d,
-                  letter2index[ch]["isolated"]["base"])
-            indices.append(idx)
+            form = _decide_form(text, idx)
             forms.append(form)
+        else:
+            forms.append('default')
 
-        else:   # non-Arabic
-            if ch in letter2index:
-                idx  = letter2index[ch] if not isinstance(
-                      letter2index[ch], dict) else letter2index[ch]["default"]
-            else:
-                idx = letter2index["PAD"]
-            indices.append(idx)
-            forms.append("default")
+        # Append index (outside the else so both branches hit it)
+        if ch in letter2index:
+            indices.append(letter2index[ch])
+        else:
+            # fall back to PAD token index (last row in con_symbols)
+            indices.append(letter2index.get('PAD_TOKEN', len(letter2index)))
 
-    # -------------------------------------------------- 6) done – no reversal
     return indices, forms
-
 
 def strip_harakat(text):
     """
@@ -229,19 +235,14 @@ class IAMDataset(Dataset):
                  style_path,
                  laplace_path,
                  type,
-                 content_type='unifont_arabic',
+                 content_type='unifont',
                  max_len=10):
         
         self.max_len = max_len
         self.style_len = style_len
         self.split     = type
         
-        # read lines from e.g. data/train.txt
-        data_file = text_path[type]
-        self.data_dict = self.load_data(data_file)
-
-        # Now join the 'type' folder to each of the paths.
-        # flat combined_dataset with split
+        self.data_dict = self.load_data(text_path[type])
         self.image_path   = os.path.join(image_path,   type)
         self.style_root   = os.path.join(style_path,   type)
         self.laplace_root = os.path.join(laplace_path, type)
@@ -254,19 +255,13 @@ class IAMDataset(Dataset):
         
         self.indices = list(self.data_dict.keys())
 
-        # Image preprocessing (identical to English loader): just ToTensor + Normalize.
         self.transforms = torchvision.transforms.Compose([
             torchvision.transforms.ToTensor(),
             torchvision.transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))
         ])
-
-        # load unifont_arabic or unifont, etc.
-        self.con_symbols, _ = self.get_symbols(content_type)
-
-        # example placeholder for a Laplace filter
-        self.laplace = torch.tensor([[0, 1, 0],
-                                     [1,-4, 1],
-                                     [0, 1, 0]], dtype=torch.float32
+        #self.content_transform = torchvision.transforms.Resize([64, 32], interpolation=Image.NEAREST)
+        self.con_symbols = self.get_symbols(content_type)
+        self.laplace = torch.tensor([[0, 1, 0],[1, -4, 1],[0, 1, 0]], dtype=torch.float
                                    ).to(torch.float32).view(1, 1, 3, 3).contiguous()
 
         # Build / fetch global writer-ID lookup
@@ -353,25 +348,30 @@ class IAMDataset(Dataset):
         return new_style_images, new_laplace_images
     
     def get_symbols(self, input_type):
-        """
-        Load Arabic symbols from data/{input_type}.pickle
-        Returns con_symbols + letter2index
-        """
         with open(f"data/{input_type}.pickle", "rb") as f:
-            data = pickle.load(f)
-        glyph_entries = data['with_harakat']['glyph_entries']
-        letter2index = data['with_harakat']['letter2index']
+            syms = pickle.load(f)
 
-        max_idx = max(e['idx'][0] for e in glyph_entries)
-        glyph_list = [None]*(max_idx+1)
-
-        for entry in glyph_entries:
-            idx_val = entry['idx'][0]
-            mat_16x16 = entry['mat'].astype(np.float32)
-            glyph_list[idx_val] = torch.from_numpy(mat_16x16)
-        con_symbols = torch.stack(glyph_list)
-
-        return con_symbols, letter2index
+        # Store for contextual look-ups in the dataset as well (needed for contextual glyphs)
+        self.symbols = {sym['idx'][0]: sym['mat'].astype(np.float32) for sym in syms}
+        
+        # Build content tensor including contextual forms
+        contents = []
+        for char in self.letters:
+            if char in forms_mapping:
+                # For Arabic letters, use isolated form as base
+                code_point = forms_mapping[char]['isolated']
+                symbol = torch.from_numpy(self.symbols[code_point]).float()
+            else:
+                # For non-Arabic chars, use basic form
+                symbol = torch.from_numpy(self.symbols[ord(char)]).float()
+            contents.append(symbol)
+            
+        # Append blank PAD token
+        contents.append(torch.zeros_like(contents[0]))
+        
+        # Stack into single tensor
+        contents = torch.stack(contents)
+        return contents
 
     def __len__(self):
         return len(self.indices)
@@ -411,109 +411,91 @@ class IAMDataset(Dataset):
 
     def collate_fn_(self, batch):
         """
-        Collate function that pads:
-          - main images => same H/W
-          - style images => same H, clamp W
-          - glyph => used for content
-          Additionally converts writer IDs to an int tensor (like English loader)
-          and keeps their string form under 'wid_str'.
+        Collate function that matches English loader's approach while handling
+        Arabic-specific features like writer ID mapping and debug prints.
         """
-        B = len(batch)
+        # Get dimensions (same as English)
+        width = [item['img'].shape[2] for item in batch]
+        c_width = [len(item['content']) for item in batch]
+        s_width = [item['style'].shape[2] for item in batch]
 
-        # ============ 1) MAIN IMAGES (3,H,W) => pad =============
-        img_heights = [item['img'].shape[1] for item in batch]
-        img_widths  = [item['img'].shape[2] for item in batch]
-        max_h = max(img_heights)
-        # Use raw maximum width in the batch (same logic as English loader).
-        # All images were pre-processed so their widths are already multiples
-        # of 16, so the UNet skip connections will align without extra padding.
-        max_w = max(img_widths)
-
-        # Build 3-channel RGB tensor (same as original English loader)
-        imgs = torch.ones([B, 3, max_h, max_w], dtype=torch.float32)
-        for i, item in enumerate(batch):
-            cur_h = item['img'].shape[1]
-            cur_w = item['img'].shape[2]
-            imgs[i, :, :cur_h, :cur_w] = item['img']
-
-        # ============ 2) STYLE IMAGES =============
-
-        style_heights = [item['style'].shape[1] for item in batch]  
-        style_widths  = [item['style'].shape[2] for item in batch]  
-        max_style_h = max(style_heights)  
-        raw_max_style_w = max(style_widths)  
-        max_style_w = min(raw_max_style_w, self.style_len) 
-
-        style_ref   = torch.ones([B, 2, max_style_h, max_style_w], dtype=torch.float32)
-        laplace_ref = torch.zeros([B, 2, max_style_h, max_style_w], dtype=torch.float32)
-
-        for i, item in enumerate(batch):
-            sh = item['style'].shape[1]  # 
-            sw = item['style'].shape[2]  # 
-            clamped_w = min(sw, max_style_w)
-            style_ref[i, :, :sh, :clamped_w]   = item['style'][:, :sh, :clamped_w]
-            laplace_ref[i, :, :sh, :clamped_w] = item['laplace'][:, :sh, :clamped_w]
-
-        # ============ 3) CONTENT => glyph references =============
         transcr = [item['transcr'] for item in batch]
-        c_width = [len(txt) for txt in transcr]  # number of chars in each label
-        max_c_width = max(c_width)
-        content_ref = torch.zeros([B, max_c_width, 16, 16], dtype=torch.float32)
-        # also build OCR ctc target
         target_lengths = torch.IntTensor([len(t) for t in transcr])
-        max_tlen = max(target_lengths)
-        target = torch.zeros([B, max_tlen], dtype=torch.int32)
+        image_name = [item['image_name'] for item in batch]
 
-        for i, item in enumerate(batch):
-            label = item['content']
-            # For glyph references
-            content_inds = [self.letter2index[ch] for ch in label]
-            glyphs = self.con_symbols[content_inds]  # [len(label), 16, 16]
-            content_ref[i, :len(glyphs)] = glyphs
-            # For ctc target
-            tinds = [self.letter2index[ch] for ch in label]
-            target[i, :len(tinds)] = torch.tensor(tinds, dtype=torch.int32)
+        # Style width handling (same as English)
+        if max(s_width) < self.style_len:
+            max_s_width = max(s_width)
+        else:
+            max_s_width = self.style_len
 
-        # ---------- writer IDs (numeric + string) ----------
-        wid_str = [item['wid'] for item in batch]  # list[str]
-        wid_tensor = torch.tensor([self.wid2idx[w] for w in wid_str], dtype=torch.long)
+        # Initialize tensors (same as English)
+        imgs = torch.ones([len(batch), batch[0]['img'].shape[0], batch[0]['img'].shape[1], max(width)], dtype=torch.float32)
+        content_ref = torch.zeros([len(batch), max(c_width), 16, 16], dtype=torch.float32)
+        
+        style_ref = torch.ones([len(batch), batch[0]['style'].shape[0], batch[0]['style'].shape[1], max_s_width], dtype=torch.float32)
+        laplace_ref = torch.zeros([len(batch), batch[0]['laplace'].shape[0], batch[0]['laplace'].shape[1], max_s_width], dtype=torch.float32)
+        target = torch.zeros([len(batch), max(target_lengths)], dtype=torch.int32)
 
-        image_names = [item['image_name'] for item in batch]
+        for idx, item in enumerate(batch):
+            # Main image (same as English)
+            try:
+                imgs[idx, :, :, :item['img'].shape[2]] = item['img']
+            except:
+                print('img', item['img'].shape)
 
-        # invert glyph bitmaps if needed
-        content_ref = 1.0 - content_ref
+            # ---------- CONTENT (contextual prototypes) ----------
+            try:
+                # Shape text to get contextual form tag per char
+                _, forms = shape_arabic_text(item['content'], self.letter2index)
+
+                glyph_list = []
+                for ch, form in zip(item['content'], forms):
+                    if ch in forms_mapping:
+                        cp = forms_mapping[ch][form]
+                    else:
+                        cp = ord(ch)
+                    mat = self.symbols.get(cp, np.zeros((16,16), dtype=np.float32))
+                    glyph_list.append(torch.from_numpy(mat).float())
+
+                glyph_stack = torch.stack(glyph_list)           # [L,16,16]
+                content_ref[idx, :len(glyph_stack)] = glyph_stack 
+            except Exception as e:
+                print(f'content error: {e}', item['content'])
+
+            # Target (same indices as content)
+            target[idx, :len(transcr[idx])] = torch.Tensor([self.letter2index[t] for t in transcr[idx]])
+            
+            # Style/Laplace (same as English)
+            try:
+                cur_w = item['style'].shape[2]
+                style_ref[idx, :, :, :cur_w] = item['style']
+                laplace_ref[idx, :, :, :cur_w] = item['laplace']
+            except Exception as e:
+                raise RuntimeError(f"Style/laplace tensor copy failed for sample {idx} | style shape {item['style'].shape} | laplace shape {item['laplace'].shape}") from e
+
+        # Get writer IDs (using global mapping for Arabic)
+        wid_tensor = torch.tensor([self.wid2idx[item['wid']] for item in batch], dtype=torch.long)
+        wid_str = [item['wid'] for item in batch]  # Keep original strings for reference
+
+        content_ref = 1.0 - content_ref # invert the image
 
         return {
-            'img':            imgs,
-            'style':          style_ref,
-            'laplace':        laplace_ref,
-            'content':        content_ref,
-            'wid':            wid_tensor,
-            'wid_str':        wid_str,
-            'transcr':        transcr,
-            'target':         target,
+            'img': imgs,
+            'style': style_ref,
+            'content': content_ref,
+            'wid': wid_tensor,
+            'wid_str': wid_str,
+            'laplace': laplace_ref,
+            'target': target,
             'target_lengths': target_lengths,
-            'image_name':     image_names
+            'image_name': image_name,
+            'transcr': transcr
         }
 
-    
-
-# ---------------------------------------
-# Random_StyleIAMDataset
-# ---------------------------------------
+"""random sampling of style images during inference"""
 class Random_StyleIAMDataset(IAMDataset):
-    """
-    Minimal wrapper used during inference to fetch a single style/laplace
-    reference per writer.  Mirrors the constructor signature in the English
-    implementation (`loader.py`) so downstream utility code can stay the same.
-    """
     def __init__(self, style_path, laplace_path, ref_num):
-        """Light-weight dataset used only to fetch 1-image style references.
-
-        Unlike the full IAMDataset it does *not* need the text annotations, so
-        we purposefully do **not** call super().__init__.  We only record the
-        paths, list the available writer IDs and store a few geometry params.
-        """
 
         self.style_path   = style_path
         self.laplace_path = laplace_path
@@ -524,6 +506,9 @@ class Random_StyleIAMDataset(IAMDataset):
 
         # every file name in style_path corresponds to one writer
         self.author_id = os.listdir(self.style_path)
+
+    def __len__(self):
+        return self.ref_num
 
     def get_style_ref(self, wr_id):
         """
@@ -547,8 +532,7 @@ class Random_StyleIAMDataset(IAMDataset):
         laplace_image = l_img.astype(np.float32) / 255.0
         return style_image, laplace_image
 
-    def __len__(self):
-        return self.ref_num
+
 
     def __getitem__(self, _):
         """
@@ -576,12 +560,8 @@ class Random_StyleIAMDataset(IAMDataset):
         wid_list = []
         for i, item in enumerate(batch):
             cur_w = item['style'].shape[2]
-            if max_s_width < self.style_len:
-                style_ref[i, :, :, :cur_w] = item['style']
-                laplace_ref[i, :, :, :cur_w] = item['laplace']
-            else:
-                style_ref[i, :, :, :cur_w] = item['style'][:, :, :self.style_len]
-                laplace_ref[i, :, :, :cur_w] = item['laplace'][:, :, :self.style_len]
+            style_ref[i, :, :, :cur_w] = item['style']
+            laplace_ref[i, :, :, :cur_w] = item['laplace']
             wid_list.append(item['wid'])
 
         return {
@@ -594,46 +574,79 @@ class Random_StyleIAMDataset(IAMDataset):
 # Prepare the Content Image During Inference
 # =======================================
 class ContentData(IAMDataset):
-    """
-    Minimal for text->glyph. Ignores images entirely, so we override __init__ to skip image logic.
-    """
-    def __init__(self, content_type='unifont_arabic'):
+
+    def __init__(self, content_type='unifont'):
         # letters used for fallback
         self.letters = letters
 
-        # self.letter2index = {label: n for n, label in enumerate(self.letters)}
-
-        # So that hamza is not considered for blank tokens
-        self.letter2index = {label: n for n, label in enumerate(self.letters)}
-
-        # load the con_symbols from pickle
-        self.con_symbols, self.letter2index = self.get_symbols(content_type)
+        # Build extended letter2index that includes contextual forms
+        self.letter2index = {}
+        for i, char in enumerate(letters):
+            if char in forms_mapping:
+                # For Arabic letters, map all forms to consecutive indices
+                for form_type in ['isolated', 'initial', 'medial', 'final']:
+                    code_point = forms_mapping[char][form_type]
+                    self.letter2index[chr(code_point)] = i  # All forms map to base char index
+            else:
+                # For non-Arabic chars, just map the basic form
+                self.letter2index[char] = i
         
-        # Store reference to the instance method
+        # Load symbols and build content tensor (also stores self.symbols)
+        self.con_symbols = self.get_symbols(content_type)
+
+        # Expose shaper for convenience (used by external tests)
         self.shape_arabic_text = shape_arabic_text
 
     def get_content(self, text):
-        # shape the text using the instance method
-        indices, _ = self.shape_arabic_text(text, self.letter2index)
-        indices_tensor = torch.tensor(indices, dtype=torch.long)
-        glyphs = self.con_symbols[indices_tensor]
-        glyphs = 1.0 - glyphs
+        """Get content tensor with proper contextual forms for Arabic text."""
+        # First get the contextual forms
+        _, forms = shape_arabic_text(text, self.letter2index)
         
-        return glyphs.unsqueeze(0)  # [1, len(text), 16,16]
+        # Convert text to proper contextual form characters
+        contextual_text = ""
+        for char, form in zip(text, forms):
+            if char in forms_mapping:
+                code_point = forms_mapping[char][form]
+                contextual_text += chr(code_point)
+            else:
+                contextual_text += char
+        
+        # Build glyphs list using contextual form code points
+        glyphs_list = []
+        for ch in contextual_text:
+            cp = ord(ch)
+            mat = self.symbols.get(cp)
+            if mat is None:
+                # Fallback to blank if glyph missing
+                mat = np.zeros((16, 16), dtype=np.float32)
+            glyphs_list.append(torch.from_numpy(mat).float())
 
-    # overrides IAMDataset's get_symbols to skip path logic
+        content_ref = torch.stack(glyphs_list)
+        content_ref = 1.0 - content_ref  # invert to match English pipeline
+        return content_ref.unsqueeze(0)
+
     def get_symbols(self, input_type):
         with open(f"data/{input_type}.pickle", "rb") as f:
-            data = pickle.load(f)
-        glyph_entries = data['with_harakat']['glyph_entries']
-        letter2index = data['with_harakat']['letter2index']
+            syms = pickle.load(f)
 
-        max_idx = max(e['idx'][0] for e in glyph_entries)
-        glyph_list = [None]*(max_idx+1)
-
-        for entry in glyph_entries:
-            idx_val = entry['idx'][0]
-            mat_16x16 = entry['mat'].astype(np.float32)
-            glyph_list[idx_val] = torch.from_numpy(mat_16x16)
-        con_symbols = torch.stack(glyph_list)
-        return con_symbols, letter2index
+        # Store for contextual look-ups in the dataset as well (needed for contextual glyphs)
+        self.symbols = {sym['idx'][0]: sym['mat'].astype(np.float32) for sym in syms}
+        
+        # Build content tensor including contextual forms
+        contents = []
+        for char in self.letters:
+            if char in forms_mapping:
+                # For Arabic letters, use isolated form as base
+                code_point = forms_mapping[char]['isolated']
+                symbol = torch.from_numpy(self.symbols[code_point]).float()
+            else:
+                # For non-Arabic chars, use basic form
+                symbol = torch.from_numpy(self.symbols[ord(char)]).float()
+            contents.append(symbol)
+            
+        # Append blank PAD token
+        contents.append(torch.zeros_like(contents[0]))
+        
+        # Stack into single tensor
+        contents = torch.stack(contents)
+        return contents
