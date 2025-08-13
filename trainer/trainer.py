@@ -108,7 +108,7 @@ class Trainer:
         ctc_loss = self.ctc_criterion(F.log_softmax(rec_out, dim=2), target, input_lengths, target_lengths)
         high_nce_loss = self.nce_criterion(high_nce_emb, labels=wid)
         low_nce_loss = self.nce_criterion(low_nce_emb, labels=wid)
-        loss = recon_loss + high_nce_loss + low_nce_loss + 0.1*ctc_loss
+        loss = recon_loss + high_nce_loss + low_nce_loss + 0.01*ctc_loss
 
         # backward and update trainable parameters
         self.optimizer.zero_grad()
